@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Bolt
+  - RoadDetections
+  - PosNulled
+  - ball
+  - Spiner
+  - Fire
+  - CurrentLevel
+  - Effect
+  - ZoneZombie
+  - ZoneMonsters
+  - Diamond
+  - UI
+  - Coins
+  - Pet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Effect
+  - Water
+  - UI
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Layer 1
+    uniqueID: 49078945
+    locked: 0
+  - name: Layer 2
+    uniqueID: 2409240395
+    locked: 0
