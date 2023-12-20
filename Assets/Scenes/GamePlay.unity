@@ -12962,6 +12962,7 @@ GameObject:
   - component: {fileID: 189845732}
   - component: {fileID: 189845733}
   - component: {fileID: 189845735}
+  - component: {fileID: 189845736}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -13126,6 +13127,18 @@ MonoBehaviour:
   - {fileID: 1320171832528862900, guid: 9923592712eb3a449a79aefc36e1e59c, type: 3}
   - {fileID: 1320171832528862900, guid: b88e6cb53850efb489a00ef7e9491e5b, type: 3}
   - {fileID: 1320171832528862900, guid: 66b3cae0033c33542bb67aa02671df67, type: 3}
+--- !u!114 &189845736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189845728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424409e49e989c0439707f4622a3c903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &189989427
 GameObject:
   m_ObjectHideFlags: 0
@@ -49700,6 +49713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50cee88c7102a1d4f9ebfac8673265f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerWeapons: {fileID: 0}
   Manager: {fileID: 189845729}
   timer: {fileID: 1396099394}
   Bool: {fileID: 1858125658}
@@ -49732,7 +49746,15 @@ MonoBehaviour:
   FireGlass: {fileID: 21300000, guid: 4a6ab8fb58e321e49a50865dcd6f309a, type: 3}
   Brick: {fileID: 21300000, guid: 0166118281bb4ee49b3539595ccb5f3b, type: 3}
   FireGase: {fileID: 21300000, guid: 11b05c059c8cc21489d2b122b1f24e3a, type: 3}
+  CheckEvolve: 
+  Checking: 
   CurrentName: 
+  FinishScreenB: 0
+  DestroyEnemys: 0
+  StopAllAudios: 0
+  MapReady: 0
+  audioCheckerPlayer: {fileID: 0}
+  myaudio: 1
 --- !u!114 &752338032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51038,7 +51060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &784031957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -74757,6 +74779,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ec92c85e7317b4cbe82b1bb8eae744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clickClip: {fileID: 0}
+  musicSource: {fileID: 0}
+  _timePlay: 0.6
   BoolM: {fileID: 1858125658}
   Sound: {fileID: 447001270}
   Music: {fileID: 914353211}
@@ -129107,12 +129132,12 @@ GameObject:
   - component: {fileID: 2002485487}
   - component: {fileID: 2002485486}
   m_Layer: 5
-  m_Name: Messaging (1)
+  m_Name: RemoveAds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2002485485
 RectTransform:
   m_ObjectHideFlags: 0
@@ -129556,7 +129581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2010919928
 RectTransform:
   m_ObjectHideFlags: 0
