@@ -2,7 +2,6 @@ using System;
 using DG.Tweening;
 using SinhTon;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace SinhTon
