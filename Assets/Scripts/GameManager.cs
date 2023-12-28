@@ -1,13 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
-using System.Threading;
-using Unity.VisualScripting;
-using static UnityEngine.GraphicsBuffer;
-using Unity.VisualScripting.Antlr3.Runtime.Collections;
-using System.Numerics;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,7 +14,6 @@ public class GameManager : MonoBehaviour
     public movementJoystick JoystManager;
     public SpawenManager Spawner;
     public TimerManager Times;
-    public ManagerFloatingBtn ManagerDownBtn;
     public ManagerWeapons WeaponSpawn;
     public UIManager ManagerUI;
 
@@ -95,9 +88,6 @@ public class GameManager : MonoBehaviour
         len = myColors.Length;
         hh = PlayerPrefs.GetFloat("Health");
         Health = 100f+ hh;
-        ManagerDownBtn.Shop = true;
-        ManagerDownBtn.Equipement = true;
-        ManagerDownBtn.Death = true;
 
     }
     public float timeGenaration=5;

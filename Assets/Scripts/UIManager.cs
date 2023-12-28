@@ -71,10 +71,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         CheckEvolve = PlayerPrefs.GetString("CheckEvolve");
-        if (CheckEvolve == "work")
-        {
-            Manager.ManagerDownBtn.Evolve = true;
-        }
+
         if(Manager.PlayerDeath == true && FinishScreenB == false)
         {
             DestroyEnemys = true;
