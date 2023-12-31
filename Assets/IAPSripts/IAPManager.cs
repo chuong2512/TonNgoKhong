@@ -7,9 +7,6 @@ using UnityEngine.UI;
 
 public class IAPManager : MonoBehaviour, IStoreListener
 {
-
-   
-
     public GameObject RestoreButton;
 
     public GameObject PanelReward;

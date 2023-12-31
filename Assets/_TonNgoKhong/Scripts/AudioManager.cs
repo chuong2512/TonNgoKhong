@@ -30,14 +30,12 @@ public class AudioManager : Singleton<AudioManager>
     private void Start()
     {
         _isPlaying = false;
-        _crtId = GameDataManager.Instance.currentID;
         
         musicSource.loop = true;
     }
 
     public void PlaySong(int id)
     {
-        GameDataManager.Instance.SetCurrentSongID(id);
 
         _crtId = id;
         //    _audioClip = GameDataManager.Instance.cardSo.GetBookWithID(_crtId).song;

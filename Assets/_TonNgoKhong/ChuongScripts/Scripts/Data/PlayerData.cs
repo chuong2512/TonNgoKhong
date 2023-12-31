@@ -1,21 +1,22 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class Constant
 {
     public static string DataKey_PlayerData = "player_data";
-    public static int countSong = 100;
-    public static int priceUnlockSong = 10;
 }
 
 public class PlayerData : BaseData
 {
-    [FormerlySerializedAs("bullets")] [FormerlySerializedAs("intDiamond")] public int coin;
-    public int currentID;
-    public bool[] listMusical;
-    public bool isUnlock;
+    public int coin, gem, exp;
 
+    public int levelUnlock;
+    public int choosingMap;
+    public List<MapRecord> mapUnlocks;
+    
     public long time;
     public string timeRegister;
 
@@ -41,6 +42,18 @@ public class PlayerData : BaseData
         Save();
     }
 
+    public override void ValidateData()
+    {
+        if (mapUnlocks == null || mapUnlocks.Count == 0)
+        {
+            mapUnlocks = new List<MapRecord>();
+            mapUnlocks.Add(new MapRecord()
+            {
+                mapID = 0,
+                time = 0
+            });
+        }
+    }
 
     public override void Init()
     {
@@ -60,84 +73,48 @@ public class PlayerData : BaseData
         time = 3 * 24 * 60 * 60;
 
         coin = 0;
-        currentID = 0;
-        listMusical = new bool[Constant.countSong];
-        isUnlock = false;
+        gem = 0;
+        exp = 0;
 
-        //listMusical[0] = true;
-        for (int i = 0; i < 4; i++)
+        levelUnlock = 0;
+        mapUnlocks = new List<MapRecord>();
+        mapUnlocks.Add(new MapRecord()
         {
-            listMusical[i] = true;
-        }
+            mapID = 0,
+            time = 0
+        });
 
         Save();
     }
 
-    public void AddBullets(int a)
+    public bool IsUnlockMap(int mapID)
     {
-        coin += a;
+        var findMap = mapUnlocks.Find(record => record.mapID == mapID);
 
-        SGameManager.OnChangeBullet?.Invoke(a);
-
-        Save();
+        return (findMap != null);
     }
 
-    public void Shoot()
+    public void UnlockMap(int mapID)
     {
-        coin--;
-
-        SGameManager.OnChangeBullet?.Invoke(1);
-
-        Save();
-    }
-
-    public bool CheckCanUnlock(int price, int id)
-    {
-        if (coin < price) return false;
-        SubDiamond(price);
-        Unlock(id);
-        return true;
-    }
-
-    public bool CheckLock(int id)
-    {
-        return this.listMusical[id];
-    }
-
-    public void Unlock(int id)
-    {
-        if (!listMusical[id])
+        if (!IsUnlockMap(mapID))
         {
-            listMusical[id] = true;
+            mapUnlocks.Add(new MapRecord()
+            {
+                mapID = mapID,
+                time = 0
+            });
+            mapUnlocks = mapUnlocks.OrderBy(i => i.mapID).ToList();
         }
-
-        Save();
     }
-
-
-    public void UnlockPack()
+    
+    private void OnDestroy()
     {
-        isUnlock = true;
         Save();
     }
+}
 
-    public void SubDiamond(int a)
-    {
-        coin -= a;
-
-        if (coin < 0)
-        {
-            coin = 0;
-        }
-
-        SGameManager.OnChangeBullet?.Invoke(-a);
-
-        Save();
-    }
-
-    public void ChooseSong(int i)
-    {
-        currentID = i;
-        Save();
-    }
+public class MapRecord
+{
+    public int mapID;
+    public long time;
 }

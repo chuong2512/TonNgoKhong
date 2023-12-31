@@ -87,6 +87,5 @@ public class BuyCoinButton : MonoBehaviour
 
     private void AddCoin()
     {
-        GameDataManager.Instance.playerData.AddBullets(bullet);
     }
 }

@@ -16,10 +16,10 @@ public class ManagerMecanique : MonoBehaviour
     public Text Gems;
     public Text Coins;
 
-    [Header("Times Controller")]
+    /*[Header("Times Controller")]
     public Text FlashTime;
     public Text GemsTime;
-    public Text CoinsTime;
+    public Text CoinsTime;*/
 
     [Header("Levels Manager Score")]
     public Image BarLevel;
@@ -41,9 +41,6 @@ public class ManagerMecanique : MonoBehaviour
         CoinsInt = PlayerPrefs.GetInt("coins");
         LevelInt = PlayerPrefs.GetInt("currentScore");
         LevelLevel = PlayerPrefs.GetFloat("Score");
-        FlashTime.text = "";
-        GemsTime.text = "";
-        CoinsTime.text = "";
     }
     public void InitText()
     {
@@ -52,9 +49,6 @@ public class ManagerMecanique : MonoBehaviour
         CoinsInt = PlayerPrefs.GetInt("coins");
         LevelInt = PlayerPrefs.GetInt("currentScore");
         LevelLevel = PlayerPrefs.GetFloat("Score");
-        FlashTime.text = "";
-        GemsTime.text = "";
-        CoinsTime.text = "";
     }
     void Update()
     {

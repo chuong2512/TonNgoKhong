@@ -13,6 +13,10 @@ public class BaseData : MonoBehaviour
     protected virtual void CheckAppendData()
     {
     }
+    
+    public virtual void ValidateData()
+    {
+    }
 
     public virtual void Init()
     {

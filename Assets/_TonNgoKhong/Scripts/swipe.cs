@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class swipe : MonoBehaviour
 {
-    public Color[] colors;
     public GameObject scrollbar, imageContent;
     private float scroll_pos = 0;
     float[] pos;
@@ -68,12 +67,10 @@ public class swipe : MonoBehaviour
                 Number = i;
                 transform.GetChild(i).localScale = Vector2.Lerp(transform.GetChild(i).localScale, new Vector2(1f, 1f), 0.1f);
                 imageContent.transform.GetChild(i).localScale = Vector2.Lerp(imageContent.transform.GetChild(i).localScale, new Vector2(1.2f, 1.2f), 0.1f);
-                imageContent.transform.GetChild(i).GetComponent<Image>().color = colors[1];
                 for (int j = 0; j < pos.Length; j++)
                 {
                     if (j != i)
                     {
-                        imageContent.transform.GetChild(j).GetComponent<Image>().color = colors[0];
                         imageContent.transform.GetChild(j).localScale = Vector2.Lerp(imageContent.transform.GetChild(j).localScale, new Vector2(0.8f, 0.8f), 0.1f);
                         transform.GetChild(j).localScale = Vector2.Lerp(transform.GetChild(j).localScale, new Vector2(0.8f, 0.8f), 0.1f);
                     }
