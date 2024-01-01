@@ -5,20 +5,20 @@ using UnityEngine;
 public class AdsManager : MonoBehaviour
 {
     public static AdsManager Ads;
-    ManagerMecanique managerMecanique;
-    private void Start()
-    {
-        managerMecanique = FindObjectOfType<ManagerMecanique>();
 
+    void Awake()
+    {
+        Advertisements.Instance.Initialize();
     }
+
     public void Showintertitial()
     {
-        if (PlayerPrefs.GetInt("ads")!=1)
+        if (PlayerPrefs.GetInt("ads") != 1)
         {
             Advertisements.Instance.ShowInterstitial();
-
         }
     }
+
     public void GetGems()
     {
 #if UNITY_EDITOR
@@ -26,13 +26,14 @@ public class AdsManager : MonoBehaviour
         GemsInt = PlayerPrefs.GetInt("gems");
         GemsInt += 10;
         PlayerPrefs.SetInt("gems", GemsInt);
-        managerMecanique.InitText();
+        /*managerMecanique.InitText();*/
 
 #else
         Advertisements.Instance.ShowRewardedVideo(CompleteMethodGems);
 
 #endif
     }
+
     private void CompleteMethodGems(bool completed, string advertiser)
     {
         Debug.Log("Closed rewarded from: " + advertiser + " -> Completed " + completed);
@@ -42,14 +43,14 @@ public class AdsManager : MonoBehaviour
             GemsInt = PlayerPrefs.GetInt("gems");
             GemsInt += 10;
             PlayerPrefs.SetInt("gems", GemsInt);
-            managerMecanique.InitText();
-
+            /*managerMecanique.InitText();*/
         }
         else
         {
             //no reward
         }
     }
+
     public void GetCoin()
     {
 #if UNITY_EDITOR
@@ -58,13 +59,14 @@ public class AdsManager : MonoBehaviour
         CoinsInt = PlayerPrefs.GetInt("coins");
         CoinsInt += 30;
         PlayerPrefs.SetInt("coins", CoinsInt);
-        managerMecanique.InitText();
+        /*managerMecanique.InitText();*/
 
 #else
         Advertisements.Instance.ShowRewardedVideo(CompleteMethodCoins);
 
 #endif
     }
+
     private void CompleteMethodCoins(bool completed, string advertiser)
     {
         Debug.Log("Closed rewarded from: " + advertiser + " -> Completed " + completed);
@@ -72,16 +74,16 @@ public class AdsManager : MonoBehaviour
         {
             int CoinsInt;
             CoinsInt = PlayerPrefs.GetInt("coins");
-            CoinsInt +=30;
+            CoinsInt += 30;
             PlayerPrefs.SetInt("coins", CoinsInt);
-            managerMecanique.InitText();
-
+            /*managerMecanique.InitText();*/
         }
         else
         {
             //no reward
         }
     }
+
     public void GetPower()
     {
 #if UNITY_EDITOR
@@ -90,14 +92,14 @@ public class AdsManager : MonoBehaviour
         CoinsInt = PlayerPrefs.GetInt("flash");
         CoinsInt += 10;
         PlayerPrefs.SetInt("flash", CoinsInt);
-        managerMecanique.InitText();
+        /*managerMecanique.InitText();*/
 
 #else
         Advertisements.Instance.ShowRewardedVideo(CompleteMethodPower);
 
 #endif
-
     }
+
     private void CompleteMethodPower(bool completed, string advertiser)
     {
         Debug.Log("Closed rewarded from: " + advertiser + " -> Completed " + completed);
@@ -107,17 +109,18 @@ public class AdsManager : MonoBehaviour
             CoinsInt = PlayerPrefs.GetInt("flash");
             CoinsInt += 10;
             PlayerPrefs.SetInt("flash", CoinsInt);
-            managerMecanique.InitText();
-
+            /*managerMecanique.InitText();*/
         }
         else
         {
             //no reward
         }
     }
+
     public void ShowrewardVideo()
     {
         Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
+
         void CompleteMethod(bool completed, string advertiser)
         {
             Debug.Log("Closed rewarded from: " + advertiser + " -> Completed " + completed);

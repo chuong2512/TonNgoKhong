@@ -45,9 +45,9 @@ public class DiamondVip : MonoBehaviour
     IEnumerator FlashingLed()
     {
         yield return new WaitForEndOfFrame();
-        Manager.GetComponent<GameManager>().FillingFlash.SetActive(true);
+        GameManager.Instance?.FillingFlash.SetActive(true);
         yield return new WaitForSeconds(0.005f);
-        Manager.GetComponent<GameManager>().FillingFlash.SetActive(false);
+        GameManager.Instance?.FillingFlash.SetActive(false);
         yield return new WaitForEndOfFrame();
         Destroy(this.gameObject);
 
@@ -56,11 +56,13 @@ public class DiamondVip : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Manager.GetComponent<GameManager>().ValureLevel += Checking;
+            GameManager.Instance.ValureLevel += Checking;
             if(Green == true)
             {
+                /*
                 UIManager.GetComponent<ManagerMecanique>().GemsInt += 1;
                 PlayerPrefs.SetInt("gems", UIManager.GetComponent<ManagerMecanique>().GemsInt);
+            */
             }
             StartCoroutine(FlashingLed());
         }

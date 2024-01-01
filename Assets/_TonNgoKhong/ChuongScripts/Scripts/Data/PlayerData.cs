@@ -4,11 +4,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class Constant
-{
-    public static string DataKey_PlayerData = "player_data";
-}
-
 public class PlayerData : BaseData
 {
     public int coin, gem, exp;
@@ -16,7 +11,7 @@ public class PlayerData : BaseData
     public int levelUnlock;
     public int choosingMap;
     public List<MapRecord> mapUnlocks;
-    
+
     public long time;
     public string timeRegister;
 
@@ -106,10 +101,12 @@ public class PlayerData : BaseData
             mapUnlocks = mapUnlocks.OrderBy(i => i.mapID).ToList();
         }
     }
-    
-    private void OnDestroy()
+
+    public MapRecord GetMapWithID(int mapID)
     {
-        Save();
+        var findMap = mapUnlocks.Find(record => record.mapID == mapID);
+
+        return findMap;
     }
 }
 

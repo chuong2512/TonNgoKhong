@@ -1,18 +1,17 @@
 using System;
 using SinhTon;
 
-public class SGameManager : Singleton<SGameManager>
+public class SGameManager : PersistentSingleton<SGameManager>
 {
     private GameDataManager _gameData;
     private ScreenManager _uiManager;
 
-    public static Action<int> OnChangeBullet;
-    public static Action<int> OnChangeDiamond;
-    public static Action<bool> OnPlayMusic;
-    public static Action<int> OnChooseSong;
-    public static Action<int> OnUnlockSong;
-    public static Action<float> SetTimeStop;
+    public static Action<int> OnChangeGem;
+    public static Action<int> OnChangeCoin;
+    public static Action<int> OnChangeExp;
     public static Action<float> SetRegisterTime;
+    
+    public static Action<int> OnChooseMap;
 
     private void Start()
     {

@@ -9,7 +9,6 @@ using static UnityEngine.GraphicsBuffer;
 public class EnemyManager : MonoBehaviour
 {
     [Header("Manager Enemy")]
-    public GameObject Manager;
     public GameObject HitEffect;
     public GameObject BloodLocalisation;
     public GameObject UImanager;
@@ -28,7 +27,6 @@ public class EnemyManager : MonoBehaviour
 
     void Start()
     {
-        Manager = GameObject.Find("GameManager");
         UImanager = GameObject.Find("UI");
         BloodLocalisation = GameObject.Find("BloodManager");
         Player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -41,7 +39,7 @@ public class EnemyManager : MonoBehaviour
     {
         if(FollowPlayer == true)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, Player.position, Manager.GetComponent<GameManager>().SpeedEnemy * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, Player.position, GameManager.Instance.SpeedEnemy * Time.deltaTime);
             this.gameObject.GetComponent<SpriteRenderer>().flipX = Player.transform.position.x < this.transform.position.x;
         }
         if(UImanager.GetComponent<UIManager>().DestroyEnemys == true)
@@ -94,7 +92,7 @@ public class EnemyManager : MonoBehaviour
             Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
             this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
             (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(BloodLocalisation.transform);
-            Manager.GetComponent<GameManager>().CurrentKilled += 1;
+            GameManager.Instance.CurrentKilled += 1;
             StartCoroutine(AnimationController());
         }
         if (other.CompareTag("ball"))
@@ -104,7 +102,7 @@ public class EnemyManager : MonoBehaviour
             Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
             this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
             (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(BloodLocalisation.transform);
-            Manager.GetComponent<GameManager>().CurrentKilled += 1;
+            GameManager.Instance.CurrentKilled += 1;
             StartCoroutine(BallController());
         }        
         if (other.CompareTag("Fire"))
@@ -114,7 +112,7 @@ public class EnemyManager : MonoBehaviour
             Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
             this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
             (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(BloodLocalisation.transform);
-            Manager.GetComponent<GameManager>().CurrentKilled += 1;
+            GameManager.Instance.CurrentKilled += 1;
             StartCoroutine(BallController());
         }
         if (other.CompareTag("Spiner"))
@@ -124,7 +122,7 @@ public class EnemyManager : MonoBehaviour
             Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
             this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
             (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(BloodLocalisation.transform);
-            Manager.GetComponent<GameManager>().CurrentKilled += 1;
+            GameManager.Instance.CurrentKilled += 1;
             StartCoroutine(AnimationController());
         }
         if (other.CompareTag("Player"))
@@ -140,7 +138,7 @@ public class EnemyManager : MonoBehaviour
             Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
             this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
             (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(BloodLocalisation.transform);
-            Manager.GetComponent<GameManager>().CurrentKilled += 1;
+            GameManager.Instance.CurrentKilled += 1;
             StartCoroutine(BallController());
         }
     }

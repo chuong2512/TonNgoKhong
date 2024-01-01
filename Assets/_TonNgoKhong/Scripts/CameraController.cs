@@ -21,10 +21,6 @@ public class CameraController : MonoBehaviour
         if(Spinner.activeSelf == true && Manage == true)
         {
             this.gameObject.GetComponent<Camera>().fieldOfView += 0.5f;
-            if(this.gameObject.GetComponent<Camera>().fieldOfView == 85)
-            {
-                Manage = false;
-            }
         }
     }
 }

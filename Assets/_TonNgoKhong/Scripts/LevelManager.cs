@@ -6,13 +6,10 @@ using UnityEngine.UI;
 [System.Serializable]
 public class LevelObjectUnlocked
 {
-
     public int LevelUnlock;
     public Sprite[] image;
-
-    
-
 }
+
 [System.Serializable]
 public class itemUnlocked
 {
@@ -21,9 +18,9 @@ public class itemUnlocked
 
     public string itemType;
 }
+
 public class LevelManager : MonoBehaviour
 {
-    ManagerMecanique managerMecanique;
     public GameObject panelParent;
     public GameObject[] panelchilden;
     public itemUnlocked[] itemUnlockeds;
@@ -59,16 +56,9 @@ public class LevelManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("level"))
         {
             PlayerPrefs.SetInt("level", 1);
-
         }
-        InitLevel();
-      
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        InitLevel();
     }
 
     public void CalculLevel(int x)
@@ -76,105 +66,107 @@ public class LevelManager : MonoBehaviour
         Debug.Log("CalculLevel");
         xp += x;
         level = PlayerPrefs.GetInt("level");
-       
-        if (xp>= (level * 1000))
+
+        if (xp >= (level * 1000))
         {
             xp -= (level * 1000);
             PlayerPrefs.SetInt("level", level + 1);
             level = PlayerPrefs.GetInt("level");
             PlayerPrefs.SetInt("xp", xp);
             InitLevel();
-
         }
         else
         {
             PlayerPrefs.SetInt("xp", xp);
             InitLevel();
         }
-        
-        
-        
-
-
     }
 
     public void InitLevel()
     {
         xp = PlayerPrefs.GetInt("xp");
         level = PlayerPrefs.GetInt("level");
-        
-        levelText.text = level.ToString();
-       
-        slidelevel.maxValue = level * 1000;
-        slidelevel.value = xp ;
 
-        slider.value = level*2;
+        levelText.text = level.ToString();
+
+        slidelevel.maxValue = level * 1000;
+        slidelevel.value = xp;
+
+        slider.value = level * 2;
 
         if (level >= 1)
         {
-            foreach(var ii in level1)
+            foreach (var ii in level1)
             {
                 ii.SetActive(true);
             }
         }
-         if(level >= 2)
+
+        if (level >= 2)
         {
             foreach (var ii in level2)
             {
                 ii.SetActive(true);
             }
         }
-         if (level >= 3)
+
+        if (level >= 3)
         {
             foreach (var ii in level3)
             {
                 ii.SetActive(true);
             }
         }
-         if (level >= 4)
+
+        if (level >= 4)
         {
             foreach (var ii in level4)
             {
                 ii.SetActive(true);
             }
         }
-         if (level >= 5)
+
+        if (level >= 5)
         {
             foreach (var ii in level5)
             {
                 ii.SetActive(true);
             }
-
         }
-         if (level >= 6)
+
+        if (level >= 6)
         {
             foreach (var ii in level6)
             {
                 ii.SetActive(true);
             }
         }
-         if (level >= 7)
+
+        if (level >= 7)
         {
             foreach (var ii in level7)
             {
                 ii.SetActive(true);
             }
         }
-         if (level >= 8)
+
+        if (level >= 8)
         {
             foreach (var ii in level8)
             {
                 ii.SetActive(true);
             }
         }
-         if (level >= 9)
+
+        if (level >= 9)
         {
             foreach (var ii in level2)
             {
                 ii.SetActive(true);
             }
         }
-         if (level >= 10)
+
+        if (level >= 10)
         {
             foreach (var ii in level2)
             {
@@ -187,22 +179,22 @@ public class LevelManager : MonoBehaviour
 
     void CheckAvailabelButton()
     {
-        for(int ii =0;ii< evolveButton.Length; ii++)
+        for (int ii = 0; ii < evolveButton.Length; ii++)
         {
-            if(PlayerPrefs.GetInt("evolveButton"+ ii) == 1)
+            if (PlayerPrefs.GetInt("evolveButton" + ii) == 1)
             {
                 evolveButton[ii].interactable = false;
             }
         }
     }
 
-   public void BuyEvolve(int ii)
+    public void BuyEvolve(int ii)
     {
         myButtonNumber = ii;
         int CoinsInt;
         CoinsInt = PlayerPrefs.GetInt("coins");
-        
     }
+
     public void BuyItems(int ii)
     {
         int CoinsInt;
@@ -214,21 +206,23 @@ public class LevelManager : MonoBehaviour
             {
                 AddHealth();
             }
-            else 
+            else
             {
                 AddSpead();
             }
+
             CoinsInt -= itemUnlockeds[ii].price;
             PlayerPrefs.SetInt("coins", CoinsInt);
             PlayerPrefs.SetInt("evolveButton" + ii, 1);
             CheckAvailabelButton();
             panelParent.SetActive(false);
-            foreach(var pp in panelchilden)
+            foreach (var pp in panelchilden)
             {
                 pp.SetActive(false);
             }
-            managerMecanique = FindObjectOfType<ManagerMecanique>();
-            managerMecanique.InitText();
+
+            /*managerMecanique = FindObjectOfType<ManagerMecanique>();
+            managerMecanique.InitText();*/
         }
         else
         {
@@ -237,21 +231,18 @@ public class LevelManager : MonoBehaviour
             nocoin.SetActive(true);
         }
     }
+
     public void AddHealth()
     {
         float hh = PlayerPrefs.GetFloat("Health");
         PlayerPrefs.SetFloat("Health", hh + 10);
-        Debug.Log("Health"+PlayerPrefs.GetFloat("Health"));
+        Debug.Log("Health" + PlayerPrefs.GetFloat("Health"));
     }
+
     public void AddSpead()
     {
         float ss = PlayerPrefs.GetFloat("Spead");
         PlayerPrefs.SetFloat("Spead", ss + 2);
-        Debug.Log("Spead"+PlayerPrefs.GetFloat("Spead"));
-
+        Debug.Log("Spead" + PlayerPrefs.GetFloat("Spead"));
     }
-
-
-
-
 }

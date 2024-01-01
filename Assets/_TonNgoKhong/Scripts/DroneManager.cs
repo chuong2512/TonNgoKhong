@@ -25,7 +25,7 @@ public class DroneManager : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, 2.8f * Time.deltaTime);
         this.gameObject.GetComponent<SpriteRenderer>().flipX = Player.transform.position.x < this.transform.position.x;
-        if (Manager.GetComponent<GameManager>().EnemyAvailable == true)
+        if (GameManager.Instance?.EnemyAvailable == true)
         {
             StartRocket = true;
             if(SpawenManager == true)
@@ -35,7 +35,7 @@ public class DroneManager : MonoBehaviour
                 SpawenManager = false;
             }
         }
-        if (Manager.GetComponent<GameManager>().EnemyAvailable == false)
+        if (GameManager.Instance?.EnemyAvailable == false)
         {
             StartRocket = true;
             if (SpawenManagers == true)

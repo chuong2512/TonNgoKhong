@@ -25,7 +25,6 @@ public class SetTimeButton : MonoBehaviour
     private void OnClickButton()
     {
         AudioManager.Instance.ClickSound();
-        AudioManager.Instance.SetTimeCount(_time);
         ScreenManager.Instance.Back();
     }
 

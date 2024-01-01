@@ -23,6 +23,7 @@ namespace SinhTon
         {
             IsActive = b;
             _canvasGroup.alpha = b ? 1 : 0;
+            gameObject.SetActive(b);
         }
 
         /// <summary>

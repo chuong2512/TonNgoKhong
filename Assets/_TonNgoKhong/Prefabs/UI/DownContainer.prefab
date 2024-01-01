@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 2963711851227494287}
   - component: {fileID: 2963711851227494289}
   - component: {fileID: 2963711851227494288}
-  - component: {fileID: 2963711851227494291}
+  - component: {fileID: 2845567286215623732}
   m_Layer: 5
   m_Name: PanelBot-GroupButtons
   m_TagString: Untagged
@@ -2038,7 +2038,7 @@ MonoBehaviour:
   - {fileID: 2963711850051717415}
   - {fileID: 2963711850760802806}
   - {fileID: 2963711850354328003}
---- !u!114 &2963711851227494291
+--- !u!114 &2845567286215623732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

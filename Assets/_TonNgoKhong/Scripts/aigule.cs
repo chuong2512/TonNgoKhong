@@ -16,7 +16,7 @@ public class aigule : MonoBehaviour
     }
     void Update()
     {
-        if(manager.GetComponent<GameManager>().EnemyAvailable == true)
+        if(GameManager.Instance?.EnemyAvailable == true)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, GameObject.FindGameObjectWithTag("Enemy").transform.position, 10f * Time.deltaTime);
             Vector2 direction = GameObject.FindGameObjectWithTag("Enemy").transform.position - transform.position;

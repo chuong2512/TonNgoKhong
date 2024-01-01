@@ -40,4 +40,8 @@ public class BaseData : MonoBehaviour
         // Debug.Log("json_______" + json);
         PlayerPrefs.SetString(prefString, json);
     }
+    private void OnDestroy()
+    {
+        Save();
+    }
 }

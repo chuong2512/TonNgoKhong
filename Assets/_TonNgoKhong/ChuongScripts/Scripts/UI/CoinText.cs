@@ -14,7 +14,7 @@ namespace SinhTon.Scripts.UI
 
         void Start()
         {
-            SGameManager.OnChangeBullet += OnChangeCoin;
+            SGameManager.OnChangeCoin += OnChangeCoin;
             ShowCurrentCoin();
         }
 

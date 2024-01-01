@@ -102,7 +102,7 @@ RectTransform:
   m_GameObject: {fileID: 8068837163610797114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8068837163677461600}
@@ -130,10 +130,12 @@ MonoBehaviour:
   _screens:
   - {fileID: 7082038259686660320, guid: b79988a52edfd0642b64bab6a4a340b1, type: 3}
   - {fileID: 2325131155786755832, guid: e5da172d87df26e4698c584ca74b4361, type: 3}
+  - {fileID: 6243720300026832492, guid: 50f7f7ea4dfd2314089e3b2e4a1a9754, type: 3}
+  - {fileID: 1368214511937833759, guid: ea134fdf7d070a24892c022189fe87f7, type: 3}
   _openingPopups: {fileID: 8068837164011591800}
   _closingPopups: {fileID: 8068837163677461600}
   _overlay: {fileID: 8910155619466853965}
-  folderPath: Assets/Perfabes/UI
+  folderPath: Assets/_TonNgoKhong/Prefabs/UI/Screen&Popup
 --- !u!1 &8068837163677461603
 GameObject:
   m_ObjectHideFlags: 0

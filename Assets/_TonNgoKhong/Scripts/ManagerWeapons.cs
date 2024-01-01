@@ -59,7 +59,6 @@ public class MStars
 
     [Header("Managers")]
     public SpriteWeapons WeaponsManager;
-    public GameManager FillingScore;
 
     [Header("Manager Componenet Addons")]
     public GameObject GameAddonsWeapons;
@@ -123,7 +122,7 @@ public class MStars
     {
         if (ActivateWeapon == true)
         {
-            if(FillingScore.ScoringLevel.fillAmount == 1)
+            if(GameManager.Instance?.ScoringLevel.fillAmount == 1)
             {
                 Debug.Log("ActivateWeapon");
                

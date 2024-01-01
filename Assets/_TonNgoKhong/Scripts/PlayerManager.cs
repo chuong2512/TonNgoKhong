@@ -9,13 +9,7 @@ public class PlayerManager : MonoBehaviour
 {
     Supplies supplies;
 
-    [Header("Manager Controller")]
-    public GameManager Manager;
-    public BooleanManager Bool;
-
-
-    [Header("Spawen Transformer")]
-    public AudioSource EffectArrow;
+    [Header("Spawen Transformer")] public AudioSource EffectArrow;
     public AudioSource AudioHeat;
     public GameObject Death;
     public GameObject SpawenShoot;
@@ -23,29 +17,25 @@ public class PlayerManager : MonoBehaviour
     public Vector3 Offest;
     private Vector3 rb;
 
-    [Header("Containers")]
-    public GameObject Bolts;
+    [Header("Containers")] public GameObject Bolts;
     public GameObject UI;
 
-    [Header("Boolean manager")]
-    internal bool Deaths = true;
+    [Header("Boolean manager")] internal bool Deaths = true;
 
 
     void Start()
     {
         supplies = FindObjectOfType<Supplies>();
-
     }
+
     void Update()
     {
-        if(Bool.GameStart == true)
-        {
-            UI.transform.position = Vector3.SmoothDamp(transform.position, transform.position + Offest, ref rb, 0);
-            SpawenShoot.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-            HitBolts();
-        }
-        
-        if(Manager.HealthBar.fillAmount == 0)
+        UI.transform.position = Vector3.SmoothDamp(transform.position, transform.position + Offest, ref rb, 0);
+        SpawenShoot.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        HitBolts();
+
+
+        if (GameManager.Instance.HealthBar.fillAmount == 0)
         {
             Death.SetActive(true);
         }
@@ -54,30 +44,26 @@ public class PlayerManager : MonoBehaviour
             Death.SetActive(false);
         }
     }
+
     void HitBolts()
     {
-        if (Bool.GameStart == true)
+        if (GameManager.Instance.AvailabelWeapon == true)
         {
-            if (Manager.AvailabelWeapon == true)
+            if (GameManager.Instance.SpawnObject == true)
             {
-                if (Manager.SpawnObject == true)
-                {
-                    (Instantiate(Bolts, SpawenShoot.transform.position, Quaternion.identity) as GameObject).transform.SetParent(ContainerWap.transform);
-                    EffectArrow.Play();
-                }
-            }
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (Bool.GameStart == true)
-        {
-            if (other.CompareTag("Enemy"))
-            {
-                AudioHeat.Play();
-                Manager.Health -= (0.5f-(0.5f* supplies.Protect)/100) ;
+                (Instantiate(Bolts, SpawenShoot.transform.position, Quaternion.identity) as GameObject).transform
+                    .SetParent(ContainerWap.transform);
+                EffectArrow.Play();
             }
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            AudioHeat.Play();
+            GameManager.Instance.Health -= (0.5f - (0.5f * supplies.Protect) / 100);
+        }
+    }
 }

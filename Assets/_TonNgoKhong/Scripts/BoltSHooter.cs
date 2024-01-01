@@ -308,12 +308,12 @@ public class BoltSHooter : MonoBehaviour
     }
     void CheckDestroy()
     {
-        if(Manager.GetComponent<GameManager>().NormalBolt == true)
+        if(GameManager.Instance?.NormalBolt == true)
         {
             EnemyDispo = true;
             StartCoroutine(NormalBolt());
         }
-        if(Manager.GetComponent<GameManager>().DiamondBolt == true)
+        if(GameManager.Instance?.DiamondBolt == true)
         {
             EnemyDispo = false;
             StartCoroutine(DiamondsBolt());
@@ -333,7 +333,7 @@ public class BoltSHooter : MonoBehaviour
     }
     IEnumerator ItemSelfDest()
     {
-        if(Manager.GetComponent<GameManager>().NormalBolt == true)
+        if(GameManager.Instance?.NormalBolt == true)
         {
             yield return new WaitForSeconds(2f);
             Destroy(this.gameObject);

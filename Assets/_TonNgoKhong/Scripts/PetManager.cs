@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class PetManager : MonoBehaviour
 {
-    public BooleanManager Bool;
     public GameObject[] Enemys;
+
     public Image HealthBar;
+
     //public float hh;
-    public float Health=100;
-    [Header("Manager Pet")]
-    public GameObject Manager;
+    public float Health = 100;
+    [Header("Manager Pet")] public GameObject Manager;
     public GameObject HitEffect;
     public GameObject BloodLocalisation;
     public float petSpeed;
@@ -28,88 +28,83 @@ public class PetManager : MonoBehaviour
         Manager = GameObject.Find("GameManager");
         this.gameObject.GetComponent<Animator>().Play("petidle");
     }
-    
+
 
     // Update is called once per frame
     private void LateUpdate()
     {
-       
     }
+
     void Update()
     {
-        if (Bool.GameStart == true)
+        float dist = Vector3.Distance(Player.position, transform.position);
+
+        if (PlayerDeath == false)
         {
-            float dist = Vector3.Distance(Player.position, transform.position);
-
-            if (PlayerDeath == false)
+            if (dist > 4)
             {
-                if (dist > 4)
+                transform.position =
+                    Vector2.MoveTowards(this.transform.position, Player.position, petSpeed * Time.deltaTime);
+                this.gameObject.GetComponent<SpriteRenderer>().flipX =
+                    Player.transform.position.x < this.transform.position.x;
+                this.gameObject.GetComponent<Animator>().Play("petwalk");
+            }
+            else if (dist <= 3.5)
+            {
+                Debug.Log("check enemy is null1");
+                if (enemy == null)
                 {
-                    transform.position = Vector2.MoveTowards(this.transform.position, Player.position, petSpeed * Time.deltaTime);
-                    this.gameObject.GetComponent<SpriteRenderer>().flipX = Player.transform.position.x < this.transform.position.x;
-                    this.gameObject.GetComponent<Animator>().Play("petwalk");
-                }
-                else if (dist <= 3.5)
-                {
-                    Debug.Log("check enemy is null1");
-                    if (enemy == null)
+                    Enemys = GameObject.FindGameObjectsWithTag("Enemy");
+                    Debug.Log("petidle");
+                    this.gameObject.GetComponent<Animator>().Play("petidle");
+
+                    for (int xx = 0; xx < Enemys.Length; xx++)
                     {
-
-                        Enemys = GameObject.FindGameObjectsWithTag("Enemy");
-                        Debug.Log("petidle");
-                        this.gameObject.GetComponent<Animator>().Play("petidle");
-
-                        for (int xx = 0; xx < Enemys.Length; xx++)
+                        if (Enemys[xx] != null)
                         {
-                            if (Enemys[xx] != null)
+                            float enemydist = Vector3.Distance(Player.position, Enemys[xx].transform.position);
+                            if (enemydist <= 3)
                             {
-                                float enemydist = Vector3.Distance(Player.position, Enemys[xx].transform.position);
-                                if (enemydist <= 3)
-                                {
-                                    enemy = Enemys[xx];
-                                    break;
-                                }
+                                enemy = Enemys[xx];
+                                break;
                             }
-
-
                         }
-
-
                     }
-                    else
+                }
+                else
+                {
+                    if (enemy != null)
                     {
-                        if (enemy != null)
-                        {
-                            Debug.Log("attack enemy");
+                        Debug.Log("attack enemy");
 
-                            transform.position = Vector2.MoveTowards(this.transform.position, enemy.transform.position, petSpeed * Time.deltaTime);
-                            this.gameObject.GetComponent<SpriteRenderer>().flipX = enemy.transform.position.x < this.transform.position.x;
-                            this.gameObject.GetComponent<Animator>().Play("petwalk");
-                        }
-
+                        transform.position = Vector2.MoveTowards(this.transform.position, enemy.transform.position,
+                            petSpeed * Time.deltaTime);
+                        this.gameObject.GetComponent<SpriteRenderer>().flipX =
+                            enemy.transform.position.x < this.transform.position.x;
+                        this.gameObject.GetComponent<Animator>().Play("petwalk");
                     }
-
                 }
             }
         }
-       
+
 
         HealthBar.fillAmount = (Health / 100);
         if (HealthBar.fillAmount == 0.5f)
         {
             HealthBar.color = Color.yellow;
         }
+
         if (HealthBar.fillAmount == 0.3f)
         {
             HealthBar.color = Color.red;
         }
+
         if (HealthBar.fillAmount == 0 && PlayerDeath == false)
         {
             Debug.Log("You are Death");
             this.gameObject.GetComponent<Animator>().Play("petDeath");
             PlayerDeath = true;
             this.GetComponent<BoxCollider2D>().enabled = false;
-
         }
     }
 
@@ -120,28 +115,12 @@ public class PetManager : MonoBehaviour
         Health = 100;
         PlayerDeath = false;
         this.GetComponent<BoxCollider2D>().enabled = true;
-
     }
-    /*
-    public IEnumerator SpaweningManager()
-    {
-       
-            yield return new WaitForSeconds(0.1f);
-         Enemys = GameObject.FindGameObjectsWithTag("Enemy");
-
-
-    }
-    */
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Bool.GameStart == true)
+        if (other.CompareTag("Enemy"))
         {
-            if (other.CompareTag("Enemy"))
-            {
-                
-                Health -= 1f ;
-            }
+            Health -= 1f;
         }
     }
 }

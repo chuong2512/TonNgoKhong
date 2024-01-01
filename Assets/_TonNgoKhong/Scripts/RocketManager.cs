@@ -24,7 +24,7 @@ public class RocketManager : MonoBehaviour
     }
     void Update()
     {
-        if (Manager.GetComponent<GameManager>().EnemyAvailable == true)
+        if (GameManager.Instance?.EnemyAvailable == true)
         {
             Enemy = GameObject.FindGameObjectWithTag("Enemy");
             transform.position = Vector2.MoveTowards(this.transform.position, Enemy.transform.position, 8f * Time.deltaTime);
@@ -32,12 +32,12 @@ public class RocketManager : MonoBehaviour
             float Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             this.gameObject.GetComponent<Rigidbody2D>().rotation = Angle;
         }
-        if(Manager.GetComponent<GameManager>().EnemyAvailable == false && CheckingPlaces == true)
+        if(GameManager.Instance?.EnemyAvailable == false && CheckingPlaces == true)
         {
             StartCoroutine(CheckingInactivePlace());
             CheckingPlaces = false;
         }
-        if (Manager.GetComponent<GameManager>().EnemyAvailable == false && StartPos == true)
+        if (GameManager.Instance?.EnemyAvailable == false && StartPos == true)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, PosDirect, 8f * Time.deltaTime);
             Vector2 direction = PosDirect - transform.position;

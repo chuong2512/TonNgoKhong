@@ -35,6 +35,7 @@ public class SelectMapManager : MonoBehaviour
         {
             _playerData.choosingMap = _mapIndex;
             _chooseTxt.text = "Đã chọn";
+            SGameManager.OnChooseMap.Invoke(_mapIndex);
         }
         else
         {

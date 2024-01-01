@@ -13,14 +13,11 @@ public enum ScreenType
     HomeScreen = 0,
     IAPScreen,
     RegisterScreen,
-    ChooseSongScreen,
-    FunnyVideo,
     SetTimePopup,
-    UnlockPopup,
-    ComingSoon,
-    NotEnoughMoney,
     RateGame,
     HUD,
+    Setting,
+    SelectMap
 }
 
 [DefaultExecutionOrder(-99)]

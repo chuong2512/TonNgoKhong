@@ -6,18 +6,17 @@ public class ControllerSpawening : MonoBehaviour
 {
     public GameObject Spawner;
     public UIManager Manager;
-    public GameManager Managers;
 
     public GameObject SpawenOne;
     public GameObject SpawenTwo;
     internal bool CheckWork = true;
-    internal bool KeepingGame = false;
+    internal bool KeepingGame = true;
 
     void Update()
     {
         if (KeepingGame == true)
         {
-            Managers.ResumeBtn();
+            GameManager.Instance?.ResumeBtn();
             KeepingGame = false;
         }
 

@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -19,7 +20,7 @@ public class ManagerMecanique : MonoBehaviour
     /*[Header("Times Controller")]
     public Text FlashTime;
     public Text GemsTime;
-    public Text CoinsTime;*/
+    public Text CoinsTime;#1#
 
     [Header("Levels Manager Score")]
     public Image BarLevel;
@@ -79,3 +80,4 @@ public class ManagerMecanique : MonoBehaviour
         PlayerPrefs.SetInt("flash", FlashInt);
     }
 }
+*/

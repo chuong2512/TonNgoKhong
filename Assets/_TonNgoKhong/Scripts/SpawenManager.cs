@@ -8,7 +8,6 @@ public class SpawenManager : MonoBehaviour
     public int EnemysLength;
     [Header("Spawener Managers")]
     public UIManager UI;
-    public GameManager Managers;
 
     [Header("Enemys Manager")]
     public GameObject Zombie;
@@ -69,32 +68,32 @@ public class SpawenManager : MonoBehaviour
                 if (EnemysLength < 100)
                 {
                     (Instantiate(Zombie, new Vector3(Spawen1.transform.position.x, Spawen1.transform.position.y + Random.Range(-5, 5), Spawen1.transform.position.z), Spawen1.transform.rotation) as GameObject).transform.SetParent(SpawenLocalisation.transform);
-                    if (Managers.CurrentReload == 0)
+                    if (GameManager.Instance?.CurrentReload == 0)
                     {
                         (Instantiate(ZombieLevel[0], new Vector3(Spawen2.transform.position.x + Random.Range(-5, 5), Spawen2.transform.position.y, Spawen2.transform.position.z), Spawen2.transform.rotation) as GameObject).transform.SetParent(SpawenLocalisation.transform);
 
                     }
-                    else if (Managers.CurrentReload == 1)
+                    else if (GameManager.Instance?.CurrentReload == 1)
                     {
                         (Instantiate(ZombieLevel[1], new Vector3(Spawen2.transform.position.x + Random.Range(-5, 5), Spawen2.transform.position.y, Spawen2.transform.position.z), Spawen2.transform.rotation) as GameObject).transform.SetParent(SpawenLocalisation.transform);
 
                     }
-                    else if (Managers.CurrentReload == 2)
+                    else if (GameManager.Instance?.CurrentReload == 2)
                     {
                         (Instantiate(ZombieLevel[2], new Vector3(Spawen2.transform.position.x + Random.Range(-5, 5), Spawen2.transform.position.y, Spawen2.transform.position.z), Spawen2.transform.rotation) as GameObject).transform.SetParent(SpawenLocalisation.transform);
 
                     }
-                    else if (Managers.CurrentReload == 3)
+                    else if (GameManager.Instance?.CurrentReload == 3)
                     {
                         (Instantiate(ZombieLevel[3], new Vector3(Spawen2.transform.position.x + Random.Range(-5, 5), Spawen2.transform.position.y, Spawen2.transform.position.z), Spawen2.transform.rotation) as GameObject).transform.SetParent(SpawenLocalisation.transform);
 
                     }
-                    else if (Managers.CurrentReload == 4)
+                    else if (GameManager.Instance?.CurrentReload == 4)
                     {
                         (Instantiate(ZombieLevel[4], new Vector3(Spawen2.transform.position.x + Random.Range(-5, 5), Spawen2.transform.position.y, Spawen2.transform.position.z), Spawen2.transform.rotation) as GameObject).transform.SetParent(SpawenLocalisation.transform);
 
                     }
-                    else if (Managers.CurrentReload >= 4)
+                    else if (GameManager.Instance?.CurrentReload >= 4)
                     {
                         (Instantiate(ZombieLevel[4], new Vector3(Spawen2.transform.position.x + Random.Range(-5, 5), Spawen2.transform.position.y, Spawen2.transform.position.z), Spawen2.transform.rotation) as GameObject).transform.SetParent(SpawenLocalisation.transform);
 

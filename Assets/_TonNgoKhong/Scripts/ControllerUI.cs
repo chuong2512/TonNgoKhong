@@ -9,7 +9,6 @@ public class ControllerUI : MonoBehaviour
 
     [Header("Component")]
     public GameObject ScreenSplash;
-    public GameObject ScreenMainMenu;
     public GameObject ScreenGamePlay;
     public GameObject Audio;
 
@@ -18,16 +17,11 @@ public class ControllerUI : MonoBehaviour
     internal bool CheckGamePlay = true;
     internal bool ActivateMusic = true;
 
-    void Awake()
-    {
-        Advertisements.Instance.Initialize();
-    }
     void Update()
     {
         if(CheckSplash == true && manager.GameLoaded == true)
         {
             ScreenSplash.SetActive(false);
-            ScreenMainMenu.SetActive(true);
             if(ActivateMusic == true)
             {
                 Audio.SetActive(true);
@@ -35,10 +29,9 @@ public class ControllerUI : MonoBehaviour
             }
             CheckSplash = false;
         }
-        if(CheckGamePlay == true && this.gameObject.GetComponent<GameManager>().GameStart == true)
+        if(CheckGamePlay == true)
         {
             ScreenSplash.SetActive(false);
-            ScreenMainMenu.SetActive(false);
             ScreenGamePlay.SetActive(true);
             CheckGamePlay = false;
         }

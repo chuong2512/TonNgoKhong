@@ -13,16 +13,13 @@ public enum ScreenTab
     ScreenVolve
 }
 
-public class ManagerFloatingBtn : MonoBehaviour
+public class TabContainer : MonoBehaviour
 {
-    public GameManager Manager;
+    public TabManager Manager;
 
     public void OpenScreen(ScreenTab tab)
     {
         Manager.ScreenHome.SetActive(tab == ScreenTab.ScreenHome);
         Manager.ScreenShop.SetActive(tab == ScreenTab.ScreenShop);
-        Manager.ScreenEquipement.SetActive(tab == ScreenTab.ScreenEquipement);
-        Manager.ScreenDeath.SetActive(tab == ScreenTab.ScreenDeath);
-        Manager.ScreenVolve.SetActive(tab == ScreenTab.ScreenVolve);
     }
 }

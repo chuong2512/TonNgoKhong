@@ -12,7 +12,7 @@ public class TabButton : AButton
     [SerializeField] private Button _button;
 
     [FoldoutGroup("Config")] [SerializeField]
-    private ManagerFloatingBtn _manager;
+    private TabContainer _manager;
 
     [FoldoutGroup("Config")] [SerializeField]
     private ScreenTab _tab;
@@ -57,7 +57,7 @@ public class TabButton : AButton
             _rectTransform = GetComponentInChildren<RectTransform>(true);
         }
 
-        _manager = GetComponentInParent<ManagerFloatingBtn>();
+        _manager = GetComponentInParent<TabContainer>();
     }
 
     private void Start()
