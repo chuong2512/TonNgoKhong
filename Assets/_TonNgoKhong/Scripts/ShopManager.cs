@@ -1,44 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using _TonNgoKhong.Shop;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ShopManager : MonoBehaviour
 {
-    public Button btn0;
-    public Button btn1;
-    public Button btn2;
-    public Button btn3;
-    public Button btn4;
-    public Button btn5;
+    [InlineEditor()] public ShopCoinBtn[] CoinBtns;
+    [InlineEditor()] public ShopGemBtn[] GemBtns;
 
-    public void Geems()
+    private void OnValidate()
     {
-        btn0.interactable = false;
-    }
-
-    public void WeaponDesign()
-    {
-        btn1.interactable = false;
-    }
-
-    public void BonePendant()
-    {
-        btn2.interactable = false;
-    }
-
-    public void BoneM()
-    {
-        btn3.interactable = false;
-    }
-
-    public void ClothingDesign()
-    {
-        btn4.interactable = false;
-    }
-
-    public void ShoesDesign()
-    {
-        btn5.interactable = false;
+        CoinBtns = GetComponentsInChildren<ShopCoinBtn>();
+        GemBtns = GetComponentsInChildren<ShopGemBtn>();
     }
 }

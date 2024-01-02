@@ -27,7 +27,7 @@ public class GameDataManager : PersistentSingleton<GameDataManager>
         playerData.transform.parent = transform;
         playerData.Init();
         playerData.ValidateData();
-        
+
         settingData = new GameObject(Constant.DataKey_SettingData).AddComponent<SettingData>();
         settingData.transform.parent = transform;
         settingData.Init();
@@ -42,5 +42,10 @@ public class GameDataManager : PersistentSingleton<GameDataManager>
     public void ResetData()
     {
         playerData.ResetData();
+    }
+
+    public int GetLevel(out float f)
+    {
+        return LevelSo.GetLevel(playerData.Exp, out f);
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 public class PlayerData : BaseData
 {
-    public int coin, gem, exp;
+    private int _coin, _gem, _exp;
 
     public int levelUnlock;
     public int choosingMap;
@@ -16,6 +16,36 @@ public class PlayerData : BaseData
     public string timeRegister;
 
     public bool isRate;
+
+    public int Coin
+    {
+        get => _coin;
+        set
+        {
+            _coin = value;
+            SGameManager.OnChangeCoin.Invoke(value);
+        }
+    }
+
+    public int Gem
+    {
+        get => _gem;
+        set
+        {
+            _gem = value;
+            SGameManager.OnChangeGem.Invoke(value);
+        }
+    }
+
+    public int Exp
+    {
+        get => _exp;
+        set
+        {
+            _exp = value;
+            SGameManager.OnChangeExp.Invoke(value);
+        }
+    }
 
     public void Rated()
     {
@@ -67,9 +97,9 @@ public class PlayerData : BaseData
         timeRegister = DateTime.Now.ToBinary().ToString();
         time = 3 * 24 * 60 * 60;
 
-        coin = 0;
-        gem = 0;
-        exp = 0;
+        _coin = 0;
+        _gem = 0;
+        _exp = 0;
 
         levelUnlock = 0;
         mapUnlocks = new List<MapRecord>();
