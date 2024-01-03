@@ -3,16 +3,15 @@ using SinhTon;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class GameManager : Singleton<GameManager>
 {
     [Header("Manager Controller")] public PlayerManager PlayerPerfb;
-    public AudioManager Sounds;
-    public movementJoystick JoystManager;
     public SpawenManager Spawner;
     public TimerManager Times;
     public ManagerWeapons WeaponSpawn;
-    public UIManager ManagerUI;
+    [FormerlySerializedAs("ManagerUI")] public InGameManager managerInGame;
 
     [Header("Perfabes Controller")] public GameObject UIWeapon;
     public GameObject FillingFlash;

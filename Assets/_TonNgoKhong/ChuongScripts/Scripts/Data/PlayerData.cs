@@ -23,7 +23,7 @@ public class PlayerData : BaseData
         set
         {
             _coin = value;
-            SGameManager.OnChangeCoin.Invoke(value);
+            OutGameManager.OnChangeCoin.Invoke(value);
         }
     }
 
@@ -33,7 +33,7 @@ public class PlayerData : BaseData
         set
         {
             _gem = value;
-            SGameManager.OnChangeGem.Invoke(value);
+            OutGameManager.OnChangeGem.Invoke(value);
         }
     }
 
@@ -43,7 +43,7 @@ public class PlayerData : BaseData
         set
         {
             _exp = value;
-            SGameManager.OnChangeExp.Invoke(value);
+            OutGameManager.OnChangeExp.Invoke(value);
         }
     }
 

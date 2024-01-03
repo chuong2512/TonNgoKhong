@@ -1,7 +1,7 @@
 using System;
 using SinhTon;
 
-public class SGameManager : PersistentSingleton<SGameManager>
+public class OutGameManager : Singleton<OutGameManager>
 {
     private GameDataManager _gameData;
     private ScreenManager _uiManager;

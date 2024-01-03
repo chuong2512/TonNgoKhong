@@ -94,6 +94,6 @@ public class BuyTimeButton : MonoBehaviour
 
     private void AddTime(int time)
     {
-        SGameManager.SetRegisterTime.Invoke(time);
+        OutGameManager.SetRegisterTime.Invoke(time);
     }
 }

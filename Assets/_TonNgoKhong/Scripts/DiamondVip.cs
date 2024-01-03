@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using SinhTon;
 using UnityEngine;
 
 public class DiamondVip : MonoBehaviour
@@ -26,7 +27,7 @@ public class DiamondVip : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, 10f * Time.deltaTime);
         }
-        if(UIManager.GetComponent<UIManager>().MapReady == false)
+        if(UIManager.GetComponent<InGameManager>().MapReady == false)
         {
             Destroy(this.gameObject);
         }

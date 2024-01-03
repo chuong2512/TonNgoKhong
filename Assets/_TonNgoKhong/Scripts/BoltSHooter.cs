@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using SinhTon;
 using UnityEngine;
 
 public class BoltSHooter : MonoBehaviour
@@ -61,7 +62,7 @@ public class BoltSHooter : MonoBehaviour
             }
             CheckPlaceSpawening();
         }
-        if (UImanager.GetComponent<UIManager>().DestroyEnemys == true)
+        if (InGameManager.Instance.DestroyEnemys == true)
         {
             Destroy(this.gameObject);
         }

@@ -17,7 +17,10 @@ public enum ScreenType
     RateGame,
     HUD,
     Setting,
-    SelectMap
+    SelectMap,
+    AddSkill,
+    Pause,
+    Result
 }
 
 [DefaultExecutionOrder(-99)]

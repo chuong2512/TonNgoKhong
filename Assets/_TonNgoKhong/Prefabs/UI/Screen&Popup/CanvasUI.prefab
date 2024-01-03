@@ -130,6 +130,9 @@ MonoBehaviour:
   _screens:
   - {fileID: 7082038259686660320, guid: b79988a52edfd0642b64bab6a4a340b1, type: 3}
   - {fileID: 2325131155786755832, guid: e5da172d87df26e4698c584ca74b4361, type: 3}
+  - {fileID: 1368214511937833759, guid: 6949696a7ea23344bb9e0c7e6d62f663, type: 3}
+  - {fileID: 1368214511937833759, guid: 1239883a77c46514ebafb4a3a4769c5f, type: 3}
+  - {fileID: 1261279023313085125, guid: 7b9adc5e91aba354bb6b99bb69dfe134, type: 3}
   - {fileID: 6243720300026832492, guid: 50f7f7ea4dfd2314089e3b2e4a1a9754, type: 3}
   - {fileID: 1368214511937833759, guid: ea134fdf7d070a24892c022189fe87f7, type: 3}
   _openingPopups: {fileID: 8068837164011591800}

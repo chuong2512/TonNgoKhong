@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using SinhTon;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
@@ -42,7 +43,7 @@ public class EnemyManager : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, Player.position, GameManager.Instance.SpeedEnemy * Time.deltaTime);
             this.gameObject.GetComponent<SpriteRenderer>().flipX = Player.transform.position.x < this.transform.position.x;
         }
-        if(UImanager.GetComponent<UIManager>().DestroyEnemys == true)
+        if(InGameManager.Instance.DestroyEnemys == true)
         {
             Destroy(this.gameObject);
         }

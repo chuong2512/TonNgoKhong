@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using SinhTon;
 using UnityEngine;
 
 public class ControllerSpawening : MonoBehaviour
 {
     public GameObject Spawner;
-    public UIManager Manager;
 
     public GameObject SpawenOne;
     public GameObject SpawenTwo;
@@ -20,13 +20,13 @@ public class ControllerSpawening : MonoBehaviour
             KeepingGame = false;
         }
 
-        if (Manager.MapReady == false)
+        if (InGameManager.Instance.MapReady == false)
         {
             Spawner.SetActive(false);
             CheckWork = true;
         }
 
-        if (Manager.MapReady == true)
+        if (InGameManager.Instance.MapReady == true)
         {
             Spawner.SetActive(true);
             if (CheckWork == true)

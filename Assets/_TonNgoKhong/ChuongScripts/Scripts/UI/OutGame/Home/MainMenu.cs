@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
         _playBtn.onClick.AddListener(ClickPlayBtn);
 
-        SGameManager.OnChooseMap += OnChooseMap;
+        OutGameManager.OnChooseMap += OnChooseMap;
 
         SetInfo();
     }

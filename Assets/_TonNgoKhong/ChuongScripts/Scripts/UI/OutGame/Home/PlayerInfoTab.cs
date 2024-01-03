@@ -23,9 +23,9 @@ namespace _TonNgoKhong
             
             SetInfo();
 
-            SGameManager.OnChangeCoin += InfoCoin;
-            SGameManager.OnChangeExp += InfoExp;
-            SGameManager.OnChangeGem += InfoGem;
+            OutGameManager.OnChangeCoin += InfoCoin;
+            OutGameManager.OnChangeExp += InfoExp;
+            OutGameManager.OnChangeGem += InfoGem;
 
             _energyTxt.text = "--/--";
         }

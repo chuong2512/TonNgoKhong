@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using SinhTon;
 using UnityEngine;
 
 public class LocalisationPresent : MonoBehaviour
@@ -16,7 +17,7 @@ public class LocalisationPresent : MonoBehaviour
     }
     private void Update()
     {
-        if(UI.GetComponent<UIManager>().MapReady == true && Check == true)
+        if(InGameManager.Instance.MapReady == true && Check == true)
         {
             ControllerSpawener.GetComponent<ControllerSpawening>().SpawenOne.GetComponent<SpawenManager>().SpawenLocalisation = this.gameObject;
             ControllerSpawener.GetComponent<ControllerSpawening>().SpawenTwo.GetComponent<SpawenManager>().SpawenLocalisation = this.gameObject;
