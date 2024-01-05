@@ -1,91 +1,105 @@
-﻿using PathologicalGames;
-using SinhTon;
-using UnityEngine;
-
-public class PoolConstant
+﻿namespace Game
 {
-    public static readonly string PoolEnemy = "Enemy";
-    public static readonly string PoolParticle = "Particle";
-    public static readonly string PoolItem = "Item";
-}
+    using PathologicalGames;
+    using UnityEngine;
 
-namespace _TonNgoKhong
-{
-    public class PoolContainer : Singleton<PoolContainer>
+    public class PoolConstant
     {
-        public void SpawnEnemy(Transform prefab, Vector3 pos, Quaternion rot, Transform parent)
+        public static readonly string PoolEnemy = "Enemy";
+        public static readonly string PoolParticle = "Particle";
+        public static readonly string PoolItem = "Item";
+    }
+
+    public static class PoolContainer
+    {
+        public static Transform SpawnEnemy(Transform prefab, Vector3 pos, Quaternion rot, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(prefab, pos, rot, parent);
+            return PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(prefab, pos, rot, parent);
         }
 
-        public void SpawnEnemy(string name, Vector3 pos, Quaternion rot, Transform parent)
+        public static Transform SpawnEnemy(string name, Vector3 pos, Quaternion rot, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(name, pos, rot, parent);
+            return PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(name, pos, rot, parent);
         }
 
-        public void SpawnEnemy(Transform prefab, Transform parent)
+        public static Transform SpawnEnemy(Transform prefab, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(prefab, parent);
+            return PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(prefab, parent);
         }
 
-        public void SpawnEnemy(string name, Transform parent)
+        public static Transform SpawnEnemy(string name, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(name, parent);
+            return PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(name, parent);
         }
 
-        public void SpawnFX(Transform prefab, Vector3 pos, Quaternion rot, Transform parent)
+        public static Transform SpawnFX(Transform prefab, Vector3 pos, Quaternion rot, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolParticle].Spawn(prefab, pos, rot, parent);
+            return PoolManager.Pools[PoolConstant.PoolParticle].Spawn(prefab, pos, rot, parent);
         }
 
-        public void SpawnFX(string name, Vector3 pos, Quaternion rot, Transform parent)
+        public static Transform SpawnFX(string name, Vector3 pos, Quaternion rot, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolParticle].Spawn(name, pos, rot, parent);
+            return PoolManager.Pools[PoolConstant.PoolParticle].Spawn(name, pos, rot, parent);
         }
 
-        public void SpawnFX(Transform prefab, Transform parent)
+        public static Transform SpawnFX(Transform prefab, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolParticle].Spawn(prefab, parent);
+            return PoolManager.Pools[PoolConstant.PoolParticle].Spawn(prefab, parent);
         }
 
-        public void SpawnFX(string name, Transform parent)
+        public static Transform SpawnFX(string name, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolParticle].Spawn(name, parent);
+            return PoolManager.Pools[PoolConstant.PoolParticle].Spawn(name, parent);
         }
 
-        public void SpawnItem(Transform prefab, Vector3 pos, Quaternion rot, Transform parent)
+        public static Transform SpawnItem(Transform prefab, Vector3 pos, Quaternion rot, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolItem].Spawn(prefab, pos, rot, parent);
+            return PoolManager.Pools[PoolConstant.PoolItem].Spawn(prefab, pos, rot, parent);
         }
 
-        public void SpawnItem(string name, Vector3 pos, Quaternion rot, Transform parent)
+        public static Transform SpawnItem(string name, Vector3 pos, Quaternion rot, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolItem].Spawn(name, pos, rot, parent);
+            return PoolManager.Pools[PoolConstant.PoolItem].Spawn(name, pos, rot, parent);
         }
 
-        public void SpawnItem(Transform prefab, Transform parent)
+        public static Transform SpawnItem(Transform prefab, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolItem].Spawn(prefab, parent);
+            return PoolManager.Pools[PoolConstant.PoolItem].Spawn(prefab, parent);
         }
 
-        public void SpawnItem(string name, Transform parent)
+        public static Transform SpawnItem(string name, Transform parent = null)
         {
-            PoolManager.Pools[PoolConstant.PoolItem].Spawn(name, parent);
+            return PoolManager.Pools[PoolConstant.PoolItem].Spawn(name, parent);
         }
 
-        public void DeSpawnFX(Transform trans)
+        public static void DeSpawnFX(Transform trans)
         {
             PoolManager.Pools[PoolConstant.PoolParticle].Despawn(trans);
         }
 
-        public void DeSpawnItem(Transform trans)
+        public static void DeSpawnItem(Transform trans)
         {
             PoolManager.Pools[PoolConstant.PoolItem].Despawn(trans);
         }
 
-        public void DeSpawnEnemy(Transform trans)
+        public static void DeSpawnEnemy(Transform trans)
         {
             PoolManager.Pools[PoolConstant.PoolEnemy].Despawn(trans);
+        }
+
+        public static void DeSpawnFX(GameObject trans)
+        {
+            PoolManager.Pools[PoolConstant.PoolParticle].Despawn(trans.transform);
+        }
+
+        public static void DeSpawnItem(GameObject trans)
+        {
+            PoolManager.Pools[PoolConstant.PoolItem].Despawn(trans.transform);
+        }
+
+        public static void DeSpawnEnemy(GameObject trans)
+        {
+            PoolManager.Pools[PoolConstant.PoolEnemy].Despawn(trans.transform);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using Skill;
 using UnityEngine;
 
@@ -14,6 +15,15 @@ namespace _TonNgoKhong
         {
             return listSkill.Find(info => info.hashID == hashID);
         }
+
+        [Button]
+        public void SetID()
+        {
+            for (int i = 0; i < listSkill.Count; i++)
+            {
+                listSkill[i].hashID = i;
+            }
+        }
     }
 
     [Serializable]
@@ -21,6 +31,7 @@ namespace _TonNgoKhong
     {
         public int hashID;
         public Sprite icon;
+        public string nameSkill;
         public string contentSkill;
         public StatSkillSO StatSkillSo;
     }

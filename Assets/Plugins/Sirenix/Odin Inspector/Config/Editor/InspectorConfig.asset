@@ -16,4 +16,6 @@ MonoBehaviour:
   defaultEditorBehaviour: 11
   processMouseMoveInInspector: 1
   drawingConfig:
-    configs: []
+    configs:
+    - DrawnTypeName: _TonNgoKhong.StatSkillSO, Assembly-CSharp
+      EditorTypeName: 

@@ -1,11 +1,10 @@
 namespace Game
 {
-	using UnityEngine;
+    using UnityEngine;
 
-	public interface IVulnerably
-	{
-		public float     MaxHealth { get; }
-		public float     Health    { get; }
-		public Transform GetColliderTarget();
-	}
+    public interface IVulnerably
+    {
+        public float MaxHealth { get; }
+        public float Health { get; }
+    }
 }

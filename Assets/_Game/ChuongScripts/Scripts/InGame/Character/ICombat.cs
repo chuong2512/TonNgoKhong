@@ -8,28 +8,21 @@ namespace Game
     public struct DamageInfo
     {
         public float trueDamage;
-        public float defPenetrationRate;
-        public float defPenetrationPowerRate;
         public Vector3 positionContact;
         public float damageByHpPercent;
 
-        public DamageInfo(float trueDamage, float damageByHpPercent, float defPenetrationRate,
-            float defPenetrationPowerRate, Vector3 positionContact)
+        public DamageInfo(float trueDamage, float damageByHpPercent, Vector3 positionContact)
         {
             this.trueDamage = trueDamage;
-            this.defPenetrationRate = defPenetrationRate;
-            this.defPenetrationPowerRate = defPenetrationPowerRate;
             this.positionContact = positionContact;
             this.damageByHpPercent = damageByHpPercent;
         }
 
-        public DamageInfo(float trueDamage, float damageByHpPercent, float defPenetrationRate,
-            float defPenetrationPowerRate) : this(trueDamage, damageByHpPercent, defPenetrationRate,
-            defPenetrationPowerRate, Vector3.zero)
+        public DamageInfo(float trueDamage, float damageByHpPercent) : this(trueDamage, damageByHpPercent, Vector3.zero)
         {
         }
-
-        public DamageInfo(float trueDamage, float damageByHpPercent) : this(trueDamage, damageByHpPercent, 0f, 0f)
+        
+        public DamageInfo(float trueDamage) : this(trueDamage, 0, Vector3.zero)
         {
         }
     }
@@ -54,8 +47,7 @@ namespace Game
         void TakeHeal(HealInfo healInfo);
         void TakeDamage(DamageInfo damageInfo);
         void TakeDamageByHealthPercent(float healthPercent);
-        /*void TakeAffectDamage(DamageInfo damageInfo);
-        void TakeAffect(Type affectType);*/
+        void TakeDamage(float trueDamage);
         bool IsDestroyed();
     }
 }

@@ -12,3 +12,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81d545ba187435c99e7ef3af451b9bf, type: 3}
   m_Name: SkillSO
   m_EditorClassIdentifier: 
+  listSkill:
+  - hashID: 0
+    icon: {fileID: 0}
+    nameSkill: "G\u1EADy nh\u01B0 \xFD"
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 1
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 2
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 3
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 4
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 5
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 6
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 7
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 8
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 9
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 10
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}
+  - hashID: 11
+    icon: {fileID: 0}
+    nameSkill: 
+    contentSkill: 
+    StatSkillSo: {fileID: 0}

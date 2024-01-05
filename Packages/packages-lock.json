@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.mackysoft.serializereference-extensions": {
+      "version": "https://github.com/mackysoft/Unity-SerializeReferenceExtensions.git?path=Assets/MackySoft/MackySoft.SerializeReferenceExtensions",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "afb30899439250596dbb6478d51ca1686fb55c39"
+    },
     "com.unity.2d.animation": {
       "version": "7.0.9",
       "depth": 1,
