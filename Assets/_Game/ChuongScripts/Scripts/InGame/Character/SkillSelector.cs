@@ -24,6 +24,8 @@ namespace Skill
 
         private void Start()
         {
+            HashIDSkill.InitData();
+            LevelSkillConstant.InitData();
             InitData();
             GetBaseSkillPlayer();
         }
@@ -115,12 +117,19 @@ namespace Skill
         public void UpgradeSkill<T>(T skillType) where T : Enum
         {
             UpgradeSkill(skillType.GetHashID());
-            InGameAction.OnUpgradeSkill?.Invoke(skillType.GetHashID());
         }
 
         public void UpgradeSkill(int hashIDSkill)
         {
-            _skillLevelDict[hashIDSkill]++;
+            if (_skillLevelDict.ContainsKey(hashIDSkill))
+            {
+                _skillLevelDict[hashIDSkill]++;
+            }
+            else
+            {
+                _skillLevelDict[hashIDSkill] = 1;
+            }
+
             InGameAction.OnUpgradeSkill?.Invoke(hashIDSkill);
         }
 

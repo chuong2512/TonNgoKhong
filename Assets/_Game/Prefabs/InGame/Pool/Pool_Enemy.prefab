@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: Enemy
-  matchPoolScale: 0
+  matchPoolScale: 1
   matchPoolLayer: 1
   dontReparent: 0
   _dontDestroyOnLoad: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
     limitInstances: 0
     limitAmount: 5
     limitFIFO: 1
-    cullDespawned: 1
+    cullDespawned: 0
     cullAbove: 10
     cullDelay: 2
     cullMaxPerPass: 10

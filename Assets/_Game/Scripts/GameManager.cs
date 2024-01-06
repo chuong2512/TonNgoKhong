@@ -1,43 +1,31 @@
 using System.Collections;
+using Game;
 using SinhTon;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Serialization;
 
+public enum GameState
+{
+    Playing,
+    Pause
+}
+
 public class GameManager : Singleton<GameManager>
 {
     [Header("Manager Controller")] public PlayerManager PlayerPerfb;
     public SpawenManager Spawner;
     public TimerManager Times;
-    public ManagerWeapons WeaponSpawn;
-    [FormerlySerializedAs("ManagerUI")] public InGameManager managerInGame;
 
     [Header("Perfabes Controller")] public GameObject UIWeapon;
-    public GameObject FillingFlash;
     public GameObject ScreenAddonWap;
     public GameObject[] Enemys;
 
-    [Header("Levels World")] public GameObject ContainerWorld;
-
-    [Header("UI Manager")] public Image HealthBar;
-    public Image ReloadWeapon;
-    public Image ScoringLevel;
-    public Image FillingReweapon;
-    public Color[] myColors;
-
-    [Header("UI Text Manager")] public TextMeshProUGUI ScoringValue;
-    public TextMeshProUGUI ScoringValueDeux;
-    public TextMeshProUGUI ValueKilled;
-    public Text ValueKilledScreenFinish;
-    public TextMeshProUGUI CurrentCoins;
-
     [Header("Float Manager")] public float SpeedEnemy;
     internal float Valeur;
-    internal float ValureLevel;
-    public float LerpTime = 0.1f;
+    internal float ExpValue;
     internal float t = 0;
-    public float Health;
     Supplies supplies;
 
     [Header("Integer Manager")] internal int len;
@@ -54,20 +42,41 @@ public class GameManager : Singleton<GameManager>
     internal bool NormalBolt = true;
     internal bool DiamondBolt = false;
     public bool CheckFinish = true;
-    internal bool StartFlashing = false;
     public bool startmove = false;
     internal bool AvailabelWeapon = true;
     internal bool SetActiveAll = true;
     internal bool PlayerDeath = false;
     public float hh;
 
+    private GameState _gameState = GameState.Playing;
+
+    public GameState GameState
+    {
+        get => _gameState;
+        set
+        {
+            if (Equals(_gameState, value))
+                return;
+
+            _gameState = value;
+
+            switch (_gameState)
+            {
+                case GameState.Pause:
+                    BtnPause();
+                    break;
+                case GameState.Playing:
+                    Cont();
+                    break;
+            }
+        }
+    }
+
     void Start()
     {
-        supplies = FindObjectOfType<Supplies>();
+        _gameState = GameState.Playing;
 
-        len = myColors.Length;
-        hh = PlayerPrefs.GetFloat("Health");
-        Health = 100f + hh;
+        supplies = FindObjectOfType<Supplies>();
     }
 
     public float timeGenaration = 5;
@@ -76,72 +85,29 @@ public class GameManager : Singleton<GameManager>
     {
         if (SetActiveAll)
         {
-            ContainerWorld.SetActive(true);
             UIWeapon.SetActive(true);
             SetActiveAll = false;
         }
 
         CheckEnemy();
-        ReloadingWapeons();
         if (timeGenaration <= 0)
         {
             timeGenaration = 5;
-            Health += supplies.restoreHP;
+            /*Health += supplies.restoreHP;*/
         }
         else
         {
             timeGenaration -= Time.deltaTime;
         }
 
-        HealthBar.fillAmount = Health / (100f + hh + ((Health * supplies.hp) / 100));
-        if (HealthBar.fillAmount == 0.5f)
-        {
-            HealthBar.color = Color.yellow;
-        }
+        InGameAction.OnHealthChange?.Invoke();
 
-        if (HealthBar.fillAmount == 0.3f)
-        {
-            HealthBar.color = Color.red;
-        }
-
-        if (HealthBar.fillAmount == 0 && PlayerDeath == false)
-        {
-            Debug.Log("You are Death");
-            BtnPause();
-            PlayerDeath = true;
-        }
-
-        ScoringValue.text = "" + CurrentReload;
-        ScoringValueDeux.text = "" + CurrentReload;
         if (CheckFinish == true)
         {
             CheckValeurFill();
-            if (ScoringLevel.fillAmount == 1)
-            {
-                Debug.Log("ScoringLevel.fillAmount == 1");
-                // WeaponSpawn.PauseFirst = Random.Range(1, 12);
-                //WeaponSpawn.PauseSecond = Random.Range(1, 12);
-                // WeaponSpawn.PauseThrees = Random.Range(1, 12);
-                WeaponSpawn.ActivateWeapon = true;
-                Times.StopTime();
-                CurrentReload += 1;
-                StartFlashing = true;
-                ScreenAddonWap.SetActive(true);
-                PlayerPerfb.GetComponent<PlayerManager>().enabled = false;
-                PlayerPerfb.GetComponent<Rigidbody2D>().simulated = false;
-                if (EnemyAvailable == true)
-                {
-                    Debug.Log("EnemyAvailable");
-                    Spawner.enabled = false;
-                    startmove = true;
-                }
-
-                ValureLevel = 0f;
-                CheckFinish = false;
-            }
         }
 
-        if (startmove == true)
+        if (startmove)
         {
             foreach (GameObject joint in Enemys)
             {
@@ -151,7 +117,7 @@ public class GameManager : Singleton<GameManager>
             }
         }
 
-        if (StartFlashing == true)
+        /*if (StartFlashing == true)
         {
             FillingReweapon.color = Color.Lerp(FillingReweapon.color, myColors[colorIndex], LerpTime * Time.deltaTime);
             t = Mathf.Lerp(t, 1f, LerpTime * Time.deltaTime);
@@ -161,9 +127,7 @@ public class GameManager : Singleton<GameManager>
                 colorIndex++;
                 colorIndex = (colorIndex >= len) ? 0 : colorIndex;
             }
-        }
-
-        CheckKilledAndCoins();
+        }*/
     }
 
     public void BtnPause()
@@ -205,7 +169,7 @@ public class GameManager : Singleton<GameManager>
             shield = (PlayerPrefs.GetInt("sheild3")) * 10f;
         }
 
-        Health = 100f + hh + shield;
+        /*Health = 100f + hh + shield;*/
         PlayerPerfb.GetComponent<PlayerManager>().enabled = true;
         PlayerPerfb.GetComponent<Rigidbody2D>().simulated = true;
         if (EnemyAvailable == true)
@@ -220,14 +184,6 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    void CheckKilledAndCoins()
-    {
-        ValueKilled.text = "" + CurrentKilled;
-        ValueKilledScreenFinish.text = "" + CurrentKilled;
-        CurrentCoins.text = "" + CurrentCurrency;
-        PlayerPrefs.SetInt("CurrentKilled", CurrentKilled);
-    }
-
     public void SaveDatta()
     {
         int CoinsInt;
@@ -238,13 +194,38 @@ public class GameManager : Singleton<GameManager>
 
     void CheckValeurFill()
     {
+        float fillAmount = 0;
+
         if (CheckFinish == true)
         {
-            ScoringLevel.fillAmount = ValureLevel / (100 + CurrentReload * 30);
+            fillAmount = ExpValue / (100 + CurrentReload * 30);
+        }
+
+        if (fillAmount >= 1)
+        {
+            Debug.Log("ScoringLevel.fillAmount == 1");
+
+            Times.StopTime();
+            CurrentReload += 1;
+            ScreenAddonWap.SetActive(true);
+            PlayerPerfb.GetComponent<PlayerManager>().enabled = false;
+            PlayerPerfb.GetComponent<Rigidbody2D>().simulated = false;
+            if (EnemyAvailable == true)
+            {
+                Debug.Log("EnemyAvailable");
+                Spawner.enabled = false;
+                startmove = true;
+            }
+
+            ExpValue = 0f;
+            CheckFinish = false;
+
+            InGameAction.OnLevelUp?.Invoke();
+            ScreenManager.Instance.OpenScreen(ScreenType.AddSkill);
         }
     }
 
-    void ReloadingWapeons()
+    /*void ReloadingWapeons()
     {
         Valeur += 1f * Time.deltaTime;
         if (ReloadWeapon.fillAmount < 1 && RightFill == true)
@@ -261,12 +242,11 @@ public class GameManager : Singleton<GameManager>
             Valeur = 0;
             LeftFill = false;
         }
-    }
+    }*/
 
     void CheckEnemy()
     {
         Enemys = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log("CheckEnemy");
         if (Enemys.Length == 0)
         {
             EnemyAvailable = false;
@@ -281,47 +261,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public void FirstCont()
-    {
-        ScreenAddonWap.SetActive(false);
-        Times.StartTime();
-        PlayerPerfb.GetComponent<PlayerManager>().enabled = true;
-        PlayerPerfb.GetComponent<Rigidbody2D>().simulated = true;
-        if (EnemyAvailable == true)
-        {
-            startmove = false;
-            foreach (GameObject joint in Enemys)
-            {
-                joint.GetComponent<EnemyManager>().enabled = true;
-                joint.GetComponent<Rigidbody2D>().simulated = true;
-            }
-        }
-
-        ScoringLevel.fillAmount = 0;
-        StartCoroutine(CheckingFinishBtn());
-    }
-
-    public void SecondCont()
-    {
-        ScreenAddonWap.SetActive(false);
-        Times.StartTime();
-        PlayerPerfb.GetComponent<PlayerManager>().enabled = true;
-        PlayerPerfb.GetComponent<Rigidbody2D>().simulated = true;
-        if (EnemyAvailable == true)
-        {
-            startmove = false;
-            foreach (GameObject joint in Enemys)
-            {
-                joint.GetComponent<EnemyManager>().enabled = true;
-                joint.GetComponent<Rigidbody2D>().simulated = true;
-            }
-        }
-
-        ScoringLevel.fillAmount = 0;
-        StartCoroutine(CheckingFinishBtn());
-    }
-
-    public void ThirdCont()
+    public void Cont()
     {
         ScreenAddonWap.SetActive(false);
         Times.StartTime();
@@ -338,7 +278,6 @@ public class GameManager : Singleton<GameManager>
             }
         }
 
-        ScoringLevel.fillAmount = 0;
         StartCoroutine(CheckingFinishBtn());
     }
 

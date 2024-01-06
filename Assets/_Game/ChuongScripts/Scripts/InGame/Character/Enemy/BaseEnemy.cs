@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Game
 {
-    using System;
-    using Random = UnityEngine.Random;
 
     [SelectionBase]
     public class BaseEnemy : MonoBehaviour, ICombat, IVulnerably
@@ -22,7 +19,7 @@ namespace Game
 
         [SerializeField] protected EnemyAttribute attribute;
 
-        [ChildGameObjectsOnly] [Required] [SerializeField]
+        [ChildGameObjectsOnly] [SerializeField]
         private AEnemyAnimator _animator;
 
         [SerializeField] private float _enemySize;
@@ -32,6 +29,16 @@ namespace Game
         public float Health => attribute.Health;
 
         public float MaxHealth => attribute.MaxHealth;
+
+        public void Reset()
+        {
+            attribute.Health = attribute.MaxHealth;
+        }
+
+        private void Start()
+        {
+            Reset();
+        }
 
         public float EnemySize
         {

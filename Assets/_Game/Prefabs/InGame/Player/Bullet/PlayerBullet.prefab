@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3181146359115505774}
   m_Layer: 0
   m_Name: PlayerBullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,12 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _visual: {fileID: 100002}
   _hitEffect: {fileID: 0}
-  _damageMultiply: 1
   _piercing: 0
-  _piercingScale: 2
-  _hitBoxDelayTime: 0
-  _canSplit: 0
-  _splitBullet: {fileID: 0}
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,7 +62,7 @@ GameObject:
   - component: {fileID: 5800000}
   m_Layer: 0
   m_Name: EnemyBullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

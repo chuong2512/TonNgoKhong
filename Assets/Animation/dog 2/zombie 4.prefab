@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6559763159078888047}
   - component: {fileID: 1353926133686541909}
   - component: {fileID: 3944019224070942772}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -118,7 +117,8 @@ GameObject:
   - component: {fileID: 3537171100188795296}
   - component: {fileID: 3537171100188795297}
   - component: {fileID: 4235804376522667059}
-  m_Layer: 0
+  - component: {fileID: 5105833705933639754}
+  m_Layer: 6
   m_Name: zombie 4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ Transform:
   m_Children:
   - {fileID: 8672863140539376602}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3537171100188795308
 SpriteRenderer:
@@ -205,7 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b905c2d056df7444ba090a3722493036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 0}
   HitEffect: {fileID: 9029106860511387991, guid: 65a5c65d102daec4c9a8b03a518dcbb7, type: 3}
   BloodLocalisation: {fileID: 0}
   UImanager: {fileID: 0}
@@ -402,6 +401,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5105833705933639754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537171100188795310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcc72bc6b4843f68e0c87d4007fc44f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 0
+  _isBoss: 0
+  _priority: 0
+  attribute:
+    <Health>k__BackingField: 10
+    <MaxHealth>k__BackingField: 10
+    <Defense>k__BackingField: 0
+  _animator: {fileID: 0}
+  _enemySize: 0.4
+  colliderTarget: {fileID: 3537171100188795311}
 --- !u!1 &4927636615585834507
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +434,7 @@ GameObject:
   - component: {fileID: 1091433599369396755}
   - component: {fileID: 2681944597449459508}
   - component: {fileID: 9056322113072043782}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}

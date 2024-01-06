@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using Game;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -26,6 +22,18 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         supplies = FindObjectOfType<Supplies>();
+
+        InGameAction.OnPlayerDie += OnPlayerDie;
+    }
+
+    private void OnPlayerDie()
+    {
+        Death.SetActive(true);
+    }
+
+    private void OnDestroy()
+    {
+        InGameAction.OnPlayerDie -= OnPlayerDie;
     }
 
     void Update()
@@ -33,16 +41,6 @@ public class PlayerManager : MonoBehaviour
         UI.transform.position = Vector3.SmoothDamp(transform.position, transform.position + Offest, ref rb, 0);
         SpawenShoot.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         HitBolts();
-
-
-        if (GameManager.Instance.HealthBar.fillAmount == 0)
-        {
-            Death.SetActive(true);
-        }
-        else
-        {
-            Death.SetActive(false);
-        }
     }
 
     void HitBolts()
@@ -60,10 +58,10 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag(TagConstants.Enemy))
         {
             AudioHeat.Play();
-            GameManager.Instance.Health -= (0.5f - (0.5f * supplies.Protect) / 100);
+            PlayerCombat.Instance.TakeDamage(0.5f - (0.5f * supplies.Protect) / 100);
         }
     }
 }

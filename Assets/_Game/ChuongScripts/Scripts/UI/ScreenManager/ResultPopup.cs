@@ -18,5 +18,10 @@ namespace _TonNgoKhong
     public class ResultModel
     {
         public bool isWin;
+
+        public ResultModel(bool b)
+        {
+            isWin = b;
+        }
     }
 }

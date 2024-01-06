@@ -8,16 +8,11 @@ namespace SinhTon
 
     public class InGameManager : Singleton<InGameManager>
     {
-        ManagerWeapons managerWeapons;
         public TimerManager timer;
 
         [Header("Componenet Player")] public GameObject Player;
         public GameObject HelthUI;
         public GameObject CurrentLevel;
-
-        [Header("UI Manager")] public GameObject ScreenPause;
-        public GameObject ScreenGamePlay;
-        public GameObject FinishScreen;
 
         [Header("Strings Manager")] internal string CheckEvolve;
         internal string Checking;
@@ -34,27 +29,20 @@ namespace SinhTon
         {
             Checking = PlayerPrefs.GetString("CheckEvolve");
 
-            PlayBtn();
+            StartCoroutine(GameStart());
         }
 
         void Update()
         {
             CheckEvolve = PlayerPrefs.GetString("CheckEvolve");
 
-            if (GameManager.Instance.PlayerDeath == true && FinishScreenB == false)
+            if (GameManager.Instance.PlayerDeath && FinishScreenB == false)
             {
                 DestroyEnemys = true;
                 StopAllAudios = true;
-                FinishScreen.SetActive(true);
                 timer.StopTime();
-                if (PlayerPrefs.GetInt("ads") != 1)
-                {
-                    Advertisements.Instance.ShowInterstitial();
-                }
 
                 GameManager.Instance.PlayerDeath = false;
-                GameManager.Instance.Health = 100;
-                GameManager.Instance.HealthBar.color = Color.green;
                 FinishScreenB = true;
             }
             else
@@ -65,26 +53,18 @@ namespace SinhTon
 
         public void BackBtn()
         {
-            managerWeapons = FindObjectOfType<ManagerWeapons>();
             MapReady = false;
             DestroyEnemys = true;
-            managerWeapons.DesactivateAll();
-            managerWeapons.CleanImageW();
             Destroy(CurrentLevel);
             StartCoroutine(StartBacking());
         }
 
         public void BackFinish()
         {
-            managerWeapons = FindObjectOfType<ManagerWeapons>();
             MapReady = false;
             DestroyEnemys = true;
-            FinishScreen.SetActive(false);
-            managerWeapons.DesactivateAll();
-            managerWeapons.CleanImageW();
             Destroy(CurrentLevel);
             StartCoroutine(StartBacking());
-            Advertisements.Instance.ShowInterstitial();
         }
 
         IEnumerator StartBacking()
@@ -97,18 +77,11 @@ namespace SinhTon
             GameManager.Instance.CurrentKilled = 0;
             timer.timeRemaining = 0;
             FinishScreenB = false;
-
-
+            
             Player.transform.position = new Vector3(0, 0, 0);
             HelthUI.SetActive(false);
-            ScreenPause.SetActive(false);
-            ScreenGamePlay.SetActive(false);
         }
-
-        public void PlayBtn()
-        {
-            StartCoroutine(GameStart());
-        }
+        
 
         IEnumerator GameStart()
         {
@@ -128,7 +101,6 @@ namespace SinhTon
             MapReady = true;
             Player.GetComponent<PlayerManager>().enabled = true;
             GameManager.Instance.AvailabelWeapon = true;
-            ScreenGamePlay.SetActive(true);
             HelthUI.SetActive(true);
             timer.StartTime();
             if (GameManager.Instance?.EnemyAvailable == true)
@@ -144,13 +116,11 @@ namespace SinhTon
 
         public void Pause()
         {
-            ScreenPause.SetActive(true);
             GameManager.Instance?.BtnPause();
         }
 
         public void Resume()
         {
-            ScreenPause.SetActive(false);
             GameManager.Instance?.ResumeBtn();
         }
 

@@ -49,12 +49,17 @@ namespace Jackal
             }
         }
 
-        public virtual void SetTarget(Transform target)
+        public void SetBulletAttribute(BulletAttribute attribute)
+        {
+            BulletAttribute = attribute;
+        }
+
+        public void SetTarget(Transform target)
         {
             m_targetTransform = target;
         }
 
-        public virtual void Init()
+        public void Init()
         {
         }
 
@@ -68,7 +73,7 @@ namespace Jackal
             m_bulletPrefab = bullet;
         }
 
-        public virtual void StopShot()
+        public void StopShot()
         {
         }
 
@@ -77,7 +82,7 @@ namespace Jackal
             return false;
         }
 
-        protected void ShotSingle()
+        private void ShotSingle()
         {
             if (m_bulletNum <= 0 || m_bulletSpeed <= 0f)
             {
@@ -114,13 +119,16 @@ namespace Jackal
             }
 
             // get UbhBullet from ObjectPool
-            UbhBullet bullet = PoolContainer
-                .SpawnItem(m_bulletPrefab.transform, m_Barrel.position, GameServices.RotIdentity)
-                .GetComponent<UbhBullet>();
+            PlayerBullet bullet = PoolContainer
+                .SpawnBullet(m_bulletPrefab, m_Barrel.position)
+                .GetComponent<PlayerBullet>();
+
             if (bullet == null)
             {
                 return null;
             }
+
+            bullet.BulletAttribute = BulletAttribute;
 
             return bullet;
         }
@@ -159,5 +167,7 @@ namespace Jackal
         {
             return false;
         }
+
+        public BulletAttribute BulletAttribute { get; set; }
     }
 }

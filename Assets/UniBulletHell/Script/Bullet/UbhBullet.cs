@@ -70,7 +70,7 @@ public class UbhBullet : UbhMonoBehaviour
             return;
         }
 
-        PoolContainer.DeSpawnItem(this.transform);
+        PoolContainer.DeSpawnBullet(this.transform);
     }
 
     /// <summary>
@@ -131,6 +131,8 @@ public class UbhBullet : UbhMonoBehaviour
             return;
         }
 
+        Debug.Log("Shoot");
+        
         m_shooting = true;
 
         m_parentBaseShot = parentBaseShot;
@@ -330,7 +332,7 @@ public class UbhBullet : UbhMonoBehaviour
             if (m_selfTimeCount >= m_autoReleaseTime)
             {
                 // Release
-                PoolContainer.DeSpawnItem(this.transform);
+                PoolContainer.DeSpawnBullet(this.transform);
                 return true;
             }
         }

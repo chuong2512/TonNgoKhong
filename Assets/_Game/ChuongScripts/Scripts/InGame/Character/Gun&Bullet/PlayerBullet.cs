@@ -12,14 +12,21 @@ namespace Game
         [AssetSelector(Paths = @"Assets//0_Game/FX/Prefabs")] [SerializeField]
         protected ParticleSystem _hitEffect;
 
-        [Space] [SerializeField] protected float _damageMultiply = 1.0f;
         [SerializeField] protected bool _piercing;
 
-        protected bool m_isActive;
-        protected Vector3 _originScale;
-        protected float _delayCounter;
+        private bool m_isActive;
+        private BulletAttribute _bulletAttribute;
 
-        public BulletAttribute BulletAttribute { get; set; }
+        public BulletAttribute BulletAttribute
+        {
+            get => _bulletAttribute;
+            set
+            {
+                _bulletAttribute = value;
+                m_autoReleaseTime = _bulletAttribute.LifeTime;
+                m_speed = _bulletAttribute.Speed;
+            }
+        }
 
         /// <summary>
         /// Activate/Inactivate flag
@@ -27,13 +34,9 @@ namespace Game
         /// </summary>
         public override bool isActive => m_isActive;
 
-        protected virtual void OnEnable()
+        void OnEnable()
         {
-            _originScale = transform.localScale;
             m_useAutoRelease = true;
-            m_autoReleaseTime = BulletAttribute.LifeTime;
-            m_speed = BulletAttribute.Speed;
-            _delayCounter = 0;
         }
 
         /// <summary>
@@ -43,21 +46,6 @@ namespace Game
         {
             m_isActive = active;
             _visual.SetActive(active);
-        }
-
-        protected virtual void FixedUpdate()
-        {
-            DelayCalculator();
-        }
-
-        private void DelayCalculator()
-        {
-            _delayCounter += Time.fixedDeltaTime;
-        }
-
-        protected virtual void SpawnSplitBullet()
-        {
-            
         }
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
@@ -74,30 +62,17 @@ namespace Game
                 PoolContainer.SpawnFX(this._hitEffect.transform, basePosition, GameServices.RotIdentity);
             }
 
-            var combat = other.GetComponentInParent<ICombat>();
+            var combat = other.GetComponentInParent<BaseEnemy>();
             if (combat != null && !combat.IsDestroyed())
             {
                 var damageInfo = new DamageInfo(BulletAttribute.Damage, 0);
 
+                Debug.LogError($"Take dmg {damageInfo.trueDamage}");
+
                 combat.TakeDamage(damageInfo);
             }
 
-            if (other.gameObject.layer == 1 << 10 || !_piercing)
-            {
-                PoolContainer.DeSpawnItem(transform);
-            }
-        }
-
-        protected static T GetSplitBullet<T>(GameObject bulletToSpawn, Vector3 position) where T : Component
-        {
-            if (bulletToSpawn == null)
-            {
-                Debug.LogWarning($"Cannot generate {bulletToSpawn.name}  because prefab is not set.----------");
-                return null;
-            }
-
-            var bullet = PoolContainer.SpawnItem(bulletToSpawn.transform, position, GameServices.RotIdentity);
-            return bullet == null ? null : bullet.GetComponent<T>();
+            PoolContainer.DeSpawnBullet(transform);
         }
     }
 

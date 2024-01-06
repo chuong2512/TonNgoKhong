@@ -19,6 +19,7 @@ TagManager:
   - UI
   - Coins
   - Pet
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -26,9 +27,9 @@ TagManager:
   - Effect
   - Water
   - UI
-  - Enemy
-  - 
-  - 
+  - EnemyCol
+  - PlayerBullet
+  - PlayerCol
   - 
   - 
   - 

@@ -8,6 +8,7 @@
         public static readonly string PoolEnemy = "Enemy";
         public static readonly string PoolParticle = "Particle";
         public static readonly string PoolItem = "Item";
+        public static readonly string PoolBullet = "Bullet";
     }
 
     public static class PoolContainer
@@ -72,14 +73,30 @@
             return PoolManager.Pools[PoolConstant.PoolItem].Spawn(name, parent);
         }
 
+        public static UbhBullet SpawnBullet(GameObject prefab, Vector3 position)
+        {
+            UbhBullet bullet = null;
+            Transform bulletInstance =
+                PoolManager.Pools[PoolConstant.PoolBullet].Spawn(prefab, position, Quaternion.identity);
+
+            if (bulletInstance != null)
+            {
+                bullet = bulletInstance.GetComponent<UbhBullet>();
+                bullet.SetActive(true);
+                UbhBulletManager.instance.AddBullet(bullet);
+            }
+
+            return bullet;
+        }
+
         public static void DeSpawnFX(Transform trans)
         {
             PoolManager.Pools[PoolConstant.PoolParticle].Despawn(trans);
         }
 
-        public static void DeSpawnItem(Transform trans)
+        public static void DeSpawnBullet(Transform trans)
         {
-            PoolManager.Pools[PoolConstant.PoolItem].Despawn(trans);
+            DeSpawnBullet(trans.gameObject);
         }
 
         public static void DeSpawnEnemy(Transform trans)
@@ -89,17 +106,35 @@
 
         public static void DeSpawnFX(GameObject trans)
         {
-            PoolManager.Pools[PoolConstant.PoolParticle].Despawn(trans.transform);
+            DeSpawnEnemy(trans.transform);
         }
 
-        public static void DeSpawnItem(GameObject trans)
+        public static void DeSpawnBullet(GameObject trans)
         {
-            PoolManager.Pools[PoolConstant.PoolItem].Despawn(trans.transform);
+            UbhBullet bullet = trans.GetComponent<UbhBullet>();
+            if (bullet != null)
+            {
+                bullet.OnFinishedShot();
+                UbhBulletManager.instance.RemoveBullet(bullet, false);
+                bullet.SetActive(false);
+            }
+
+            PoolManager.Pools[PoolConstant.PoolBullet].Despawn(trans.transform);
         }
 
         public static void DeSpawnEnemy(GameObject trans)
         {
-            PoolManager.Pools[PoolConstant.PoolEnemy].Despawn(trans.transform);
+            DeSpawnEnemy(trans.transform);
+        }
+
+        public static void DeSpawnItem(GameObject trans)
+        {
+            DeSpawnItem(trans.transform);
+        }
+
+        public static void DeSpawnItem(Transform trans)
+        {
+            PoolManager.Pools[PoolConstant.PoolItem].Despawn(trans.transform);
         }
     }
 }

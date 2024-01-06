@@ -70,7 +70,7 @@ public class Diamond : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.Instance.ValureLevel += 0.75f;
+            GameManager.Instance.ExpValue += 0.75f;
             Instantiate(Flasher, transform.position, transform.rotation);
             Audio.Play();
             StartCoroutine(Destroy());

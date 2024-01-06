@@ -175,7 +175,7 @@ public abstract class UbhBaseShot : UbhMonoBehaviour
 
         // get UbhBullet from ObjectPool
         UbhBullet bullet = PoolContainer
-            .SpawnItem(m_bulletPrefab.transform, m_Barrel.position, GameServices.RotIdentity).GetComponent<UbhBullet>();
+            .SpawnBullet(m_bulletPrefab, m_Barrel.position);
         if (bullet == null)
         {
             return null;
@@ -193,7 +193,7 @@ public abstract class UbhBaseShot : UbhMonoBehaviour
         }
 
         // get UbhBullet from ObjectPool
-        UbhBullet bullet = PoolContainer.SpawnItem(m_bulletPrefab.transform, position, GameServices.RotIdentity)
+        UbhBullet bullet = PoolContainer.SpawnBullet(m_bulletPrefab, position)
             .GetComponent<UbhBullet>();
         if (bullet == null)
         {

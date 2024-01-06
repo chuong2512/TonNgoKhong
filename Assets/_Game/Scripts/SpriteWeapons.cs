@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class SpriteWeapons : MonoBehaviour
 {
-    public  ManagerWeapons managerWeapons;
     [Header("Weapons Container")]
     public GameObject ProtecteurGreen;
     public GameObject DroneA;

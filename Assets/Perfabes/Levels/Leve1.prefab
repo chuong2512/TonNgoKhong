@@ -1170,7 +1170,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5413090773503373058}
   - component: {fileID: 7392579761211292629}
-  - component: {fileID: 2475788524514429757}
   - component: {fileID: 7865030357806501394}
   - component: {fileID: 7835066060849116059}
   - component: {fileID: 6359220989156024328}
@@ -1248,26 +1247,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2475788524514429757
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 189968698252456820}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7865030357806501394
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1296,10 +1275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &6359220989156024328
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2528,7 +2503,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7171645520762832092}
   - component: {fileID: 2064873954706261211}
-  - component: {fileID: 2704109604428000467}
   - component: {fileID: 1629209270865878247}
   - component: {fileID: 4378906617228845729}
   - component: {fileID: 5047290561806415044}
@@ -2606,26 +2580,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2704109604428000467
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492662879479607974}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1629209270865878247
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2654,10 +2608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5047290561806415044
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2764,7 +2714,6 @@ GameObject:
   m_Component:
   - component: {fileID: 397238247213724141}
   - component: {fileID: 5923449512545584152}
-  - component: {fileID: 4004198068117445611}
   - component: {fileID: 8410878396239722141}
   - component: {fileID: 679826667712464197}
   - component: {fileID: 2511359771630615152}
@@ -2842,26 +2791,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4004198068117445611
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518943498986273808}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8410878396239722141
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2890,10 +2819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2511359771630615152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3900,7 +3825,6 @@ GameObject:
   m_Component:
   - component: {fileID: 734857052093054660}
   - component: {fileID: 2696326283517276090}
-  - component: {fileID: 599268669153352765}
   - component: {fileID: 743054900895172594}
   - component: {fileID: 6382831300057278948}
   - component: {fileID: 1869051103776978696}
@@ -3978,26 +3902,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &599268669153352765
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677878938389128403}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &743054900895172594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4026,10 +3930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1869051103776978696
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4136,7 +4036,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7393524544671916840}
   - component: {fileID: 4073541402634688634}
-  - component: {fileID: 530628726622985123}
   - component: {fileID: 867013289187067597}
   - component: {fileID: 4853413975914837888}
   - component: {fileID: 2552365040644114293}
@@ -4214,26 +4113,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &530628726622985123
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690561908646196716}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &867013289187067597
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4262,10 +4141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2552365040644114293
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5047,7 +4922,6 @@ GameObject:
   m_Component:
   - component: {fileID: 948884557764475444}
   - component: {fileID: 5047131944894862009}
-  - component: {fileID: 29578724315019666}
   - component: {fileID: 8484704993077823464}
   - component: {fileID: 643811097724913262}
   - component: {fileID: 5674318665076127931}
@@ -5125,26 +4999,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &29578724315019666
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793601054813900102}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8484704993077823464
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5173,10 +5027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5674318665076127931
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5283,7 +5133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8088007408686575878}
   - component: {fileID: 389829514227155598}
-  - component: {fileID: 3763490777275427052}
   - component: {fileID: 5494652272226073429}
   - component: {fileID: 5935438685230975526}
   - component: {fileID: 4048463985623422344}
@@ -5361,26 +5210,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3763490777275427052
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845321677515445136}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5494652272226073429
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5409,10 +5238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &4048463985623422344
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5519,7 +5344,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4528109493896307607}
   - component: {fileID: 8369013417219230620}
-  - component: {fileID: 3141680866537926437}
   - component: {fileID: 2197120929039670752}
   - component: {fileID: 8643982920743258679}
   - component: {fileID: 6346383298137470019}
@@ -5597,26 +5421,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3141680866537926437
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846700467267563869}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2197120929039670752
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5645,10 +5449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &6346383298137470019
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6462,7 +6262,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9050107608680803756}
   - component: {fileID: 3875112513342899570}
-  - component: {fileID: 601411415473942292}
   - component: {fileID: 8910845702897268454}
   - component: {fileID: 5528109154885654449}
   - component: {fileID: 1072859854619238822}
@@ -6540,26 +6339,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &601411415473942292
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964412569988957202}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8910845702897268454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6588,10 +6367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1072859854619238822
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9173,7 +8948,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4786058598383544085}
   - component: {fileID: 7155068054541335684}
-  - component: {fileID: 2281933440844079344}
   - component: {fileID: 8263183199750042074}
   - component: {fileID: 4651548337010977104}
   - component: {fileID: 6694679346393620547}
@@ -9251,26 +9025,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2281933440844079344
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184080881975873545}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8263183199750042074
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9299,10 +9053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &6694679346393620547
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11434,7 +11184,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1175674343650492468}
   - component: {fileID: 3907621765019480440}
-  - component: {fileID: 2519973008960245714}
   - component: {fileID: 5275495502422127258}
   - component: {fileID: 857304008308184197}
   - component: {fileID: 8425673863266427865}
@@ -11512,26 +11261,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2519973008960245714
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301993534970707009}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5275495502422127258
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11560,10 +11289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8425673863266427865
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32786,7 +32511,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6097598083484828361}
   - component: {fileID: 4206187579169753477}
-  - component: {fileID: 5694879746623960278}
   - component: {fileID: 3531620818308661032}
   - component: {fileID: 5267996258112947102}
   - component: {fileID: 3314320679723188145}
@@ -32864,26 +32588,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5694879746623960278
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366196363129883572}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3531620818308661032
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32912,10 +32616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3314320679723188145
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33247,7 +32947,6 @@ GameObject:
   m_Component:
   - component: {fileID: 872738116830665068}
   - component: {fileID: 8792583646266176182}
-  - component: {fileID: 6150530240584980628}
   - component: {fileID: 7804645256307719103}
   - component: {fileID: 714708752508688195}
   - component: {fileID: 5667257444524530614}
@@ -33325,26 +33024,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6150530240584980628
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378753073009483174}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7804645256307719103
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33373,10 +33052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5667257444524530614
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33483,7 +33158,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6240633599055360011}
   - component: {fileID: 4963330861121050856}
-  - component: {fileID: 15723591038073632}
   - component: {fileID: 2062063419763932514}
   - component: {fileID: 8734189385773237509}
   - component: {fileID: 1130520774405191198}
@@ -33561,26 +33235,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &15723591038073632
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391411195531930560}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2062063419763932514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33609,10 +33263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1130520774405191198
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35180,7 +34830,6 @@ GameObject:
   m_Component:
   - component: {fileID: 277627057182014344}
   - component: {fileID: 3126670517063616578}
-  - component: {fileID: 3092296844675659766}
   - component: {fileID: 4379782963071456037}
   - component: {fileID: 2441765818673802590}
   - component: {fileID: 5359606550559797264}
@@ -35258,26 +34907,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3092296844675659766
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516215545575669818}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &4379782963071456037
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35306,10 +34935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5359606550559797264
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36541,7 +36166,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1646435152597912498}
   - component: {fileID: 1646435152597912499}
-  - component: {fileID: 1646435152597912496}
   - component: {fileID: 1646435152597912501}
   - component: {fileID: 3308479585234244900}
   - component: {fileID: 8442858102084608581}
@@ -36619,26 +36243,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1646435152597912496
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646435152597912497}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1646435152597912501
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36667,10 +36271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8442858102084608581
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38256,7 +37856,6 @@ GameObject:
   m_Component:
   - component: {fileID: 577347384383853567}
   - component: {fileID: 7104054201161199545}
-  - component: {fileID: 2662937233683428484}
   - component: {fileID: 8629056162478735866}
   - component: {fileID: 7980331869159961674}
   - component: {fileID: 6392604063340524155}
@@ -38334,26 +37933,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2662937233683428484
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805022831930664159}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8629056162478735866
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38382,10 +37961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &6392604063340524155
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39167,7 +38742,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5322499775645018114}
   - component: {fileID: 3935487999490267252}
-  - component: {fileID: 2313406347501832233}
   - component: {fileID: 3492130722161396129}
   - component: {fileID: 3869193899423293317}
   - component: {fileID: 151548657718004944}
@@ -39245,26 +38819,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2313406347501832233
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848287278884925754}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3492130722161396129
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39293,10 +38847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &151548657718004944
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39628,7 +39178,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8058717885968694741}
   - component: {fileID: 2669241996352733649}
-  - component: {fileID: 5272041694654578584}
   - component: {fileID: 6913858978313572986}
   - component: {fileID: 1502570404052655406}
   - component: {fileID: 511300217509037837}
@@ -39706,26 +39255,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5272041694654578584
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930559693558917854}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6913858978313572986
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39754,10 +39283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &511300217509037837
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39864,7 +39389,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8042966859661788372}
   - component: {fileID: 7163884056454653036}
-  - component: {fileID: 8092565950900022498}
   - component: {fileID: 1320703600947175887}
   - component: {fileID: 8668769422591799819}
   - component: {fileID: 7717963261482235204}
@@ -39942,26 +39466,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8092565950900022498
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965082163393867569}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1320703600947175887
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39990,10 +39494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7717963261482235204
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41786,7 +41286,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6935052179432529067}
   - component: {fileID: 1670732761156755756}
-  - component: {fileID: 3854767922330164096}
   - component: {fileID: 1467625629321141341}
   - component: {fileID: 2906656707868428593}
   - component: {fileID: 5212611796497340268}
@@ -41864,26 +41363,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3854767922330164096
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2235943423429862804}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1467625629321141341
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41912,10 +41391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5212611796497340268
 AudioSource:
   m_ObjectHideFlags: 0
@@ -42022,7 +41497,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4192184757630166273}
   - component: {fileID: 9222281759715693946}
-  - component: {fileID: 4980714959925221906}
   - component: {fileID: 7435700677151224583}
   - component: {fileID: 1186261481927670558}
   - component: {fileID: 73341250163205782}
@@ -42100,26 +41574,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4980714959925221906
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2252344012134402227}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7435700677151224583
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42148,10 +41602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &73341250163205782
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44283,7 +43733,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2946976917045007524}
   - component: {fileID: 7960081771077446997}
-  - component: {fileID: 5394817396548197213}
   - component: {fileID: 314517160196620011}
   - component: {fileID: 7116558883283543855}
   - component: {fileID: 750844209523118228}
@@ -44361,26 +43810,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5394817396548197213
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2410630689183200138}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &314517160196620011
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44409,10 +43838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &750844209523118228
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44519,7 +43944,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8886505467172037144}
   - component: {fileID: 8547121733833666282}
-  - component: {fileID: 5706598119947520221}
   - component: {fileID: 5344956742066451463}
   - component: {fileID: 5621814978918301517}
   - component: {fileID: 3000651199862042209}
@@ -44597,26 +44021,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5706598119947520221
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423722130181458549}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5344956742066451463
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44645,10 +44049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3000651199862042209
 AudioSource:
   m_ObjectHideFlags: 0
@@ -45880,7 +45280,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5416690889456480031}
   - component: {fileID: 5115750322040690330}
-  - component: {fileID: 6084727624398473999}
   - component: {fileID: 1105606754746111882}
   - component: {fileID: 799727298025705122}
   - component: {fileID: 4349690375071216159}
@@ -45958,26 +45357,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6084727624398473999
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2518644408717076011}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1105606754746111882
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46006,10 +45385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &4349690375071216159
 AudioSource:
   m_ObjectHideFlags: 0
@@ -46341,7 +45716,6 @@ GameObject:
   m_Component:
   - component: {fileID: 186476827669339037}
   - component: {fileID: 4036826731930462457}
-  - component: {fileID: 7052160108214943636}
   - component: {fileID: 3513082828872146745}
   - component: {fileID: 5930463424594563218}
   - component: {fileID: 7440493714664677722}
@@ -46419,26 +45793,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7052160108214943636
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2542694133120187913}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3513082828872146745
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46467,10 +45821,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7440493714664677722
 AudioSource:
   m_ObjectHideFlags: 0
@@ -48377,7 +47727,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7454997055334465154}
   - component: {fileID: 8927741478235304864}
-  - component: {fileID: 920761881431712825}
   - component: {fileID: 6334973272029397134}
   - component: {fileID: 4736156517492229536}
   - component: {fileID: 7848929039861706243}
@@ -48455,26 +47804,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &920761881431712825
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2720552517862495221}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6334973272029397134
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48503,10 +47832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7848929039861706243
 AudioSource:
   m_ObjectHideFlags: 0
@@ -50974,7 +50299,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1132363028795628597}
   - component: {fileID: 8403014138936494621}
-  - component: {fileID: 2439412348716707617}
   - component: {fileID: 5869964899931787304}
   - component: {fileID: 1556489471341607832}
   - component: {fileID: 1155500524566124771}
@@ -51052,26 +50376,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2439412348716707617
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3013093932597463513}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5869964899931787304
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51100,10 +50404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1155500524566124771
 AudioSource:
   m_ObjectHideFlags: 0
@@ -53010,7 +52310,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4670407449149055755}
   - component: {fileID: 4931974232488310657}
-  - component: {fileID: 5528852920924101271}
   - component: {fileID: 8400923617918523113}
   - component: {fileID: 2337146727522737000}
   - component: {fileID: 2718967908985369320}
@@ -53088,26 +52387,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5528852920924101271
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3160883182418890270}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8400923617918523113
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53136,10 +52415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2718967908985369320
 AudioSource:
   m_ObjectHideFlags: 0
@@ -53246,7 +52521,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6313816032199618210}
   - component: {fileID: 5787258088069888628}
-  - component: {fileID: 876371160380852340}
   - component: {fileID: 730329887947179715}
   - component: {fileID: 2659536410703911111}
   - component: {fileID: 5493730078109152892}
@@ -53324,26 +52598,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &876371160380852340
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3186732842567742268}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &730329887947179715
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53372,10 +52626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5493730078109152892
 AudioSource:
   m_ObjectHideFlags: 0
@@ -55282,7 +54532,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6342025003911611353}
   - component: {fileID: 2626508351380505886}
-  - component: {fileID: 4634354886322456623}
   - component: {fileID: 2832034371933421699}
   - component: {fileID: 7968272762870630865}
   - component: {fileID: 8975780684622293555}
@@ -55360,26 +54609,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4634354886322456623
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3338872530919917553}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2832034371933421699
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55408,10 +54637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8975780684622293555
 AudioSource:
   m_ObjectHideFlags: 0
@@ -55968,7 +55193,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8449363401147667852}
   - component: {fileID: 451818728537871040}
-  - component: {fileID: 369741603855866010}
   - component: {fileID: 3683097259744387456}
   - component: {fileID: 3017211781712760904}
   - component: {fileID: 8736798487790707241}
@@ -56046,26 +55270,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &369741603855866010
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3373746216188622885}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3683097259744387456
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56094,10 +55298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8736798487790707241
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57104,7 +56304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8427104731733576294}
   - component: {fileID: 2903560145563695659}
-  - component: {fileID: 8712675820992560254}
   - component: {fileID: 3314109256298724409}
   - component: {fileID: 9041929571738281559}
   - component: {fileID: 5947657539867904089}
@@ -57182,26 +56381,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8712675820992560254
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3430206427894422049}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3314109256298724409
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57230,10 +56409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5947657539867904089
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57565,7 +56740,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1828483615004869563}
   - component: {fileID: 395067639701900855}
-  - component: {fileID: 5726187970395726544}
   - component: {fileID: 959428635043887721}
   - component: {fileID: 5776118183279495125}
   - component: {fileID: 7372326573172104935}
@@ -57643,26 +56817,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5726187970395726544
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3465815425595479794}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &959428635043887721
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57691,10 +56845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7372326573172104935
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57801,7 +56951,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7857291671063927449}
   - component: {fileID: 1560947710762367752}
-  - component: {fileID: 929996821810967160}
   - component: {fileID: 5185187868614796393}
   - component: {fileID: 2760349758568290041}
   - component: {fileID: 1419205252331157979}
@@ -57879,26 +57028,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &929996821810967160
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3467889922069863258}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5185187868614796393
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57927,10 +57056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1419205252331157979
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58487,7 +57612,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3498841482078883603}
   - component: {fileID: 3498841482078883602}
-  - component: {fileID: 3498841482078883601}
   - component: {fileID: 3498841482078883604}
   - component: {fileID: 8720050979251594128}
   - component: {fileID: 1186954146784528315}
@@ -58565,26 +57689,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3498841482078883601
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3498841482078883600}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3498841482078883604
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58613,10 +57717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1186954146784528315
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58948,7 +58048,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8783174198131675482}
   - component: {fileID: 4937622322697875404}
-  - component: {fileID: 6529158386488687101}
   - component: {fileID: 5742036176533034252}
   - component: {fileID: 7368267074732043961}
   - component: {fileID: 3385007278811848457}
@@ -59026,26 +58125,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6529158386488687101
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3545074080563047145}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5742036176533034252
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59074,10 +58153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3385007278811848457
 AudioSource:
   m_ObjectHideFlags: 0
@@ -59520,7 +58595,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2820467412694700432}
   - component: {fileID: 8760665641018174516}
-  - component: {fileID: 1007398994454427442}
   - component: {fileID: 1392174675496160047}
   - component: {fileID: 1409847155006230243}
   - component: {fileID: 1264212139469976595}
@@ -59598,26 +58672,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1007398994454427442
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3560734149717297109}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1392174675496160047
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59646,10 +58700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1264212139469976595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -60431,7 +59481,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3259891433775812193}
   - component: {fileID: 5264659737992735447}
-  - component: {fileID: 3174933237360069587}
   - component: {fileID: 141001309780111370}
   - component: {fileID: 7464688062392355340}
   - component: {fileID: 2004982703431900405}
@@ -60509,26 +59558,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3174933237360069587
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3699649750404016341}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &141001309780111370
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60557,10 +59586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2004982703431900405
 AudioSource:
   m_ObjectHideFlags: 0
@@ -61567,7 +60592,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6598106112579887288}
   - component: {fileID: 8832117958545329372}
-  - component: {fileID: 5712513459275364425}
   - component: {fileID: 8014592558296021984}
   - component: {fileID: 27623487727464351}
   - component: {fileID: 5657230815190696312}
@@ -61645,26 +60669,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5712513459275364425
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3804156143383699659}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8014592558296021984
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61693,10 +60697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5657230815190696312
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62253,7 +61253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3863059557339582416}
   - component: {fileID: 3863059557339582417}
-  - component: {fileID: 3863059557339582418}
   - component: {fileID: 3863059557339582423}
   - component: {fileID: 1353285894703165747}
   - component: {fileID: 205702840533189199}
@@ -62331,26 +61330,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3863059557339582418
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3863059557339582419}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3863059557339582423
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62379,10 +61358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &205702840533189199
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62939,7 +61914,6 @@ GameObject:
   m_Component:
   - component: {fileID: 670907593741649080}
   - component: {fileID: 2184232128651385238}
-  - component: {fileID: 1310397006016397659}
   - component: {fileID: 4279978817018821277}
   - component: {fileID: 2550605890879013541}
   - component: {fileID: 5800079601177314218}
@@ -63017,26 +61991,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1310397006016397659
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3929766686787124510}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &4279978817018821277
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63065,10 +62019,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5800079601177314218
 AudioSource:
   m_ObjectHideFlags: 0
@@ -63400,7 +62350,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2409028542174984473}
   - component: {fileID: 6932408327727261403}
-  - component: {fileID: 5884652115323688438}
   - component: {fileID: 8505512666901173456}
   - component: {fileID: 6146737289851082373}
   - component: {fileID: 3080389646797140931}
@@ -63478,26 +62427,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5884652115323688438
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3952757070706754282}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8505512666901173456
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63526,10 +62455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3080389646797140931
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65661,7 +64586,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4124554751369322827}
   - component: {fileID: 4124554751369322826}
-  - component: {fileID: 4124554751369322825}
   - component: {fileID: 4124554751369322828}
   - component: {fileID: 2888141121691899873}
   - component: {fileID: 5314847793874199389}
@@ -65739,26 +64663,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4124554751369322825
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4124554751369322824}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &4124554751369322828
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -65787,10 +64691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5314847793874199389
 AudioSource:
   m_ObjectHideFlags: 0
@@ -66797,7 +65697,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8538021670621691252}
   - component: {fileID: 4860711162185031840}
-  - component: {fileID: 2204805649318318132}
   - component: {fileID: 1211051735517229626}
   - component: {fileID: 4794164043642279833}
   - component: {fileID: 8411861127421054383}
@@ -66875,26 +65774,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2204805649318318132
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4259325107231502635}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1211051735517229626
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -66923,10 +65802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8411861127421054383
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67033,7 +65908,6 @@ GameObject:
   m_Component:
   - component: {fileID: 865348555760175374}
   - component: {fileID: 9144520203395292998}
-  - component: {fileID: 4823869835281077927}
   - component: {fileID: 7414117283130406806}
   - component: {fileID: 7246159027800778406}
   - component: {fileID: 3588818185309877320}
@@ -67111,26 +65985,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4823869835281077927
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4278314871711261501}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7414117283130406806
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -67159,10 +66013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3588818185309877320
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67494,7 +66344,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3852320438041687931}
   - component: {fileID: 834847700154181314}
-  - component: {fileID: 7333863417087047239}
   - component: {fileID: 8847732270657476594}
   - component: {fileID: 2970674626272983355}
   - component: {fileID: 7174405051399762918}
@@ -67572,26 +66421,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7333863417087047239
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4288228646476436595}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8847732270657476594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -67620,10 +66449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7174405051399762918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67730,7 +66555,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8029682194633776812}
   - component: {fileID: 5608237668741664807}
-  - component: {fileID: 4286741329472696571}
   - component: {fileID: 377506364536134241}
   - component: {fileID: 112125529958875697}
   - component: {fileID: 2540789621489915817}
@@ -67808,26 +66632,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4286741329472696571
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4298700611305249835}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &377506364536134241
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -67856,10 +66660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2540789621489915817
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68191,7 +66991,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8076259426261018083}
   - component: {fileID: 7150315415806730505}
-  - component: {fileID: 4823387255528109991}
   - component: {fileID: 8127255437385484411}
   - component: {fileID: 7125363655151138954}
   - component: {fileID: 2759109596644294061}
@@ -68269,26 +67068,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4823387255528109991
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4317282196070070029}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8127255437385484411
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -68317,10 +67096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2759109596644294061
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68427,7 +67202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4362607019511484188}
   - component: {fileID: 4362607019511484189}
-  - component: {fileID: 4362607019511484190}
   - component: {fileID: 4362607019511484187}
   - component: {fileID: 8817298839020586135}
   - component: {fileID: 2336168745614676524}
@@ -68505,26 +67279,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4362607019511484190
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4362607019511484191}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &4362607019511484187
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -68553,10 +67307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2336168745614676524
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68888,7 +67638,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7672294037802936759}
   - component: {fileID: 2456511722219992225}
-  - component: {fileID: 5543922999789480547}
   - component: {fileID: 8096860202770339234}
   - component: {fileID: 2704293661174309088}
   - component: {fileID: 6663653664162455835}
@@ -68966,26 +67715,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5543922999789480547
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503713701048801639}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8096860202770339234
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -69014,10 +67743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &6663653664162455835
 AudioSource:
   m_ObjectHideFlags: 0
@@ -69235,7 +67960,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3201042726950824268}
   - component: {fileID: 8066782537695950700}
-  - component: {fileID: 4073749607744231931}
   - component: {fileID: 4165331616433287371}
   - component: {fileID: 3976249556944898680}
   - component: {fileID: 7268592655775853882}
@@ -69313,26 +68037,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4073749607744231931
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4509640722296844095}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &4165331616433287371
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -69361,10 +68065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7268592655775853882
 AudioSource:
   m_ObjectHideFlags: 0
@@ -74196,7 +72896,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9173603782203634535}
   - component: {fileID: 1586956821654595877}
-  - component: {fileID: 4238830389502866353}
   - component: {fileID: 5464131188504159683}
   - component: {fileID: 58843083378559400}
   - component: {fileID: 1335922209109810116}
@@ -74274,26 +72973,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4238830389502866353
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912826367849602554}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5464131188504159683
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -74322,10 +73001,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1335922209109810116
 AudioSource:
   m_ObjectHideFlags: 0
@@ -75332,7 +74007,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9025493280348702547}
   - component: {fileID: 5408398708447379256}
-  - component: {fileID: 1614318958702251402}
   - component: {fileID: 1150976724569976771}
   - component: {fileID: 3693173488815246919}
   - component: {fileID: 4737383719910980839}
@@ -75410,26 +74084,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1614318958702251402
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5010793530242596156}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1150976724569976771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -75458,10 +74112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &4737383719910980839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76354,7 +75004,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5137710330914238339}
   - component: {fileID: 4134216237690079025}
-  - component: {fileID: 91432293423129075}
   - component: {fileID: 9086470504133518069}
   - component: {fileID: 2538661201090702532}
   - component: {fileID: 5422084288199145910}
@@ -76432,26 +75081,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &91432293423129075
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5068768184388012619}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &9086470504133518069
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -76480,10 +75109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5422084288199145910
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76590,7 +75215,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5073580154838495345}
   - component: {fileID: 5073580154838495344}
-  - component: {fileID: 5073580154838495347}
   - component: {fileID: 5073580154838495350}
   - component: {fileID: 4962015637857174588}
   - component: {fileID: 5166363913444418155}
@@ -76668,26 +75292,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5073580154838495347
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5073580154838495346}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5073580154838495350
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -76716,10 +75320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5166363913444418155
 AudioSource:
   m_ObjectHideFlags: 0
@@ -79751,7 +78351,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2170415536660413656}
   - component: {fileID: 1151944376113434959}
-  - component: {fileID: 7196005518197931899}
   - component: {fileID: 7123885356681572481}
   - component: {fileID: 6958007749687656355}
   - component: {fileID: 7072058452401476556}
@@ -79829,26 +78428,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7196005518197931899
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5238900650875692881}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7123885356681572481
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -79877,10 +78456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7072058452401476556
 AudioSource:
   m_ObjectHideFlags: 0
@@ -81337,7 +79912,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8436926538377049039}
   - component: {fileID: 5849518820209776155}
-  - component: {fileID: 2522043068576718506}
   - component: {fileID: 5081024650194737722}
   - component: {fileID: 1925820625875950420}
   - component: {fileID: 4561503695234873128}
@@ -81415,26 +79989,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2522043068576718506
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5462824681508532994}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5081024650194737722
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81463,10 +80017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &4561503695234873128
 AudioSource:
   m_ObjectHideFlags: 0
@@ -82695,7 +81245,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5599293852531478623}
   - component: {fileID: 5599293852531478622}
-  - component: {fileID: 5599293852531478621}
   - component: {fileID: 5599293852531478616}
   - component: {fileID: 2152695563247325586}
   - component: {fileID: 5586311809639157573}
@@ -82773,26 +81322,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5599293852531478621
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599293852531478620}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5599293852531478616
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82821,10 +81350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5586311809639157573
 AudioSource:
   m_ObjectHideFlags: 0
@@ -85181,7 +83706,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4100984186826534845}
   - component: {fileID: 4397813490077333673}
-  - component: {fileID: 7249809425365435307}
   - component: {fileID: 2034311035804143493}
   - component: {fileID: 6638971951862562596}
   - component: {fileID: 462058376807270282}
@@ -85259,26 +83783,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7249809425365435307
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5816121525350147093}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2034311035804143493
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -85307,10 +83811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &462058376807270282
 AudioSource:
   m_ObjectHideFlags: 0
@@ -86767,7 +85267,6 @@ GameObject:
   m_Component:
   - component: {fileID: 493039608249756402}
   - component: {fileID: 6057477341413519922}
-  - component: {fileID: 7639512404552748166}
   - component: {fileID: 978776732746816610}
   - component: {fileID: 8038358698768840558}
   - component: {fileID: 7384188524941627766}
@@ -86845,26 +85344,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7639512404552748166
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5875525044750227588}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &978776732746816610
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -86893,10 +85372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7384188524941627766
 AudioSource:
   m_ObjectHideFlags: 0
@@ -88578,7 +87053,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6340371318950048079}
   - component: {fileID: 5118817704179235010}
-  - component: {fileID: 8386778178499221595}
   - component: {fileID: 8214006825184998949}
   - component: {fileID: 9210599658959041398}
   - component: {fileID: 717218409117410642}
@@ -88656,26 +87130,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8386778178499221595
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5982132654894466402}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8214006825184998949
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88704,10 +87158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &717218409117410642
 AudioSource:
   m_ObjectHideFlags: 0
@@ -88814,7 +87264,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6312622088390648580}
   - component: {fileID: 354504743644347144}
-  - component: {fileID: 2595480297035349779}
   - component: {fileID: 8738247690653093153}
   - component: {fileID: 4304014017891726385}
   - component: {fileID: 5642430828137354332}
@@ -88892,26 +87341,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2595480297035349779
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5982358933599586338}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8738247690653093153
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88940,10 +87369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5642430828137354332
 AudioSource:
   m_ObjectHideFlags: 0
@@ -89836,7 +88261,6 @@ GameObject:
   m_Component:
   - component: {fileID: 371783269131300706}
   - component: {fileID: 1660523777285773462}
-  - component: {fileID: 2119297838394377431}
   - component: {fileID: 282107580152489562}
   - component: {fileID: 2323904596233712777}
   - component: {fileID: 4335434729965302467}
@@ -89914,26 +88338,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2119297838394377431
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6049414706424397956}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &282107580152489562
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89962,10 +88366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &4335434729965302467
 AudioSource:
   m_ObjectHideFlags: 0
@@ -90522,7 +88922,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5350502377008770568}
   - component: {fileID: 5463104153970330781}
-  - component: {fileID: 5241272749855561530}
   - component: {fileID: 2867878891682715880}
   - component: {fileID: 7523658402974881732}
   - component: {fileID: 6429748261109227437}
@@ -90600,26 +88999,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5241272749855561530
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078204153907435249}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2867878891682715880
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90648,10 +89027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &6429748261109227437
 AudioSource:
   m_ObjectHideFlags: 0
@@ -91430,7 +89805,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9072931222019587162}
   - component: {fileID: 6021136082209590480}
-  - component: {fileID: 4435066220497115965}
   - component: {fileID: 7911770482995299696}
   - component: {fileID: 2749424432948597886}
   - component: {fileID: 7595170238563389390}
@@ -91508,26 +89882,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4435066220497115965
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6149885706612574918}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7911770482995299696
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91556,10 +89910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7595170238563389390
 AudioSource:
   m_ObjectHideFlags: 0
@@ -91891,7 +90241,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5075920382315727678}
   - component: {fileID: 1595122481244947940}
-  - component: {fileID: 5706240965366317263}
   - component: {fileID: 4703924873522657385}
   - component: {fileID: 5338124864264131261}
   - component: {fileID: 8145235376700812371}
@@ -91969,26 +90318,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5706240965366317263
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6161044905251138296}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &4703924873522657385
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92017,10 +90346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8145235376700812371
 AudioSource:
   m_ObjectHideFlags: 0
@@ -92127,7 +90452,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5306280008205032355}
   - component: {fileID: 3517820824014442881}
-  - component: {fileID: 7107156364405826234}
   - component: {fileID: 6990902537468952361}
   - component: {fileID: 7705737303476272534}
   - component: {fileID: 8542129092474215209}
@@ -92205,26 +90529,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7107156364405826234
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172840497491887480}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6990902537468952361
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92253,10 +90557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8542129092474215209
 AudioSource:
   m_ObjectHideFlags: 0
@@ -92363,7 +90663,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6205846722724113621}
   - component: {fileID: 6205846722724113620}
-  - component: {fileID: 6205846722724113623}
   - component: {fileID: 6205846722724113618}
   - component: {fileID: 6259209336526684402}
   - component: {fileID: 3630066598400250360}
@@ -92441,26 +90740,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6205846722724113623
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6205846722724113622}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6205846722724113618
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92489,10 +90768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3630066598400250360
 AudioSource:
   m_ObjectHideFlags: 0
@@ -93499,7 +91774,6 @@ GameObject:
   m_Component:
   - component: {fileID: 981811939590656403}
   - component: {fileID: 7873017677775880839}
-  - component: {fileID: 7482934261365139761}
   - component: {fileID: 567806908383272158}
   - component: {fileID: 5836853758618033633}
   - component: {fileID: 410564298507630089}
@@ -93577,26 +91851,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7482934261365139761
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6250320727386417880}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &567806908383272158
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93625,10 +91879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &410564298507630089
 AudioSource:
   m_ObjectHideFlags: 0
@@ -93960,7 +92210,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1282689405354095679}
   - component: {fileID: 4715022433395969121}
-  - component: {fileID: 8871466450945273003}
   - component: {fileID: 6109870204362159080}
   - component: {fileID: 5119121746564934757}
   - component: {fileID: 3550220723270807427}
@@ -94038,26 +92287,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8871466450945273003
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6294269445225324423}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6109870204362159080
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94086,10 +92315,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3550220723270807427
 AudioSource:
   m_ObjectHideFlags: 0
@@ -94532,7 +92757,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6334554810815885607}
   - component: {fileID: 6334554810815885606}
-  - component: {fileID: 6334554810815885605}
   - component: {fileID: 6334554810815885600}
   - component: {fileID: 2156117546311527282}
   - component: {fileID: 7948951725840577044}
@@ -94610,26 +92834,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6334554810815885605
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6334554810815885604}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6334554810815885600
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94658,10 +92862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7948951725840577044
 AudioSource:
   m_ObjectHideFlags: 0
@@ -94768,7 +92968,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3156819543448350111}
   - component: {fileID: 494759608667565387}
-  - component: {fileID: 8285750170031996212}
   - component: {fileID: 6178027791915241794}
   - component: {fileID: 6367921637017713375}
   - component: {fileID: 5216803006471837118}
@@ -94846,26 +93045,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8285750170031996212
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6349434766648244049}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6178027791915241794
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94894,10 +93073,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5216803006471837118
 AudioSource:
   m_ObjectHideFlags: 0
@@ -95904,7 +94079,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3047083515997931265}
   - component: {fileID: 2351775285712028061}
-  - component: {fileID: 6994758907573635654}
   - component: {fileID: 2201877473286602176}
   - component: {fileID: 2904704798697690602}
   - component: {fileID: 920303821587672982}
@@ -95982,26 +94156,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6994758907573635654
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6374448381697247585}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2201877473286602176
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96030,10 +94184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &920303821587672982
 AudioSource:
   m_ObjectHideFlags: 0
@@ -96140,7 +94290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6692010053283829480}
   - component: {fileID: 6555209283305818940}
-  - component: {fileID: 2152884717762208892}
   - component: {fileID: 1166966504766098507}
   - component: {fileID: 8362319996937687490}
   - component: {fileID: 5520834107596624402}
@@ -96218,26 +94367,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2152884717762208892
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6381949748231347387}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1166966504766098507
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96266,10 +94395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5520834107596624402
 AudioSource:
   m_ObjectHideFlags: 0
@@ -96826,7 +94951,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4906364681474412115}
   - component: {fileID: 6868951352641579565}
-  - component: {fileID: 6486085268620580266}
   - component: {fileID: 2830378895684133595}
   - component: {fileID: 5972352104018930219}
   - component: {fileID: 1905849346615264077}
@@ -96904,26 +95028,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6486085268620580266
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6429440697919483142}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2830378895684133595
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96952,10 +95056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1905849346615264077
 AudioSource:
   m_ObjectHideFlags: 0
@@ -98637,7 +96737,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6503130594937147554}
   - component: {fileID: 6503130594937147555}
-  - component: {fileID: 6503130594937147552}
   - component: {fileID: 6503130594937147557}
   - component: {fileID: 1772838539874712006}
   - component: {fileID: 682930630490307163}
@@ -98715,26 +96814,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6503130594937147552
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6503130594937147553}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6503130594937147557
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98763,10 +96842,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &682930630490307163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -102782,7 +100857,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6561657571254193975}
   - component: {fileID: 2336772258740866533}
-  - component: {fileID: 3824662886696856899}
   - component: {fileID: 7206555252972468498}
   - component: {fileID: 4173353759138204906}
   - component: {fileID: 2096300918933506701}
@@ -102860,26 +100934,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3824662886696856899
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6888229386285412895}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7206555252972468498
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102908,10 +100962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2096300918933506701
 AudioSource:
   m_ObjectHideFlags: 0
@@ -104636,7 +102686,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7414799155940232062}
   - component: {fileID: 5325906774136913407}
-  - component: {fileID: 1168578360716132944}
   - component: {fileID: 6955162437668049801}
   - component: {fileID: 4088670148388485523}
   - component: {fileID: 1955625009937603107}
@@ -104714,26 +102763,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1168578360716132944
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6981824280089664150}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6955162437668049801
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104762,10 +102791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1955625009937603107
 AudioSource:
   m_ObjectHideFlags: 0
@@ -106333,7 +104358,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4263697405778162460}
   - component: {fileID: 563656972784893368}
-  - component: {fileID: 2332712192529421285}
   - component: {fileID: 3290202266478240695}
   - component: {fileID: 3436638182666560848}
   - component: {fileID: 8575979205819578794}
@@ -106411,26 +104435,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2332712192529421285
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7166981749466019371}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3290202266478240695
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -106459,10 +104463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8575979205819578794
 AudioSource:
   m_ObjectHideFlags: 0
@@ -107160,7 +105160,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6749386862963177081}
   - component: {fileID: 8198219200369887832}
-  - component: {fileID: 3777148233924243652}
   - component: {fileID: 2697754910399103088}
   - component: {fileID: 6369145139066138202}
   - component: {fileID: 7451453735655803180}
@@ -107238,26 +105237,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3777148233924243652
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7210515557881537832}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2697754910399103088
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107286,10 +105265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7451453735655803180
 AudioSource:
   m_ObjectHideFlags: 0
@@ -109871,7 +107846,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3577562869856957631}
   - component: {fileID: 5233630171416322203}
-  - component: {fileID: 8421024889982626093}
   - component: {fileID: 1797475693421022371}
   - component: {fileID: 4137748864868487402}
   - component: {fileID: 7778174944904633967}
@@ -109949,26 +107923,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8421024889982626093
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7494681809599404700}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1797475693421022371
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -109997,10 +107951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &7778174944904633967
 AudioSource:
   m_ObjectHideFlags: 0
@@ -111053,7 +109003,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8513652331998399119}
   - component: {fileID: 8200577901982201377}
-  - component: {fileID: 178037951254991584}
   - component: {fileID: 5344438584143402441}
   - component: {fileID: 4996758317258577902}
   - component: {fileID: 2342703804505358710}
@@ -111131,26 +109080,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &178037951254991584
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7690678227775991991}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5344438584143402441
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111179,10 +109108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2342703804505358710
 AudioSource:
   m_ObjectHideFlags: 0
@@ -112525,7 +110450,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9112816276604688693}
   - component: {fileID: 7688405810956785879}
-  - component: {fileID: 7259988891750377202}
   - component: {fileID: 7637920343696135069}
   - component: {fileID: 3302995315227233347}
   - component: {fileID: 2975407084054563445}
@@ -112603,26 +110527,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7259988891750377202
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7797161508324780770}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &7637920343696135069
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112651,10 +110555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &2975407084054563445
 AudioSource:
   m_ObjectHideFlags: 0
@@ -112761,7 +110661,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5089075844689634955}
   - component: {fileID: 4209651778549209300}
-  - component: {fileID: 7989076121510022729}
   - component: {fileID: 8456158897723599665}
   - component: {fileID: 7414833095605995193}
   - component: {fileID: 1974574983925740098}
@@ -112839,26 +110738,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7989076121510022729
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7798662474719708521}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8456158897723599665
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112887,10 +110766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1974574983925740098
 AudioSource:
   m_ObjectHideFlags: 0
@@ -115472,7 +113347,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5058499105227841949}
   - component: {fileID: 1703951641959566140}
-  - component: {fileID: 5777817908867239191}
   - component: {fileID: 1784769026018084278}
   - component: {fileID: 4472638013378406131}
   - component: {fileID: 4792339683922424414}
@@ -115550,26 +113424,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5777817908867239191
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7979767877429416388}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &1784769026018084278
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115598,10 +113452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &4792339683922424414
 AudioSource:
   m_ObjectHideFlags: 0
@@ -116383,7 +114233,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4340624408172192926}
   - component: {fileID: 6965474080888319547}
-  - component: {fileID: 4655024791330242171}
   - component: {fileID: 5860955248872038296}
   - component: {fileID: 769884354982627701}
   - component: {fileID: 843981149865878739}
@@ -116461,26 +114310,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4655024791330242171
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8095246286726389524}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &5860955248872038296
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116509,10 +114338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &843981149865878739
 AudioSource:
   m_ObjectHideFlags: 0
@@ -116844,7 +114669,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8109893212472187997}
   - component: {fileID: 8109893212472187996}
-  - component: {fileID: 8109893212472187999}
   - component: {fileID: 8109893212472187994}
   - component: {fileID: 692304280459546443}
   - component: {fileID: 5659434973816789776}
@@ -116922,26 +114746,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8109893212472187999
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8109893212472187998}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8109893212472187994
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116970,10 +114774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &5659434973816789776
 AudioSource:
   m_ObjectHideFlags: 0
@@ -118655,7 +116455,6 @@ GameObject:
   m_Component:
   - component: {fileID: 177457149544985583}
   - component: {fileID: 2798647247994308217}
-  - component: {fileID: 3257885256343138083}
   - component: {fileID: 4557678124202383620}
   - component: {fileID: 2748354711851074652}
   - component: {fileID: 3627980638557617309}
@@ -118733,26 +116532,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3257885256343138083
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8273570427981616972}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &4557678124202383620
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -118781,10 +116560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3627980638557617309
 AudioSource:
   m_ObjectHideFlags: 0
@@ -120466,7 +118241,6 @@ GameObject:
   m_Component:
   - component: {fileID: 204310827787559208}
   - component: {fileID: 438206025453436242}
-  - component: {fileID: 6427579287060230433}
   - component: {fileID: 3046129696648233510}
   - component: {fileID: 3406497917366048830}
   - component: {fileID: 3340809967890934440}
@@ -120544,26 +118318,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6427579287060230433
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8511593934555172560}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &3046129696648233510
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120592,10 +118346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3340809967890934440
 AudioSource:
   m_ObjectHideFlags: 0
@@ -120927,7 +118677,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5541932466329806435}
   - component: {fileID: 2658030973833845505}
-  - component: {fileID: 8541239159457487503}
   - component: {fileID: 2632419072589414064}
   - component: {fileID: 4288309533356592593}
   - component: {fileID: 3679693323799793529}
@@ -121005,26 +118754,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8541239159457487503
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8619156318648188637}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &2632419072589414064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121053,10 +118782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &3679693323799793529
 AudioSource:
   m_ObjectHideFlags: 0
@@ -121163,7 +118888,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8692307443737383706}
   - component: {fileID: 8692307443737383707}
-  - component: {fileID: 8692307443737383704}
   - component: {fileID: 8692307443737383709}
   - component: {fileID: 3810403790845770827}
   - component: {fileID: 1844669185529540283}
@@ -121241,26 +118965,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8692307443737383704
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8692307443737383705}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8692307443737383709
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121289,10 +118993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &1844669185529540283
 AudioSource:
   m_ObjectHideFlags: 0
@@ -121399,7 +119099,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5313519881827029478}
   - component: {fileID: 988968579587436610}
-  - component: {fileID: 5952096781620767336}
   - component: {fileID: 41960781823358379}
   - component: {fileID: 6147289027899731238}
   - component: {fileID: 4592379716462492212}
@@ -121477,26 +119176,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5952096781620767336
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8735415261075967151}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &41960781823358379
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121525,10 +119204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &4592379716462492212
 AudioSource:
   m_ObjectHideFlags: 0
@@ -123660,7 +121335,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4669496182616776229}
   - component: {fileID: 7229559242745404972}
-  - component: {fileID: 8758853938158551330}
   - component: {fileID: 6269833164844192505}
   - component: {fileID: 5405443228405285993}
   - component: {fileID: 6521653723071715249}
@@ -123738,26 +121412,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8758853938158551330
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8913866425587519139}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &6269833164844192505
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123786,10 +121440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &6521653723071715249
 AudioSource:
   m_ObjectHideFlags: 0
@@ -123896,7 +121546,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7010649879921716064}
   - component: {fileID: 3135801760270806463}
-  - component: {fileID: 118793467696084024}
   - component: {fileID: 358619393946420933}
   - component: {fileID: 6987837054406191188}
   - component: {fileID: 8362225393866194906}
@@ -123974,26 +121623,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &118793467696084024
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914092312172686927}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &358619393946420933
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124022,10 +121651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8362225393866194906
 AudioSource:
   m_ObjectHideFlags: 0
@@ -124132,7 +121757,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2922910786991297048}
   - component: {fileID: 6369408062847927956}
-  - component: {fileID: 6749608319975809662}
   - component: {fileID: 8089413291705966077}
   - component: {fileID: 8912821813456443181}
   - component: {fileID: 8300510015869826191}
@@ -124210,26 +121834,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6749608319975809662
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8919513582483951581}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &8089413291705966077
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124258,10 +121862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8300510015869826191
 AudioSource:
   m_ObjectHideFlags: 0
@@ -127068,7 +124668,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9186393715141420200}
   - component: {fileID: 9186393715141420201}
-  - component: {fileID: 9186393715141420202}
   - component: {fileID: 9186393715141420207}
   - component: {fileID: 7830511611425792357}
   - component: {fileID: 8342653916571150232}
@@ -127146,26 +124745,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &9186393715141420202
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9186393715141420203}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b57b5ccbbb956814da62be31b2b4f203, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!58 &9186393715141420207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127194,10 +124773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0fceb031db4134fafaa69a2a97b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 1
 --- !u!82 &8342653916571150232
 AudioSource:
   m_ObjectHideFlags: 0

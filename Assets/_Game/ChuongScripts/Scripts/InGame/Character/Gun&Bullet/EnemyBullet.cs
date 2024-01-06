@@ -58,7 +58,7 @@ namespace Game
                 _onContactEvent?.Invoke();
             }
 
-            PoolContainer.DeSpawnItem(this.gameObject);
+            PoolContainer.DeSpawnBullet(this.gameObject);
         }
     }
 }

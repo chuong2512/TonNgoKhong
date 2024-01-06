@@ -1,14 +1,15 @@
-﻿using System;
-using _TonNgoKhong;
+﻿using _TonNgoKhong;
 using Game;
-using SinhTon;
 using UnityEngine;
+using UnityEngine.UI.Extensions;
 
 namespace Skill
 {
     public abstract class BaseSkill : MonoBehaviour, IInfoSkill, IUpgradable
     {
         [SerializeField] protected StatSkillSO _statSkillSo;
+
+        [ReadOnly][SerializeField] private int TestLevel = 0;
         
         private void Awake()
         {
@@ -22,6 +23,7 @@ namespace Skill
             if (!SkillSelector.Instance.IsMaxLevel(hashID))
             {
                 Upgrade();
+                TestLevel = Level;
             }
         }
 

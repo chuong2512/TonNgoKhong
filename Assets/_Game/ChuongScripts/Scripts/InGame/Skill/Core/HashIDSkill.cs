@@ -84,14 +84,20 @@ namespace Skill
     public enum WeaponType
     {
         PowerPole,
-        PowerPole2,
-        PowerPole3,
+        W1Skill,
+        W2Skill,
+        W3Skill,
+        W4Skill,
+        W5Skill,
     }
 
     public enum SuppliesType
     {
-        Supplies1,
-        Supplies2,
-        Supplies3,
+        AddHP,
+        UpgradeMagnet,
+        SpeedShoot,
+        AddDamage,
+        RestoreHP,
+        AddSpeed
     }
 }

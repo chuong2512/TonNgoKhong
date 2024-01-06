@@ -1,4 +1,5 @@
 ﻿using System;
+using _TonNgoKhong;
 using SinhTon;
 using UnityEngine;
 
@@ -42,7 +43,7 @@ namespace Game
                 Health = Mathf.Clamp(Health, 0, MaxHealth);
                 /*UITextDamageManager.Instance.ShowText(healingAmount, true, transform.position,
                     DamageType.PlayerHealing);*/
-                
+
                 InGameAction.OnHealthChange?.Invoke();
             }
         }
@@ -57,8 +58,14 @@ namespace Game
             {
                 Health -= (damageInfo.trueDamage - Defense);
             }
-            
+
             InGameAction.OnHealthChange?.Invoke();
+
+            if (Health <= 0)
+            {
+                InGameAction.OnPlayerDie?.Invoke();
+                ScreenManager.Instance.OpenScreen(ScreenType.Result, new ResultModel(false));
+            }
         }
 
         public void TakeDamageByHealthPercent(float healthPercent)
