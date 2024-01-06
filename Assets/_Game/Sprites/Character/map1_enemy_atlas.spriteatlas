@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: map1_enemy_atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 1b2a6f0191b8e8441a1aafd79e6668d6, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 2be63cc0136601240be66d2188f4a409, type: 3}
+  - {fileID: 21300000, guid: 8a71d3211b0d7684c8c879e293da3ec7, type: 3}
+  - {fileID: 21300000, guid: be7b6b811b1c7c943a052ccf852023ce, type: 3}
+  - {fileID: 21300000, guid: be3afaa1aa6939342a97e157e9422139, type: 3}
+  - {fileID: 21300000, guid: ce1af3d1e4ac8734d9dc7378fe99f790, type: 3}
+  - {fileID: 21300000, guid: a540ea321c6bb764cbb9838bd8a62a17, type: 3}
+  - {fileID: 21300000, guid: 63dfc3723777aed4ca3d9277a4a69eb8, type: 3}
+  - {fileID: 21300000, guid: 1217bc8254c33ed4a90cfa050299dbce, type: 3}
+  - {fileID: 21300000, guid: 4fdcb29233ce6524589106b2c2aa498d, type: 3}
+  - {fileID: 21300000, guid: 6a88b2c24aaafd5419b727c82c0e1cb1, type: 3}
+  - {fileID: 21300000, guid: 5d057713f6c2d5f4aa697eb15ffaae15, type: 3}
+  - {fileID: 21300000, guid: cbaa6f837d8fcc847b660931bbea11ed, type: 3}
+  - {fileID: 21300000, guid: f03548c33c5bcac4eacc4213997c4de5, type: 3}
+  - {fileID: 21300000, guid: 9412dbf3d3fbdcf43bca6466bddb4984, type: 3}
+  - {fileID: 21300000, guid: 530d0514a4613b04fafbbd93f93a52b7, type: 3}
+  - {fileID: 21300000, guid: 7997e724d7080a24ab8deb210cf57ebb, type: 3}
+  - {fileID: 21300000, guid: d6176c245503d2f4d8453219dd2f0b5b, type: 3}
+  - {fileID: 21300000, guid: 93dbaea40af4baa46b0487213d5b814c, type: 3}
+  - {fileID: 21300000, guid: 3956d0b454e1b1d409341c1991ed2ee9, type: 3}
+  - {fileID: 21300000, guid: 8face1c4923482a45a71d39f61b1f02d, type: 3}
+  - {fileID: 21300000, guid: 8d732d4579ee5524898fd1b110665e89, type: 3}
+  - {fileID: 21300000, guid: e0b359a50d15ab640bd3848a7ba70f42, type: 3}
+  - {fileID: 21300000, guid: 94aff9b5d72a5b8429831235ed537080, type: 3}
+  - {fileID: 21300000, guid: 1bd870f5243092d4cb660419b0027d09, type: 3}
+  - {fileID: 21300000, guid: 0c76cc26708a4434193806499097dd24, type: 3}
+  - {fileID: 21300000, guid: 0adff00764cde404ea8af5715d796928, type: 3}
+  - {fileID: 21300000, guid: 691e5f7719ea4264cb6250df8cacee3a, type: 3}
+  - {fileID: 21300000, guid: 869be5b7e6dfcaf44b9f97098428e539, type: 3}
+  - {fileID: 21300000, guid: f4afedd734bae574e8b2ea5c7453ac5f, type: 3}
+  - {fileID: 21300000, guid: a93f32484d365164cb64979e3f43d213, type: 3}
+  - {fileID: 21300000, guid: b570e0a83f5f3b44fb814df7bacdd139, type: 3}
+  - {fileID: 21300000, guid: bc71def81d74ec04ea0f620cf57d0ef3, type: 3}
+  - {fileID: 21300000, guid: 6efd80196a66fc743aa52ec4118526d2, type: 3}
+  - {fileID: 21300000, guid: 1c57777923fa2d146b41e9231db086cd, type: 3}
+  - {fileID: 21300000, guid: 2874838a8154acb419922880c2053588, type: 3}
+  - {fileID: 21300000, guid: db88d14b76737a94b9795fb5cd072af1, type: 3}
+  - {fileID: 21300000, guid: 7b0cd69b4ed0f554d8f7c285cfe69985, type: 3}
+  - {fileID: 21300000, guid: bd22fedbcae544c408257984e60cc3b3, type: 3}
+  - {fileID: 21300000, guid: 2c17a4fba8e727c4dba02f0dd389a702, type: 3}
+  - {fileID: 21300000, guid: b3a9bcfbb1eb63d45ae5665831300d4e, type: 3}
+  - {fileID: 21300000, guid: fc99663c5eb653d44ae949fb62207551, type: 3}
+  - {fileID: 21300000, guid: d380907c47398ab4a8c073431a6bed98, type: 3}
+  - {fileID: 21300000, guid: 97df9bac39b670f4b8ea48426db75cf1, type: 3}
+  - {fileID: 21300000, guid: 4c307decd06418d48906b73790b6d11b, type: 3}
+  - {fileID: 21300000, guid: aedc1c1d854c41e46a4b75292d95bf82, type: 3}
+  - {fileID: 21300000, guid: ebb7440eada0fb843879b81d71ddc7d7, type: 3}
+  - {fileID: 21300000, guid: 60fba64e6a63e2647899189fd85c36f2, type: 3}
+  - {fileID: 21300000, guid: 42f0aebe14665ba47b64da52c0c546c5, type: 3}
+  - {fileID: 21300000, guid: b45bc40f56f8fba4388db7c1481aaade, type: 3}
+  - {fileID: 21300000, guid: ed58c01fc2cfb4440a4922db7ad3008b, type: 3}
+  - {fileID: 21300000, guid: 873c3c6fb5d31eb4a92b8e3bae888681, type: 3}
+  - {fileID: 21300000, guid: 4ccef5afb7505ef4fa01f75460ebfa94, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Artboard 59
+  - Artboard 50
+  - Artboard 97
+  - Artboard 89
+  - Artboard 18 copy 2
+  - Artboard 65
+  - Artboard 62
+  - Artboard 86
+  - Artboard 75
+  - Artboard 82
+  - Artboard 69
+  - Artboard 77
+  - Artboard 100
+  - Artboard 24 copy 2
+  - Artboard 99
+  - Artboard 101
+  - Artboard 79
+  - Artboard 48
+  - Artboard 73
+  - Artboard 57
+  - Artboard 72
+  - Artboard 60
+  - Artboard 88
+  - Artboard 90
+  - Artboard 27 copy 2
+  - Artboard 76
+  - Artboard 23 copy 2
+  - Artboard 23 copy 3
+  - Artboard 68
+  - Artboard 26 copy 2
+  - Artboard 102
+  - Artboard 96
+  - Artboard 81
+  - Artboard 94
+  - Artboard 66
+  - Artboard 47
+  - Artboard 70
+  - Artboard 93
+  - Artboard 54
+  - Artboard 53
+  - Artboard 58
+  - Artboard 87
+  - Artboard 98
+  - Artboard 78
+  - Artboard 51
+  - Artboard 25 copy 2
+  - Artboard 63
+  - Artboard 24
+  - Artboard 85
+  - Artboard 67
+  - Artboard 74
+  - Artboard 95
+  m_RenderDataMap: {}
+  m_Tag: map1_enemy_atlas
+  m_IsVariant: 0
