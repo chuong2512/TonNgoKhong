@@ -1,18 +1,39 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using UnityEngine;
 
 public class AudioCheckerPlayer : MonoBehaviour
 {
-    public void AudioManager(bool audio)
+    private AudioSource _audioSource;
+
+    private void Start()
     {
-        if (audio)
+        _audioSource = GetComponent<AudioSource>();
+
+        InGameAction.OnGameStateChange += OnGameStateChange;
+    }
+
+    private void OnGameStateChange()
+    {
+        AudioManager(InGameManager.Instance.IsPlaying);
+    }
+
+    private void OnDestroy()
+    {
+        InGameAction.OnGameStateChange -= OnGameStateChange;
+    }
+
+    public void AudioManager(bool b)
+    {
+        if (b)
         {
-            this.GetComponent<AudioSource>().Play();
+            _audioSource.Play();
         }
         else
         {
-            this.GetComponent<AudioSource>().Stop();
+            _audioSource.Stop();
         }
     }
 }

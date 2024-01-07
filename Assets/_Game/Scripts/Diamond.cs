@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using UnityEngine;
 
 public class Diamond : MonoBehaviour
 {
+    public int Value = 1;
+
     public GameObject Player;
     public GameObject Manager;
     public GameObject Boolean;
@@ -66,9 +69,9 @@ public class Diamond : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(TagConstants.Player))
         {
-            GameManager.Instance.ExpValue += 0.75f;
+            InGameManager.Instance.AddExp(Value);
             Instantiate(Flasher, transform.position, transform.rotation);
             Audio.Play();
             StartCoroutine(Destroy());

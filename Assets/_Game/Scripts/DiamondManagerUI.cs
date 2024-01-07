@@ -19,7 +19,7 @@ public class DiamondManagerUI : MonoBehaviour
     }
     void Update()
     {
-        if(GameManager.Instance?.Spawner.enabled == true)
+        if(InGameManager.Instance?.Spawner.enabled == true)
         {
             Destroy(this.gameObject);
         }

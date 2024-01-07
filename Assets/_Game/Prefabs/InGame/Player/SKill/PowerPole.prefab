@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _statSkillSo: {fileID: 11400000, guid: 22874084bcb230f42b8aa041db7de7cb, type: 2}
+  TestLevel: 0
   powerPoleController: {fileID: 3526820047455265766}
 --- !u!114 &3526820047455265766
 MonoBehaviour:
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shot: {fileID: 3526820048510613780}
   _baseDmg: 10
-  _baseAmount: 1
+  _baseAmount: 0
   speed: 10
   lifeTime: 1
 --- !u!1 &3526820048510613778

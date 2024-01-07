@@ -11,30 +11,28 @@ namespace Game
         public Image ReloadWeapon;
         public Color[] myColors;
 
-        internal int len;
-        public float Health;
-        public float hh;
-
         public Vector3 Offest;
-        private Vector3 rb;
-        
+
+        private Vector3 _rb;
+
+        private PlayerCombat PlayerCombat;
+
         private void Start()
         {
-            len = myColors.Length;
-
             HealthBar.color = Color.green;
-
             InGameAction.OnHealthChange += OnHealthChange;
+
+            PlayerCombat = PlayerManager.Instance.Combat;
         }
 
         private void FixedUpdate()
         {
-            transform.position = Vector3.SmoothDamp(transform.position, transform.position + Offest, ref rb, 0);
+            transform.position = Vector3.SmoothDamp(transform.position, transform.position + Offest, ref _rb, 0);
         }
 
         private void OnHealthChange()
         {
-            //HealthBar.fillAmount = Health / (100f + hh + ((Health * supplies.hp) / 100));
+            HealthBar.fillAmount = PlayerCombat.Health / PlayerCombat.MaxHealth;
             if (HealthBar.fillAmount <= 0.5f)
             {
                 HealthBar.color = Color.yellow;
@@ -45,6 +43,25 @@ namespace Game
                 HealthBar.color = Color.red;
             }
         }
+
+        /*void ReloadingWapeons()
+{
+    Valeur += 1f * Time.deltaTime;
+    if (ReloadWeapon.fillAmount < 1 && RightFill == true)
+    {
+        SpawnObject = false;
+        ReloadWeapon.fillAmount = Valeur;
+        LeftFill = true;
+    }
+
+    if (ReloadWeapon.fillAmount == 1 && LeftFill == true)
+    {
+        SpawnObject = true;
+        ReloadWeapon.fillAmount = 0;
+        Valeur = 0;
+        LeftFill = false;
+    }
+}*/
 
         private void OnDestroy()
         {

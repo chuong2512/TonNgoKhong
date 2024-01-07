@@ -14,6 +14,11 @@ namespace Skill
         float Damage { get; set; }
     }
 
+    
+    public interface IPlayerDamageAttribute : IDamageAttribute
+    {
+    }
+
     public interface IPercentDamageAttribute : IAttribute
     {
         float PercentDamage { get; set; }
@@ -75,5 +80,15 @@ namespace Skill
     public interface IMagnetAttribute : IAttribute
     {
         float Magnet { get; set; }
+    }
+    
+    public interface IEnemyValueAttribute : IAttribute
+    {
+        float EnemyValue { get; set; }
+    }
+    
+    public interface IEnemyPiorityAttribute : IAttribute
+    {
+        float Piority { get; set; }
     }
 }

@@ -15,11 +15,7 @@ namespace Skill.Weapons
 
         public override void Upgrade()
         {
-            foreach (var upgradeSkill in _statSkillSo.GetSkillUpgradeInfo(Level).listUpgradeSkill)
-            {
-                upgradeSkill.Upgrade(_poleAttribute);
-            }
-
+            _statSkillSo[Level].ApplyUpgrade(_poleAttribute);
             powerPoleController.Refresh();
         }
 

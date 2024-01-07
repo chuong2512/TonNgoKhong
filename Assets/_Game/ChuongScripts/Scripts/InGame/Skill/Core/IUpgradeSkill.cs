@@ -39,7 +39,7 @@ namespace Skill
         
         public void Upgrade(IAmountAttribute weaponAttribute)
         {
-            weaponAttribute.Amount = amount;
+            weaponAttribute.Amount += amount;
         }
     }
     

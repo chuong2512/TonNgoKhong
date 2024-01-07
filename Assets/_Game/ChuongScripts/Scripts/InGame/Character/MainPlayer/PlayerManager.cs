@@ -11,36 +11,49 @@ using UnityEngine;
 public class PlayerManager : Singleton<PlayerManager>
 {
     [SerializeField] public PlayerCombat Combat;
+    [SerializeField] public PlayerController Controller;
     [SerializeField] private WeaponSkillContainer weaponSkillContainer;
     [SerializeField] private SuppliesSkillContainer suppliesSkillContainer;
-    private Dictionary<int, WeaponSkill> WeaponSkills;
-    private Dictionary<int, SupplySkill> SupplySkills;
+    private Dictionary<int, WeaponSkill> WeaponSkills = new();
+    private Dictionary<int, SupplySkill> SupplySkills = new();
     public AudioSource AudioHeat;
     public GameObject Death;
     public GameObject SpawenShoot;
 
     [Header("Boolean manager")] internal bool Deaths = true;
 
-    [SerializeField] private PlayerStat _baseStat;
+    [SerializeField] private PlayerStatus _baseStat;
 
     private SkillUpgradeInfo _listBuff;
     private PlayerStatus _currentStatus;
     private Dictionary<int, BaseSkill> _skillDict;
 
     public PlayerStatus CurrentStatus => _currentStatus;
+    
+    public Transform Transform => Controller.transform;
 
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         InitAttribute();
-
         InGameAction.OnPlayerDie += OnPlayerDie;
+    }
+
+    public void Stop()
+    {
+        Controller.SetSimulated(false);
+    }
+    
+    public void Play()
+    {
+        Controller.SetSimulated(true);
     }
 
     private void InitAttribute()
     {
         _listBuff = new SkillUpgradeInfo();
 
-        _currentStatus = (PlayerStatus) _baseStat;
+        _currentStatus =  _baseStat;
 
         Combat.PlayerStatus = _currentStatus;
         Combat.InitHealth();
@@ -74,6 +87,7 @@ public class PlayerManager : Singleton<PlayerManager>
     {
         if (!WeaponSkills.ContainsKey(hashIDSkill))
         {
+            InitWeaponSkill(hashIDSkill);
         }
         WeaponSkills[hashIDSkill].Upgrade();
     }
@@ -81,12 +95,13 @@ public class PlayerManager : Singleton<PlayerManager>
     private void InitWeaponSkill(int hashIDSkill)
     {
         WeaponSkills[hashIDSkill] = weaponSkillContainer.GetSkill(hashIDSkill);
+        WeaponSkills[hashIDSkill].ActiveWeapon();
         WeaponSkills[hashIDSkill].Upgrade(_listBuff);
     }
     
     public void UpgradeSuppliesSkill(int hashIDSkill)
     {
-        if (SupplySkills.ContainsKey(hashIDSkill))
+        if (!SupplySkills.ContainsKey(hashIDSkill))
         {
             InitSuppliesSkill(hashIDSkill);
         }

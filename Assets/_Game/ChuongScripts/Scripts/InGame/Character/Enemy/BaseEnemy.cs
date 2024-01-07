@@ -14,10 +14,16 @@ namespace Game
         [SerializeField] protected bool _isBoss;
         public bool IsBoss => _isBoss;
 
-        [SerializeField] private float _priority;
-        public float Priority => _priority;
+        public float Priority => attribute.Piority;
 
-        [SerializeField] protected EnemyAttribute attribute;
+        [SerializeField] protected EnemyAttribute attribute = new EnemyAttribute()
+        {
+            MaxHealth = 10,
+            Defense = 0,
+            Health = 10,
+            EnemyValue = 1,
+            Piority = 1
+        };
 
         [ChildGameObjectsOnly] [SerializeField]
         private AEnemyAnimator _animator;

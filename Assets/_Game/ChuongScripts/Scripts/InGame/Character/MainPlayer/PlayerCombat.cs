@@ -91,6 +91,8 @@ namespace Game
 
         public float MaxHealth => _playerStatus.MaxHealth;
         public float Defense => _playerStatus.Defense;
+        
+        public float Damage => _playerStatus.Damage;
 
         public float Health
         {
