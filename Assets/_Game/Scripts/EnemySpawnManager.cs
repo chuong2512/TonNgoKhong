@@ -1,27 +1,21 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Game;
+using SinhTon;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
-public class SpawnManager : MonoBehaviour
+public class EnemySpawnManager : Singleton<EnemySpawnManager>
 {
     public static int EnemiesCount = 0;
 
-    [FormerlySerializedAs("ZombieLevel")] public GameObject[] Enemies;
-
-    [Header("Spawents Poins")] public GameObject Spawen1;
-    public GameObject Spawen2;
-    public GameObject Spawen3;
-    public GameObject Spawen4;
+    public GameObject[] Enemies;
+    public Transform[] SpawnPoints;
 
     private Transform _playerTrans;
 
-    [SerializeField] private TimerManager _timer;
-
     private bool _isSpawning;
+
+    float _timeCounter = 0;
+    float _timeSpawn = 0.8f;
 
     private void Awake()
     {
@@ -46,17 +40,23 @@ public class SpawnManager : MonoBehaviour
 
     private void Update()
     {
-        Spawn();
+        if (!_isSpawning)
+            return;
+
+        _timeCounter += Time.deltaTime;
+
+        if (_timeCounter >= _timeSpawn)
+        {
+            _timeCounter = 0;
+
+            Spawn();
+        }
     }
 
     private void Spawn()
     {
-        if (!_isSpawning)
-            return;
-
         if (EnemiesCount < 100)
         {
-            EnemiesCount++;
             SpawnRandom();
             SpawnRandom();
         }
@@ -64,14 +64,19 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnRandom()
     {
+        EnemiesCount++;
         PoolContainer.SpawnEnemy(Enemies[Random.Range(0, Enemies.Length)], GetRandomSpawnPoint());
     }
 
-    public void SpawnEnemiesSameType(int amount, int type)
+    private void SpawnEnemiesSameType(int amount, int type)
     {
+        var pointSpawn = SpawnPoints[Random.Range(0, SpawnPoints.Length)];
+
+        EnemiesCount += amount;
+
         for (int i = 0; i < amount; i++)
         {
-            PoolContainer.SpawnEnemy(Enemies[type], GetRandomSpawnPointOneDir());
+            PoolContainer.SpawnEnemy(Enemies[type], GetRandomSpawnPointOneDir(pointSpawn));
         }
     }
 
@@ -87,13 +92,11 @@ public class SpawnManager : MonoBehaviour
     {
         var pos = _playerTrans.position;
 
-        return pos + (Vector3) (Random.insideUnitCircle.normalized * Random.Range(6f, 9f));
+        return pos + (Vector3) (Random.insideUnitCircle.normalized * Random.Range(8f, 10f));
     }
 
-    private Vector3 GetRandomSpawnPointOneDir()
+    private Vector3 GetRandomSpawnPointOneDir(Transform point)
     {
-        var pos = _playerTrans.position;
-
-        return pos + (Vector3) (Random.insideUnitCircle.normalized * Random.Range(6f, 9f));
+        return point.position + (Vector3) (Random.insideUnitCircle.normalized * Random.Range(0f, 2f));
     }
 }

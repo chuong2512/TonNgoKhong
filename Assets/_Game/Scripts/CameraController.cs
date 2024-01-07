@@ -6,11 +6,10 @@ using static UnityEngine.GraphicsBuffer;
 public class CameraController : MonoBehaviour
 {
     public GameObject Player;
-    public GameObject Spinner;
+    /*public GameObject Spinner;*/
     public float SpeedMove;
     public Vector3 Offest;
     private Vector3 rb;
-    internal bool Manage = true;
 
     void LateUpdate()
     {
@@ -18,9 +17,9 @@ public class CameraController : MonoBehaviour
     }
     void Update()
     {
-        if(Spinner.activeSelf == true && Manage == true)
+        /*if(Spinner.activeSelf == true && Manage == true)
         {
             this.gameObject.GetComponent<Camera>().fieldOfView += 0.5f;
-        }
+        }*/
     }
 }
