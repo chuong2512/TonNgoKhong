@@ -14,6 +14,11 @@ namespace Skill
         float Damage { get; set; }
     }
 
+    
+    public interface IPlayerDamageAttribute : IDamageAttribute
+    {
+    }
+
     public interface IPercentDamageAttribute : IAttribute
     {
         float PercentDamage { get; set; }

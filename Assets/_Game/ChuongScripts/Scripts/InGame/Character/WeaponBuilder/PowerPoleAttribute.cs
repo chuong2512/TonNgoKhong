@@ -1,6 +1,6 @@
 namespace Skill
 {
-    public interface IPowerPoleAttribute : IAmountAttribute, IDamageAttribute, IPercentDamageAttribute, 
+    public interface IPowerPoleAttribute : IAmountAttribute, IPlayerDamageAttribute, IPercentDamageAttribute, 
         IMultipleAmountAttribute, ISpeedAttribute
     {
     }

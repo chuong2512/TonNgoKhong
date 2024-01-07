@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Game;
 using SinhTon;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -36,6 +37,20 @@ namespace Skill
             HashIDSkill.GetSkillTypeValues(out _availableSupplies);
         }
 
+#if UNITY_EDITOR
+        [Button]
+        private void UpgradePowerPole()
+        {
+            UpgradeSkill(WeaponType.PowerPole);
+        }
+
+        [Button]
+        private void UpgradeSupplies(SuppliesType suppliesType)
+        {
+            UpgradeSkill(suppliesType);
+        }
+#endif
+        
         private void GetBaseSkillPlayer()
         {
             UpgradeSkill(WeaponType.PowerPole);

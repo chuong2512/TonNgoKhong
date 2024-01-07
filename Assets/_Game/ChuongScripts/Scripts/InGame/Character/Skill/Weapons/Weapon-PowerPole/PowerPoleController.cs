@@ -17,8 +17,8 @@ namespace Skill.Weapons
             attribute = new PowerPoleAttribute();
         }
 
-        public float Damage => (_baseDmg + attribute.Damage) * (1 + attribute.PercentDamage);
-        public int Amount => _baseAmount * attribute?.MultipleAmount ?? 0;
+        public float Damage => (_baseDmg + attribute.Damage + PlayerManager.Instance.Combat.Damage) * (1 + attribute.PercentDamage);
+        public int Amount => (_baseAmount + attribute.Amount) * attribute.MultipleAmount;
         public float Speed => speed + attribute.Speed;
 
         public override void Refresh()
@@ -29,7 +29,7 @@ namespace Skill.Weapons
                 Speed = Speed,
                 LifeTime = lifeTime,
             });
-
+            Debug.LogError("Damage power pole " + Damage);
             _shot.Amount = Amount;
         }
     }

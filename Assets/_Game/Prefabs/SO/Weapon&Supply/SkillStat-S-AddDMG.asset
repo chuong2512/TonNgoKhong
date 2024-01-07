@@ -22,12 +22,42 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   ListUpgradeSkill:
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
+  - listUpgradeSkill:
+    - rid: 4881752630806183936
+  - listUpgradeSkill:
+    - rid: 4881752630806183937
+  - listUpgradeSkill:
+    - rid: 4881752630806183938
+  - listUpgradeSkill:
+    - rid: 4881752630806183939
+  - listUpgradeSkill:
+    - rid: 4881752630806183940
+  - listUpgradeSkill:
+    - rid: 4881752630806183941
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4881752630806183936
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 5
+    - rid: 4881752630806183937
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 5
+    - rid: 4881752630806183938
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 5
+    - rid: 4881752630806183939
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 5
+    - rid: 4881752630806183940
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 5
+    - rid: 4881752630806183941
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 5

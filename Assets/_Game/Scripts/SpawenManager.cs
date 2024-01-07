@@ -55,7 +55,6 @@ public class SpawenManager : MonoBehaviour
 
     public IEnumerator SpaweningManager()
     {
-        Debug.Log("SpaweningManager");
         yield return new WaitForEndOfFrame();
         if (ManagerPose == false)
         {
