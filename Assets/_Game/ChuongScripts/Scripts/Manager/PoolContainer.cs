@@ -21,6 +21,10 @@
 
         //---------------------PARTICLE---------------------------------
         public static readonly string Blood = "Blood";
+        public static readonly string BloodB = "BloodB";
+        public static readonly string Explosion = "Explosion";
+        public static readonly string ShotHitEffect = "ShotHitEffect";
+        public static readonly string Flash = "Flash";
         
         //---------------------ENEMY---------------------------------
         //---------------------BULLET---------------------------------
@@ -51,6 +55,10 @@
         public static Transform SpawnFX(Transform prefab, Vector3 pos, Quaternion rot, Transform parent = null)
         {
             return PoolManager.Pools[PoolConstant.PoolParticle].Spawn(prefab, pos, rot, parent);
+        }
+        public static Transform SpawnFX(GameObject prefab, Vector3 pos, Quaternion rot, Transform parent = null)
+        {
+            return SpawnFX(prefab.gameObject, pos, rot, parent);
         }
 
         public static Transform SpawnFX(string name, Vector3 pos, Quaternion rot, Transform parent = null)

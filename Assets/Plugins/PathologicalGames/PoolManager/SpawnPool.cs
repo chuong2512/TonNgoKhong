@@ -843,6 +843,9 @@ namespace PathologicalGames
                                        "You cannot despawn something more than once!",
                                         this.poolName,
                                         instance.name));
+                    
+                    Destroy(instance.gameObject);
+                    
                     return;
                 }
             }

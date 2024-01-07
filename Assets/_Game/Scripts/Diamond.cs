@@ -8,15 +8,15 @@ public class Diamond : MonoBehaviour
     public int Value = 1;
 
     public GameObject Player;
-    public GameObject Flasher;
     private AudioSource Audio;
+
     internal bool FollowPlayer = false;
     internal bool StartMove = true;
     internal bool AddOnce = true;
 
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        Player = PlayerManager.Instance.gameObject;
         Audio = GetComponent<AudioSource>();
         Audio.volume = 0.5f;
     }
@@ -68,7 +68,8 @@ public class Diamond : MonoBehaviour
         if (other.CompareTag(TagConstants.Player))
         {
             InGameManager.Instance.AddExp(Value);
-            Instantiate(Flasher, transform.position, transform.rotation);
+            
+            PoolContainer.SpawnFX(PoolConstant.Flash, transform.position, transform.rotation);
             Audio.Play();
             StartCoroutine(Destroy());
         }

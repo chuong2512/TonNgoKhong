@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class aigule : MonoBehaviour
 {
-    public GameObject manager;
     internal Rigidbody2D rb;
     internal Vector3 LastVeclocity;
     internal bool CheckPos = true;
 
     void Start()
     {
-        manager = GameObject.Find("GameManager");
         rb = this.gameObject.GetComponent<Rigidbody2D>();
     }
 

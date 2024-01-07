@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using UnityEngine;
 
 public class DestroyItems : MonoBehaviour
@@ -13,6 +14,6 @@ public class DestroyItems : MonoBehaviour
     IEnumerator destroy()
     {
         yield return new WaitForSeconds(time);
-        Destroy(this.gameObject);
+        PoolContainer.DeSpawnFX(this.gameObject);
     }
 }

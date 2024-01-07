@@ -48,6 +48,8 @@ namespace Game
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
+            Debug.LogError("Trigger Player Bullet");
+            
             if (this._hitEffect)
             {
                 var basePosition = transform.position;

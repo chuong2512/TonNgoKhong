@@ -9,7 +9,7 @@ namespace Game
     [RequireComponent(typeof(CircleCollider2D))]
     public class CheckEnemyInRange : Singleton<CheckEnemyInRange>
     {
-        private List<BaseEnemy> _enemies = new List<BaseEnemy>();
+        [SerializeField] private List<BaseEnemy> _enemies = new List<BaseEnemy>();
 
         public List<BaseEnemy> GetAllEnemiesInRange()
         {

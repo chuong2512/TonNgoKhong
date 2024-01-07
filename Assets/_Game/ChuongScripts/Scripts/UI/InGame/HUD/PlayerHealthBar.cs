@@ -10,7 +10,6 @@ namespace Game
         [Header("UI Manager")] public Image HealthBar;
         public Image ReloadWeapon;
         public Color[] myColors;
-
         public Vector3 Offest;
 
         private Vector3 _rb;
@@ -23,11 +22,6 @@ namespace Game
             InGameAction.OnHealthChange += OnHealthChange;
 
             PlayerCombat = PlayerManager.Instance.Combat;
-        }
-
-        private void FixedUpdate()
-        {
-            transform.position = Vector3.SmoothDamp(transform.position, transform.position + Offest, ref _rb, 0);
         }
 
         private void OnHealthChange()

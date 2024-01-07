@@ -14,6 +14,9 @@ public class CoinItem : MonoBehaviour
                 PlayerPrefs.SetInt("gems", UIManager.GetComponent<ManagerMecanique>().GemsInt);
             #1#
             }*/
+            
+            InGameManager.Instance.AddCoin();
+            
             Destroy(this.gameObject);
         }
     }
