@@ -29,7 +29,6 @@ namespace Skill.Weapons
                 Speed = Speed,
                 LifeTime = lifeTime,
             });
-            Debug.LogError("Damage power pole " + Damage);
             _shot.Amount = Amount;
         }
     }

@@ -22,6 +22,7 @@ namespace Skill.Weapons
         public override void Upgrade(SkillUpgradeInfo skillUpgradeInfo)
         {
             skillUpgradeInfo.ApplyUpgrade(_poleAttribute);
+            powerPoleController.Refresh();
         }
         
         public override void Upgrade(List<IUpgradeSkill> list)

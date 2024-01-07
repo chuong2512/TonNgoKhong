@@ -22,12 +22,42 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   ListUpgradeSkill:
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
+  - listUpgradeSkill:
+    - rid: 4881752630806183946
+  - listUpgradeSkill:
+    - rid: 4881752630806183947
+  - listUpgradeSkill:
+    - rid: 4881752630806183948
+  - listUpgradeSkill:
+    - rid: 4881752630806183949
+  - listUpgradeSkill:
+    - rid: 4881752630806183950
+  - listUpgradeSkill:
+    - rid: 4881752630806183951
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4881752630806183946
+      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addMagnetRange: 1
+    - rid: 4881752630806183947
+      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addMagnetRange: 2
+    - rid: 4881752630806183948
+      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addMagnetRange: 3
+    - rid: 4881752630806183949
+      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addMagnetRange: 4
+    - rid: 4881752630806183950
+      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addMagnetRange: 6
+    - rid: 4881752630806183951
+      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addMagnetRange: 10
