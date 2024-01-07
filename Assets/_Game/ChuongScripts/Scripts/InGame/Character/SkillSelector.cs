@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Game;
 using SinhTon;
 using Sirenix.OdinInspector;
@@ -59,73 +60,83 @@ namespace Skill
 
         public List<int> GetListSkillUpgrade(int amount = 3)
         {
-            var maxWeaponUpgradeAmount = Random.Range(0, 100f) switch
+            var listSkillUpgrade = new List<Enum>();
+            var listWeaponAvailableUpgrade = GetListUpgradeAvailable(_availableWeapons, 
+                SkillConstant.MaxLevelWeapon, SkillConstant.MaxAmountWeapons);
+            var listSuppliesAvailableUpgrade = GetListUpgradeAvailable(_availableSupplies, 
+                SkillConstant.MaxLevelSupplies, SkillConstant.MaxLevelSupplies);
+            var weaponAvailableCount = listWeaponAvailableUpgrade.Count;
+            var suppliesAvailableCount = listSuppliesAvailableUpgrade.Count;
+            if (weaponAvailableCount + suppliesAvailableCount <= amount)
             {
-                <= 15f => 1,
-                <= 40f => 2,
+                listSkillUpgrade = listSuppliesAvailableUpgrade;
+                listSkillUpgrade.AddRange(listWeaponAvailableUpgrade);
+                return listSkillUpgrade.Select(skill => skill.GetHashID()).ToList();
+            }
+            
+            var weaponUpgradeAmount = Random.Range(0, 100f) switch
+            {
+                <= 15f => Mathf.Max(0, amount - 2),
+                <= 40f => Mathf.Max(0, amount - 1),
                 _ => amount
             };
-            var listWeaponUpgrade = GetListUpgrade(_availableWeapons, maxWeaponUpgradeAmount,
-                SkillConstant.MaxAmountWeapons, SkillConstant.MaxLevelWeapon);
-            var maxSuppliesUpgradeAmount = amount - listWeaponUpgrade.Count;
-            var listSuppliesUpgrade = GetListUpgrade(_availableSupplies, maxSuppliesUpgradeAmount,
-                SkillConstant.MaxAmountSupplies, SkillConstant.MaxLevelSupplies);
-            var listSkillUpgrade = new List<int>();
-            foreach (var weaponType in listWeaponUpgrade)
+            if (weaponAvailableCount < weaponUpgradeAmount)
             {
-                listSkillUpgrade.Add(weaponType.GetHashID());
+                listSkillUpgrade.AddRange(listWeaponAvailableUpgrade);
+                listSkillUpgrade.AddRange(GetRandomSkill(listSuppliesAvailableUpgrade,
+                    amount - weaponAvailableCount));
+                return listSkillUpgrade.Select(skill => skill.GetHashID()).ToList();
             }
 
-            foreach (var suppliesType in listSuppliesUpgrade)
-            {
-                listSkillUpgrade.Add(suppliesType.GetHashID());
-            }
-
-            return listSkillUpgrade;
+            var suppliesUpgradeAmount = Mathf.Min(amount - weaponUpgradeAmount, suppliesAvailableCount);
+            weaponUpgradeAmount = amount - suppliesUpgradeAmount;
+            listSkillUpgrade.AddRange(GetRandomSkill(listWeaponAvailableUpgrade, weaponUpgradeAmount));
+            listSkillUpgrade.AddRange(GetRandomSkill(listSuppliesAvailableUpgrade, suppliesUpgradeAmount));
+            return listSkillUpgrade.Select(skill => skill.GetHashID()).ToList();
         }
 
-
-        private List<T> GetListUpgrade<T>
-            (T[] availableSkill, int maxListCount, int maxSkillAmount, int maxLevel) where T : Enum
+        private List<Enum> GetListUpgradeAvailable<T>(T[] availableSkill, int maxLevel, int maxSkillContain) where T : Enum
         {
-            if (maxListCount <= 0) return new List<T>();
-            var availableUpgrade = new List<T>();
-            var applySkillAmount = 0;
-
-            //Add apply skill except max level skill
+            var availableUpgrade = new List<Enum>();
+            var nonActiveSkill = new List<Enum>();
+            var countSkillContain = 0;
             foreach (var skillType in availableSkill)
             {
                 var hashID = skillType.GetHashID();
-                if (maxListCount <= 0) break;
-                //check weapon is used by player
-                if (!_skillLevelDict.ContainsKey(hashID)) continue;
+                //check weapon is not used by player
+                if (!_skillLevelDict.ContainsKey(hashID))
+                {
+                    nonActiveSkill.Add(skillType);
+                    continue;
+                }
+                countSkillContain++;
                 //check weapon is max level, can not upgrade
-                applySkillAmount++;
-                if (_skillLevelDict[hashID] > maxLevel) continue;
+                if (_skillLevelDict[hashID] >= maxLevel) continue;
                 availableUpgrade.Add(skillType);
-                maxListCount--;
             }
 
-            //add non-apply skill in player
-            var skillCanUpgradeAmount = maxSkillAmount - applySkillAmount;
-            foreach (var weapon in availableSkill)
+            var skillAmountRemain = maxSkillContain - availableUpgrade.Count;
+            if (skillAmountRemain <= 0)
             {
-                if (maxListCount <= 0) break;
-                if (skillCanUpgradeAmount <= 0) break;
-                availableUpgrade.Add(weapon);
-                skillCanUpgradeAmount--;
+                return availableUpgrade;
+                
             }
+            availableUpgrade.AddRange(GetRandomSkill(nonActiveSkill, skillAmountRemain));
+            return availableUpgrade;
+        }
 
-            var availableAmount = Mathf.Min(availableUpgrade.Count, maxListCount);
-            var listSkillUpgrade = new List<T>();
-            for (int count = 0; count < availableAmount; count++)
+        private List<Enum> GetRandomSkill(List<Enum> skills, int listCount = 3)
+        {
+            if (listCount <= 0) return new List<Enum>();
+            if (skills.Count <= listCount) return skills;
+            var listSkillUpgrade = new List<Enum>();
+            for (var count = 0; count < listCount; count++)
             {
-                var index = Random.Range(0, availableUpgrade.Count);
-                var weapon = availableUpgrade[index];
+                var index = Random.Range(0, skills.Count);
+                var weapon = skills[index];
                 listSkillUpgrade.Add(weapon);
-                availableUpgrade.RemoveAt(index);
+                skills.RemoveAt(index);
             }
-
             return listSkillUpgrade;
         }
 

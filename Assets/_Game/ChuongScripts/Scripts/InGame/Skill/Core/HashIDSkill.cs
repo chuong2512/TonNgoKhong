@@ -69,14 +69,11 @@ namespace Skill
         
         public static int GetHashID<T>(this T enumValue) where T : Enum
         {
-#if UNITY_EDITOR
-            if (!RangeSkillType.ContainsKey(typeof(T)))
+            if (!_skillHashID.TryGetValue(enumValue, out var value))
             {
-                Debug.LogError($"{typeof(T)} is not exist in Skill Type");
                 return -1;
             }
-#endif
-            return _skillHashID[enumValue];
+            return value;
         }
 
         public static bool ContainHashID<T>(this T enumValue, int id) where T : Enum
