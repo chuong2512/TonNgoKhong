@@ -113,7 +113,6 @@ GameObject:
   - component: {fileID: 3537171100188795308}
   - component: {fileID: 3537171100188795309}
   - component: {fileID: 3537171100188795298}
-  - component: {fileID: 3537171100188795299}
   - component: {fileID: 3537171100188795296}
   - component: {fileID: 3537171100188795297}
   - component: {fileID: 4235804376522667059}
@@ -213,17 +212,11 @@ MonoBehaviour:
     <ExpValue>k__BackingField: 1
     <CoinValue>k__BackingField: 1
     <Piority>k__BackingField: 1
+    <Speed>k__BackingField: 1
+    <Damage>k__BackingField: 2
   _animator: {fileID: 0}
   _enemySize: 0.4
   colliderTarget: {fileID: 3537171100188795311}
-  HitEffect: {fileID: 9029106860511387991, guid: 65a5c65d102daec4c9a8b03a518dcbb7, type: 3}
-  BloodLocalisation: {fileID: 0}
-  Bolt: {fileID: 4927636615585834507}
-  rigidbody: {fileID: 0}
-  BlueDiamond: {fileID: 8183285587281381113, guid: 48a6780bb0811b14cb098f7671cb1371, type: 3}
-  RedDiamond: {fileID: 8183285587281381113, guid: fc6dec5d55df07d42810cc7f5d84c623, type: 3}
-  GreenDiamond: {fileID: 8183285587281381113, guid: 4a5dab04b7c633643a0c2429c34864bc, type: 3}
-  _playerTrans: {fileID: 0}
 --- !u!61 &3537171100188795298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -237,7 +230,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.038856864, y: -0.18076903}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -248,33 +241,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.65}
-  m_EdgeRadius: 0
---- !u!61 &3537171100188795299
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537171100188795310}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.64}
+  m_Size: {x: 1.2265203, y: 0.7885343}
   m_EdgeRadius: 0
 --- !u!50 &3537171100188795296
 Rigidbody2D:

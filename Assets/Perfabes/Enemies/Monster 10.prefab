@@ -58,7 +58,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -114,7 +113,6 @@ GameObject:
   - component: {fileID: 3537171100188795308}
   - component: {fileID: 3537171100188795309}
   - component: {fileID: 3537171100188795298}
-  - component: {fileID: 3537171100188795299}
   - component: {fileID: 3537171100188795296}
   - component: {fileID: 467694698723115531}
   - component: {fileID: 1863873213674398443}
@@ -205,14 +203,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b905c2d056df7444ba090a3722493036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 0}
-  HitEffect: {fileID: 9029106860511387991, guid: 65a5c65d102daec4c9a8b03a518dcbb7, type: 3}
-  BloodLocalisation: {fileID: 0}
-  UImanager: {fileID: 0}
-  Bolt: {fileID: 4927636615585834507}
-  BlueDiamond: {fileID: 8183285587281381113, guid: 48a6780bb0811b14cb098f7671cb1371, type: 3}
-  RedDiamond: {fileID: 8183285587281381113, guid: fc6dec5d55df07d42810cc7f5d84c623, type: 3}
-  GreenDiamond: {fileID: 8183285587281381113, guid: 4a5dab04b7c633643a0c2429c34864bc, type: 3}
+  _id: 0
+  _isBoss: 0
+  attribute:
+    <Health>k__BackingField: 10
+    <MaxHealth>k__BackingField: 10
+    <Defense>k__BackingField: 0
+    <ExpValue>k__BackingField: 1
+    <CoinValue>k__BackingField: 1
+    <Piority>k__BackingField: 1
+    <Speed>k__BackingField: 1
+    <Damage>k__BackingField: 2
+  _animator: {fileID: 0}
+  _enemySize: 0
+  colliderTarget: {fileID: 3537171100188795311}
 --- !u!61 &3537171100188795298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -224,32 +228,6 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.2}
-  m_EdgeRadius: 0
---- !u!61 &3537171100188795299
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537171100188795310}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

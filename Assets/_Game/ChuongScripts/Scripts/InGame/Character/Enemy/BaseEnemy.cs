@@ -118,7 +118,7 @@ namespace Game
 
         public virtual void Die()
         {
-            SpawnManager.EnemiesCount--;
+            EnemySpawnManager.EnemiesCount--;
             
             if (_animator != null)
             {

@@ -1,3 +1,4 @@
+using System;
 using Game;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -35,28 +36,27 @@ public class Enemy : BaseEnemy
 
     void Update()
     {
-        if (_followPlayer)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, _playerTrans.position,
-                attribute.Speed * Time.deltaTime);
-            _spriteRenderer.flipX = _playerTrans.position.x < transform.position.x;
-        }
+        if (!_followPlayer) return;
+
+        transform.position = Vector2.MoveTowards(transform.position, _playerTrans.position,
+            attribute.Speed * Time.deltaTime);
+        _spriteRenderer.flipX = _playerTrans.position.x < transform.position.x;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (other.CompareTag(TagConstants.Player))
+        if (col.transform.CompareTag(TagConstants.Player))
         {
             _audio.Play();
             _followPlayer = false;
-            
+
             PlayerManager.Instance.Combat.TakeDamage(attribute.Damage);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionExit(Collision other)
     {
-        if (other.CompareTag(TagConstants.Player))
+        if (other.transform.CompareTag(TagConstants.Player))
         {
             _audio.Stop();
             _followPlayer = true;
@@ -83,8 +83,7 @@ public class Enemy : BaseEnemy
         this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
 
         PoolContainer.SpawnFX(PoolConstant.Blood, transform.position, transform.rotation);
-
-
+        
         Destroy(this.gameObject);
     }
 }
