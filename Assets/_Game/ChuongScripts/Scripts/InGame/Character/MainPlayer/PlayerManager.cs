@@ -108,6 +108,7 @@ public class PlayerManager : Singleton<PlayerManager>
         var supplies = SupplySkills[hashIDSkill];
         supplies.Upgrade();
         _listBuff.Append(supplies.SkillUpgradeInfo);
+        supplies.Apply(_currentStatus);
         foreach (var weaponSkill in WeaponSkills)
         {
             supplies.UpgradeWeapon(weaponSkill.Value);
