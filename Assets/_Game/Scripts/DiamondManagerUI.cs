@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class DiamondManagerUI : MonoBehaviour
 {
-    public GameObject Manager;
     public Sprite Green;
     public Sprite Blue;
     public Sprite Red;
@@ -13,7 +12,6 @@ public class DiamondManagerUI : MonoBehaviour
     internal int ValueColor;
     void Start()
     {
-        Manager = GameObject.Find("GameManager");
         ValueColor = Random.Range(0, 2);
         StartCoroutine(Dist());
     }

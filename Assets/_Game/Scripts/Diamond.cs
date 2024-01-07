@@ -8,8 +8,6 @@ public class Diamond : MonoBehaviour
     public int Value = 1;
 
     public GameObject Player;
-    public GameObject Manager;
-    public GameObject Boolean;
     public GameObject Flasher;
     private AudioSource Audio;
     internal bool FollowPlayer = false;
@@ -19,8 +17,6 @@ public class Diamond : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        Boolean = GameObject.Find("Controller");
-        Manager = GameObject.Find("GameManager");
         Audio = GetComponent<AudioSource>();
         Audio.volume = 0.5f;
     }

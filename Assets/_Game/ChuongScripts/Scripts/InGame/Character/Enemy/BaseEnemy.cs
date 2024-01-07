@@ -21,8 +21,9 @@ namespace Game
             MaxHealth = 10,
             Defense = 0,
             Health = 10,
-            EnemyValue = 1,
-            Piority = 1
+            ExpValue = 1,
+            Piority = 1,
+            CoinValue = 1
         };
 
         [ChildGameObjectsOnly] [SerializeField]
@@ -65,7 +66,8 @@ namespace Game
         {
             if (attribute.Health <= 0) return;
 
-
+            attribute.MinusHealth(damageInfo.trueDamage);
+            
             if (!_isBoss)
             {
                 if (attribute.Health <= attribute.MaxHealth * 0.25f)
@@ -76,7 +78,7 @@ namespace Game
             }
             else
             {
-                if (attribute.Health <= attribute.MaxHealth * 0.1f)
+                if (attribute.Health <= attribute.MaxHealth * 0.05f)
                 {
                     DeadExecute();
                     return;
@@ -108,9 +110,8 @@ namespace Game
 
         private void DeadExecute()
         {
-            float trueDamage = attribute.MaxHealth;
-            attribute.MinusHealth(trueDamage * 2f);
             Die();
+            InGameManager.Instance.AddKilled();
         }
 
         public virtual void Die()

@@ -117,7 +117,6 @@ GameObject:
   - component: {fileID: 3537171100188795296}
   - component: {fileID: 3537171100188795297}
   - component: {fileID: 4235804376522667059}
-  - component: {fileID: -8006027815403761589}
   m_Layer: 6
   m_Name: zombie 3
   m_TagString: Enemy
@@ -205,13 +204,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b905c2d056df7444ba090a3722493036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _id: 0
+  _isBoss: 0
+  attribute:
+    <Health>k__BackingField: 10
+    <MaxHealth>k__BackingField: 10
+    <Defense>k__BackingField: 0
+    <ExpValue>k__BackingField: 1
+    <CoinValue>k__BackingField: 1
+    <Piority>k__BackingField: 1
+  _animator: {fileID: 0}
+  _enemySize: 0.4
+  colliderTarget: {fileID: 3537171100188795311}
   HitEffect: {fileID: 9029106860511387991, guid: 65a5c65d102daec4c9a8b03a518dcbb7, type: 3}
   BloodLocalisation: {fileID: 0}
-  UImanager: {fileID: 0}
   Bolt: {fileID: 4927636615585834507}
+  rigidbody: {fileID: 0}
   BlueDiamond: {fileID: 8183285587281381113, guid: 48a6780bb0811b14cb098f7671cb1371, type: 3}
   RedDiamond: {fileID: 8183285587281381113, guid: fc6dec5d55df07d42810cc7f5d84c623, type: 3}
   GreenDiamond: {fileID: 8183285587281381113, guid: 4a5dab04b7c633643a0c2429c34864bc, type: 3}
+  _playerTrans: {fileID: 0}
 --- !u!61 &3537171100188795298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -401,28 +413,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-8006027815403761589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537171100188795310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdcc72bc6b4843f68e0c87d4007fc44f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _id: 0
-  _isBoss: 0
-  _priority: 0
-  attribute:
-    <Health>k__BackingField: 10
-    <MaxHealth>k__BackingField: 10
-    <Defense>k__BackingField: 0
-  _animator: {fileID: 0}
-  _enemySize: 0.4
-  colliderTarget: {fileID: 3537171100188795311}
 --- !u!1 &4927636615585834507
 GameObject:
   m_ObjectHideFlags: 0

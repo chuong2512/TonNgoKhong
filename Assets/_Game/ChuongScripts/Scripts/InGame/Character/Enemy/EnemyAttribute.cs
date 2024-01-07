@@ -5,14 +5,14 @@ namespace Game
     using UnityEngine;
 
     [System.Serializable]
-    public class EnemyAttribute : IHealthAttribute, IMaxHealthAttribute, IDefenseAttribute, IEnemyValueAttribute,
-        IEnemyPiorityAttribute
+    public class EnemyAttribute : IHealthAttribute, IMaxHealthAttribute, IDefenseAttribute, IEnemyValueAttribute
     {
         [field: SerializeField] public float Health { get; set; }
         [field: SerializeField] public float MaxHealth { get; set; }
         [field: SerializeField] public float Defense { get; set; }
-        [field: SerializeField] public float EnemyValue { get; set; }
-        [field: SerializeField] public float Piority { get; set; }
+        [field: SerializeField] public int ExpValue { get; set; }
+        [field: SerializeField] public int CoinValue { get; set; }
+        [field: SerializeField] public int Piority { get; set; }
 
         internal float GetDamageTaken(float trueDamage)
         {

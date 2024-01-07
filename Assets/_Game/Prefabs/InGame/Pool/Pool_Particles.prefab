@@ -45,14 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: Particle
-  matchPoolScale: 0
-  matchPoolLayer: 0
+  matchPoolScale: 1
+  matchPoolLayer: 1
   dontReparent: 0
   _dontDestroyOnLoad: 0
   logMessages: 0
   _perPrefabPoolOptions:
-  - prefab: {fileID: 400000, guid: 9167bf1f05c357f42b38aa823ce4f773, type: 3}
-    preloadAmount: 0
+  - prefab: {fileID: 9029106860511387984, guid: 65a5c65d102daec4c9a8b03a518dcbb7, type: 3}
+    preloadAmount: 20
     preloadTime: 0
     preloadFrames: 2
     preloadDelay: 0

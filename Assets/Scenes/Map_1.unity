@@ -686,8 +686,6 @@ MonoBehaviour:
   Spawner: {fileID: 204604326}
   Enemys: []
   SpeedEnemy: 1
-  CurrentReload: 0
-  timeGenaration: 5
 --- !u!4 &189845730
 Transform:
   m_ObjectHideFlags: 0

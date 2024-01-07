@@ -10,29 +10,20 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : BaseEnemy
 {
-    [Header("Manager Enemy")] public GameObject HitEffect;
     public GameObject BloodLocalisation;
     private AudioSource Audio;
 
     public GameObject Bolt;
     internal bool FollowPlayer = true;
-    internal int ValueAdd;
-    internal int Diamond;
 
     public Rigidbody2D rigidbody;
-
-    [Header("Diamond")] public GameObject BlueDiamond;
-    public GameObject RedDiamond;
-    public GameObject GreenDiamond;
 
     public Transform _playerTrans;
 
     void Start()
     {
         BloodLocalisation = GameObject.Find("BloodManager");
-
-        ValueAdd = Random.Range(1, 100);
-        Diamond = Random.Range(1, 3);
+        
         Audio = GetComponent<AudioSource>();
 
         rigidbody = GetComponentInChildren<Rigidbody2D>();
@@ -52,8 +43,7 @@ public class Enemy : BaseEnemy
     {
         InGameAction.OnGameStateChange -= OnGameStateChange;
     }
-
-
+    
     void Update()
     {
         if (FollowPlayer == true)
@@ -63,56 +53,7 @@ public class Enemy : BaseEnemy
             this.gameObject.GetComponent<SpriteRenderer>().flipX = _playerTrans.position.x < transform.position.x;
         }
     }
-
-    IEnumerator AnimationController()
-    {
-        yield return new WaitForSeconds(0.5f);
-        if (Diamond == 1)
-        {
-            (Instantiate(BlueDiamond, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-        }
-
-        if (Diamond == 2)
-        {
-            (Instantiate(RedDiamond, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-        }
-
-        if (Diamond == 3)
-        {
-            (Instantiate(GreenDiamond, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-        }
-
-        Destroy(this.gameObject);
-        InGameManager.Instance.AddKilled();
-    }
-
-    IEnumerator BallController()
-    {
-        yield return new WaitForSeconds(0.5f);
-        if (Diamond == 1)
-        {
-            (Instantiate(BlueDiamond, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-        }
-
-        if (Diamond == 2)
-        {
-            (Instantiate(RedDiamond, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-        }
-
-        if (Diamond == 3)
-        {
-            (Instantiate(GreenDiamond, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-        }
-
-        Destroy(this.gameObject);
-    }
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bolt"))
@@ -120,66 +61,37 @@ public class Enemy : BaseEnemy
             Audio.Play();
             Bolt.SetActive(true);
             Bolt.GetComponent<TextMeshProUGUI>().color = Color.red;
-            Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
-            this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
-            (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-            InGameManager.Instance.KilledValue += 1;
-            StartCoroutine(AnimationController());
+            
+            TakeDamage(999);
         }
 
         if (other.CompareTag("ball"))
         {
             Audio.Play();
             Bolt.SetActive(true);
-            Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
-            this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
-            (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-            InGameManager.Instance.KilledValue += 1;
-            StartCoroutine(BallController());
+            TakeDamage(999);
         }
 
         if (other.CompareTag("Fire"))
         {
             Audio.Play();
             Bolt.SetActive(true);
-            Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
-            this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
-            (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-            InGameManager.Instance.KilledValue += 1;
-            StartCoroutine(BallController());
+
+            TakeDamage(999);
         }
 
         if (other.CompareTag("Spiner"))
         {
             Audio.Play();
             Bolt.SetActive(true);
-            Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
-            this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
-            (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-            InGameManager.Instance.KilledValue += 1;
-            StartCoroutine(AnimationController());
+
+            TakeDamage(999);
         }
 
         if (other.CompareTag("Player"))
         {
             Audio.Play();
             FollowPlayer = false;
-        }
-
-        if (other.CompareTag("Pet"))
-        {
-            Audio.Play();
-            Bolt.SetActive(true);
-            Bolt.GetComponent<TextMeshProUGUI>().text = "" + ValueAdd;
-            this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
-            (Instantiate(HitEffect, transform.position, transform.rotation) as GameObject).transform.SetParent(
-                BloodLocalisation.transform);
-            InGameManager.Instance.KilledValue += 1;
-            StartCoroutine(BallController());
         }
     }
 
@@ -189,5 +101,30 @@ public class Enemy : BaseEnemy
         {
             FollowPlayer = true;
         }
+    }
+
+    public override void Die()
+    {
+        base.Die();
+        
+        switch (attribute.ExpValue)
+        {
+            case 1:
+                PoolContainer.SpawnItem(PoolConstant.BlueDiamond, transform.position, transform.rotation);
+                break;
+            case 2:
+                PoolContainer.SpawnItem(PoolConstant.RedDiamond, transform.position, transform.rotation);
+                break;
+            case 3:
+                PoolContainer.SpawnItem(PoolConstant.GreenDiamond, transform.position, transform.rotation);
+                break;
+        }
+
+        this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
+
+        PoolContainer.SpawnItem(PoolConstant.Blood, transform.position, transform.rotation);
+
+        
+        Destroy(this.gameObject);
     }
 }

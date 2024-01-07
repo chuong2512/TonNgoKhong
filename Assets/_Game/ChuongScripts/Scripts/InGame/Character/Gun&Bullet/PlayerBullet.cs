@@ -12,8 +12,6 @@ namespace Game
         [AssetSelector(Paths = @"Assets//0_Game/FX/Prefabs")] [SerializeField]
         protected ParticleSystem _hitEffect;
 
-        [SerializeField] protected bool _piercing;
-
         private bool m_isActive;
         private BulletAttribute _bulletAttribute;
 

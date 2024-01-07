@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -6,21 +7,20 @@ using UnityEngine.VFX;
 
 public class JoystickManager : MonoBehaviour
 {
-    public float shoesSpeed;
-    public AudioManager Sounds;
-
     [Header("ManagerPlayer")] public movementJoystick joystickMovement;
-    public float playerSpeed;
     private Rigidbody2D rb;
     public GameObject Gun;
 
-    internal bool rigidManager = true;
-
     [Header("Animations")] public Animator anim;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
-        if (PlayerPrefs.GetInt("shoes") == 10)
+        /*if (PlayerPrefs.GetInt("shoes") == 10)
         {
             shoesSpeed = 0.1f * PlayerPrefs.GetInt("shoes1");
         }
@@ -31,23 +31,9 @@ public class JoystickManager : MonoBehaviour
         else if (PlayerPrefs.GetInt("shoes") == 12)
         {
             shoesSpeed = 0.1f * PlayerPrefs.GetInt("shoes3");
-        }
+        }*/
 
-        if (rigidManager)
-        {
-            rb = GetComponent<Rigidbody2D>();
-            rigidManager = false;
-        }
-
-
-        if (rb.velocity.magnitude > 0)
-        {
-            anim.Play("CharacterBody");
-        }
-        else
-        {
-            anim.Play("0");
-        }
+        anim.Play(rb.velocity.magnitude > 0 ? "CharacterBody" : "0");
 
         AnimatorController();
         if (joystickMovement.joystickVec.y != 0)

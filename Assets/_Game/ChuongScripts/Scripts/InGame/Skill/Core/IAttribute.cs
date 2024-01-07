@@ -28,11 +28,11 @@ namespace Skill
     {
         float Speed { get; set; }
     }
-    
+
     public interface IShotSpeedAttribute : ISpeedAttribute
     {
     }
-    
+
     public interface IPlayerSpeedAttribute : ISpeedAttribute
     {
     }
@@ -71,19 +71,16 @@ namespace Skill
     {
         float CritMult { get; set; }
     }
-    
+
     public interface IMagnetAttribute : IAttribute
     {
         float Magnet { get; set; }
     }
-    
+
     public interface IEnemyValueAttribute : IAttribute
     {
-        float EnemyValue { get; set; }
-    }
-    
-    public interface IEnemyPiorityAttribute : IAttribute
-    {
-        float Piority { get; set; }
+        int ExpValue { get; set; }
+        int CoinValue { get; set; }
+        int Piority { get; set; }
     }
 }

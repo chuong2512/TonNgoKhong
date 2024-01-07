@@ -5,10 +5,25 @@
 
     public class PoolConstant
     {
+        //--------------------POOL NAME--------------------
         public static readonly string PoolEnemy = "Enemy";
         public static readonly string PoolParticle = "Particle";
         public static readonly string PoolItem = "Item";
+
         public static readonly string PoolBullet = "Bullet";
+
+        //------------------ITEM---------------------------------
+        public static readonly string BlueDiamond = "Diamond Blue";
+        public static readonly string RedDiamond = "Diamond Red";
+        public static readonly string GreenDiamond = "Diamond Green";
+        public static readonly string VipDiamond = "Diamond V I P";
+        public static readonly string Coin = "Coin";
+
+        //---------------------PARTICLE---------------------------------
+        public static readonly string Blood = "Blood";
+        
+        //---------------------ENEMY---------------------------------
+        //---------------------BULLET---------------------------------
     }
 
     public static class PoolContainer
@@ -56,6 +71,11 @@
         public static Transform SpawnItem(Transform prefab, Vector3 pos, Quaternion rot, Transform parent = null)
         {
             return PoolManager.Pools[PoolConstant.PoolItem].Spawn(prefab, pos, rot, parent);
+        }
+
+        public static Transform SpawnItem(GameObject prefab, Vector3 pos, Quaternion rot, Transform parent = null)
+        {
+            return SpawnItem(prefab.transform, pos, rot, parent);
         }
 
         public static Transform SpawnItem(string name, Vector3 pos, Quaternion rot, Transform parent = null)
