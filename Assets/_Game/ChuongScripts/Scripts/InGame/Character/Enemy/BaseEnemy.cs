@@ -29,7 +29,7 @@ namespace Game
         };
 
         [ChildGameObjectsOnly] [SerializeField]
-        private AEnemyAnimator _animator;
+        protected AEnemyAnimator _animator;
 
         [SerializeField] private float _enemySize;
 
@@ -120,7 +120,7 @@ namespace Game
         {
             EnemySpawnManager.EnemiesCount--;
             
-            if (_animator != null)
+            if (!_animator.IsNull())
             {
                 _animator.Active(true);
                 _animator.SetDead(true);

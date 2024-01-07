@@ -80,10 +80,12 @@ public class Enemy : BaseEnemy
                 break;
         }
 
-        this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
+        if (_animator.IsNull())
+        {
+            this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
+            PoolContainer.DeSpawnEnemy(gameObject);
+        }
 
         PoolContainer.SpawnFX(PoolConstant.Blood, transform.position, transform.rotation);
-        
-        Destroy(this.gameObject);
     }
 }

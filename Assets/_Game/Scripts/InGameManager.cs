@@ -11,8 +11,7 @@ public enum GameState
 
 public class InGameManager : Singleton<InGameManager>
 {
-    [Header("Integer Manager")] 
-    internal int KilledValue = 0;
+    [Header("Integer Manager")] internal int KilledValue = 0;
     internal int ExpValue = 0;
     internal int CoinValue = 0;
 
@@ -21,6 +20,8 @@ public class InGameManager : Singleton<InGameManager>
     internal bool SpawnObject = true;
     internal bool RightFill = true;
     internal bool LeftFill = true;
+
+    public float PercentLevel => (float) ExpValue / _expLevel;
 
     private GameState _gameState = GameState.Playing;
 
@@ -43,7 +44,7 @@ public class InGameManager : Singleton<InGameManager>
                     OnResumeGame();
                     break;
             }
-            
+
             InGameAction.OnGameStateChange?.Invoke();
         }
     }
