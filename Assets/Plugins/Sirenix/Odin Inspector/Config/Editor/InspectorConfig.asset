@@ -19,3 +19,7 @@ MonoBehaviour:
     configs:
     - DrawnTypeName: _TonNgoKhong.StatSkillSO, Assembly-CSharp
       EditorTypeName: 
+    - DrawnTypeName: GameDataManager, Assembly-CSharp
+      EditorTypeName: Sirenix.OdinInspector.Editor.OdinEditor, Sirenix.OdinInspector.Editor
+    - DrawnTypeName: _TonNgoKhong.SkillSO, Assembly-CSharp
+      EditorTypeName: 

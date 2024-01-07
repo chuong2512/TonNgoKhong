@@ -13,63 +13,102 @@ MonoBehaviour:
   m_Name: SkillSO
   m_EditorClassIdentifier: 
   listSkill:
-  - hashID: 0
-    icon: {fileID: 0}
-    nameSkill: "G\u1EADy nh\u01B0 \xFD"
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 1
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 2
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 3
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 4
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 5
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 6
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 7
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 8
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 9
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 10
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
-  - hashID: 11
-    icon: {fileID: 0}
-    nameSkill: 
-    contentSkill: 
-    StatSkillSo: {fileID: 0}
+  - rid: 4881752630806183952
+  - rid: 4881752630806183953
+  - rid: 4881752630806183954
+  - rid: 4881752630806183955
+  - rid: 4881752630806183956
+  - rid: 4881752630806183957
+  - rid: 4881752630806183958
+  - rid: 4881752630806183959
+  - rid: 4881752630806183960
+  - rid: 4881752630806183961
+  - rid: 4881752630806183962
+  - rid: 4881752630806183963
+  references:
+    version: 2
+    RefIds:
+    - rid: 4881752630806183952
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 691e5f7719ea4264cb6250df8cacee3a, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        weaponType: 0
+    - rid: 4881752630806183953
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 869be5b7e6dfcaf44b9f97098428e539, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        weaponType: 1
+    - rid: 4881752630806183954
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: a93f32484d365164cb64979e3f43d213, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        weaponType: 2
+    - rid: 4881752630806183955
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 2c17a4fba8e727c4dba02f0dd389a702, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        weaponType: 3
+    - rid: 4881752630806183956
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 869be5b7e6dfcaf44b9f97098428e539, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        weaponType: 4
+    - rid: 4881752630806183957
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: aedc1c1d854c41e46a4b75292d95bf82, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        weaponType: 5
+    - rid: 4881752630806183958
+      type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: e0b359a50d15ab640bd3848a7ba70f42, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        suppliesType: 0
+    - rid: 4881752630806183959
+      type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: aedc1c1d854c41e46a4b75292d95bf82, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        suppliesType: 1
+    - rid: 4881752630806183960
+      type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: aedc1c1d854c41e46a4b75292d95bf82, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        suppliesType: 2
+    - rid: 4881752630806183961
+      type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 0c76cc26708a4434193806499097dd24, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        suppliesType: 3
+    - rid: 4881752630806183962
+      type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: db88d14b76737a94b9795fb5cd072af1, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        suppliesType: 4
+    - rid: 4881752630806183963
+      type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: db88d14b76737a94b9795fb5cd072af1, type: 3}
+        <nameSkill>k__BackingField: 
+        contentSkill: 
+        suppliesType: 5
