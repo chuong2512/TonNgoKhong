@@ -19,6 +19,6 @@ namespace Game
         [field: SerializeField] public float Damage { get; set; } = 1;
         [field: SerializeField] public float Defense { get; set; } = 0;
         [field: SerializeField] public float Speed { get; set; } = 3;
-        [field: SerializeField] public float Magnet { get; set; } = 1;
+        [field: SerializeField] public float Magnet { get; set; } = 0;
     }
 }

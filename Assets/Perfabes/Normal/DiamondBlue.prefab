@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8183285587281381114}
   - component: {fileID: 8183285587281381109}
   - component: {fileID: 8890237169778378430}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DiamondBlue
   m_TagString: Diamond
   m_Icon: {fileID: 0}
@@ -124,7 +124,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34cd61dbc7186ac4583e66814713b55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  UIManager: {fileID: 0}
-  WorkOn: 0

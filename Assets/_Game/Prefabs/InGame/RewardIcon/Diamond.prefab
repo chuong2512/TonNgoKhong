@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 269119838428390245}
   - component: {fileID: 269119838428390246}
   - component: {fileID: 5561219503818583926}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,10 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681ed9a302e746e488b01c05eb9639c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Manager: {fileID: 0}
-  Boolean: {fileID: 0}
-  Flasher: {fileID: 8127691040998294271, guid: f8020028abfffc84a93cddaaaabdfa62, type: 3}
+  Value: 1
 --- !u!82 &5561219503818583926
 AudioSource:
   m_ObjectHideFlags: 0

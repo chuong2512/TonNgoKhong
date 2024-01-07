@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace Game
 {
-
     [SelectionBase]
     public class BaseEnemy : MonoBehaviour, ICombat, IVulnerably
     {
@@ -44,7 +43,7 @@ namespace Game
             attribute.Health = attribute.MaxHealth;
         }
 
-        private void Start()
+        protected virtual void OnEnable()
         {
             Reset();
         }
@@ -55,7 +54,7 @@ namespace Game
             set => _enemySize = value;
         }
 
-        private void OnValidate()
+        protected virtual void OnValidate()
         {
             var col = GetComponentInChildren<Collider2D>();
             if (col)
@@ -69,7 +68,7 @@ namespace Game
             if (attribute.Health <= 0) return;
 
             attribute.MinusHealth(damageInfo.trueDamage);
-            
+
             if (!_isBoss)
             {
                 if (attribute.Health <= attribute.MaxHealth * 0.25f)
@@ -119,8 +118,8 @@ namespace Game
         public virtual void Die()
         {
             EnemySpawnManager.EnemiesCount--;
-            
-            if (!_animator.IsNull())
+
+            if (_animator != null)
             {
                 _animator.Active(true);
                 _animator.SetDead(true);

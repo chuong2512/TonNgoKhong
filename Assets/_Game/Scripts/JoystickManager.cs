@@ -8,14 +8,16 @@ using UnityEngine.VFX;
 public class JoystickManager : MonoBehaviour
 {
     [Header("ManagerPlayer")] public movementJoystick joystickMovement;
-    private Rigidbody2D rb;
+
     public GameObject Gun;
 
     [Header("Animations")] public Animator anim;
 
-    private void Start()
+    [SerializeField] private Rigidbody2D _rigidbody2D;
+
+    public void SetSimulated(bool b)
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rigidbody2D.simulated = b;
     }
 
     void Update()
@@ -33,7 +35,7 @@ public class JoystickManager : MonoBehaviour
             shoesSpeed = 0.1f * PlayerPrefs.GetInt("shoes3");
         }*/
 
-        anim.Play(rb.velocity.magnitude > 0 ? "CharacterBody" : "0");
+        anim.Play(_rigidbody2D.velocity.magnitude > 0 ? "CharacterBody" : "0");
 
         AnimatorController();
         if (joystickMovement.joystickVec.y != 0)
@@ -44,12 +46,12 @@ public class JoystickManager : MonoBehaviour
             Debug.Log("player speed" + ps);
             Debug.Log("player save" + PlayerPrefs.GetFloat("Spead"));
 
-            rb.velocity = new Vector2(joystickMovement.joystickVec.x * speed,
+            _rigidbody2D.velocity = new Vector2(joystickMovement.joystickVec.x * speed,
                 joystickMovement.joystickVec.y * speed);
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            _rigidbody2D.velocity = Vector2.zero;
         }
     }
 

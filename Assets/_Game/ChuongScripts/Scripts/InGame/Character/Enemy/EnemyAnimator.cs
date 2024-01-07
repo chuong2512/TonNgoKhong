@@ -66,10 +66,5 @@ namespace Game
         {
             animator.enabled = active;
         }
-
-        public override bool IsNull()
-        {
-            return animator == null;
-        }
     }
 }

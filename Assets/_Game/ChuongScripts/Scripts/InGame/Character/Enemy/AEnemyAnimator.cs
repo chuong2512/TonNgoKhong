@@ -27,6 +27,5 @@ namespace Game
         public abstract bool TriggeredShot();
 
         public abstract void Active(bool active);
-        public abstract bool IsNull();
     }
 }

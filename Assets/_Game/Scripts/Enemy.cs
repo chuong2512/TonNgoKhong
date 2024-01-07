@@ -5,22 +5,35 @@ using UnityEngine.Serialization;
 
 public class Enemy : BaseEnemy
 {
-    private AudioSource _audio;
-    private Rigidbody2D _rigidbody;
-    private Transform _playerTrans;
-    private SpriteRenderer _spriteRenderer;
+    [SerializeField] private AudioSource _audio;
+    [SerializeField] private Rigidbody2D _rigidbody;
+    [SerializeField] private Collider2D _collision2D;
+    [SerializeField] private Transform _playerTrans;
 
     private bool _followPlayer = true;
 
-    void Start()
+    protected override void OnValidate()
     {
+        base.OnValidate();
+
         _audio = GetComponent<AudioSource>();
         _rigidbody = GetComponentInChildren<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _collision2D = GetComponentInChildren<Collider2D>();
+    }
 
+    void Start()
+    {
         _playerTrans = PlayerManager.Instance.PlayerTransform;
 
         InGameAction.OnGameStateChange += OnGameStateChange;
+    }
+
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        _playerTrans = PlayerManager.Instance.PlayerTransform;
+        _collision2D.isTrigger = false;
+        _followPlayer = true;
     }
 
     private void OnGameStateChange()
@@ -40,7 +53,7 @@ public class Enemy : BaseEnemy
 
         transform.position = Vector2.MoveTowards(transform.position, _playerTrans.position,
             attribute.Speed * Time.deltaTime);
-        _spriteRenderer.flipX = _playerTrans.position.x < transform.position.x;
+        transform.rotation = Quaternion.Euler(Vector3.up * (_playerTrans.position.x > transform.position.x ? 0 : 180));
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -67,6 +80,9 @@ public class Enemy : BaseEnemy
     {
         base.Die();
 
+        _followPlayer = false;
+        _collision2D.isTrigger = true;
+
         switch (attribute.ExpValue)
         {
             case 1:
@@ -80,7 +96,7 @@ public class Enemy : BaseEnemy
                 break;
         }
 
-        if (_animator.IsNull())
+        if (_animator == null)
         {
             this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
             PoolContainer.DeSpawnEnemy(gameObject);

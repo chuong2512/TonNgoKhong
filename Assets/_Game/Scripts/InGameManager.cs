@@ -71,10 +71,11 @@ public class InGameManager : Singleton<InGameManager>
     {
         ExpValue += exp;
 
-        InGameAction.OnExpChange?.Invoke(KilledValue);
+        InGameAction.OnExpChange?.Invoke(ExpValue);
 
         if (ExpValue >= _expLevel)
         {
+            ExpValue = 0;
             GameState = GameState.Pause;
             InGameAction.OnLevelUp?.Invoke();
             ScreenManager.Instance.OpenScreen(ScreenType.AddSkill);

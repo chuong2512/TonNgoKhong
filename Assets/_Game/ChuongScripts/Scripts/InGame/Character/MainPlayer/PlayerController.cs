@@ -4,12 +4,7 @@ namespace Game
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] private Rigidbody2D _rigidbody2D;
-
-        public void SetSimulated(bool b)
-        {
-            _rigidbody2D.simulated = b;
-        }
+      
     }
 
     public class PlayerTransform
