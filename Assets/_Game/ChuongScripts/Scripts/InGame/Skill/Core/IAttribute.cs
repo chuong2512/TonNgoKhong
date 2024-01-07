@@ -68,4 +68,14 @@ namespace Skill
     {
         float Magnet { get; set; }
     }
+    
+    public interface IEnemyValueAttribute : IAttribute
+    {
+        float EnemyValue { get; set; }
+    }
+    
+    public interface IEnemyPiorityAttribute : IAttribute
+    {
+        float Piority { get; set; }
+    }
 }

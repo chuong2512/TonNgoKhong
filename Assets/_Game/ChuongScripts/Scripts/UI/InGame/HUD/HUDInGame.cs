@@ -14,20 +14,24 @@ public class HUDInGame : MonoBehaviour
     public TextMeshProUGUI CoinTMP;
 
     public Button pauseBtn;
-    
+
     private void Start()
     {
+        OnKillChange(0);
+        OnCoinChange(0);
+        OnExpChange(0);
+
         InGameAction.OnCoinChange += OnCoinChange;
         InGameAction.OnKillChange += OnKillChange;
         InGameAction.OnExpChange += OnExpChange;
         InGameAction.OnTimeChange += OnTimeChange;
-        
+
         pauseBtn.onClick.AddListener(OnCickPauseBtn);
     }
 
     private void OnCickPauseBtn()
     {
-        GameManager.Instance.GameState = GameState.Pause;
+        InGameManager.Instance.GameState = GameState.Pause;
         ScreenManager.Instance.OpenScreen(ScreenType.Pause);
     }
 
@@ -37,23 +41,29 @@ public class HUDInGame : MonoBehaviour
         InGameAction.OnKillChange -= OnKillChange;
         InGameAction.OnExpChange -= OnExpChange;
         InGameAction.OnTimeChange -= OnTimeChange;
-        
+
         pauseBtn.onClick.RemoveAllListeners();
     }
 
-    private void OnCoinChange()
+    private void OnTimeChange(float time)
     {
+        float minutes = Mathf.FloorToInt(time / 60);
+        float seconds = Mathf.FloorToInt(time % 60);
+        TimeTMP.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    private void OnKillChange()
+    private void OnCoinChange(int amount)
     {
+        CoinTMP.SetText(amount.ToString());
     }
 
-    private void OnExpChange()
+    private void OnKillChange(int amount)
     {
+        KilledTMP.SetText(amount.ToString());
     }
 
-    private void OnTimeChange()
+    private void OnExpChange(int amount)
     {
+        ExpTMP.SetText(amount.ToString());
     }
 }

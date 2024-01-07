@@ -14,19 +14,13 @@ public class aigule : MonoBehaviour
         manager = GameObject.Find("GameManager");
         rb = this.gameObject.GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
-        if(GameManager.Instance?.EnemyAvailable == true)
-        {
-            transform.position = Vector2.MoveTowards(this.transform.position, GameObject.FindGameObjectWithTag("Enemy").transform.position, 10f * Time.deltaTime);
-            Vector2 direction = GameObject.FindGameObjectWithTag("Enemy").transform.position - transform.position;
-            float Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            this.gameObject.GetComponent<Rigidbody2D>().rotation = Angle;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        transform.position = Vector2.MoveTowards(this.transform.position,
+            GameObject.FindGameObjectWithTag("Enemy").transform.position, 10f * Time.deltaTime);
+        Vector2 direction = GameObject.FindGameObjectWithTag("Enemy").transform.position - transform.position;
+        float Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        this.gameObject.GetComponent<Rigidbody2D>().rotation = Angle;
     }
-
 }

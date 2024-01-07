@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerManager : Singleton<PlayerManager>
 {
     [SerializeField] public PlayerCombat Combat;
+    [SerializeField] public PlayerController Controller;
 
     public AudioSource AudioHeat;
     public GameObject Death;
@@ -21,11 +22,23 @@ public class PlayerManager : Singleton<PlayerManager>
 
     public PlayerAttribute CurrentAttribute => _currentAttribute;
 
+    public Transform Transform => Controller.transform;
+    
     void Start()
     {
         InitAttribute();
 
         InGameAction.OnPlayerDie += OnPlayerDie;
+    }
+
+    public void Stop()
+    {
+        Controller.SetSimulated(false);
+    }
+    
+    public void Play()
+    {
+        Controller.SetSimulated(true);
     }
 
     private void InitAttribute()

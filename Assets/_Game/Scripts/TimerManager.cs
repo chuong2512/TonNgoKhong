@@ -1,58 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+
 public class TimerManager : MonoBehaviour
 {
+    float _timeCounter = 0;
 
-    public float timeRemaining = 10;
-     bool timerIsRunning = false;
-    public Text timeText;
-    public Text timeTextScreenFinish;
-    public Text BestTime;
-    private void Start()
-    {
-        // Starts the timer automatically
-        timerIsRunning = true;
-    }
     void Update()
     {
-        timeTextScreenFinish.text = timeText.text;
-        BestTime.text = timeText.text;
-        if (timerIsRunning)
+        if (!InGameManager.Instance.IsPlaying) return;
+
+        _timeCounter += Time.deltaTime;
+
+        if (_timeCounter > 1)
         {
-            if (timeRemaining > -1)
-            {
-                timeRemaining += Time.deltaTime;
-                DisplayTime(timeRemaining);
-            }
-            else
-            {
-                //Debug.Log("Time has run out!");
-                //timeRemaining = 0;
-                //timerIsRunning = false;
-            }
+            DisplayTime(_timeCounter);
         }
     }
+
     void DisplayTime(float timeToDisplay)
     {
+        _timeCounter = 0;
         timeToDisplay += 1;
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
-
-    public void StartTime()
-    {
-        timerIsRunning = true;
-        Debug.Log("StartTime");
-    }
-    public void StopTime()
-    {
-        timerIsRunning = false;
-        Debug.Log("StopTime");
-
+        InGameAction.OnTimeChange?.Invoke(timeToDisplay);
     }
 }
-

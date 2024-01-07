@@ -22,34 +22,37 @@ public class RocketManager : MonoBehaviour
         SpawenrLocalisation = GameObject.Find("RocketContainer");
         this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right * 10);
     }
+
     void Update()
     {
-        if (GameManager.Instance?.EnemyAvailable == true)
-        {
-            Enemy = GameObject.FindGameObjectWithTag("Enemy");
-            transform.position = Vector2.MoveTowards(this.transform.position, Enemy.transform.position, 8f * Time.deltaTime);
-            Vector2 direction = Enemy.transform.position - transform.position;
-            float Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            this.gameObject.GetComponent<Rigidbody2D>().rotation = Angle;
-        }
-        if(GameManager.Instance?.EnemyAvailable == false && CheckingPlaces == true)
+        Enemy = GameObject.FindGameObjectWithTag("Enemy");
+        transform.position =
+            Vector2.MoveTowards(this.transform.position, Enemy.transform.position, 8f * Time.deltaTime);
+        Vector2 direction = Enemy.transform.position - transform.position;
+        float Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        this.gameObject.GetComponent<Rigidbody2D>().rotation = Angle;
+
+        if (CheckingPlaces)
         {
             StartCoroutine(CheckingInactivePlace());
             CheckingPlaces = false;
         }
-        if (GameManager.Instance?.EnemyAvailable == false && StartPos == true)
+
+        if (StartPos)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, PosDirect, 8f * Time.deltaTime);
-            Vector2 direction = PosDirect - transform.position;
-            float Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            this.gameObject.GetComponent<Rigidbody2D>().rotation = Angle;
+            Vector2 dir = PosDirect - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            this.gameObject.GetComponent<Rigidbody2D>().rotation = angle;
             if (transform.position == PosDirect)
             {
-                (Instantiate(Explosion, transform.position, transform.rotation) as GameObject).transform.SetParent(SpawenrLocalisation.transform);
+                (Instantiate(Explosion, transform.position, transform.rotation) as GameObject).transform.SetParent(
+                    SpawenrLocalisation.transform);
                 Destroy(this.gameObject);
             }
         }
     }
+
     IEnumerator CheckingInactivePlace()
     {
         yield return new WaitForEndOfFrame();
@@ -62,7 +65,8 @@ public class RocketManager : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            (Instantiate(Explosion, transform.position, transform.rotation) as GameObject).transform.SetParent(SpawenrLocalisation.transform);
+            (Instantiate(Explosion, transform.position, transform.rotation) as GameObject).transform.SetParent(
+                SpawenrLocalisation.transform);
             Destroy(this.gameObject);
         }
     }
