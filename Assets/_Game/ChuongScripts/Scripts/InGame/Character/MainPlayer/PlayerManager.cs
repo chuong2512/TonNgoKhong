@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using _TonNgoKhong;
 using Game;
 using SinhTon;
 using Skill;
+using Skill.Weapons;
 using UnityEngine;
 
 public class PlayerManager : Singleton<PlayerManager>
@@ -9,6 +11,9 @@ public class PlayerManager : Singleton<PlayerManager>
     [SerializeField] public PlayerCombat Combat;
     [SerializeField] public PlayerController Controller;
 
+    
+    public Dictionary<int, WeaponSkill> WeaponSkills;
+    public Dictionary<int, SupplySkill> SupplySkills;
     public AudioSource AudioHeat;
     public GameObject Death;
     public GameObject SpawenShoot;
@@ -17,10 +22,11 @@ public class PlayerManager : Singleton<PlayerManager>
 
     [SerializeField] private PlayerStat _baseStat;
 
-    private List<IUpgradeSkill> _listBuff;
-    private PlayerAttribute _currentAttribute;
+    private SkillUpgradeInfo _listBuff;
+    private PlayerStatus _currentStatus;
+    private Dictionary<int, BaseSkill> _skillDict;
 
-    public PlayerAttribute CurrentAttribute => _currentAttribute;
+    public PlayerStatus CurrentStatus => _currentStatus;
 
     public Transform Transform => Controller.transform;
     
@@ -43,22 +49,12 @@ public class PlayerManager : Singleton<PlayerManager>
 
     private void InitAttribute()
     {
-        _listBuff = new List<IUpgradeSkill>();
+        _listBuff = new SkillUpgradeInfo();
 
-        _currentAttribute = (PlayerAttribute) _baseStat;
+        _currentStatus = (PlayerStatus) _baseStat;
 
-        Combat.PlayerAttribute = _currentAttribute;
+        Combat.PlayerStatus = _currentStatus;
         Combat.InitHealth();
-    }
-
-    public void Upgrade(List<IUpgradeSkill> listSkill)
-    {
-        _listBuff.AddRange(listSkill);
-
-        foreach (var upgradeSkill in listSkill)
-        {
-            upgradeSkill.Upgrade(_baseStat);
-        }
     }
 
     private void OnPlayerDie()
@@ -81,7 +77,42 @@ public class PlayerManager : Singleton<PlayerManager>
         if (other.CompareTag(TagConstants.Enemy))
         {
             AudioHeat.Play();
-            Combat.TakeDamage(0.5f - (0.5f * CurrentAttribute.Defense) / 100);
+            Combat.TakeDamage(0.5f - (0.5f * CurrentStatus.Defense) / 100);
         }
     }
+
+    public void UpgradeWeaponSkill(int hashIDSkill)
+    {
+        if (!WeaponSkills.ContainsKey(hashIDSkill))
+        {
+        }
+        WeaponSkills[hashIDSkill].Upgrade();
+    }
+
+    private void InitWeaponSkill(int hashIDSkill)
+    {
+        WeaponSkills[hashIDSkill] = new PowerPoleSkill();
+        WeaponSkills[hashIDSkill].Upgrade(_listBuff);
+    }
+    
+    public void UpgradeSuppliesSkill(int hashIDSkill)
+    {
+        if (SupplySkills.ContainsKey(hashIDSkill))
+        {
+            InitSuppliesSkill(hashIDSkill);
+        }
+        var supplies = SupplySkills[hashIDSkill];
+        supplies.Upgrade();
+        _listBuff.Append(supplies.SkillUpgradeInfo);
+        foreach (var weaponSkill in WeaponSkills)
+        {
+            supplies.UpgradeWeapon(weaponSkill.Value);
+        }
+    }
+
+    private void InitSuppliesSkill(int hashIDSkill)
+    {
+        SupplySkills[hashIDSkill] = new AddDamageSupply();
+    }
+    
 }

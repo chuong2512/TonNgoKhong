@@ -7,6 +7,7 @@ namespace Game
     {
         public override void Upgrade()
         {
+            PlayerManager.Instance.Combat.RestoreHP();
         }
 
         public override SuppliesType SuppliesType => SuppliesType.RestoreHP;

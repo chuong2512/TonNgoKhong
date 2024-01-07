@@ -10,26 +10,13 @@ namespace Skill
         [SerializeField] protected StatSkillSO _statSkillSo;
 
         [ReadOnly][SerializeField] private int TestLevel = 0;
-        
-        private void Awake()
-        {
-            InGameAction.OnUpgradeSkill += UpgradeSkill;
-        }
 
-        private void UpgradeSkill(int hashID)
+        private void UpgradeSkill()
         {
-            if (hashID != HashID) return;
-
-            if (!SkillSelector.Instance.IsMaxLevel(hashID))
-            {
-                Upgrade();
-                TestLevel = Level;
-            }
-        }
-
-        private void OnDestroy()
-        {
-            InGameAction.OnUpgradeSkill -= UpgradeSkill;
+            if (SkillSelector.Instance.IsMaxLevel(HashID)) return;
+            
+            Upgrade();
+            TestLevel = Level;
         }
 
         public int Level => SkillSelector.Instance.GetSkillLevel(HashID);

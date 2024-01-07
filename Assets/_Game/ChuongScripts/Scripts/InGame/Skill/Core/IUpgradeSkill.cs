@@ -1,16 +1,17 @@
 using System;
+using Game;
 using UnityEngine;
 
 namespace Skill
 {
     public interface IUpgradeSkill
     {
-        void Upgrade(object weaponBuilder);
+        void Upgrade(IAttribute weaponBuilder);
     }
     
     public interface IUpgradeSkill<in T> : IUpgradeSkill where T : IAttribute
     {
-        void IUpgradeSkill.Upgrade(object @object)
+        void IUpgradeSkill.Upgrade(IAttribute @object)
         {
             if (@object is not T weaponBuilder)
             {
@@ -67,6 +68,38 @@ namespace Skill
         public void Upgrade(IDamageAttribute weaponAttribute)
         {
             weaponAttribute.Damage *= (1f + rate);
+        }
+    }
+    
+    [Serializable]
+    public class PlayerSpeedUpgrade : IUpgradeSkill<IPlayerSpeedAttribute>
+    {
+        [SerializeField] private float addSpeed;
+
+        public void Upgrade(IPlayerSpeedAttribute playerAtt)
+        {
+            playerAtt.Speed += addSpeed;
+        }
+    }
+    
+    [Serializable]
+    public class ShotSpeedUpgrade : IUpgradeSkill<IPlayerSpeedAttribute>
+    {
+        [SerializeField] private float addSpeed;
+
+        public void Upgrade(IPlayerSpeedAttribute playerAtt)
+        {
+            playerAtt.Speed += addSpeed;
+        }
+    }
+
+    [Serializable]
+    public class MagnetUpgrade : IUpgradeSkill<IMagnetAttribute>
+    {
+        [SerializeField] private float addMagnetRange;
+        public void Upgrade(IMagnetAttribute weaponBuilder)
+        {
+            weaponBuilder.Magnet += addMagnetRange;
         }
     }
     

@@ -46,7 +46,7 @@ public class Diamond : MonoBehaviour
 
     void Update()
     {
-        gameObject.GetComponent<BoxCollider2D>().size = Vector2.one * PlayerManager.Instance.CurrentAttribute.Magnet;
+        gameObject.GetComponent<BoxCollider2D>().size = Vector2.one * PlayerManager.Instance.CurrentStatus.Magnet;
 
         if (StartMove == false)
         {

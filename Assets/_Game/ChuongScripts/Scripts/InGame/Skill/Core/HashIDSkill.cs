@@ -13,7 +13,7 @@ namespace Skill
             typeof(SuppliesType)
         };
         
-        private static readonly Dictionary<Type, int> _skillTypeAmount = new();
+        private static readonly Dictionary<Type, (int min, int amount)> RangeSkillType = new();
         private static readonly Dictionary<Enum, int> _skillHashID = new();
         private static readonly Dictionary<int, Enum> _skillValues = new();
 
@@ -31,7 +31,7 @@ namespace Skill
 #endif
                 var enumValues = Enum.GetValues(type);
                 var amount = enumValues.Length;
-                _skillTypeAmount[type] = amount;
+                RangeSkillType[type] =(count, amount);
                 foreach (Enum value in enumValues)
                 {
 #if UNITY_EDITOR
@@ -49,7 +49,7 @@ namespace Skill
         public static void GetSkillTypeValues<T>(out T[] skills) where T : Enum
         {
             var type = typeof(T);
-            if (!_skillTypeAmount.ContainsKey(type))
+            if (!RangeSkillType.ContainsKey(type))
             {
                 Debug.LogError($"{type} is not exist in Skill Type");
                 skills = null;
@@ -59,18 +59,18 @@ namespace Skill
         
         public static int GetSkillAmount(Type skillType)
         {
-            if (!_skillTypeAmount.ContainsKey(skillType))
+            if (!RangeSkillType.ContainsKey(skillType))
             {
                 Debug.LogError($"{skillType} is not exist in Skill Type");
             }
             
-            return _skillTypeAmount[skillType];
+            return RangeSkillType[skillType].min;
         }
         
         public static int GetHashID<T>(this T enumValue) where T : Enum
         {
 #if UNITY_EDITOR
-            if (!_skillTypeAmount.ContainsKey(typeof(T)))
+            if (!RangeSkillType.ContainsKey(typeof(T)))
             {
                 Debug.LogError($"{typeof(T)} is not exist in Skill Type");
                 return -1;
@@ -78,7 +78,23 @@ namespace Skill
 #endif
             return _skillHashID[enumValue];
         }
+
+        public static bool ContainHashID<T>(this T enumValue, int id) where T : Enum
+        {
+            var type = typeof(T);
+            if (!RangeSkillType.ContainsKey(type)) return false;
+            var range = RangeSkillType[type];
+            if (id < range.min || id >= range.amount + range.min) return false;
+            return true;
+        }
         
+        public static bool ContainHashID(this Type type, int id)
+        {
+            if (!RangeSkillType.ContainsKey(type)) return false;
+            var range = RangeSkillType[type];
+            if (id < range.min || id >= range.amount + range.min) return false;
+            return true;
+        }
     }
 
     public enum WeaponType

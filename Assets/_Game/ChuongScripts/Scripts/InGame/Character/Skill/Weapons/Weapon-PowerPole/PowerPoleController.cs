@@ -19,13 +19,14 @@ namespace Skill.Weapons
 
         public float Damage => (_baseDmg + attribute.Damage) * (1 + attribute.PercentDamage);
         public int Amount => _baseAmount * attribute?.MultipleAmount ?? 0;
+        public float Speed => speed + attribute.Speed;
 
         public override void Refresh()
         {
             _shot.SetBulletAttribute(new BulletAttribute()
             {
                 Damage = Damage,
-                Speed = speed,
+                Speed = Speed,
                 LifeTime = lifeTime,
             });
 

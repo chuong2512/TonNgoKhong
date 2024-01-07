@@ -52,7 +52,7 @@ public class JoystickManager : MonoBehaviour
         AnimatorController();
         if (joystickMovement.joystickVec.y != 0)
         {
-            var speed = PlayerManager.Instance.CurrentAttribute.Speed;
+            var speed = PlayerManager.Instance.CurrentStatus.Speed;
 
             float ps = speed /*+ PlayerPrefs.GetFloat("Spead") / 10*/;
             Debug.Log("player speed" + ps);

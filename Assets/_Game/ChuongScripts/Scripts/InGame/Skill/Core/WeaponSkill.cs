@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _TonNgoKhong;
 using UnityEngine;
 
 namespace Skill
@@ -9,6 +10,7 @@ namespace Skill
         public abstract override void Upgrade();
 
         public abstract void Upgrade(List<IUpgradeSkill> list);
+        public abstract void Upgrade(SkillUpgradeInfo skillUpgradeInfo);
         public abstract WeaponType WeaponType { get; }
         public abstract void ActiveWeapon();
     }

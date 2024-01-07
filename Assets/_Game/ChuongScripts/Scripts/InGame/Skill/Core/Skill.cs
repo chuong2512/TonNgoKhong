@@ -23,6 +23,7 @@ namespace Skill
 
     public interface ISuppliesSkill : ISkill
     {
-        public abstract SuppliesType SuppliesType { get; }
+        public void Apply<T>(T attribute) where T : IAttribute;
+        public SuppliesType SuppliesType { get; }
     }
 }

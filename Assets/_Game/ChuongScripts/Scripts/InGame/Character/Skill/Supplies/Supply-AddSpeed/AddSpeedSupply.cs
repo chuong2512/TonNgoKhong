@@ -7,6 +7,7 @@ namespace Game
     {
         public override void Upgrade()
         {
+            
         }
 
         public override SuppliesType SuppliesType => SuppliesType.AddSpeed;
