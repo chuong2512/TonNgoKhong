@@ -40,7 +40,7 @@ namespace _TonNgoKhong
     [Serializable]
     public class SkillUpgradeInfo
     {
-        [SerializeReference, SubclassSelector] public List<IUpgradeSkill> listUpgradeSkill;
+        [SerializeReference, SubclassSelector] public List<IUpgradeSkill> listUpgradeSkill = new();
 
         public void ApplyUpgrade<T>(T attribute) where T : IAttribute
         {
@@ -48,6 +48,32 @@ namespace _TonNgoKhong
             {
                 listUpgradeSkill[index].Upgrade(attribute);
             }
+        }
+        
+        public void ApplyUpgrade<T>(params T[] attributes) where T : IAttribute
+        {
+            for (int attributeIndex = 0; attributeIndex < attributes.Length; attributeIndex++)
+            {
+                ApplyUpgrade(attributes[attributeIndex]);
+            }
+        }
+        
+        public void ApplyUpgrade<T>(List<T> attributes) where T : IAttribute
+        {
+            for (int attributeIndex = 0; attributeIndex < attributes.Count; attributeIndex++)
+            {
+                ApplyUpgrade(attributes[attributeIndex]);
+            }
+        }
+
+        public void Append(List<IUpgradeSkill> listUpgrade)
+        {
+            listUpgradeSkill.AddRange(listUpgrade);
+        }
+
+        public void Append(SkillUpgradeInfo skillUpgradeInfo)
+        {
+            listUpgradeSkill.AddRange(skillUpgradeInfo.listUpgradeSkill);
         }
     }
 }

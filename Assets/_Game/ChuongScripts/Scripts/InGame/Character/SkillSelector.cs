@@ -130,7 +130,15 @@ namespace Skill
                 _skillLevelDict[hashIDSkill] = 1;
             }
 
-            InGameAction.OnUpgradeSkill?.Invoke(hashIDSkill);
+            if (IsSuppliesHashID(hashIDSkill))
+            {
+                PlayerManager.Instance.UpgradeSuppliesSkill(hashIDSkill);
+            }
+            else if(IsWeaponHashID(hashIDSkill))
+            {
+                PlayerManager.Instance.UpgradeWeaponSkill(hashIDSkill);
+            }
+            
         }
 
         public List<int> GetAllCurrentSkillID<T>(T[] availableSkill) where T : Enum
@@ -199,5 +207,8 @@ namespace Skill
 
             return level >= hashID.GetMaxLevel();
         }
+        
+        public static bool IsWeaponHashID(int id) => typeof(WeaponType).ContainHashID(id);
+        public static bool IsSuppliesHashID(int id) => typeof(SuppliesType).ContainHashID(id);
     }
 }

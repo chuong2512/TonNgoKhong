@@ -5,12 +5,12 @@ namespace Skill
 {
     public interface IUpgradeSkill
     {
-        void Upgrade(object weaponBuilder);
+        void Upgrade(IAttribute weaponBuilder);
     }
     
     public interface IUpgradeSkill<in T> : IUpgradeSkill where T : IAttribute
     {
-        void IUpgradeSkill.Upgrade(object @object)
+        void IUpgradeSkill.Upgrade(IAttribute @object)
         {
             if (@object is not T weaponBuilder)
             {
