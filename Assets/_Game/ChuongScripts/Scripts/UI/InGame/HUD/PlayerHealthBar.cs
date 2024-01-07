@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Game
@@ -9,18 +10,26 @@ namespace Game
         [Header("UI Manager")] public Image HealthBar;
         public Image ReloadWeapon;
         public Color[] myColors;
-        
+
         internal int len;
         public float Health;
         public float hh;
 
+        public Vector3 Offest;
+        private Vector3 rb;
+        
         private void Start()
         {
             len = myColors.Length;
-            
+
             HealthBar.color = Color.green;
-            
+
             InGameAction.OnHealthChange += OnHealthChange;
+        }
+
+        private void FixedUpdate()
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, transform.position + Offest, ref rb, 0);
         }
 
         private void OnHealthChange()

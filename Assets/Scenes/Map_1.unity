@@ -1039,31 +1039,10 @@ MonoBehaviour:
   PlayerPerfb: {fileID: 1177642144}
   Spawner: {fileID: 204604326}
   Times: {fileID: 1396099394}
-  managerInGame: {fileID: 0}
   UIWeapon: {fileID: 1121717384}
   ScreenAddonWap: {fileID: 0}
   Enemys: []
-  HealthBar: {fileID: 1541228270}
-  ReloadWeapon: {fileID: 1785789031}
-  ScoringLevel: {fileID: 1498864498}
-  FillingReweapon: {fileID: 0}
-  myColors:
-  - {r: 0.07066631, g: 1, b: 0, a: 1}
-  - {r: 0.9747988, g: 1, b: 0, a: 1}
-  - {r: 1, g: 0.39354917, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0.025919914, a: 1}
-  - {r: 0.9963193, g: 0, b: 1, a: 1}
-  - {r: 0.04513645, g: 0, b: 1, a: 1}
-  - {r: 0, g: 0.885386, b: 1, a: 1}
-  - {r: 0, g: 1, b: 0.49680638, a: 1}
-  ScoringValue: {fileID: 0}
-  ScoringValueDeux: {fileID: 0}
-  ValueKilled: {fileID: 0}
-  ValueKilledScreenFinish: {fileID: 0}
-  CurrentCoins: {fileID: 0}
   SpeedEnemy: 1
-  LerpTime: 15
-  Health: 0
   CurrentReload: 0
   CheckFinish: 1
   startmove: 0
@@ -1100,9 +1079,6 @@ MonoBehaviour:
   Player: {fileID: 1177642138}
   HelthUI: {fileID: 1121717384}
   CurrentLevel: {fileID: 0}
-  ScreenPause: {fileID: 0}
-  ScreenGamePlay: {fileID: 517922384}
-  FinishScreen: {fileID: 1685313774}
 --- !u!1 &201116194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,7 +1172,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 1541228270}
   ReloadWeapon: {fileID: 1785789031}
-  ScoringLevel: {fileID: 1498864498}
   myColors:
   - {r: 0.07066631, g: 1, b: 0, a: 1}
   - {r: 0.9747988, g: 1, b: 0, a: 1}
@@ -1206,6 +1181,9 @@ MonoBehaviour:
   - {r: 0.04513645, g: 0, b: 1, a: 1}
   - {r: 0, g: 0.885386, b: 1, a: 1}
   - {r: 0, g: 1, b: 0.49680638, a: 1}
+  Health: 0
+  hh: 0
+  Offest: {x: -0.057, y: -0.692, z: 0}
 --- !u!1 &204604324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,6 +3787,7 @@ MonoBehaviour:
   ExpTMP: {fileID: 0}
   KilledTMP: {fileID: 0}
   CoinTMP: {fileID: 0}
+  pauseBtn: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -9092,6 +9071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161c7bf9f808f947b564d3d79921d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Combat: {fileID: 0}
   EffectArrow: {fileID: 1979066962}
   AudioHeat: {fileID: 1044766578}
   Death: {fileID: 712875191}
@@ -9099,7 +9079,13 @@ MonoBehaviour:
   ContainerWap: {fileID: 1021969298}
   Offest: {x: -0.057, y: -0.692, z: 0}
   Bolts: {fileID: 294761617863680392, guid: e4f500636d700c046b9553e3f189a6e7, type: 3}
-  UI: {fileID: 1121717384}
+  _baseStat:
+    <MaxHealth>k__BackingField: 100
+    <VirtualHealth>k__BackingField: 0
+    <Damage>k__BackingField: 1
+    <Defense>k__BackingField: 0
+    <Speed>k__BackingField: 3
+    <Magnet>k__BackingField: 1
 --- !u!212 &1177642145
 SpriteRenderer:
   m_ObjectHideFlags: 0
