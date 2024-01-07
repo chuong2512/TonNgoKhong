@@ -83,32 +83,32 @@ MonoBehaviour:
         icon: {fileID: 21300000, guid: aedc1c1d854c41e46a4b75292d95bf82, type: 3}
         <nameSkill>k__BackingField: 
         contentSkill: 
-        suppliesType: 0
+        suppliesType: 1
     - rid: 4881752630806183960
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
         icon: {fileID: 21300000, guid: aedc1c1d854c41e46a4b75292d95bf82, type: 3}
         <nameSkill>k__BackingField: 
         contentSkill: 
-        suppliesType: 1
+        suppliesType: 2
     - rid: 4881752630806183961
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
         icon: {fileID: 21300000, guid: 0c76cc26708a4434193806499097dd24, type: 3}
         <nameSkill>k__BackingField: 
         contentSkill: 
-        suppliesType: 2
+        suppliesType: 3
     - rid: 4881752630806183962
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
         icon: {fileID: 21300000, guid: db88d14b76737a94b9795fb5cd072af1, type: 3}
         <nameSkill>k__BackingField: 
         contentSkill: 
-        suppliesType: 3
+        suppliesType: 4
     - rid: 4881752630806183963
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
         icon: {fileID: 21300000, guid: db88d14b76737a94b9795fb5cd072af1, type: 3}
         <nameSkill>k__BackingField: 
         contentSkill: 
-        suppliesType: 4
+        suppliesType: 5

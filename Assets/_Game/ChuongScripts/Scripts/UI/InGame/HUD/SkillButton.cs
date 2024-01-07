@@ -18,6 +18,7 @@ public class SkillButton : MonoBehaviour
 
     private void Start()
     {
+        _upgradeBut = GetComponent<Button>();
         _upgradeBut.onClick.AddListener(OnUpgrade);
     }
 
