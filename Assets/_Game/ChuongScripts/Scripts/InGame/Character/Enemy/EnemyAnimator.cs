@@ -10,7 +10,7 @@ namespace Game
 
         private int _shootHash = Animator.StringToHash("TriggerShot");
         private int _moveHash = Animator.StringToHash("Move");
-        private int _deadHash = Animator.StringToHash("IsDead");
+        private int _deadHash = Animator.StringToHash("Die");
         private int _aimHash = Animator.StringToHash("IsAim");
         private int _knockHash = Animator.StringToHash("Knock");
 

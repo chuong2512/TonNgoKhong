@@ -7,6 +7,12 @@ using UnityEngine;
 public class TimerManager : MonoBehaviour
 {
     float _timeCounter = 0;
+    float _timeToDisplay = 0;
+
+    private void Start()
+    {
+        _timeToDisplay = 0;
+    }
 
     void Update()
     {
@@ -16,14 +22,14 @@ public class TimerManager : MonoBehaviour
 
         if (_timeCounter > 1)
         {
-            DisplayTime(_timeCounter);
+            DisplayTime();
         }
     }
 
-    void DisplayTime(float timeToDisplay)
+    void DisplayTime()
     {
         _timeCounter = 0;
-        timeToDisplay += 1;
-        InGameAction.OnTimeChange?.Invoke(timeToDisplay);
+        _timeToDisplay += 1;
+        InGameAction.OnTimeChange?.Invoke(_timeToDisplay);
     }
 }

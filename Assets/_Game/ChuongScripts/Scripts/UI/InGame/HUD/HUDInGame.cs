@@ -10,6 +10,8 @@ public class HUDInGame : MonoBehaviour
     public TextMeshProUGUI KilledTMP;
     public TextMeshProUGUI CoinTMP;
 
+    public Image ExpImage;
+
     public Button pauseBtn;
 
     private void Start()
@@ -62,5 +64,6 @@ public class HUDInGame : MonoBehaviour
     private void OnExpChange(int amount)
     {
         ExpTMP.SetText(amount.ToString());
+        ExpImage.fillAmount = InGameManager.Instance.PercentLevel;
     }
 }

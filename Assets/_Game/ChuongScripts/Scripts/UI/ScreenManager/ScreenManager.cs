@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,7 +66,12 @@ public class ScreenManager : Singleton<ScreenManager>
         _screens = listScreen.ToArray();
     }
 #endif
-    
+
+    private void Start()
+    {
+        OpenScreen(ScreenType.HomeScreen);
+    }
+
 
     [Button]
     public void OpenScreen(ScreenType screenType)

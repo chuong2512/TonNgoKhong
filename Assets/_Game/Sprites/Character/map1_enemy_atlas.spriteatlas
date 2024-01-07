@@ -61,6 +61,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4fdcb29233ce6524589106b2c2aa498d, type: 3}
   - {fileID: 21300000, guid: 6a88b2c24aaafd5419b727c82c0e1cb1, type: 3}
   - {fileID: 21300000, guid: 5d057713f6c2d5f4aa697eb15ffaae15, type: 3}
+  - {fileID: 21300000, guid: 3815ad831ad877a4eb5fd5de804bf6a6, type: 3}
   - {fileID: 21300000, guid: cbaa6f837d8fcc847b660931bbea11ed, type: 3}
   - {fileID: 21300000, guid: 37e964a39c8e9ff4eabbca9554386201, type: 3}
   - {fileID: 21300000, guid: f03548c33c5bcac4eacc4213997c4de5, type: 3}
@@ -101,7 +102,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d380907c47398ab4a8c073431a6bed98, type: 3}
   - {fileID: 21300000, guid: 97df9bac39b670f4b8ea48426db75cf1, type: 3}
   - {fileID: 21300000, guid: 4c307decd06418d48906b73790b6d11b, type: 3}
-  - {fileID: 21300000, guid: b7d0b0fc974ce1b48a5d1f167c666028, type: 3}
   - {fileID: 21300000, guid: aedc1c1d854c41e46a4b75292d95bf82, type: 3}
   - {fileID: 21300000, guid: 37b0ab6dc46b8f24f84b80a161d8babb, type: 3}
   - {fileID: 21300000, guid: ebb7440eada0fb843879b81d71ddc7d7, type: 3}
@@ -110,6 +110,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 42f0aebe14665ba47b64da52c0c546c5, type: 3}
   - {fileID: 21300000, guid: b45bc40f56f8fba4388db7c1481aaade, type: 3}
   - {fileID: 21300000, guid: ed58c01fc2cfb4440a4922db7ad3008b, type: 3}
+  - {fileID: 21300000, guid: e48d846fd0fba634ab13827489a8218b, type: 3}
   - {fileID: 21300000, guid: 873c3c6fb5d31eb4a92b8e3bae888681, type: 3}
   - {fileID: 21300000, guid: 4ccef5afb7505ef4fa01f75460ebfa94, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -124,6 +125,7 @@ SpriteAtlas:
   - Artboard 75
   - Artboard 82
   - Artboard 69
+  - "nh\xE2n-v\u1EADt-game-(tach-nhan-vat) (1)"
   - Artboard 77
   - Artboard 67
   - Artboard 100
@@ -164,7 +166,6 @@ SpriteAtlas:
   - Artboard 87
   - Artboard 98
   - Artboard 78
-  - BG
   - Artboard 51
   - Artboard 25
   - Artboard 25 copy 2
@@ -173,6 +174,7 @@ SpriteAtlas:
   - Artboard 24
   - Artboard 85
   - Artboard 67
+  - "nh\xE2n-v\u1EADt-game-(tach-nhan-vat)"
   - Artboard 74
   - Artboard 95
   m_RenderDataMap: {}

@@ -11,7 +11,7 @@ public class PlayerManager : Singleton<PlayerManager>
 {
     [SerializeField] private PlayerStatus _baseStat;
     [SerializeField] public PlayerCombat Combat;
-    [SerializeField] public PlayerController Controller;
+    [SerializeField] public JoystickManager Controller;
 
     [SerializeField] private WeaponSkillContainer weaponSkillContainer;
     [SerializeField] private SuppliesSkillContainer suppliesSkillContainer;
@@ -78,9 +78,11 @@ public class PlayerManager : Singleton<PlayerManager>
         }
 
         var supplies = SupplySkills[hashIDSkill];
-        supplies.Upgrade();
+
         _listBuff.Append(supplies.SkillUpgradeInfo);
         supplies.Apply(_currentStatus);
+        supplies.Upgrade();
+
         foreach (var weaponSkill in WeaponSkills)
         {
             supplies.UpgradeWeapon(weaponSkill.Value);

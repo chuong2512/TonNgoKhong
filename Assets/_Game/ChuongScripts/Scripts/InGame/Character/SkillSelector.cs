@@ -51,10 +51,11 @@ namespace Skill
             UpgradeSkill(suppliesType);
         }
 #endif
-        
+
         private void GetBaseSkillPlayer()
         {
             UpgradeSkill(WeaponType.PowerPole);
+            UpgradeSkill(SuppliesType.UpgradeMagnet);
         }
 
         public List<int> GetListSkillUpgrade(int amount = 3)
@@ -160,11 +161,10 @@ namespace Skill
             {
                 PlayerManager.Instance.UpgradeSuppliesSkill(hashIDSkill);
             }
-            else if(IsWeaponHashID(hashIDSkill))
+            else if (IsWeaponHashID(hashIDSkill))
             {
                 PlayerManager.Instance.UpgradeWeaponSkill(hashIDSkill);
             }
-            
         }
 
         public List<int> GetAllCurrentSkillID<T>(T[] availableSkill) where T : Enum
@@ -233,7 +233,7 @@ namespace Skill
 
             return level >= hashID.GetMaxLevel();
         }
-        
+
         public static bool IsWeaponHashID(int id) => typeof(WeaponType).ContainHashID(id);
         public static bool IsSuppliesHashID(int id) => typeof(SuppliesType).ContainHashID(id);
     }
