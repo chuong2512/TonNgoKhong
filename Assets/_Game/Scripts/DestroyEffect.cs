@@ -6,7 +6,7 @@ using UnityEngine;
 public class DestroyEffect : MonoBehaviour
 {
     public float time = 0.3f;
-    void Start()
+    void OnEnable()
     {
         StartCoroutine(destroy());
     }

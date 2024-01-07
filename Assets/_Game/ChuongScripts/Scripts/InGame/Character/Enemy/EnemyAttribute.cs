@@ -5,7 +5,8 @@ namespace Game
     using UnityEngine;
 
     [System.Serializable]
-    public class EnemyAttribute : IHealthAttribute, IMaxHealthAttribute, IDefenseAttribute, IEnemyValueAttribute
+    public class EnemyAttribute : IHealthAttribute, IMaxHealthAttribute, IDefenseAttribute, IEnemyValueAttribute,
+        ISpeedAttribute, IDamageAttribute
     {
         [field: SerializeField] public float Health { get; set; }
         [field: SerializeField] public float MaxHealth { get; set; }
@@ -13,6 +14,8 @@ namespace Game
         [field: SerializeField] public int ExpValue { get; set; }
         [field: SerializeField] public int CoinValue { get; set; }
         [field: SerializeField] public int Piority { get; set; }
+        [field: SerializeField] public float Speed { get; set; }
+        [field: SerializeField] public float Damage { get; set; }
 
         internal float GetDamageTaken(float trueDamage)
         {

@@ -6,7 +6,7 @@ using UnityEngine;
 public class DestroyItems : MonoBehaviour
 {
     public float time = 0.3f;
-    void Start()
+    void OnEnable()
     {
         StartCoroutine(destroy());
         transform.Rotate(0, 0, Random.Range(1,180));

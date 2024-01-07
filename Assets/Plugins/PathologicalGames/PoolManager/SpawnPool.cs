@@ -838,14 +838,12 @@ namespace PathologicalGames
                 }  // Protection - Already despawned?
                 else if (this._prefabPools[i]._despawned.Contains(instance))
                 {
-                    Debug.LogError(
+                    Debug.LogWarning(
                         string.Format("SpawnPool {0}: {1} has already been despawned. " +
                                        "You cannot despawn something more than once!",
                                         this.poolName,
                                         instance.name));
-                    
-                    Destroy(instance.gameObject);
-                    
+
                     return;
                 }
             }
@@ -856,6 +854,8 @@ namespace PathologicalGames
                 Debug.LogError(string.Format("SpawnPool {0}: {1} not found in SpawnPool",
                                this.poolName,
                                instance.name));
+                
+                Destroy(instance.gameObject);
                 return;
             }
 

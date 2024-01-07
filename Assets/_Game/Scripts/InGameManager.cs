@@ -11,17 +11,12 @@ public enum GameState
 
 public class InGameManager : Singleton<InGameManager>
 {
-    public SpawenManager Spawner;
-
-    public GameObject[] Enemys;
-
-    [Header("Float Manager")] public float SpeedEnemy;
-
-    [Header("Integer Manager")] internal int KilledValue = 0;
+    [Header("Integer Manager")] 
+    internal int KilledValue = 0;
     internal int ExpValue = 0;
     internal int CoinValue = 0;
 
-    internal int _expLevel = 100;
+    private int _expLevel = 100;
 
     internal bool SpawnObject = true;
     internal bool RightFill = true;
@@ -48,6 +43,8 @@ public class InGameManager : Singleton<InGameManager>
                     OnResumeGame();
                     break;
             }
+            
+            InGameAction.OnGameStateChange?.Invoke();
         }
     }
 
@@ -62,13 +59,11 @@ public class InGameManager : Singleton<InGameManager>
     private void OnPauseGame()
     {
         PlayerManager.Instance.Stop();
-        Spawner.enabled = false;
     }
 
     private void OnResumeGame()
     {
         PlayerManager.Instance.Play();
-        Spawner.enabled = true;
     }
 
     public void AddExp(int exp = 1)

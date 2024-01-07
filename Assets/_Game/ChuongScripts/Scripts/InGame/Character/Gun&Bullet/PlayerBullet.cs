@@ -48,8 +48,6 @@ namespace Game
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.LogError("Trigger Player Bullet");
-            
             if (this._hitEffect)
             {
                 var basePosition = transform.position;
@@ -67,12 +65,10 @@ namespace Game
             {
                 var damageInfo = new DamageInfo(BulletAttribute.Damage, 0);
 
-                Debug.LogError($"Take dmg {damageInfo.trueDamage}");
-
                 combat.TakeDamage(damageInfo);
+                
+                PoolContainer.DeSpawnBullet(transform);
             }
-
-            PoolContainer.DeSpawnBullet(transform);
         }
     }
 
