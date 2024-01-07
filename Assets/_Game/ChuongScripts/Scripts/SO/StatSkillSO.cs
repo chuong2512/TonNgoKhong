@@ -13,8 +13,11 @@ namespace _TonNgoKhong
     {
         public List<SkillUpgradeInfo> ListUpgradeSkill;
 
+        public SkillUpgradeInfo this[int level] => GetSkillUpgradeInfo(level);
+        
         public SkillUpgradeInfo GetSkillUpgradeInfo(int level)
         {
+            level--; //Get level index
             if (ListUpgradeSkill == null)
             {
                 return null;
@@ -38,5 +41,13 @@ namespace _TonNgoKhong
     public class SkillUpgradeInfo
     {
         [SerializeReference, SubclassSelector] public List<IUpgradeSkill> listUpgradeSkill;
+
+        public void ApplyUpgrade<T>(T attribute) where T : IAttribute
+        {
+            for (int index = 0; index < listUpgradeSkill.Count; index++)
+            {
+                listUpgradeSkill[index].Upgrade(attribute);
+            }
+        }
     }
 }
