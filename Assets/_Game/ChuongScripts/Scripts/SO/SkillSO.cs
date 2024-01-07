@@ -9,30 +9,55 @@ namespace _TonNgoKhong
     [CreateAssetMenu(fileName = "SkillSO", menuName = "ScriptableObjects/SkillSO", order = 1)]
     public class SkillSO : ScriptableObject
     {
-        public List<SkillInfo> listSkill;
+        [SubclassSelector, SerializeReference] public List<SkillInfo> listSkill;
 
+        public SkillInfo this[int hashID] => GetSkillInfo(hashID);
+        
         public SkillInfo GetSkillInfo(int hashID)
         {
             return listSkill.Find(info => info.hashID == hashID);
         }
 
-        [Button]
-        public void SetID()
-        {
-            for (int i = 0; i < listSkill.Count; i++)
-            {
-                listSkill[i].hashID = i;
-            }
-        }
     }
 
     [Serializable]
-    public class SkillInfo
+    public abstract class SkillInfo
     {
-        public int hashID;
+        public abstract int hashID { get; }
         public Sprite icon;
-        public string nameSkill;
+        [field: SerializeField] public virtual string nameSkill { get; protected set; }
         public string contentSkill;
-        public StatSkillSO StatSkillSo;
+    }
+
+    [Serializable]
+    public class WeaponSkillInfo : SkillInfo
+    {
+        public WeaponType weaponType;
+        public override int hashID => weaponType.GetHashID();
+
+#if UNITY_EDITOR
+        public override string nameSkill { get => weaponType.ToString();
+            protected set
+            {
+                return;
+            }
+        }
+#endif
+    }
+    
+    [Serializable]
+    public class SuppliesSkillInfo : SkillInfo
+    {
+        public SuppliesType suppliesType;
+        public override int hashID => suppliesType.GetHashID();
+        
+#if UNITY_EDITOR
+        public override string nameSkill { get => suppliesType.ToString();
+            protected set
+            {
+                return;
+            }
+        }
+#endif
     }
 }
