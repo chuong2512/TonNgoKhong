@@ -8,6 +8,8 @@ public class TimerManager : MonoBehaviour
 {
     float _timeCounter = 0;
 
+    public float TimeCounter => _timeCounter;
+
     void Update()
     {
         if (!InGameManager.Instance.IsPlaying) return;

@@ -17,7 +17,7 @@ public class Enemy : BaseEnemy
         _rigidbody = GetComponentInChildren<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
-        _playerTrans = PlayerManager.Instance.Transform;
+        _playerTrans = PlayerManager.Instance.PlayerTransform;
 
         InGameAction.OnGameStateChange += OnGameStateChange;
     }
@@ -35,10 +35,10 @@ public class Enemy : BaseEnemy
 
     void Update()
     {
-        if (_followPlayer == true)
+        if (_followPlayer)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, _playerTrans.position,
-                InGameManager.Instance.SpeedEnemy * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, _playerTrans.position,
+                attribute.Speed * Time.deltaTime);
             _spriteRenderer.flipX = _playerTrans.position.x < transform.position.x;
         }
     }
@@ -50,7 +50,7 @@ public class Enemy : BaseEnemy
             _audio.Play();
             _followPlayer = false;
             
-            TakeDamage(999);
+            PlayerManager.Instance.Combat.TakeDamage(attribute.Damage);
         }
     }
 

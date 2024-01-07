@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using SinhTon;
 using UnityEngine;
+using UnityEngine.UI.Extensions;
 
 namespace Game
 {
     [RequireComponent(typeof(CircleCollider2D))]
     public class CheckEnemyInRange : Singleton<CheckEnemyInRange>
     {
-        [SerializeField] private List<BaseEnemy> _enemies = new List<BaseEnemy>();
+        [ReadOnly] [SerializeField] private List<BaseEnemy> _enemies = new List<BaseEnemy>();
 
         public List<BaseEnemy> GetAllEnemiesInRange()
         {

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840118569733806352}
   - component: {fileID: 1840118569728127184}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pool_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: Bullet
-  matchPoolScale: 1
-  matchPoolLayer: 1
+  matchPoolScale: 0
+  matchPoolLayer: 0
   dontReparent: 0
   _dontDestroyOnLoad: 0
   logMessages: 0

@@ -23,7 +23,9 @@ namespace Game
             Health = 10,
             ExpValue = 1,
             Piority = 1,
-            CoinValue = 1
+            CoinValue = 1,
+            Speed = 1,
+            Damage = 2
         };
 
         [ChildGameObjectsOnly] [SerializeField]
@@ -116,6 +118,8 @@ namespace Game
 
         public virtual void Die()
         {
+            SpawnManager.EnemiesCount--;
+            
             if (_animator != null)
             {
                 _animator.Active(true);

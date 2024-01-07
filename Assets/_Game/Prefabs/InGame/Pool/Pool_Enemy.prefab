@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7253501730586620187}
   - component: {fileID: 7253501730596329691}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pool_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,13 +45,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: Enemy
-  matchPoolScale: 1
-  matchPoolLayer: 1
+  matchPoolScale: 0
+  matchPoolLayer: 0
   dontReparent: 0
   _dontDestroyOnLoad: 0
   logMessages: 0
   _perPrefabPoolOptions:
-  - prefab: {fileID: 400000, guid: 27d432f15cb27a4408d64a6acab4d8a7, type: 3}
+  - prefab: {fileID: 3537171100188795311, guid: a4be2570a2e23844d97eda6847bcfe92, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 3537171100188795311, guid: 7930e22a5b597754b9ac42fceeb034bb, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 3537171100188795311, guid: 2613ef3d537e83848bd77b7196b97359, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 3537171100188795311, guid: f6b274e0f3bb89d46b7ab003136888a9, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 3537171100188795311, guid: ee483b13f0559c44a96b7ddddb914ce4, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 3537171100188795311, guid: 82b2f0b6f5e2ed041a1e49e2dffbb52f, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 3537171100188795311, guid: c0feb335d957d6e429237db00bd948e3, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 3537171100188795311, guid: 9b3190019c2874b4193c6649fe9c4b9b, type: 3}
     preloadAmount: 10
     preloadTime: 0
     preloadFrames: 2
@@ -65,18 +163,18 @@ MonoBehaviour:
     cullMaxPerPass: 10
     _logMessages: 0
     spawnPool: {fileID: 0}
-  - prefab: {fileID: 400000, guid: e416f715befa6314da934f2cc5c9d4fd, type: 3}
-    preloadAmount: 5
+  - prefab: {fileID: 3537171100188795311, guid: 6de3ec13b7093e045b5c0f7c37457838, type: 3}
+    preloadAmount: 10
     preloadTime: 0
     preloadFrames: 2
     preloadDelay: 0
     limitInstances: 0
-    limitAmount: 0
+    limitAmount: 100
     limitFIFO: 0
     cullDespawned: 0
-    cullAbove: 0
-    cullDelay: 0
-    cullMaxPerPass: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
     _logMessages: 0
     spawnPool: {fileID: 0}
   maxParticleDespawnTime: 30

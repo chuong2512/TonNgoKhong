@@ -683,9 +683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68aa399b0c0c2e0478187695089f9037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spawner: {fileID: 204604326}
-  Enemys: []
-  SpeedEnemy: 1
 --- !u!4 &189845730
 Transform:
   m_ObjectHideFlags: 0
@@ -834,7 +831,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1484999969}
-  - {fileID: 1111218154}
   m_Father: {fileID: 519420032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -850,20 +846,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a128190934d71fd4cb2017f3738aa004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemysLength: 0
-  Zombie: {fileID: 3537171100188795310, guid: a4be2570a2e23844d97eda6847bcfe92, type: 3}
-  ZombieLevel:
+  Enemies:
   - {fileID: 3537171100188795310, guid: 9b3190019c2874b4193c6649fe9c4b9b, type: 3}
+  - {fileID: 3537171100188795310, guid: c0feb335d957d6e429237db00bd948e3, type: 3}
   - {fileID: 3537171100188795310, guid: 82b2f0b6f5e2ed041a1e49e2dffbb52f, type: 3}
   - {fileID: 3537171100188795310, guid: 6de3ec13b7093e045b5c0f7c37457838, type: 3}
-  - {fileID: 3537171100188795310, guid: f6b274e0f3bb89d46b7ab003136888a9, type: 3}
   - {fileID: 3537171100188795310, guid: ee483b13f0559c44a96b7ddddb914ce4, type: 3}
+  - {fileID: 3537171100188795310, guid: f6b274e0f3bb89d46b7ab003136888a9, type: 3}
   - {fileID: 3537171100188795310, guid: 2613ef3d537e83848bd77b7196b97359, type: 3}
-  SpawenLocalisation: {fileID: 0}
+  - {fileID: 3537171100188795310, guid: 7930e22a5b597754b9ac42fceeb034bb, type: 3}
+  - {fileID: 3537171100188795310, guid: a4be2570a2e23844d97eda6847bcfe92, type: 3}
   Spawen1: {fileID: 1183999890}
   Spawen2: {fileID: 852765993}
   Spawen3: {fileID: 1444786310}
   Spawen4: {fileID: 1412129679}
+  _timer: {fileID: 1816819340}
 --- !u!114 &207636840 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4006017687221131032, guid: d5a3f770a35816d47baecfd5a53bab33, type: 3}
@@ -3077,8 +3074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 531185d8940e3aa4298e2139e15afd95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawenOne: {fileID: 204604326}
-  SpawenTwo: {fileID: 1111218155}
 --- !u!4 &539113999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 256252820116462703, guid: 78d1b579878e96548902c223b5b7fd12, type: 3}
@@ -3609,7 +3604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686870334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 788.3783, y: 1787.8585, z: -8.98098}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6360,64 +6355,6 @@ Transform:
   m_Father: {fileID: 1821763372}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1111218153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1111218154}
-  - component: {fileID: 1111218155}
-  m_Layer: 0
-  m_Name: MonsetrsZone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1111218154
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111218153}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 204604325}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1111218155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111218153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a128190934d71fd4cb2017f3738aa004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemysLength: 0
-  Zombie: {fileID: 3537171100188795310, guid: c0feb335d957d6e429237db00bd948e3, type: 3}
-  ZombieLevel:
-  - {fileID: 3537171100188795310, guid: 9b3190019c2874b4193c6649fe9c4b9b, type: 3}
-  - {fileID: 3537171100188795310, guid: 82b2f0b6f5e2ed041a1e49e2dffbb52f, type: 3}
-  - {fileID: 3537171100188795310, guid: 6de3ec13b7093e045b5c0f7c37457838, type: 3}
-  - {fileID: 3537171100188795310, guid: f6b274e0f3bb89d46b7ab003136888a9, type: 3}
-  - {fileID: 3537171100188795310, guid: ee483b13f0559c44a96b7ddddb914ce4, type: 3}
-  - {fileID: 3537171100188795310, guid: 2613ef3d537e83848bd77b7196b97359, type: 3}
-  SpawenLocalisation: {fileID: 0}
-  Spawen1: {fileID: 1183999890}
-  Spawen2: {fileID: 852765993}
-  Spawen3: {fileID: 1444786310}
-  Spawen4: {fileID: 1412129679}
 --- !u!1 &1121717384
 GameObject:
   m_ObjectHideFlags: 0
@@ -6973,13 +6910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7161c7bf9f808f947b564d3d79921d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Combat: {fileID: 1177642147}
-  Controller: {fileID: 1177642148}
-  weaponSkillContainer: {fileID: 1612451291}
-  suppliesSkillContainer: {fileID: 574934720}
-  AudioHeat: {fileID: 1044766578}
-  Death: {fileID: 712875191}
-  SpawenShoot: {fileID: 1597210390}
   _baseStat:
     <MaxHealth>k__BackingField: 100
     <VirtualHealth>k__BackingField: 0
@@ -6988,6 +6918,10 @@ MonoBehaviour:
     <Speed>k__BackingField: 3
     <Magnet>k__BackingField: 1
     <Health>k__BackingField: 0
+  Combat: {fileID: 1177642147}
+  Controller: {fileID: 1177642148}
+  weaponSkillContainer: {fileID: 1612451291}
+  suppliesSkillContainer: {fileID: 574934720}
 --- !u!212 &1177642145
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7053,7 +6987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ManagerSpawn: {fileID: 204604326}
-  Monsters: {fileID: 1111218155}
+  Monsters: {fileID: 0}
 --- !u!114 &1177642147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9894,6 +9828,17 @@ Transform:
   m_Father: {fileID: 1924596210}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.093}
+--- !u!114 &1816819340 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4006017687945336626, guid: d5a3f770a35816d47baecfd5a53bab33, type: 3}
+  m_PrefabInstance: {fileID: 4006017687156104816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dba9d5ff9efd154b938299a72fcf13c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1821763371
 GameObject:
   m_ObjectHideFlags: 0
@@ -9994,7 +9939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1858125657
 Transform:
   m_ObjectHideFlags: 0
@@ -10350,11 +10295,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8068837163610797119, guid: ed6ce976afc56df4b9168cae275c4296, type: 3}
       propertyPath: m_Pivot.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8068837163610797119, guid: ed6ce976afc56df4b9168cae275c4296, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8068837163610797119, guid: ed6ce976afc56df4b9168cae275c4296, type: 3}
       propertyPath: m_RootOrder
@@ -10362,11 +10307,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8068837163610797119, guid: ed6ce976afc56df4b9168cae275c4296, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068837163610797119, guid: ed6ce976afc56df4b9168cae275c4296, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068837163610797119, guid: ed6ce976afc56df4b9168cae275c4296, type: 3}
       propertyPath: m_AnchorMin.x
@@ -10984,6 +10929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26ef92c12b204724ae9f62acc4e7db89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemies: []
 --- !u!58 &1977011053
 CircleCollider2D:
   m_ObjectHideFlags: 0

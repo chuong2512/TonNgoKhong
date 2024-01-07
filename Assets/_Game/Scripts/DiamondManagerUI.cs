@@ -17,10 +17,6 @@ public class DiamondManagerUI : MonoBehaviour
     }
     void Update()
     {
-        if(InGameManager.Instance?.Spawner.enabled == true)
-        {
-            Destroy(this.gameObject);
-        }
         if (ValueColor == 0)
         {
             this.gameObject.GetComponent<Image>().sprite = Green;

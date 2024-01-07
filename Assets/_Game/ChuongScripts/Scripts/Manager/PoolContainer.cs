@@ -36,6 +36,15 @@
         {
             return PoolManager.Pools[PoolConstant.PoolEnemy].Spawn(prefab, pos, rot, parent);
         }
+        public static BaseEnemy SpawnEnemy(GameObject prefab, Vector3 pos)
+        {
+            return SpawnEnemy(prefab.transform, pos, GameServices.RotIdentity).GetComponent<BaseEnemy>();
+        }
+        
+        public static BaseEnemy SpawnEnemy(BaseEnemy prefab, Vector3 pos)
+        {
+            return SpawnEnemy(prefab.transform, pos, GameServices.RotIdentity).GetComponent<BaseEnemy>();
+        }
 
         public static Transform SpawnEnemy(string name, Vector3 pos, Quaternion rot, Transform parent = null)
         {
@@ -134,7 +143,7 @@
 
         public static void DeSpawnFX(GameObject trans)
         {
-            DeSpawnEnemy(trans.transform);
+            DeSpawnFX(trans.transform);
         }
 
         public static void DeSpawnBullet(GameObject trans)
