@@ -3205,6 +3205,7 @@ GameObject:
   - component: {fileID: 1623873090888077881}
   - component: {fileID: 2101310483791439883}
   - component: {fileID: 1368214511937833759}
+  - component: {fileID: 4725377751540957761}
   m_Layer: 5
   m_Name: InGame-Pause
   m_TagString: Untagged
@@ -3260,6 +3261,20 @@ MonoBehaviour:
   _canvasGroup: {fileID: 2101310483791439883}
   _closeBtn: {fileID: 0}
   _type: 9
+--- !u!114 &4725377751540957761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623873090888077880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e588dfb79984149a8f7eea9a98196a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resumeBtn: {fileID: 4889001984399566721}
+  _homeBtn: {fileID: 9099940111633518396}
 --- !u!1 &1657460895604771815
 GameObject:
   m_ObjectHideFlags: 0
@@ -13518,19 +13533,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6330904393206834598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6330137783446601970}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7094784137022059719
 GameObject:
   m_ObjectHideFlags: 0
