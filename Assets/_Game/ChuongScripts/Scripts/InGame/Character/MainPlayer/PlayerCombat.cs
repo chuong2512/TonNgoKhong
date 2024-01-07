@@ -7,12 +7,12 @@ namespace Game
 {
     public class PlayerCombat : MonoBehaviour, ICombat
     {
-        private PlayerAttribute _playerAttribute;
+        private PlayerStatus _playerStatus;
 
-        public PlayerAttribute PlayerAttribute
+        public PlayerStatus PlayerStatus
         {
-            get => _playerAttribute;
-            set => _playerAttribute = value;
+            get => _playerStatus;
+            set => _playerStatus = value;
         }
 
         public void InitHealth()
@@ -20,6 +20,11 @@ namespace Game
             Health = MaxHealth;
         }
 
+        public void RestoreHP()
+        {
+            InitHealth();
+        }
+        
         public void TakeHeal(HealInfo healInfo)
         {
             var flatHeal = healInfo.flatHeal;
@@ -81,16 +86,16 @@ namespace Game
 
         public bool IsDestroyed()
         {
-            return _playerAttribute.Health <= 0f;
+            return _playerStatus.Health <= 0f;
         }
 
-        public float MaxHealth => _playerAttribute.MaxHealth;
-        public float Defense => _playerAttribute.Defense;
+        public float MaxHealth => _playerStatus.MaxHealth;
+        public float Defense => _playerStatus.Defense;
 
         public float Health
         {
-            get => _playerAttribute.Health;
-            set => _playerAttribute.Health = value;
+            get => _playerStatus.Health;
+            set => _playerStatus.Health = value;
         }
 
         public float PercentHealth => Health / MaxHealth;

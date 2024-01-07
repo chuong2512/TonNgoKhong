@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Game
 {
     [Serializable]
-    public class PlayerAttribute : PlayerStat, IHealthAttribute
+    public class PlayerStatus : PlayerStat, IHealthAttribute
     {
         [field: SerializeField] public float Health { get; set; }
         /*[field: SerializeField] public float MaxHealth { get; set; } = 100;
@@ -18,7 +18,7 @@ namespace Game
 
     [Serializable]
     public class PlayerStat : IMaxHealthAttribute, IVirtualHealthAttribute, IDamageAttribute,
-        IDefenseAttribute, ISpeedAttribute, IMagnetAttribute
+        IDefenseAttribute, IPlayerSpeedAttribute, IMagnetAttribute
     {
         [field: SerializeField] public float MaxHealth { get; set; } = 100;
         [field: SerializeField] public float VirtualHealth { get; set; } = 0;

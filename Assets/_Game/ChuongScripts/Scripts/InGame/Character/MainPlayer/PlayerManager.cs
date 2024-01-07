@@ -21,10 +21,10 @@ public class PlayerManager : Singleton<PlayerManager>
     [SerializeField] private PlayerStat _baseStat;
 
     private SkillUpgradeInfo _listBuff;
-    private PlayerAttribute _currentAttribute;
+    private PlayerStatus _currentStatus;
     private Dictionary<int, BaseSkill> _skillDict;
 
-    public PlayerAttribute CurrentAttribute => _currentAttribute;
+    public PlayerStatus CurrentStatus => _currentStatus;
 
     void Start()
     {
@@ -37,9 +37,9 @@ public class PlayerManager : Singleton<PlayerManager>
     {
         _listBuff = new SkillUpgradeInfo();
 
-        _currentAttribute = (PlayerAttribute) _baseStat;
+        _currentStatus = (PlayerStatus) _baseStat;
 
-        Combat.PlayerAttribute = _currentAttribute;
+        Combat.PlayerStatus = _currentStatus;
         Combat.InitHealth();
     }
 
@@ -63,7 +63,7 @@ public class PlayerManager : Singleton<PlayerManager>
         if (other.CompareTag(TagConstants.Enemy))
         {
             AudioHeat.Play();
-            Combat.TakeDamage(0.5f - (0.5f * CurrentAttribute.Defense) / 100);
+            Combat.TakeDamage(0.5f - (0.5f * CurrentStatus.Defense) / 100);
         }
     }
 
@@ -71,7 +71,6 @@ public class PlayerManager : Singleton<PlayerManager>
     {
         if (!WeaponSkills.ContainsKey(hashIDSkill))
         {
-            
         }
         WeaponSkills[hashIDSkill].Upgrade();
     }
