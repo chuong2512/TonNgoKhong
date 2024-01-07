@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Diamond : MonoBehaviour
 {
-    Supplies supplies;
     public GameObject Player;
     public GameObject Manager;
     public GameObject Boolean;
@@ -16,7 +15,6 @@ public class Diamond : MonoBehaviour
 
     void Start()
     {
-        supplies = FindObjectOfType<Supplies>();
         Player = GameObject.FindGameObjectWithTag("Player");
         Boolean = GameObject.Find("Controller");
         Manager = GameObject.Find("GameManager");
@@ -45,7 +43,7 @@ public class Diamond : MonoBehaviour
 
     void Update()
     {
-        gameObject.GetComponent<BoxCollider2D>().size = new Vector2(supplies.Magnet, supplies.Magnet);
+        gameObject.GetComponent<BoxCollider2D>().size = Vector2.one * PlayerManager.Instance.CurrentAttribute.Magnet;
 
         if (StartMove == false)
         {

@@ -26,7 +26,6 @@ public class GameManager : Singleton<GameManager>
     internal float Valeur;
     internal float ExpValue;
     internal float t = 0;
-    Supplies supplies;
 
     [Header("Integer Manager")] internal int len;
     internal int colorIndex = 0;
@@ -75,8 +74,6 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         _gameState = GameState.Playing;
-
-        supplies = FindObjectOfType<Supplies>();
     }
 
     public float timeGenaration = 5;

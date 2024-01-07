@@ -6,7 +6,6 @@ using UnityEngine.VFX;
 
 public class JoystickManager : MonoBehaviour
 {
-    Supplies supplies;
     public float shoesSpeed;
     public AudioManager Sounds;
 
@@ -18,11 +17,6 @@ public class JoystickManager : MonoBehaviour
     internal bool rigidManager = true;
 
     [Header("Animations")] public Animator anim;
-
-    void Start()
-    {
-        supplies = FindObjectOfType<Supplies>();
-    }
 
     void Update()
     {
@@ -58,15 +52,14 @@ public class JoystickManager : MonoBehaviour
         AnimatorController();
         if (joystickMovement.joystickVec.y != 0)
         {
-            float ps = playerSpeed + (playerSpeed * supplies.playerSpeed) / 100 +
-                       PlayerPrefs.GetFloat("Spead") / 10;
-            Debug.Log("player speed" + ps);
+            var speed = PlayerManager.Instance.CurrentAttribute.Speed;
 
-            rb.velocity = new Vector2(
-                joystickMovement.joystickVec.x *
-                (shoesSpeed + playerSpeed + (playerSpeed * supplies.playerSpeed) / 100),
-                joystickMovement.joystickVec.y *
-                (shoesSpeed + playerSpeed + (playerSpeed * supplies.playerSpeed) / 100));
+            float ps = speed /*+ PlayerPrefs.GetFloat("Spead") / 10*/;
+            Debug.Log("player speed" + ps);
+            Debug.Log("player save" + PlayerPrefs.GetFloat("Spead"));
+
+            rb.velocity = new Vector2(joystickMovement.joystickVec.x * speed,
+                joystickMovement.joystickVec.y * speed);
         }
         else
         {

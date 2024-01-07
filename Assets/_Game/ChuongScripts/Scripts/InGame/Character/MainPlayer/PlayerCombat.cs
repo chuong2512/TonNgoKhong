@@ -5,16 +5,17 @@ using UnityEngine;
 
 namespace Game
 {
-    public class PlayerCombat : Singleton<PlayerCombat>, ICombat
+    public class PlayerCombat : MonoBehaviour, ICombat
     {
         private PlayerAttribute _playerAttribute;
 
-        private void Start()
+        public PlayerAttribute PlayerAttribute
         {
-            InitHealth();
+            get => _playerAttribute;
+            set => _playerAttribute = value;
         }
 
-        private void InitHealth()
+        public void InitHealth()
         {
             Health = MaxHealth;
         }

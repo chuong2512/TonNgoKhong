@@ -1,9 +1,13 @@
+using System.Collections.Generic;
+using System.Linq;
 using Game;
+using SinhTon;
+using Skill;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : Singleton<PlayerManager>
 {
-    Supplies supplies;
+    [SerializeField] public PlayerCombat Combat;
 
     [Header("Spawen Transformer")] public AudioSource EffectArrow;
     public AudioSource AudioHeat;
@@ -18,12 +22,38 @@ public class PlayerManager : MonoBehaviour
 
     [Header("Boolean manager")] internal bool Deaths = true;
 
+    [SerializeField] private PlayerStat _baseStat;
+
+    private List<IUpgradeSkill> _listBuff;
+    private PlayerAttribute _currentAttribute;
+
+    public PlayerAttribute CurrentAttribute => _currentAttribute;
 
     void Start()
     {
-        supplies = FindObjectOfType<Supplies>();
+        InitAttribute();
 
         InGameAction.OnPlayerDie += OnPlayerDie;
+    }
+
+    private void InitAttribute()
+    {
+        _listBuff = new List<IUpgradeSkill>();
+
+        _currentAttribute = (PlayerAttribute) _baseStat;
+
+        Combat.PlayerAttribute = _currentAttribute;
+        Combat.InitHealth();
+    }
+
+    public void Upgrade(List<IUpgradeSkill> listSkill)
+    {
+        _listBuff = _listBuff.Append<>(listSkill).ToList();
+
+        foreach (var upgradeSkill in listSkill)
+        {
+            upgradeSkill.Upgrade(_baseStat);
+        }
     }
 
     private void OnPlayerDie()
@@ -61,7 +91,7 @@ public class PlayerManager : MonoBehaviour
         if (other.CompareTag(TagConstants.Enemy))
         {
             AudioHeat.Play();
-            PlayerCombat.Instance.TakeDamage(0.5f - (0.5f * supplies.Protect) / 100);
+            Combat.TakeDamage(0.5f - (0.5f *  CurrentAttribute.Defense) / 100);
         }
     }
 }

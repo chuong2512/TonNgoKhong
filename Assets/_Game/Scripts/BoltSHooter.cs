@@ -11,8 +11,6 @@ public class BoltSHooter : MonoBehaviour
     public Sprite ninja2;
     [Header("Manager")]
     public GameObject Manager;
-    Supplies supplies;
-
     [Header("Pefabes Manager")]
     public GameObject Diamond;
     public GameObject DiamondPos;
@@ -28,7 +26,6 @@ public class BoltSHooter : MonoBehaviour
     public float speed=10;
     void Awake()
     {
-        supplies = FindObjectOfType<Supplies>();
 
         Manager = GameObject.Find("GameManager");
         DiamondPos = GameObject.Find("DiamondPos");
@@ -48,7 +45,7 @@ public class BoltSHooter : MonoBehaviour
         {
            // transform.position = Vector2.MoveTowards(this.transform.position, GameObject.FindGameObjectWithTag("Enemy").transform.position, ((speed + (speed * supplies.speedShoot) / 100)) * Time.deltaTime);
 
-            transform.position = Vector2.MoveTowards(this.transform.position, GameObject.FindGameObjectWithTag("Enemy").transform.position, ((10+ (10*supplies.speedShoot)/100 ) + NinjaSpeed) * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, GameObject.FindGameObjectWithTag("Enemy").transform.position, (10 + NinjaSpeed) * Time.deltaTime);
            Vector2 direction = GameObject.FindGameObjectWithTag("Enemy").transform.position - transform.position;
            float Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
            this.gameObject.GetComponent<Rigidbody2D>().rotation = Angle;

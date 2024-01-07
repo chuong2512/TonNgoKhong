@@ -18,7 +18,6 @@ namespace Game
         [SerializeField] protected float _cachedSpeed;
         [SerializeField] protected float _lifeTime;
 
-
         void OnEnable()
         {
             m_useAutoRelease = true;
@@ -54,7 +53,7 @@ namespace Game
 
             if (other.CompareTag("Player"))
             {
-                PlayerCombat.Instance.TakeDamage(_bulletDamage);
+                PlayerManager.Instance.Combat.TakeDamage(_bulletDamage);
                 _onContactEvent?.Invoke();
             }
 

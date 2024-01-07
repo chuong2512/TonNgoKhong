@@ -63,4 +63,9 @@ namespace Skill
     {
         float CritMult { get; set; }
     }
+    
+    public interface IMagnetAttribute : IAttribute
+    {
+        float Magnet { get; set; }
+    }
 }
