@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _Game;
 using _TonNgoKhong;
 using Game;
 using SinhTon;
@@ -6,12 +7,14 @@ using Skill;
 using Skill.Weapons;
 using UnityEngine;
 
+[DefaultExecutionOrder(-99)]
 public class PlayerManager : Singleton<PlayerManager>
 {
     [SerializeField] public PlayerCombat Combat;
-    
-    public Dictionary<int, WeaponSkill> WeaponSkills;
-    public Dictionary<int, SupplySkill> SupplySkills;
+    [SerializeField] private WeaponSkillContainer weaponSkillContainer;
+    [SerializeField] private SuppliesSkillContainer suppliesSkillContainer;
+    private Dictionary<int, WeaponSkill> WeaponSkills;
+    private Dictionary<int, SupplySkill> SupplySkills;
     public AudioSource AudioHeat;
     public GameObject Death;
     public GameObject SpawenShoot;
@@ -26,7 +29,7 @@ public class PlayerManager : Singleton<PlayerManager>
 
     public PlayerStatus CurrentStatus => _currentStatus;
 
-    void Start()
+    void Awake()
     {
         InitAttribute();
 
@@ -77,7 +80,7 @@ public class PlayerManager : Singleton<PlayerManager>
 
     private void InitWeaponSkill(int hashIDSkill)
     {
-        WeaponSkills[hashIDSkill] = new PowerPoleSkill();
+        WeaponSkills[hashIDSkill] = weaponSkillContainer.GetSkill(hashIDSkill);
         WeaponSkills[hashIDSkill].Upgrade(_listBuff);
     }
     
@@ -98,7 +101,7 @@ public class PlayerManager : Singleton<PlayerManager>
 
     private void InitSuppliesSkill(int hashIDSkill)
     {
-        SupplySkills[hashIDSkill] = new AddDamageSupply();
+        SupplySkills[hashIDSkill] = suppliesSkillContainer.GetSkill(hashIDSkill);
     }
     
 }
