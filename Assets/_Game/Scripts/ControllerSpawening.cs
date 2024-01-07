@@ -1,26 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using SinhTon;
-using UnityEngine;
 
 public class ControllerSpawening : Singleton<ControllerSpawening>
 {
-    public GameObject Spawner;
-
-    public GameObject SpawenOne;
-    public GameObject SpawenTwo;
-    internal bool CheckWork = true;
+    public SpawenManager SpawenOne;
+    public SpawenManager SpawenTwo;
 
     void Update()
     {
-        Spawner.SetActive(true);
-        if (CheckWork == true)
-        {
-            StartCoroutine(SpawenOne.GetComponent<SpawenManager>().SpaweningManager());
-            StartCoroutine(SpawenTwo.GetComponent<SpawenManager>().SpaweningManager());
-            StartCoroutine(SpawenOne.GetComponent<SpawenManager>().stopSpawning());
-            StartCoroutine(SpawenTwo.GetComponent<SpawenManager>().stopSpawning());
-            CheckWork = false;
-        }
+        StartCoroutine(SpawenOne.SpaweningManager());
+        StartCoroutine(SpawenTwo.SpaweningManager());
+        StartCoroutine(SpawenOne.stopSpawning());
+        StartCoroutine(SpawenTwo.stopSpawning());
     }
 }

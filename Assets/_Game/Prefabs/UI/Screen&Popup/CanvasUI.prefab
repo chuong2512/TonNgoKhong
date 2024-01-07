@@ -138,7 +138,7 @@ MonoBehaviour:
   _openingPopups: {fileID: 8068837164011591800}
   _closingPopups: {fileID: 8068837163677461600}
   _overlay: {fileID: 8910155619466853965}
-  folderPath: Assets/_TonNgoKhong/Prefabs/UI/Screen&Popup
+  folderPath: Assets/_Game/Prefabs/UI/Screen&Popup
 --- !u!1 &8068837163677461603
 GameObject:
   m_ObjectHideFlags: 0

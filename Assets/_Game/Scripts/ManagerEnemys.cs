@@ -9,20 +9,7 @@ public class ManagerEnemys : MonoBehaviour
     public GameObject Blooding;
 
     internal bool Stop = false;
-    private void Start()
-    {
-        
-    }
-    private void Update()
-    {
-        if(Stop == true)
-        {
-            /*
-            ManagerMec.LevelLevel += 0.005f;
-            PlayerPrefs.SetFloat("Score", ManagerMec.LevelLevel);
-        */
-        }
-    }
+    
     IEnumerator Spawning()
     {
         yield return new WaitForEndOfFrame();

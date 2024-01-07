@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class HUDInGame : MonoBehaviour
 {
-    [Header("UI Text Manager")] public TextMeshProUGUI TimeTMP;
+    [Header("UI Text Manager")] public Text TimeTMP;
     public TextMeshProUGUI ExpTMP;
     public TextMeshProUGUI KilledTMP;
     public TextMeshProUGUI CoinTMP;

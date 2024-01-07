@@ -13,10 +13,10 @@
         public static readonly string PoolBullet = "Bullet";
 
         //------------------ITEM---------------------------------
-        public static readonly string BlueDiamond = "Diamond Blue";
-        public static readonly string RedDiamond = "Diamond Red";
-        public static readonly string GreenDiamond = "Diamond Green";
-        public static readonly string VipDiamond = "Diamond V I P";
+        public static readonly string BlueDiamond = "DiamondBlue";
+        public static readonly string RedDiamond = "DiamondRed";
+        public static readonly string GreenDiamond = "DiamondGreen";
+        public static readonly string VipDiamond = "DiamondVIP";
         public static readonly string Coin = "Coin";
 
         //---------------------PARTICLE---------------------------------

@@ -1,32 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using Game;
-using SinhTon;
-using UnityEngine.UI;
 using UnityEngine;
-using TMPro;
-using Unity.VisualScripting;
-using static UnityEngine.GraphicsBuffer;
+using UnityEngine.Serialization;
 
 public class Enemy : BaseEnemy
 {
-    public GameObject BloodLocalisation;
-    private AudioSource Audio;
+    private AudioSource _audio;
+    private Rigidbody2D _rigidbody;
+    private Transform _playerTrans;
+    private SpriteRenderer _spriteRenderer;
 
-    public GameObject Bolt;
-    internal bool FollowPlayer = true;
-
-    public Rigidbody2D rigidbody;
-
-    public Transform _playerTrans;
+    private bool _followPlayer = true;
 
     void Start()
     {
-        BloodLocalisation = GameObject.Find("BloodManager");
-        
-        Audio = GetComponent<AudioSource>();
-
-        rigidbody = GetComponentInChildren<Rigidbody2D>();
+        _audio = GetComponent<AudioSource>();
+        _rigidbody = GetComponentInChildren<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 
         _playerTrans = PlayerManager.Instance.Transform;
 
@@ -36,77 +25,48 @@ public class Enemy : BaseEnemy
     private void OnGameStateChange()
     {
         enabled = InGameManager.Instance.IsPlaying;
-        rigidbody.simulated = InGameManager.Instance.IsPlaying;
+        _rigidbody.simulated = InGameManager.Instance.IsPlaying;
     }
 
     private void OnDestroy()
     {
         InGameAction.OnGameStateChange -= OnGameStateChange;
     }
-    
+
     void Update()
     {
-        if (FollowPlayer == true)
+        if (_followPlayer == true)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, _playerTrans.position,
                 InGameManager.Instance.SpeedEnemy * Time.deltaTime);
-            this.gameObject.GetComponent<SpriteRenderer>().flipX = _playerTrans.position.x < transform.position.x;
+            _spriteRenderer.flipX = _playerTrans.position.x < transform.position.x;
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Bolt"))
+        if (other.CompareTag(TagConstants.Player))
         {
-            Audio.Play();
-            Bolt.SetActive(true);
-            Bolt.GetComponent<TextMeshProUGUI>().color = Color.red;
+            _audio.Play();
+            _followPlayer = false;
             
             TakeDamage(999);
-        }
-
-        if (other.CompareTag("ball"))
-        {
-            Audio.Play();
-            Bolt.SetActive(true);
-            TakeDamage(999);
-        }
-
-        if (other.CompareTag("Fire"))
-        {
-            Audio.Play();
-            Bolt.SetActive(true);
-
-            TakeDamage(999);
-        }
-
-        if (other.CompareTag("Spiner"))
-        {
-            Audio.Play();
-            Bolt.SetActive(true);
-
-            TakeDamage(999);
-        }
-
-        if (other.CompareTag("Player"))
-        {
-            Audio.Play();
-            FollowPlayer = false;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(TagConstants.Player))
         {
-            FollowPlayer = true;
+            _audio.Stop();
+            _followPlayer = true;
         }
     }
 
     public override void Die()
     {
         base.Die();
-        
+
         switch (attribute.ExpValue)
         {
             case 1:
@@ -122,9 +82,9 @@ public class Enemy : BaseEnemy
 
         this.gameObject.GetComponent<Animator>().Play("ZombieDeath");
 
-        PoolContainer.SpawnItem(PoolConstant.Blood, transform.position, transform.rotation);
+        PoolContainer.SpawnFX(PoolConstant.Blood, transform.position, transform.rotation);
 
-        
+
         Destroy(this.gameObject);
     }
 }
