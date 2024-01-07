@@ -10,23 +10,17 @@ public class OutGameManager : Singleton<OutGameManager>
     public static Action<int> OnChangeCoin;
     public static Action<int> OnChangeExp;
     public static Action<float> SetRegisterTime;
-    
+
     public static Action<int> OnChooseMap;
 
     private void Start()
     {
         BindData();
-        SetFirstScreen();
     }
 
     private void BindData()
     {
         _gameData = GameDataManager.Instance;
         _uiManager = ScreenManager.Instance;
-    }
-
-    private void SetFirstScreen()
-    {
-        _uiManager.OpenScreen(ScreenType.HomeScreen);
     }
 }

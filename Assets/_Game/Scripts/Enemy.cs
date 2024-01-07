@@ -67,7 +67,7 @@ public class Enemy : BaseEnemy
         }
     }
 
-    private void OnCollisionExit(Collision other)
+    private void OnCollisionExit2D(Collision2D other)
     {
         if (other.transform.CompareTag(TagConstants.Player))
         {
