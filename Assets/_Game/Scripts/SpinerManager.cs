@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using UnityEngine;
 
 public class SpinerManager : MonoBehaviour
@@ -8,10 +9,12 @@ public class SpinerManager : MonoBehaviour
     {
         transform.Rotate(0, 0, -5f);
     }
+
     private void Start()
     {
         StartCoroutine(CheckingSize());
     }
+
     IEnumerator CheckingSize()
     {
         yield return new WaitForSeconds(5f);
@@ -21,5 +24,16 @@ public class SpinerManager : MonoBehaviour
         this.gameObject.GetComponent<Animator>().Play("FadeIn");
         this.gameObject.GetComponent<CircleCollider2D>().enabled = true;
         StartCoroutine(CheckingSize());
+    }
+
+    protected virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        var combat = other.GetComponentInParent<BaseEnemy>();
+        if (combat != null && !combat.IsDestroyed())
+        {
+            var damageInfo = new DamageInfo(4, 0);
+
+            combat.TakeDamage(damageInfo);
+        }
     }
 }

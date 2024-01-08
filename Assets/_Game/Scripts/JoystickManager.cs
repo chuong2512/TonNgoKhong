@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
-using UnityEngine.VFX;
 
 public class JoystickManager : MonoBehaviour
 {
@@ -14,6 +9,7 @@ public class JoystickManager : MonoBehaviour
     [Header("Animations")] public Animator anim;
 
     [SerializeField] private Rigidbody2D _rigidbody2D;
+    private static readonly int Speed = Animator.StringToHash("Speed");
 
     public void SetSimulated(bool b)
     {
@@ -22,20 +18,7 @@ public class JoystickManager : MonoBehaviour
 
     void Update()
     {
-        /*if (PlayerPrefs.GetInt("shoes") == 10)
-        {
-            shoesSpeed = 0.1f * PlayerPrefs.GetInt("shoes1");
-        }
-        else if (PlayerPrefs.GetInt("shoes") == 11)
-        {
-            shoesSpeed = 0.1f * PlayerPrefs.GetInt("shoes2");
-        }
-        else if (PlayerPrefs.GetInt("shoes") == 12)
-        {
-            shoesSpeed = 0.1f * PlayerPrefs.GetInt("shoes3");
-        }*/
-
-        anim.Play(_rigidbody2D.velocity.magnitude > 0 ? "CharacterBody" : "0");
+        anim.SetFloat(Speed, _rigidbody2D.velocity.magnitude > 0 ? 1 : 0);
 
         AnimatorController();
         if (joystickMovement.joystickVec.y != 0)
