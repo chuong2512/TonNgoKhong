@@ -60,6 +60,8 @@ public class Enemy : BaseEnemy
     {
         if (col.transform.CompareTag(TagConstants.Player))
         {
+            Debug.LogError($"Enter : {col.transform.name}");
+
             _audio.Play();
             _followPlayer = false;
 

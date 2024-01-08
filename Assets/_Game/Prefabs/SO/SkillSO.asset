@@ -39,76 +39,76 @@ MonoBehaviour:
       type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
         icon: {fileID: 21300000, guid: ac705c5388b28c448a2339220df84e6c, type: 3}
-        <nameSkill>k__BackingField: "G\u1EADy nh\u01B0 \xFD"
+        <nameSkill>k__BackingField: "Ki\u1EBFm ma ph\xE1p"
         contentSkill: 
         weaponType: 1
     - rid: 4881752630806183954
       type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: ac705c5388b28c448a2339220df84e6c, type: 3}
-        <nameSkill>k__BackingField: "G\u1EADy nh\u01B0 \xFD"
+        icon: {fileID: 21300000, guid: 34cabdf9946606444bfbcae7be94691e, type: 3}
+        <nameSkill>k__BackingField: "R\xECu Hyoga"
         contentSkill: 
         weaponType: 2
     - rid: 4881752630806183955
       type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: 34cabdf9946606444bfbcae7be94691e, type: 3}
-        <nameSkill>k__BackingField: "G\u1EADy nh\u01B0 \xFD"
+        icon: {fileID: 21300000, guid: d3225197c7162604d89dea5fe234cee7, type: 3}
+        <nameSkill>k__BackingField: "V\xF2ng b\u1EA3o v\u1EC7"
         contentSkill: 
         weaponType: 3
     - rid: 4881752630806183956
       type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
         icon: {fileID: 21300000, guid: 036936fce14e5344695a721a7ef82ab9, type: 3}
-        <nameSkill>k__BackingField: "G\u1EADy nh\u01B0 \xFD"
+        <nameSkill>k__BackingField: "Th\xE1p Thi\xEAn V\u01B0\u01A1ng"
         contentSkill: 
         weaponType: 4
     - rid: 4881752630806183957
       type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: d3225197c7162604d89dea5fe234cee7, type: 3}
+        icon: {fileID: 21300000, guid: fdb45eaad201f384e9996e797958b4fe, type: 3}
         <nameSkill>k__BackingField: "G\u1EADy nh\u01B0 \xFD"
         contentSkill: 
         weaponType: 5
     - rid: 4881752630806183958
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: 036936fce14e5344695a721a7ef82ab9, type: 3}
+        icon: {fileID: 21300000, guid: 477862b4250ce0b4c82c552de8de524a, type: 3}
         <nameSkill>k__BackingField: "Th\xEAm m\xE1u"
         contentSkill: 
         suppliesType: 0
     - rid: 4881752630806183959
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: d3225197c7162604d89dea5fe234cee7, type: 3}
+        icon: {fileID: 21300000, guid: 9d0b501ec9b35614abc95da8014b2733, type: 3}
         <nameSkill>k__BackingField: "Nam ch\xE2m"
         contentSkill: 
         suppliesType: 1
     - rid: 4881752630806183960
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: 34cabdf9946606444bfbcae7be94691e, type: 3}
+        icon: {fileID: 21300000, guid: 6d71093e53a716a4ab55a0855ec484b1, type: 3}
         <nameSkill>k__BackingField: "T\u1ED1c \u0111\u1ED9 b\u1EAFn"
         contentSkill: 
         suppliesType: 2
     - rid: 4881752630806183961
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: ac705c5388b28c448a2339220df84e6c, type: 3}
+        icon: {fileID: 21300000, guid: 771617992deefc94ebb2dd9882c9d5d6, type: 3}
         <nameSkill>k__BackingField: "T\u0103ng t\u1EA5n c\xF4ng"
         contentSkill: 
         suppliesType: 3
     - rid: 4881752630806183962
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: 036936fce14e5344695a721a7ef82ab9, type: 3}
+        icon: {fileID: 21300000, guid: a0a64f2dca86b8e4183584f1c0bee37f, type: 3}
         <nameSkill>k__BackingField: "H\u1ED3i m\xE1u"
         contentSkill: 
         suppliesType: 4
     - rid: 4881752630806183963
       type: {class: SuppliesSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: d3225197c7162604d89dea5fe234cee7, type: 3}
+        icon: {fileID: 21300000, guid: 3b5db9ee8e38f4341aeb2327b15495ff, type: 3}
         <nameSkill>k__BackingField: "C\xE2n \u0111\u1EA9u v\xE2n"
         contentSkill: "T\u0103ng t\u1ED1c \u0111\u1ED9"
         suppliesType: 5

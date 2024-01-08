@@ -88,4 +88,9 @@ namespace Skill
         int CoinValue { get; set; }
         int Piority { get; set; }
     }
+    
+    public interface IRangeAttribute : IAttribute
+    {
+        float Range { get; set; }
+    }
 }

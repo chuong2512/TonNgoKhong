@@ -52,7 +52,35 @@ MonoBehaviour:
   logMessages: 0
   _perPrefabPoolOptions:
   - prefab: {fileID: 400000, guid: ed4b213a49aea5443b30dbdad6dd0af1, type: 3}
-    preloadAmount: 30
+    preloadAmount: 20
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 400000, guid: aa9a68d404aa8c74c81482e5590b17da, type: 3}
+    preloadAmount: 10
+    preloadTime: 0
+    preloadFrames: 2
+    preloadDelay: 0
+    limitInstances: 0
+    limitAmount: 100
+    limitFIFO: 0
+    cullDespawned: 0
+    cullAbove: 50
+    cullDelay: 60
+    cullMaxPerPass: 5
+    _logMessages: 0
+    spawnPool: {fileID: 0}
+  - prefab: {fileID: 400000, guid: 745045ac91cecc447a2cb9eb7ee02b3a, type: 3}
+    preloadAmount: 20
     preloadTime: 0
     preloadFrames: 2
     preloadDelay: 0

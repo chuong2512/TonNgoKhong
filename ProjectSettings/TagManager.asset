@@ -20,6 +20,7 @@ TagManager:
   - Coins
   - Pet
   - PlayerBullet
+  - Shield
   layers:
   - Default
   - TransparentFX
