@@ -8,7 +8,7 @@ namespace Skill.Weapons
 {
     public class PowerPoleSkill : WeaponSkill
     {
-        [SerializeField] private PowerPoleController powerPoleController;
+        [FormerlySerializedAs("powerPoleController")] [SerializeField] private ShotController shotController;
         
         public override WeaponType WeaponType => WeaponType.PowerPole;
         private PowerPoleAttribute _poleAttribute = new PowerPoleAttribute();
@@ -16,13 +16,13 @@ namespace Skill.Weapons
         public override void Upgrade()
         {
             _statSkillSo[Level].ApplyUpgrade(_poleAttribute);
-            powerPoleController.Refresh();
+            shotController.Refresh();
         }
 
         public override void Upgrade(SkillUpgradeInfo skillUpgradeInfo)
         {
             skillUpgradeInfo.ApplyUpgrade(_poleAttribute);
-            powerPoleController.Refresh();
+            shotController.Refresh();
         }
         
         public override void Upgrade(List<IUpgradeSkill> list)
@@ -35,9 +35,9 @@ namespace Skill.Weapons
 
         public override void ActiveWeapon()
         {
-            powerPoleController.enabled = true;
+            shotController.enabled = true;
             _poleAttribute.MultipleAmount = 1;
-            powerPoleController.attribute = _poleAttribute;
+            shotController.attribute = _poleAttribute;
         }
     }
 }

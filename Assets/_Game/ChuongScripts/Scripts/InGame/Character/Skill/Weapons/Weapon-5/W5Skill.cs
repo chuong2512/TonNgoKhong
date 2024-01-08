@@ -19,7 +19,7 @@ public class W5Skill : WeaponSkill
         
     }
 
-    public override WeaponType WeaponType => WeaponType.W5Skill;
+    public override WeaponType WeaponType => WeaponType.SpinerSkill;
 
     public override void ActiveWeapon()
     {

@@ -21,7 +21,7 @@ public class W4Skill : WeaponSkill
         
     }
 
-    public override WeaponType WeaponType => WeaponType.W4Skill;
+    public override WeaponType WeaponType => WeaponType.TowerSkill;
     public override void ActiveWeapon()
     {
        

@@ -6569,7 +6569,7 @@ IL_004a:
 		MethodInfo_t* L_14 = ___methodInfo1;
 		NullCheck(L_14);
 		bool L_15;
-		L_15 = VirtualFuncInvoker0< bool >::Invoke(26 /* System.Boolean System.Reflection.MethodBase::get_IsGenericMethod() */, L_14);
+		L_15 = VirtualFuncInvoker0< bool >::Invoke(27 /* System.Boolean System.Reflection.MethodBase::get_IsGenericMethod() */, L_14);
 		if (!L_15)
 		{
 			goto IL_0063;

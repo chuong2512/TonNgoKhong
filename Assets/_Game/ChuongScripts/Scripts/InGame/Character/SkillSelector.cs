@@ -39,16 +39,17 @@ namespace Skill
         }
 
 #if UNITY_EDITOR
-        [Button]
-        private void UpgradePowerPole()
-        {
-            UpgradeSkill(WeaponType.PowerPole);
-        }
 
         [Button]
         private void UpgradeSupplies(SuppliesType suppliesType)
         {
             UpgradeSkill(suppliesType);
+        }
+
+        [Button]
+        private void UpgradeSupplies(WeaponType weaponType)
+        {
+            UpgradeSkill(weaponType);
         }
 #endif
 
@@ -61,9 +62,9 @@ namespace Skill
         public List<int> GetListSkillUpgrade(int amount = 3)
         {
             var listSkillUpgrade = new List<Enum>();
-            var listWeaponAvailableUpgrade = GetListUpgradeAvailable(_availableWeapons, 
+            var listWeaponAvailableUpgrade = GetListUpgradeAvailable(_availableWeapons,
                 SkillConstant.MaxLevelWeapon, SkillConstant.MaxAmountWeapons);
-            var listSuppliesAvailableUpgrade = GetListUpgradeAvailable(_availableSupplies, 
+            var listSuppliesAvailableUpgrade = GetListUpgradeAvailable(_availableSupplies,
                 SkillConstant.MaxLevelSupplies, SkillConstant.MaxLevelSupplies);
             var weaponAvailableCount = listWeaponAvailableUpgrade.Count;
             var suppliesAvailableCount = listSuppliesAvailableUpgrade.Count;
@@ -73,7 +74,7 @@ namespace Skill
                 listSkillUpgrade.AddRange(listWeaponAvailableUpgrade);
                 return listSkillUpgrade.Select(skill => skill.GetHashID()).ToList();
             }
-            
+
             var weaponUpgradeAmount = Random.Range(0, 100f) switch
             {
                 <= 15f => Mathf.Max(0, amount - 2),
@@ -95,7 +96,8 @@ namespace Skill
             return listSkillUpgrade.Select(skill => skill.GetHashID()).ToList();
         }
 
-        private List<Enum> GetListUpgradeAvailable<T>(T[] availableSkill, int maxLevel, int maxSkillContain) where T : Enum
+        private List<Enum> GetListUpgradeAvailable<T>(T[] availableSkill, int maxLevel, int maxSkillContain)
+            where T : Enum
         {
             var availableUpgrade = new List<Enum>();
             var nonActiveSkill = new List<Enum>();
@@ -109,6 +111,7 @@ namespace Skill
                     nonActiveSkill.Add(skillType);
                     continue;
                 }
+
                 countSkillContain++;
                 //check weapon is max level, can not upgrade
                 if (_skillLevelDict[hashID] >= maxLevel) continue;
@@ -119,8 +122,8 @@ namespace Skill
             if (skillAmountRemain <= 0)
             {
                 return availableUpgrade;
-                
             }
+
             availableUpgrade.AddRange(GetRandomSkill(nonActiveSkill, skillAmountRemain));
             return availableUpgrade;
         }
@@ -137,6 +140,7 @@ namespace Skill
                 listSkillUpgrade.Add(weapon);
                 skills.RemoveAt(index);
             }
+
             return listSkillUpgrade;
         }
 

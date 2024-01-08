@@ -10529,7 +10529,7 @@ IL_0039:
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_10 = V_0;
 		NullCheck(L_10);
 		String_t* L_11;
-		L_11 = VirtualFuncInvoker0< String_t* >::Invoke(37 /* System.String System.IO.FileStream::get_Name() */, L_10);
+		L_11 = VirtualFuncInvoker0< String_t* >::Invoke(38 /* System.String System.IO.FileStream::get_Name() */, L_10);
 		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 		String_t* L_12;
 		L_12 = Path_GetDirectoryName_m428BADBE493A3927B51A13DEF658929B430516F6(L_11, NULL);
@@ -10538,7 +10538,7 @@ IL_0039:
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_13 = V_0;
 		NullCheck(L_13);
 		String_t* L_14;
-		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(37 /* System.String System.IO.FileStream::get_Name() */, L_13);
+		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(38 /* System.String System.IO.FileStream::get_Name() */, L_13);
 		String_t* L_15;
 		L_15 = Path_GetFileNameWithoutExtension_m2D14CCBAB9C60DC8D32C2443CCE3D34644822FAF(L_14, NULL);
 		__this->____fileName_12 = L_15;
@@ -10546,7 +10546,7 @@ IL_0039:
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_16 = V_0;
 		NullCheck(L_16);
 		String_t* L_17;
-		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(37 /* System.String System.IO.FileStream::get_Name() */, L_16);
+		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(38 /* System.String System.IO.FileStream::get_Name() */, L_16);
 		String_t* L_18;
 		L_18 = Path_GetExtension_m6FEAA9E14451BFD210B9D1AEC2430C813F570FE5(L_17, NULL);
 		__this->____fileExt_13 = L_18;

@@ -5,9 +5,25 @@ namespace Skill
     {
     }
 
-    public class PowerPoleAttribute : IPowerPoleAttribute
+    public class PowerPoleAttribute : ShotWeaponAttribute
     {
         public PowerPoleAttribute()
+        {
+            MultipleAmount = 1;
+        }
+    }
+    
+    public class SwordAttribute : ShotWeaponAttribute
+    {
+        public SwordAttribute()
+        {
+            MultipleAmount = 1;
+        }
+    }
+    
+    public class ShotWeaponAttribute : IPowerPoleAttribute
+    {
+        public ShotWeaponAttribute()
         {
             MultipleAmount = 1;
         }

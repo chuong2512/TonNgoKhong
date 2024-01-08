@@ -97,11 +97,11 @@ namespace Skill
     public enum WeaponType
     {
         PowerPole,
-        W1Skill,
-        W2Skill,
-        W3Skill,
-        W4Skill,
-        W5Skill,
+        SwordSkill,
+        AxeSkill,
+        ShieldSkill,
+        TowerSkill,
+        SpinerSkill,
     }
 
     public enum SuppliesType

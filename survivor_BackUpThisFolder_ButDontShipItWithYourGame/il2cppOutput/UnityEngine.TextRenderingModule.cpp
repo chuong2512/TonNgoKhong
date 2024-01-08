@@ -2280,6 +2280,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextGenerator_get_lineCount_mC568C375
 	int32_t icallRetVal = _il2cpp_icall_func(__this);
 	return icallRetVal;
 }
+// System.Int32 UnityEngine.TextGenerator::get_fontSizeUsedForBestFit()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextGenerator_get_fontSizeUsedForBestFit_mBCA834ACDE42232D91E30FB189D99D7CE9EAE084 (TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* __this, const RuntimeMethod* method) 
+{
+	typedef int32_t (*TextGenerator_get_fontSizeUsedForBestFit_mBCA834ACDE42232D91E30FB189D99D7CE9EAE084_ftn) (TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC*);
+	static TextGenerator_get_fontSizeUsedForBestFit_mBCA834ACDE42232D91E30FB189D99D7CE9EAE084_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TextGenerator_get_fontSizeUsedForBestFit_mBCA834ACDE42232D91E30FB189D99D7CE9EAE084_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TextGenerator::get_fontSizeUsedForBestFit()");
+	int32_t icallRetVal = _il2cpp_icall_func(__this);
+	return icallRetVal;
+}
 // System.IntPtr UnityEngine.TextGenerator::Internal_Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t TextGenerator_Internal_Create_m66701C08DAE160892766930F831D2AB1EB4E998C (const RuntimeMethod* method) 
 {
