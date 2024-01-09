@@ -16,6 +16,7 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
 
     float _timeCounter = 0;
     float _timeSpawn = 0.8f;
+    float _timeAddAttribute = 0;
 
     private void Awake()
     {
@@ -44,6 +45,7 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
             return;
 
         _timeCounter += Time.deltaTime;
+        _timeAddAttribute += Time.deltaTime;
 
         if (_timeCounter >= _timeSpawn)
         {
@@ -65,7 +67,8 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
     private void SpawnRandom()
     {
         EnemiesCount++;
-        PoolContainer.SpawnEnemy(Enemies[Random.Range(0, Enemies.Length)], GetRandomSpawnPoint());
+        var e = PoolContainer.SpawnEnemy(Enemies[Random.Range(0, Enemies.Length)], GetRandomSpawnPoint());
+        e.Attribute = GetEnemyAttribute();
     }
 
     private void SpawnEnemiesSameType(int amount, int type)
@@ -76,8 +79,27 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
 
         for (int i = 0; i < amount; i++)
         {
-            PoolContainer.SpawnEnemy(Enemies[type], GetRandomSpawnPointOneDir(pointSpawn));
+            var e = PoolContainer.SpawnEnemy(Enemies[type], GetRandomSpawnPointOneDir(pointSpawn));
+            e.Attribute = GetEnemyAttribute();
         }
+    }
+
+    private EnemyAttribute GetEnemyAttribute()
+    {
+        var DMG = _timeAddAttribute % 30;
+        var HP = _timeAddAttribute % 20;
+
+        return new EnemyAttribute()
+        {
+            MaxHealth = 10 + HP,
+            Defense = 0,
+            Health = 10,
+            ExpValue = 1,
+            Piority = 1,
+            CoinValue = 1,
+            Speed = 1,
+            Damage = 2 + DMG
+        };
     }
 
     public void SpawnEnemiesSameType(int amount)

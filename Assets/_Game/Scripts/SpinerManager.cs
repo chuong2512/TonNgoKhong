@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class SpinerManager : MonoBehaviour
 {
+    [SerializeField] private float Damage = 4;
+
     void Update()
     {
         transform.Rotate(0, 0, -5f);
@@ -31,7 +33,7 @@ public class SpinerManager : MonoBehaviour
         var combat = other.GetComponentInParent<BaseEnemy>();
         if (combat != null && !combat.IsDestroyed())
         {
-            var damageInfo = new DamageInfo(4, 0);
+            var damageInfo = new DamageInfo(Damage, 0);
 
             combat.TakeDamage(damageInfo);
         }

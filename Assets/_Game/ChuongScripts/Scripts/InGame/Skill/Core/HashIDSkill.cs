@@ -102,6 +102,9 @@ namespace Skill
         ShieldSkill,
         TowerSkill,
         SpinerSkill,
+        PowerPole2,
+        FireSkill,
+        IceSkill,
     }
 
     public enum SuppliesType

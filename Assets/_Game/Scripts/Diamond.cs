@@ -39,22 +39,22 @@ public class Diamond : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(TagConstants.Player))
+        if (!other.CompareTag(TagConstants.Player))
+            return;
+
+        InGameManager.Instance.AddExp(Value);
+
+        PoolContainer.SpawnFX(PoolConstant.Flash, transform.position, transform.rotation);
+        Audio.Play();
+
+        if (AddOnce == true)
         {
-            InGameManager.Instance.AddExp(Value);
-
-            PoolContainer.SpawnFX(PoolConstant.Flash, transform.position, transform.rotation);
-            Audio.Play();
-
-            if (AddOnce == true)
-            {
-                this.gameObject.AddComponent<Rigidbody2D>();
-                this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-                AddOnce = false;
-            }
-
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 15);
-            StartCoroutine(Destroy());
+            this.gameObject.AddComponent<Rigidbody2D>();
+            this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
+            AddOnce = false;
         }
+
+        this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 15);
+        StartCoroutine(Destroy());
     }
 }

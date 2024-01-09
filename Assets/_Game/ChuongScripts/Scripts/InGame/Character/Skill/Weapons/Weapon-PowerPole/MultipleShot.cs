@@ -8,7 +8,7 @@ using UnityEngine.Events;
 
 namespace Skill.Weapons
 {
-    public class MultipleShot : SerializedMonoBehaviour
+    public class MultipleShot : PlayerShot
     {
         private readonly IAiming _aiming = new RegularAiming();
 
@@ -24,7 +24,7 @@ namespace Skill.Weapons
         private float _dmg;
         private int _amount;
 
-        public int Amount
+        public override int Amount
         {
             get => _amount;
             set => _amount = value;
@@ -36,7 +36,7 @@ namespace Skill.Weapons
             set => _dmg = value;
         }
 
-        public void SetBulletAttribute(BulletAttribute attribute)
+        public override void SetBulletAttribute(BulletAttribute attribute)
         {
             _usingShot.SetBulletAttribute(attribute);
         }

@@ -25,9 +25,33 @@ MonoBehaviour:
   - rid: 4881752630806183961
   - rid: 4881752630806183962
   - rid: 4881752630806183963
+  - rid: 3794718310463438848
+  - rid: 3794718310463438850
+  - rid: 3794718310463438851
   references:
     version: 2
     RefIds:
+    - rid: 3794718310463438848
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 477862b4250ce0b4c82c552de8de524a, type: 3}
+        <nameSkill>k__BackingField: "G\u1EADy nh\u01B0 \xFD 2"
+        contentSkill: 
+        weaponType: 6
+    - rid: 3794718310463438850
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 9d0b501ec9b35614abc95da8014b2733, type: 3}
+        <nameSkill>k__BackingField: "Qu\u1EA3 c\u1EA7u l\u1EEDa"
+        contentSkill: 
+        weaponType: 7
+    - rid: 3794718310463438851
+      type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
+      data:
+        icon: {fileID: 21300000, guid: 6d71093e53a716a4ab55a0855ec484b1, type: 3}
+        <nameSkill>k__BackingField: "B\u0103ng c\u1EF1c"
+        contentSkill: 
+        weaponType: 8
     - rid: 4881752630806183952
       type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:

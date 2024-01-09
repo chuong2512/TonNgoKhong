@@ -9,7 +9,6 @@ using static UnityEngine.EventSystems.EventTrigger;
 public class movementJoystick : MonoBehaviour
 {
     public GameObject ArrowDirecteur;
-    public GameObject Gun;
     public GameObject joystick;
     public GameObject joystickBG;
     public Vector2 joystickVec;
@@ -28,10 +27,6 @@ public class movementJoystick : MonoBehaviour
         {
             ArrowDirecteur.SetActive(true);
             ArrowDirecteur.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(-joystickVec.x, joystickVec.y) * 180 / Mathf.PI);
-        }
-        if(Gun.activeSelf == true)
-        {
-            Gun.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(-joystickVec.x, joystickVec.y) * 180 / Mathf.PI);
         }
     }
     void Start()

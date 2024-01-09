@@ -4,8 +4,6 @@ public class JoystickManager : MonoBehaviour
 {
     [Header("ManagerPlayer")] public movementJoystick joystickMovement;
 
-    public GameObject Gun;
-
     [Header("Animations")] public Animator anim;
 
     [SerializeField] private Rigidbody2D _rigidbody2D;
@@ -53,21 +51,17 @@ public class JoystickManager : MonoBehaviour
         if (joystickMovement.joystickVec.x < 0)
         {
             //Debug.Log(" Going Left");
-            this.gameObject.transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-            if (Gun.activeSelf == true)
-            {
-                Gun.transform.localScale = new Vector3(-0.2446888f, 0.2446888f, 0.2446888f);
-            }
+            var localScale = anim.transform.localScale;
+            localScale.x = Mathf.Abs(localScale.x);
+            anim.transform.localScale = localScale;
         }
 
         if (joystickMovement.joystickVec.x > 0)
         {
             //Debug.Log("Going Right");
-            this.gameObject.transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-            if (Gun.activeSelf == true)
-            {
-                Gun.transform.localScale = new Vector3(0.2446888f, 0.2446888f, 0.2446888f);
-            }
+            var localScale = anim.transform.localScale;
+            localScale.x = -Mathf.Abs(localScale.x);
+            anim.transform.localScale = localScale;
         }
     }
 }

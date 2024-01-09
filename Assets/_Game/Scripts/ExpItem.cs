@@ -5,10 +5,10 @@ public class ExpItem : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag(TagConstants.Player)) return;
+        if (!other.CompareTag(TagConstants.Player))
+            return;
         
         InGameManager.Instance.AddExp();
-        
         PoolContainer.DeSpawnItem(this.gameObject);
     }
 }

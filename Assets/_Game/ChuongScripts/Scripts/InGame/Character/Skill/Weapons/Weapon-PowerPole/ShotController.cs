@@ -5,7 +5,7 @@ namespace Skill.Weapons
 {
     public class ShotController : BaseSkillController<ShotWeaponAttribute>
     {
-        [SerializeField] private MultipleShot _shot;
+        [SerializeField] private PlayerShot _shot;
 
         [SerializeField] private float _baseDmg = 10;
         [SerializeField] private int _baseAmount = 1;

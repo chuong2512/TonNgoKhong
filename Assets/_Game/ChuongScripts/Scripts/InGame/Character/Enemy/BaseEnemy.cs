@@ -27,6 +27,12 @@ namespace Game
             Damage = 2
         };
 
+        public EnemyAttribute Attribute
+        {
+            get => attribute;
+            set => attribute = value;
+        }
+
         [ChildGameObjectsOnly] [SerializeField]
         protected AEnemyAnimator _animator;
 
