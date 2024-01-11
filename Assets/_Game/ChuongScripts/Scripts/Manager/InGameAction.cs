@@ -16,4 +16,11 @@ namespace Game
         public static Action<float> OnTimeChange;
         public static Action OnPlayerDie;
     }
+
+    public class GameAction
+    {
+        public static Action<bool> OnSoundChange;
+        public static Action<bool> OnSFXChange;
+        public static Action<bool> OnVibrateChange;
+    }
 }

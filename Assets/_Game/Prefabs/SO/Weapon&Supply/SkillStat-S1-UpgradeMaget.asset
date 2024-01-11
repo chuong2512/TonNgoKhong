@@ -44,11 +44,11 @@ MonoBehaviour:
     - rid: 4881752630806183947
       type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
-        addMagnetRange: 1
+        addMagnetRange: 0.5
     - rid: 4881752630806183948
       type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
-        addMagnetRange: 1
+        addMagnetRange: 0.5
     - rid: 4881752630806183949
       type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
@@ -56,7 +56,7 @@ MonoBehaviour:
     - rid: 4881752630806183950
       type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
-        addMagnetRange: 1
+        addMagnetRange: 0.5
     - rid: 4881752630806183951
       type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:

@@ -8,7 +8,6 @@ public class Diamond : MonoBehaviour
     public int Value = 1;
 
     private GameObject _player;
-    private AudioSource Audio;
 
     internal bool StartMove = true;
     internal bool AddOnce = true;
@@ -16,8 +15,6 @@ public class Diamond : MonoBehaviour
     void Start()
     {
         _player = PlayerManager.Instance.gameObject;
-        Audio = GetComponent<AudioSource>();
-        Audio.volume = 0.5f;
     }
 
     void Update()
@@ -45,7 +42,7 @@ public class Diamond : MonoBehaviour
         InGameManager.Instance.AddExp(Value);
 
         PoolContainer.SpawnFX(PoolConstant.Flash, transform.position, transform.rotation);
-        Audio.Play();
+        MasterAudioManager.Play2DSfx(AudioConst.Exp);
 
         if (AddOnce == true)
         {

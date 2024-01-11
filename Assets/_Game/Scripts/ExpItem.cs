@@ -9,6 +9,7 @@ public class ExpItem : MonoBehaviour
             return;
         
         InGameManager.Instance.AddExp();
+        MasterAudioManager.Play2DSfx(AudioConst.Exp);
         PoolContainer.DeSpawnItem(this.gameObject);
     }
 }

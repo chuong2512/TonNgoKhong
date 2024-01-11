@@ -1,7 +1,7 @@
 namespace Skill
 {
     public interface IPowerPoleAttribute : IAmountAttribute, IPlayerDamageAttribute, IPercentDamageAttribute, 
-        IMultipleAmountAttribute, ISpeedAttribute
+        IMultipleAmountAttribute, ISpeedAttribute, ISpeedShotAttribute
     {
     }
 
@@ -33,5 +33,6 @@ namespace Skill
         public float PercentDamage { get; set; }
         public int MultipleAmount { get; set; }
         public float Speed { get; set; }
+        public float SpeedShot { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BabySound.Scripts;
 using DG.Tweening;
+using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,7 +29,7 @@ namespace SinhTon
 
         private void RateGame()
         {
-            AudioManager.Instance.ClickSound();
+            MasterAudioManager.ClickSound();
 #if UNITY_ANDROID
             Application.OpenURL(string.Format("market://details?id=" + Application.identifier));
 #elif UNITY_IPHONE

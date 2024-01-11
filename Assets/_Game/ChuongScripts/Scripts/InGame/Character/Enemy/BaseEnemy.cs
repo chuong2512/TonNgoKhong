@@ -30,7 +30,11 @@ namespace Game
         public EnemyAttribute Attribute
         {
             get => attribute;
-            set => attribute = value;
+            set
+            {
+                attribute = value;
+                Reset();
+            }
         }
 
         [ChildGameObjectsOnly] [SerializeField]

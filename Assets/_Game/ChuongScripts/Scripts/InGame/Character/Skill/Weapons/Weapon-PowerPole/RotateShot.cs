@@ -27,6 +27,8 @@ public class RotateShot : PlayerShot
         set => _amount = value;
     }
 
+    public override float SpeedShotTime { get; set; }
+
     public float Dmg
     {
         get => _dmg;

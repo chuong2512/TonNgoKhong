@@ -22,12 +22,42 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   ListUpgradeSkill:
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
+  - listUpgradeSkill:
+    - rid: 3794718355998900260
+  - listUpgradeSkill:
+    - rid: 3794718355998900261
+  - listUpgradeSkill:
+    - rid: 3794718355998900262
+  - listUpgradeSkill:
+    - rid: 3794718355998900263
+  - listUpgradeSkill:
+    - rid: 3794718355998900264
+  - listUpgradeSkill:
+    - rid: 3794718355998900265
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 3794718355998900260
+      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addSpeed: 0.2
+    - rid: 3794718355998900261
+      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addSpeed: 0.3
+    - rid: 3794718355998900262
+      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addSpeed: 0.2
+    - rid: 3794718355998900263
+      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addSpeed: 0.3
+    - rid: 3794718355998900264
+      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addSpeed: 0.2
+    - rid: 3794718355998900265
+      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addSpeed: 0.2

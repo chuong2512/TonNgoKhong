@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using SinhTon;
 using UnityEngine;
 
@@ -11,32 +12,26 @@ public class AudioManager : Singleton<AudioManager>
 
     private AudioClip _audioClip;
 
-    public void ClickSound()
-    {
-        musicSource.PlayOneShot(_clickClip);
-    }
-
-    public void Fire(AudioClip currentSong)
-    {
-        musicSource.PlayOneShot(currentSong);
-    }
-
-    [Header("Componenet Sounds")] 
-    public GameObject Sound;
-    public GameObject Music;
-    public GameObject Vibration;
-
     private SettingData _setting;
 
     void Start()
     {
         _setting = GameDataManager.Instance.settingData;
+
+        MasterAudioManager.SetSFXVolume(_setting.Sound ? 1 : 0);
+        MasterAudioManager.SetPlaylistVolume(_setting.Music ? 1 : 0);
+
+        GameAction.OnSFXChange += OnSfxChange;
+        GameAction.OnSoundChange += OnSoundChange;
     }
 
-    void Update()
+    private void OnSoundChange(bool obj)
     {
-        Sound.SetActive(_setting.Sound);
-        Music.SetActive(_setting.Music);
-        Vibration.SetActive(_setting.Vibration);
+        MasterAudioManager.SetSFXVolume(_setting.Sound ? 1 : 0);
+    }
+
+    private void OnSfxChange(bool obj)
+    {
+        MasterAudioManager.SetPlaylistVolume(_setting.Music ? 1 : 0);
     }
 }

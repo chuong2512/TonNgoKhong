@@ -5,8 +5,11 @@ namespace Game
 {
     public class RestoreHPSupply : SupplySkill
     {
+        [SerializeField] private ParticleSystem hp;
+
         public override void Upgrade()
         {
+            hp.Play();
             PlayerManager.Instance.Combat.RestoreHP();
         }
 

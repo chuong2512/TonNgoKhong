@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -61,7 +62,7 @@ public class BuyTimeButton : MonoBehaviour
 
     private void OnClickButton()
     {
-        AudioManager.Instance.ClickSound();
+        MasterAudioManager.ClickSound();
         /*switch (_index)
         {
             case 0:

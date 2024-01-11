@@ -2279,7 +2279,7 @@ MonoBehaviour:
   _button: {fileID: 2963711851328686410}
   _manager: {fileID: 0}
   _tab: 1
-  _isLock: 0
+  _isLock: 1
   _lock: {fileID: 2963711850248322563}
   _bgImg: {fileID: 2963711851328686413}
   _on: {fileID: 21300000, guid: 3ed242c5b4564a54eaa80f0764b720ba, type: 3}

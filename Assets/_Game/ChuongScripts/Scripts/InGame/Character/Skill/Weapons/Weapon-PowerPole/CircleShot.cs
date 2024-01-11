@@ -23,6 +23,8 @@ public class CircleShot : PlayerShot
         set => _amount = value;
     }
 
+    public override float SpeedShotTime { get; set; }
+
     public float Dmg
     {
         get => _dmg;
@@ -46,8 +48,6 @@ public class CircleShot : PlayerShot
 
     private void Shoot()
     {
-        Debug.LogError($"amount : {_amount}");
-        
         for (int i = 0; i < _amount; i++)
         {
             _usingShot.SetAngle(360 / _amount * i);

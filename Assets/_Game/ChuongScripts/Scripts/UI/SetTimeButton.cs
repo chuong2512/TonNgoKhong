@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,7 +25,7 @@ public class SetTimeButton : MonoBehaviour
 
     private void OnClickButton()
     {
-        AudioManager.Instance.ClickSound();
+        MasterAudioManager.ClickSound();
         ScreenManager.Instance.Back();
     }
 

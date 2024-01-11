@@ -8,6 +8,7 @@ namespace Game
     public class PlayerBullet : UbhBullet
     {
         [SerializeField] protected GameObject _visual;
+        [SerializeField] protected bool _isPiercing;
 
         [AssetSelector(Paths = @"Assets//0_Game/FX/Prefabs")] [SerializeField]
         protected ParticleSystem _hitEffect;
@@ -66,8 +67,11 @@ namespace Game
                 var damageInfo = new DamageInfo(BulletAttribute.Damage, 0);
 
                 combat.TakeDamage(damageInfo);
-                
-                PoolContainer.DeSpawnBullet(transform);
+
+                if (!_isPiercing)
+                {
+                    PoolContainer.DeSpawnBullet(transform);
+                }
             }
         }
     }

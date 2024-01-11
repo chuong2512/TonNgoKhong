@@ -6,12 +6,8 @@ using UnityEngine;
 
 public class AudioCheckerPlayer : MonoBehaviour
 {
-    private AudioSource _audioSource;
-
     private void Start()
     {
-        _audioSource = GetComponent<AudioSource>();
-
         InGameAction.OnGameStateChange += OnGameStateChange;
     }
 
@@ -25,15 +21,8 @@ public class AudioCheckerPlayer : MonoBehaviour
         InGameAction.OnGameStateChange -= OnGameStateChange;
     }
 
-    public void AudioManager(bool b)
+    private void AudioManager(bool b)
     {
-        if (b)
-        {
-            _audioSource.Play();
-        }
-        else
-        {
-            _audioSource.Stop();
-        }
+        MasterAudioManager.SetPlaylistVolume(b ? 1 : 0);
     }
 }

@@ -28,6 +28,7 @@ MonoBehaviour:
     - rid: 3794718288140828681
   - listUpgradeSkill:
     - rid: 3794718288140828686
+    - rid: 3794718355998900236
   - listUpgradeSkill:
     - rid: 3794718288140828685
   - listUpgradeSkill:
@@ -58,6 +59,10 @@ MonoBehaviour:
       data:
         addDamage: 2
     - rid: 3794718288140828688
+      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        amount: 2
+    - rid: 3794718355998900236
       type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
         amount: 1

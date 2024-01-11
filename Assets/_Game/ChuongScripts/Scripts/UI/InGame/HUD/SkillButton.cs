@@ -16,6 +16,9 @@ public class SkillButton : MonoBehaviour
     private Button _upgradeBut;
     private int _hashID = -1;
 
+
+    [SerializeField] private Sprite _coin;
+
     private void Start()
     {
         _upgradeBut = GetComponent<Button>();
@@ -25,22 +28,41 @@ public class SkillButton : MonoBehaviour
     public void Setup(int hashID)
     {
         _hashID = hashID;
+        if (hashID < 0)
+        {
+            ShowCoinBtn();
+        }
+
         SetInfo();
+    }
+
+    private void ShowCoinBtn()
+    {
+        skillIcon.sprite = _coin;
+        tDescription.text = "+10 Ngân lượng";
+        tNameSkill.text = "Ngân lượng";
+        SetStar(6);
     }
 
     private void SetInfo()
     {
         var data = GameDataManager.Instance.SkillSo[_hashID];
         skillIcon.sprite = data.icon;
-        tDescription.text = data.contentSkill + " Description";
-        tNameSkill.text = data.nameSkill + " name";
+        tDescription.text = data.contentSkill;
+        tNameSkill.text = data.nameSkill;
         var level = SkillSelector.Instance.GetSkillLevel(_hashID);
-        for (int i = 0; i < level; i++)
+
+        SetStar(level);
+    }
+
+    private void SetStar(int amount)
+    {
+        for (int i = 0; i < amount; i++)
         {
             stars[i].SetActive(true);
         }
 
-        for (int i = level; i < stars.Length; i++)
+        for (int i = amount; i < stars.Length; i++)
         {
             stars[i].SetActive(false);
         }

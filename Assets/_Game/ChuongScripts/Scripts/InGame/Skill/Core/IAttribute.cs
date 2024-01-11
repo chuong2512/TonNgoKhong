@@ -33,6 +33,11 @@ namespace Skill
     {
         float Speed { get; set; }
     }
+    
+    public interface ISpeedShotAttribute : IAttribute
+    {
+        float SpeedShot { get; set; }
+    }
 
     public interface IShotSpeedAttribute : ISpeedAttribute
     {

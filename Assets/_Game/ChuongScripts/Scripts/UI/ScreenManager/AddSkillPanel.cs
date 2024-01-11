@@ -24,7 +24,7 @@ public class AddSkillPanel : BasePopup
 
         for (; buttonIndex < _skillButtons.Length; buttonIndex++)
         {
-            _skillButtons[buttonIndex].gameObject.SetActive(false);
+            _skillButtons[buttonIndex].Setup(-1);
         }
         
     }

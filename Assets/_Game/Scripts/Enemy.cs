@@ -8,7 +8,8 @@ public class Enemy : BaseEnemy
     [SerializeField] private AudioSource _audio;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private Collider2D _collision2D;
-    [SerializeField] private Transform _playerTrans;
+
+    private Transform _playerTrans;
 
     private bool _followPlayer = true;
 

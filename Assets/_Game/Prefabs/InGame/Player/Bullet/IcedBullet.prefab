@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _visual: {fileID: 1009008200131704530}
+  _isPiercing: 1
   _hitEffect: {fileID: 0}
 --- !u!50 &9122833475339188054
 Rigidbody2D:

@@ -40,19 +40,19 @@ MonoBehaviour:
     - rid: 4881752630806183936
       type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
-        addDamage: 5
+        addDamage: 3
     - rid: 4881752630806183937
       type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
-        addDamage: 5
+        addDamage: 3
     - rid: 4881752630806183938
       type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
-        addDamage: 5
+        addDamage: 4
     - rid: 4881752630806183939
       type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:
-        addDamage: 5
+        addDamage: 4
     - rid: 4881752630806183940
       type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
       data:

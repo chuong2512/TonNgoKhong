@@ -8,6 +8,8 @@ public class CoinItem : MonoBehaviour
         if (!other.CompareTag(TagConstants.Player))
             return;
         
+        MasterAudioManager.Play2DSfx(AudioConst.Gold);
+        
         InGameManager.Instance.AddCoin();
         Destroy(this.gameObject);
     }

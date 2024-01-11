@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using SinhTon;
 using UnityEngine.UI;
 using UnityEngine;
@@ -50,6 +51,7 @@ public class SettingManager : MonoBehaviour
         SIconActive.SetActive(true);
         SIconInactive.SetActive(false);
         _setting.Sound = true;
+        GameAction.OnSoundChange?.Invoke(true);
     }
 
     public void SoundInActive()
@@ -59,6 +61,7 @@ public class SettingManager : MonoBehaviour
         SIconActive.SetActive(false);
         SIconInactive.SetActive(true);
         _setting.Sound = false;
+        GameAction.OnSoundChange?.Invoke(false);
     }
 
     public void MusicActive()
@@ -68,6 +71,7 @@ public class SettingManager : MonoBehaviour
         MIconActive.SetActive(true);
         MIconInactive.SetActive(false);
         _setting.Music = true;
+        GameAction.OnSFXChange?.Invoke(true);
     }
 
     public void MusicInactive()
@@ -77,6 +81,7 @@ public class SettingManager : MonoBehaviour
         MIconActive.SetActive(false);
         MIconInactive.SetActive(true);
         _setting.Music = false;
+        GameAction.OnSFXChange?.Invoke(false);
     }
 
     public void VibrationActive()
@@ -86,6 +91,7 @@ public class SettingManager : MonoBehaviour
         VIconActive.SetActive(true);
         VIconInactive.SetActive(false);
         _setting.Vibration = true;
+        GameAction.OnVibrateChange?.Invoke(true);
     }
 
     public void VibrationInactive()
@@ -95,10 +101,11 @@ public class SettingManager : MonoBehaviour
         VIconActive.SetActive(false);
         VIconInactive.SetActive(true);
         _setting.Vibration = false;
+        GameAction.OnVibrateChange?.Invoke(false);
     }
 
     public void Click()
     {
-        AudioManager.Instance.ClickSound();
+        MasterAudioManager.ClickSound();
     }
 }

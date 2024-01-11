@@ -96,7 +96,7 @@ public class ScreenManager : Singleton<ScreenManager>
             _listScreens.Add(screen);
         }
 
-        _overlay.gameObject.SetActive(screen is not BaseScreen);
+        _overlay.gameObject.SetActive(screen.GetID() != ScreenType.HomeScreen);
 
         _overlay.SetAsLastSibling();
         screen.Add();

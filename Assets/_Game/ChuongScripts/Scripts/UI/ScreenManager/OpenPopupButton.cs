@@ -1,3 +1,4 @@
+using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +16,7 @@ public class OpenPopupButton : MonoBehaviour
 
     private void OnClickButton()
     {
-        AudioManager.Instance.ClickSound();
+        MasterAudioManager.ClickSound();
         if (_screenType == ScreenType.Back)
         {
             ScreenManager.Instance.Back();

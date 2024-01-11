@@ -20,6 +20,7 @@ namespace Skill.Weapons
 
         private bool _forceStop;
         private float _counter;
+        private float _speedShotTime;
 
         private float _dmg;
         private int _amount;
@@ -30,12 +31,20 @@ namespace Skill.Weapons
             set => _amount = value;
         }
 
+        public override float SpeedShotTime
+        {
+            get => _speedShotTime;
+            set => _speedShotTime = value;
+        }
+
         public float Dmg
         {
             get => _dmg;
             set => _dmg = value;
         }
 
+        private float BetweenTime => _delayBetween - _speedShotTime;
+        
         public override void SetBulletAttribute(BulletAttribute attribute)
         {
             _usingShot.SetBulletAttribute(attribute);
@@ -57,7 +66,7 @@ namespace Skill.Weapons
             if (_counter < 0)
             {
                 Shoot(target);
-                _counter = _delayBetween;
+                _counter = BetweenTime;
             }
         }
 
@@ -70,11 +79,6 @@ namespace Skill.Weapons
                 SetTarget(target[i]);
                 Shot();
             }
-        }
-
-        public virtual void UpdateFireRate(float attackSpeed)
-        {
-            _delayBetween = 1f / attackSpeed;
         }
 
         //----Animation Event-------------------------------------------------------------------------------------------
@@ -100,7 +104,7 @@ namespace Skill.Weapons
 
         public void ReBind()
         {
-            _counter = _delayBetween;
+            _counter = BetweenTime;
         }
 
         public void RestartShot()

@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.5019608, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -722,6 +722,11 @@ MonoBehaviour:
   _canvasGroup: {fileID: 2101310483791439883}
   _restartBtn: {fileID: 1652958994853403917}
   _homeBtn: {fileID: 6416002802220051659}
+  KilledTMP: {fileID: 6517366137220984639}
+  CoinTMP: {fileID: 7706319881590832210}
+  TimeTMP: {fileID: 7884064195183540827}
+  ExpTMP: {fileID: 3192453981806496874}
+  MaxTimeTMP: {fileID: 8264824258873523622}
 --- !u!1 &1834606423056517097
 GameObject:
   m_ObjectHideFlags: 0

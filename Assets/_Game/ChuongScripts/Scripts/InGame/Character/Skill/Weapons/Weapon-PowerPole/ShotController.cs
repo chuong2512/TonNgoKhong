@@ -17,7 +17,9 @@ namespace Skill.Weapons
             attribute = new ShotWeaponAttribute();
         }
 
-        public float Damage => (_baseDmg + attribute.Damage + PlayerManager.Instance.Combat.Damage) * (1 + attribute.PercentDamage);
+        public float Damage => (_baseDmg + attribute.Damage + PlayerManager.Instance.Combat.Damage) *
+                               (1 + attribute.PercentDamage);
+
         public int Amount => (_baseAmount + attribute.Amount) * attribute.MultipleAmount;
         public float Speed => speed + attribute.Speed;
 
@@ -30,6 +32,7 @@ namespace Skill.Weapons
                 LifeTime = lifeTime,
             });
             _shot.Amount = Amount;
+            _shot.SpeedShotTime = attribute.SpeedShot;
         }
     }
 }

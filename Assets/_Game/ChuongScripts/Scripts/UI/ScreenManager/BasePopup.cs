@@ -1,4 +1,5 @@
 ﻿using BabySound.Scripts;
+using Game;
 using UnityEngine;
 
 namespace SinhTon
@@ -38,7 +39,7 @@ namespace SinhTon
         public virtual void Back()
         {
             ScreenManager.Instance.Back();
-            AudioManager.Instance.ClickSound();
+            MasterAudioManager.ClickSound();
         }
 
         /// <summary>

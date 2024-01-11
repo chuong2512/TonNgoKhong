@@ -100,7 +100,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4095
 --- !u!1 &3537171100188795310
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +217,10 @@ MonoBehaviour:
   _animator: {fileID: 0}
   _enemySize: 0.4
   colliderTarget: {fileID: 3537171100188795311}
+  _audio: {fileID: 4235804376522667059}
+  _rigidbody: {fileID: 3537171100188795296}
+  _collision2D: {fileID: 3537171100188795298}
+  _playerTrans: {fileID: 0}
 --- !u!61 &3537171100188795298
 BoxCollider2D:
   m_ObjectHideFlags: 0

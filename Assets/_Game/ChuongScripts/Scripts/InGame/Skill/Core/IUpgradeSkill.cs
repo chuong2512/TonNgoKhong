@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Skill
 {
@@ -7,7 +8,7 @@ namespace Skill
     {
         void Upgrade(IAttribute weaponBuilder);
     }
-    
+
     public interface IUpgradeSkill<in T> : IUpgradeSkill where T : IAttribute
     {
         void IUpgradeSkill.Upgrade(IAttribute @object)
@@ -19,8 +20,10 @@ namespace Skill
 #endif
                 return;
             }
+
             Upgrade(weaponBuilder);
         }
+
         void Upgrade(T weaponBuilder);
     }
 
@@ -29,25 +32,29 @@ namespace Skill
     {
         [SerializeField] private int amount;
 
-        public AmountUpgrade() { }
+        public AmountUpgrade()
+        {
+        }
 
         public AmountUpgrade(int amount)
         {
             this.amount = amount;
         }
-        
+
         public void Upgrade(IAmountAttribute weaponAttribute)
         {
             weaponAttribute.Amount += amount;
         }
     }
-    
+
     [Serializable]
     public class AddDamageUpgrade : IUpgradeSkill<IDamageAttribute>
     {
         [SerializeField] private float addDamage;
 
-        public AddDamageUpgrade() { }
+        public AddDamageUpgrade()
+        {
+        }
 
         public AddDamageUpgrade(float addDamage)
         {
@@ -59,17 +66,18 @@ namespace Skill
             weaponAttribute.Damage += addDamage;
         }
     }
-    
+
     [Serializable]
     public class AddRateDamageUpgrade : IUpgradeSkill<IDamageAttribute>
     {
         [SerializeField] private float rate;
+
         public void Upgrade(IDamageAttribute weaponAttribute)
         {
             weaponAttribute.Damage *= (1f + rate);
         }
     }
-    
+
     [Serializable]
     public class PlayerSpeedUpgrade : IUpgradeSkill<IPlayerSpeedAttribute>
     {
@@ -80,7 +88,7 @@ namespace Skill
             playerAtt.Speed += addSpeed;
         }
     }
-    
+
     [Serializable]
     public class ShotSpeedUpgrade : IUpgradeSkill<IPlayerSpeedAttribute>
     {
@@ -96,12 +104,35 @@ namespace Skill
     public class MagnetUpgrade : IUpgradeSkill<IMagnetAttribute>
     {
         [SerializeField] private float addMagnetRange;
+
         public void Upgrade(IMagnetAttribute weaponBuilder)
         {
             weaponBuilder.Magnet += addMagnetRange;
         }
     }
-    
+
+    [Serializable]
+    public class HPUpgrade : IUpgradeSkill<IMaxHealthAttribute>
+    {
+        [SerializeField] private float hp;
+
+        public void Upgrade(IMaxHealthAttribute weaponBuilder)
+        {
+            weaponBuilder.MaxHealth += hp;
+        }
+    }
+
+    [Serializable]
+    public class SpeedShotUpgrade : IUpgradeSkill<ISpeedShotAttribute>
+    {
+        [SerializeField] private float speed;
+
+        public void Upgrade(ISpeedShotAttribute weaponBuilder)
+        {
+            weaponBuilder.SpeedShot += speed;
+        }
+    }
+
     /*[Serializable]
     public class AddBlueFire : IUpgradeSkill<IFireAttribute>
     {

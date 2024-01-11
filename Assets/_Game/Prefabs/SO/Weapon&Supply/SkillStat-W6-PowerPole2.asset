@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0e7590d9d440c6a005c74874699954, type: 3}
+  m_Name: SkillStat-W6-PowerPole2
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  ListUpgradeSkill:
+  - listUpgradeSkill: []
+  - listUpgradeSkill:
+    - rid: 3794718355998900250
+  - listUpgradeSkill:
+    - rid: 3794718355998900252
+  - listUpgradeSkill:
+    - rid: 3794718355998900253
+  - listUpgradeSkill:
+    - rid: 3794718355998900255
+  - listUpgradeSkill:
+    - rid: 3794718355998900256
+  references:
+    version: 2
+    RefIds:
+    - rid: 3794718355998900250
+      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        amount: 1
+    - rid: 3794718355998900252
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 2
+    - rid: 3794718355998900253
+      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        amount: 1
+    - rid: 3794718355998900255
+      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        addDamage: 3
+    - rid: 3794718355998900256
+      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        amount: 1

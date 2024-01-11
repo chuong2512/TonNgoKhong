@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -61,7 +62,7 @@ public class BuyCoinButton : MonoBehaviour
 
     private void OnClickButton()
     {
-        AudioManager.Instance.ClickSound();
+        MasterAudioManager.ClickSound();
 
         /*IAPManager.OnPurchaseSuccess = AddCoin;
 

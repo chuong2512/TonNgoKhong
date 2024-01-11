@@ -7,15 +7,18 @@ using UnityEngine.Serialization;
 public class PlayerData : BaseData
 {
     private int _coin, _gem, _exp;
+    public float _maxTimePlay;
 
     public int levelUnlock;
     public int choosingMap;
     public List<MapRecord> mapUnlocks;
 
-    public long time;
+    public float time;
     public string timeRegister;
 
     public bool isRate;
+
+    public float MaxTimePlay => _maxTimePlay;
 
     public int Coin
     {
@@ -23,7 +26,7 @@ public class PlayerData : BaseData
         set
         {
             _coin = value;
-            OutGameManager.OnChangeCoin.Invoke(value);
+            OutGameManager.OnChangeCoin?.Invoke(value);
         }
     }
 
@@ -33,7 +36,7 @@ public class PlayerData : BaseData
         set
         {
             _gem = value;
-            OutGameManager.OnChangeGem.Invoke(value);
+            OutGameManager.OnChangeGem?.Invoke(value);
         }
     }
 
@@ -43,7 +46,7 @@ public class PlayerData : BaseData
         set
         {
             _exp = value;
-            OutGameManager.OnChangeExp.Invoke(value);
+            OutGameManager.OnChangeExp?.Invoke(value);
         }
     }
 
@@ -53,14 +56,7 @@ public class PlayerData : BaseData
     }
 
     public bool IsRate => isRate;
-
-    public void SetTimeRegister(long timeSet)
-    {
-        timeRegister = DateTime.Now.ToBinary().ToString();
-        time = timeSet;
-        Save();
-    }
-
+    
     public void ResetTime()
     {
         time = 0;
@@ -137,6 +133,14 @@ public class PlayerData : BaseData
         var findMap = mapUnlocks.Find(record => record.mapID == mapID);
 
         return findMap;
+    }
+
+    public void SetMaxTime(float playTime)
+    {
+       if(_maxTimePlay > playTime)
+           return;
+
+       _maxTimePlay = playTime;
     }
 }
 

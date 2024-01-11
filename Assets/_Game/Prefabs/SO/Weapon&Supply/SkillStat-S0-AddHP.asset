@@ -22,12 +22,42 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   ListUpgradeSkill:
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
+  - listUpgradeSkill:
+    - rid: 3794718355998900224
+  - listUpgradeSkill:
+    - rid: 3794718355998900225
+  - listUpgradeSkill:
+    - rid: 3794718355998900226
+  - listUpgradeSkill:
+    - rid: 3794718355998900227
+  - listUpgradeSkill:
+    - rid: 3794718355998900228
+  - listUpgradeSkill:
+    - rid: 3794718355998900229
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 3794718355998900224
+      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        hp: 30
+    - rid: 3794718355998900225
+      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        hp: 40
+    - rid: 3794718355998900226
+      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        hp: 50
+    - rid: 3794718355998900227
+      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        hp: 50
+    - rid: 3794718355998900228
+      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        hp: 50
+    - rid: 3794718355998900229
+      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        hp: 100

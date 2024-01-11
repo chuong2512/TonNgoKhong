@@ -22,12 +22,42 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   ListUpgradeSkill:
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
+  - listUpgradeSkill:
+    - rid: 3794718355998900266
+  - listUpgradeSkill:
+    - rid: 3794718355998900267
+  - listUpgradeSkill:
+    - rid: 3794718355998900268
+  - listUpgradeSkill:
+    - rid: 3794718355998900269
+  - listUpgradeSkill:
+    - rid: 3794718355998900270
+  - listUpgradeSkill:
+    - rid: 3794718355998900271
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 3794718355998900266
+      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        speed: 0.05
+    - rid: 3794718355998900267
+      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        speed: 0.05
+    - rid: 3794718355998900268
+      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        speed: 0.05
+    - rid: 3794718355998900269
+      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        speed: 0.05
+    - rid: 3794718355998900270
+      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        speed: 0.05
+    - rid: 3794718355998900271
+      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+      data:
+        speed: 0.05

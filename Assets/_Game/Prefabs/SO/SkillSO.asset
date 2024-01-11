@@ -34,7 +34,7 @@ MonoBehaviour:
     - rid: 3794718310463438848
       type: {class: WeaponSkillInfo, ns: _TonNgoKhong, asm: Assembly-CSharp}
       data:
-        icon: {fileID: 21300000, guid: 477862b4250ce0b4c82c552de8de524a, type: 3}
+        icon: {fileID: 21300000, guid: d5040dcdc75702948b8973d32d3c3bd1, type: 3}
         <nameSkill>k__BackingField: "G\u1EADy nh\u01B0 \xFD 2"
         contentSkill: 
         weaponType: 6
