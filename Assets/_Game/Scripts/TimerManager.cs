@@ -8,9 +8,9 @@ using UnityEngine;
 public class TimerManager : Singleton<TimerManager>
 {
     float _timeCounter = 0;
-    float _timeToDisplay = 0;
+    long _timeToDisplay = 0;
 
-    public float TimeToDisplay => _timeToDisplay;
+    public long TimeToDisplay => _timeToDisplay;
 
     public TimeSpan PlayTime => TimeSpan.FromSeconds(_timeToDisplay);
 

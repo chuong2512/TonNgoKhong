@@ -727,6 +727,7 @@ MonoBehaviour:
   TimeTMP: {fileID: 7884064195183540827}
   ExpTMP: {fileID: 3192453981806496874}
   MaxTimeTMP: {fileID: 8264824258873523622}
+  ChapterTMP: {fileID: 5364826145820431254}
 --- !u!1 &1834606423056517097
 GameObject:
   m_ObjectHideFlags: 0

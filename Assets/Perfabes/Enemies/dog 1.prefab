@@ -132,7 +132,7 @@ Transform:
   m_GameObject: {fileID: 3537171100188795310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.38, y: 6.05, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.54166204, y: 0.54166204, z: 0.54166204}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8672863140539376602}
@@ -217,6 +217,9 @@ MonoBehaviour:
   _animator: {fileID: 0}
   _enemySize: 0.4
   colliderTarget: {fileID: 3537171100188795311}
+  _audio: {fileID: 4235804376522667059}
+  _rigidbody: {fileID: 3537171100188795296}
+  _collision2D: {fileID: 3537171100188795298}
 --- !u!61 &3537171100188795298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -230,7 +233,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.037504792}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -241,7 +244,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.65}
+  m_Size: {x: 0.7091857, y: 0.6712352}
   m_EdgeRadius: 0
 --- !u!50 &3537171100188795296
 Rigidbody2D:

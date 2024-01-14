@@ -41,7 +41,9 @@ public class MainMenu : MonoBehaviour
         var time = TimeSpan.FromSeconds(record.time);
 
         _nameMapTxt.text = mapItem.name;
-        _infoMapText.text = $"Thời gian sống sót lâu nhất : {time.Hours}H:{time.Minutes}M:{time.Seconds}s";
+        _infoMapText.text = $"Thời gian sống sót lâu nhất : {time.TotalHours:00}H:{time.Minutes:00}M:{time.Seconds:00}s";
+
+        _iconImg.sprite = mapItem.icon;
     }
 
     private void SetInfo()

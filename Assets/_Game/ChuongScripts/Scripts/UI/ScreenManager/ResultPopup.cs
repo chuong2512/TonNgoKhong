@@ -15,6 +15,8 @@ namespace _TonNgoKhong
         public Text TimeTMP;
         public Text ExpTMP;
         public Text MaxTimeTMP;
+        
+        public Text ChapterTMP;
 
         private PlayerData _player;
         private InGameManager _game;
@@ -42,9 +44,11 @@ namespace _TonNgoKhong
 
             TimeTMP.text = ($"{time.TotalMinutes:00}:{time.Seconds:00}");
 
-            var maxTime = TimeSpan.FromSeconds(_player.MaxTimePlay);
+            var maxTime = TimeSpan.FromSeconds(_player.GetMapWithID(_player.choosingMap).time);
 
             MaxTimeTMP.text = ($"{maxTime.TotalMinutes:00}:{maxTime.Seconds:00}");
+
+            ChapterTMP.text = $"Chương {_player.choosingMap + 1}";
         }
 
         private void AddData()
@@ -54,7 +58,7 @@ namespace _TonNgoKhong
 
             var time = TimerManager.Instance.TimeToDisplay;
 
-            _player.SetMaxTime(time);
+            _player.SetMaxTime(time, _player.choosingMap);
         }
 
         private void ClickHome()

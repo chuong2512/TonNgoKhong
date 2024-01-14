@@ -5,6 +5,7 @@ using _TonNgoKhong;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.UI;
+using UnityEngine.UI.Extensions;
 
 public class SelectMapManager : MonoBehaviour
 {
@@ -13,20 +14,30 @@ public class SelectMapManager : MonoBehaviour
     [SerializeField] private Text _infoMapText;
     [SerializeField] private InfoMapItem[] _infoMapItems;
     [SerializeField] private Button _chooseBtn;
+    [SerializeField] private HorizontalScrollSnap _horizontalScroll;
 
     private int _mapIndex;
     private LevelSO _levelSo;
     private PlayerData _playerData;
-    
+
     private void Start()
     {
         _levelSo = GameDataManager.Instance.LevelSo;
         _playerData = GameDataManager.Instance.playerData;
-        
+
         _chooseBtn.onClick.AddListener(OnChooseBtn);
-        
+
         SetInfoMaps();
-        OnChooseMap(0);
+        OnChooseMap(_playerData.choosingMap);
+    }
+
+    private void OnEnable()
+    {
+        if (_playerData)
+        {
+            _horizontalScroll.ChangePage(_playerData.choosingMap);
+            OnChooseMap(_playerData.choosingMap);
+        }
     }
 
     private void OnChooseBtn()

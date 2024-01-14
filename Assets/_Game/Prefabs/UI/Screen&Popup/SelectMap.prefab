@@ -539,6 +539,7 @@ MonoBehaviour:
   - {fileID: 1495048959328883102}
   - {fileID: 2269251103811284182}
   _chooseBtn: {fileID: 6143562370938356826}
+  _horizontalScroll: {fileID: 8727936564090113411}
 --- !u!95 &6143562370569333612
 Animator:
   serializedVersion: 4

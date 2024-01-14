@@ -10447,7 +10447,7 @@ CATCH_00ac:
 		L_24 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
 		Exception_t* L_25 = V_5;
 		NullCheck(L_24);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_24, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral351310AAE48329CEA08A21B031C435B78D066E27)), L_25);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_24, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral351310AAE48329CEA08A21B031C435B78D066E27)), L_25);
 		// return;
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_00f2;
@@ -10557,7 +10557,7 @@ CATCH_0011:
 		L_4 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
 		Exception_t* L_5 = V_3;
 		NullCheck(L_4);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral351310AAE48329CEA08A21B031C435B78D066E27)), L_5);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral351310AAE48329CEA08A21B031C435B78D066E27)), L_5);
 		// return;
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_003d;
@@ -10923,7 +10923,7 @@ CATCH_001b:
 		RuntimeObject* L_5 = V_1;
 		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_6 = V_3;
 		NullCheck(L_5);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(6 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDFA95E44884A185E337CCF76AEA0AB3659991F3D)), L_6);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDFA95E44884A185E337CCF76AEA0AB3659991F3D)), L_6);
 		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_004c;
@@ -10937,7 +10937,7 @@ CATCH_002a:
 		RuntimeObject* L_7 = V_1;
 		IAPSecurityException_t0CF168A490D20D9F3A643C75A77826B27ABDEA9B* L_8 = V_4;
 		NullCheck(L_7);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(6 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDFA95E44884A185E337CCF76AEA0AB3659991F3D)), L_8);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDFA95E44884A185E337CCF76AEA0AB3659991F3D)), L_8);
 		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_004c;
@@ -10951,7 +10951,7 @@ CATCH_003b:
 		RuntimeObject* L_9 = V_1;
 		NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB* L_10 = V_5;
 		NullCheck(L_9);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(6 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_9, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDFA95E44884A185E337CCF76AEA0AB3659991F3D)), L_10);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_9, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDFA95E44884A185E337CCF76AEA0AB3659991F3D)), L_10);
 		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_004c;
@@ -11761,7 +11761,7 @@ CATCH_00cb:
 		L_29 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
 		Exception_t* L_30 = V_7;
 		NullCheck(L_29);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(6 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_29, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral78A4651E158FD6F3E69E525EE8DAA0A0F8312E0C)), L_30);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_29, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral78A4651E158FD6F3E69E525EE8DAA0A0F8312E0C)), L_30);
 		// unit = SubscriptionPeriodUnit.NotAvailable;
 		V_5 = 4;
 		// }
@@ -14392,7 +14392,7 @@ CATCH_000e:
 		RuntimeObject* L_2 = __this->___m_Logger_1;
 		Exception_t* L_3 = V_0;
 		NullCheck(L_2);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralCA4521D77105EDFD1502C5C3AD0E26AE935AAE94)), L_3);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralCA4521D77105EDFD1502C5C3AD0E26AE935AAE94)), L_3);
 		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_0022;
@@ -14475,7 +14475,7 @@ CATCH_000d:
 		RuntimeObject* L_1 = __this->___m_Logger_1;
 		Exception_t* L_2 = V_0;
 		NullCheck(L_1);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7 /* System.Void UnityEngine.ILogger::LogWarning(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral7FB471D03374A76E7C5ADD1825912D09C66F9D98)), L_2);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8 /* System.Void UnityEngine.ILogger::LogWarning(System.String,System.Object) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral7FB471D03374A76E7C5ADD1825912D09C66F9D98)), L_2);
 		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_0021;
@@ -15147,7 +15147,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WinRTStore_logError_m78E33C737B10EBDD62E
 		RuntimeObject* L_0 = __this->___logger_3;
 		String_t* L_1 = ___error0;
 		NullCheck(L_0);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralB11F3EF2D6E4C1C9340A558AF14C8C019E7B9C36, L_1);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralB11F3EF2D6E4C1C9340A558AF14C8C019E7B9C36, L_1);
 		// }
 		return;
 	}
@@ -15766,7 +15766,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass16_0_U3ClogU3Eb__0_
 		RuntimeObject* L_1 = L_0->___logger_3;
 		String_t* L_2 = __this->___message_1;
 		NullCheck(L_1);
-		InterfaceActionInvoker1< RuntimeObject* >::Invoke(5 /* System.Void UnityEngine.ILogger::Log(System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_1, L_2);
+		InterfaceActionInvoker1< RuntimeObject* >::Invoke(6 /* System.Void UnityEngine.ILogger::Log(System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_1, L_2);
 		// });
 		return;
 	}
@@ -15827,7 +15827,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass17_0_U3COnPurchaseF
 		ArrayElementTypeCheck (L_5, L_6);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_6);
 		NullCheck(L_1);
-		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_1, 0, _stringLiteral4F5949C12E8E309FDF873E629DC7EF172B0D0385, L_5);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(10 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_1, 0, _stringLiteral4F5949C12E8E309FDF873E629DC7EF172B0D0385, L_5);
 		// if ("AlreadyPurchased" == error)
 		String_t* L_7 = __this->___error_2;
 		bool L_8;

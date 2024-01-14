@@ -906,6 +906,8 @@ struct SetTimePopup_t70A6C60FFCEFA39F6B08FFED029EEE0DF0851179;
 struct SettingData_t0CF0C9216029B45A296E02A12DDE7CF960FC9B36;
 // Game.SfxPlayer
 struct SfxPlayer_tFC5141E0A4B9574F8BD4A4AD226C20AABBAB1990;
+// _TonNgoKhong.Shop.ShopCoinBtn
+struct ShopCoinBtn_t3D37EA8EAAF874BF6E34C2BF1A4F96A25574D864;
 // _TonNgoKhong.Shop.ShopGemBtn
 struct ShopGemBtn_t5FB5C93FAAA187F23C2465FE70E03979D3D4D65B;
 // Skill.Weapons.ShotController
@@ -1259,6 +1261,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral4BF063853E17141EFF611F379C6D1E080A2A8BD7
 IL2CPP_EXTERN_C String_t* _stringLiteral4C4AC6FE042A8ACBFD5A8EA2C665F22FB8975A6C;
 IL2CPP_EXTERN_C String_t* _stringLiteral4F6D9789D9A0D7483B15CB01BD0BEA1419B65721;
 IL2CPP_EXTERN_C String_t* _stringLiteral505C1E473F6467CC76DC9954ADFD7BABD1BC0AC3;
+IL2CPP_EXTERN_C String_t* _stringLiteral51111928B302866B7E270C7165D0FED9A410B453;
 IL2CPP_EXTERN_C String_t* _stringLiteral544CE126B9BF3BE33D27BE78A893EE505699483F;
 IL2CPP_EXTERN_C String_t* _stringLiteral55CC82EFAB5B06E706E9ADE7AB66EEC73F9EA205;
 IL2CPP_EXTERN_C String_t* _stringLiteral5850C06C770BC2AC6742A4BEF30C6D430FC07F2E;
@@ -1494,6 +1497,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* PlayerHealthBar_OnHealthChange_m45FDBF2857E
 IL2CPP_EXTERN_C const RuntimeMethod* RateGameScreen_RateGame_m143627EF3EE26AF460354012909F0A7CC6D3912E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RateGameScreen_U3COnOpenU3Eb__2_0_m9E04768868CC39E262BBA4036BA4DA72A75A2514_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ScreenManager_OpenScreen_TisResultModel_tB930462746CB59C1665952C0BE129C25006084CF_m6E8450CE1B2509F70C0DC254BF8BF30AFA992C27_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ShopCoinBtn_OnClickButton_mEA40AE711A5ACA89D123C03518414B4A8FBF2383_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ShopGemBtn_OnClickButton_mA33675C4AA333AC7E69C70220AB8F1F771FD0624_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Singleton_1__ctor_m2047C423E4E79A5E22479D3A358526DA5C2532B7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Singleton_1__ctor_mEAB20AC5755D20608D0798FC57F72ACFCF13660C_RuntimeMethod_var;
@@ -4812,11 +4816,11 @@ struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F  : public Runti
 	// System.Uri UnityEngine.Networking.UnityWebRequest::m_Uri
 	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___m_Uri_4;
 	// System.Boolean UnityEngine.Networking.UnityWebRequest::<disposeCertificateHandlerOnDispose>k__BackingField
-	bool ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField_5;
+	bool ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField_11;
 	// System.Boolean UnityEngine.Networking.UnityWebRequest::<disposeDownloadHandlerOnDispose>k__BackingField
-	bool ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField_6;
+	bool ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField_12;
 	// System.Boolean UnityEngine.Networking.UnityWebRequest::<disposeUploadHandlerOnDispose>k__BackingField
-	bool ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField_7;
+	bool ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField_13;
 };
 // Native definition for P/Invoke marshalling of UnityEngine.Networking.UnityWebRequest
 struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_pinvoke
@@ -4826,9 +4830,9 @@ struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_pinvo
 	UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6_marshaled_pinvoke ___m_UploadHandler_2;
 	CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshaled_pinvoke ___m_CertificateHandler_3;
 	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___m_Uri_4;
-	int32_t ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField_5;
-	int32_t ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField_6;
-	int32_t ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField_7;
+	int32_t ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField_11;
+	int32_t ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField_12;
+	int32_t ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField_13;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.UnityWebRequest
 struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_com
@@ -4838,9 +4842,9 @@ struct UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_marshaled_com
 	UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6_marshaled_com* ___m_UploadHandler_2;
 	CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshaled_com* ___m_CertificateHandler_3;
 	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___m_Uri_4;
-	int32_t ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField_5;
-	int32_t ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField_6;
-	int32_t ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField_7;
+	int32_t ___U3CdisposeCertificateHandlerOnDisposeU3Ek__BackingField_11;
+	int32_t ___U3CdisposeDownloadHandlerOnDisposeU3Ek__BackingField_12;
+	int32_t ___U3CdisposeUploadHandlerOnDisposeU3Ek__BackingField_13;
 };
 
 // UnityEngine.Networking.UnityWebRequestAsyncOperation
@@ -6575,6 +6579,23 @@ struct SfxPlayer_tFC5141E0A4B9574F8BD4A4AD226C20AABBAB1990  : public MonoBehavio
 	float ____delayBetween_10;
 };
 
+// _TonNgoKhong.Shop.ShopCoinBtn
+struct ShopCoinBtn_t3D37EA8EAAF874BF6E34C2BF1A4F96A25574D864  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Int32 _TonNgoKhong.Shop.ShopCoinBtn::_amount
+	int32_t ____amount_4;
+	// System.Int32 _TonNgoKhong.Shop.ShopCoinBtn::_price
+	int32_t ____price_5;
+	// UnityEngine.UI.Button _TonNgoKhong.Shop.ShopCoinBtn::_button
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ____button_6;
+	// UnityEngine.UI.Text _TonNgoKhong.Shop.ShopCoinBtn::_amountText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ____amountText_7;
+	// UnityEngine.UI.Text _TonNgoKhong.Shop.ShopCoinBtn::_priceText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ____priceText_8;
+	// PlayerData _TonNgoKhong.Shop.ShopCoinBtn::_player
+	PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* ____player_9;
+};
+
 // _TonNgoKhong.Shop.ShopGemBtn
 struct ShopGemBtn_t5FB5C93FAAA187F23C2465FE70E03979D3D4D65B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -6928,20 +6949,18 @@ struct PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A  : public BaseData_t
 	int32_t ____gem_6;
 	// System.Int32 PlayerData::_exp
 	int32_t ____exp_7;
-	// System.Single PlayerData::_maxTimePlay
-	float ____maxTimePlay_8;
 	// System.Int32 PlayerData::levelUnlock
-	int32_t ___levelUnlock_9;
+	int32_t ___levelUnlock_8;
 	// System.Int32 PlayerData::choosingMap
-	int32_t ___choosingMap_10;
+	int32_t ___choosingMap_9;
 	// System.Collections.Generic.List`1<MapRecord> PlayerData::mapUnlocks
-	List_1_t8FD4200FF6B20572AE1E14D5235ABF3CD288D6ED* ___mapUnlocks_11;
+	List_1_t8FD4200FF6B20572AE1E14D5235ABF3CD288D6ED* ___mapUnlocks_10;
 	// System.Single PlayerData::time
-	float ___time_12;
+	float ___time_11;
 	// System.String PlayerData::timeRegister
-	String_t* ___timeRegister_13;
+	String_t* ___timeRegister_12;
 	// System.Boolean PlayerData::isRate
-	bool ___isRate_14;
+	bool ___isRate_13;
 };
 
 // PlayerManager
@@ -8570,6 +8589,8 @@ struct ParticleSystemU5BU5D_tC5E33DA557C9C2064085128B3530C5F04D48F6E6  : public 
 
 // T SinhTon.PersistentSingleton`1<System.Object>::get_Instance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PersistentSingleton_1_get_Instance_mFDBB45AA8C964D2FA2688AD810F3F5BB0981397C_gshared (const RuntimeMethod* method) ;
+// T SinhTon.Singleton`1<System.Object>::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Singleton_1_get_Instance_mF91935D79F7A29524E55E2D87F944DD957BEDB3E_gshared (const RuntimeMethod* method) ;
 // System.Void Skill.HashIDSkill::GetSkillTypeValues<System.Int32Enum>(T[]&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashIDSkill_GetSkillTypeValues_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_mD7B53FE9481D092B0843208D792517AC0F4AC8ED_gshared (Int32EnumU5BU5D_t87B7DB802810C38016332669039EF42C487A081F** ___skills0, const RuntimeMethod* method) ;
 // System.Void Skill.SkillSelector::UpgradeSkill<System.Int32Enum>(T)
@@ -8600,8 +8621,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m050AC0D9D6F681
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::set_Item(TKey,TValue)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_gshared (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* __this, int32_t ___key0, int32_t ___value1, const RuntimeMethod* method) ;
-// T SinhTon.Singleton`1<System.Object>::get_Instance()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Singleton_1_get_Instance_mF91935D79F7A29524E55E2D87F944DD957BEDB3E_gshared (const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1<System.Int32> Skill.SkillSelector::GetAllCurrentSkillID<System.Int32Enum>(T[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* SkillSelector_GetAllCurrentSkillID_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_m1BA5B8E2E7561C97DC2E826ACDB871D5CB7F8C1F_gshared (SkillSelector_tFC80A51DE115ADE61ECD70F7E240525CF065E51B* __this, Int32EnumU5BU5D_t87B7DB802810C38016332669039EF42C487A081F* ___availableSkill0, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1<T> Skill.SkillSelector::GetAllCurrentSkill<System.Int32Enum>(T[])
@@ -8731,6 +8750,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED59
 // T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared (RuntimeObject* ___original0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation2, const RuntimeMethod* method) ;
 
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // T SinhTon.PersistentSingleton`1<GameDataManager>::get_Instance()
 inline GameDataManager_t334227F400FA22E9A3C850D53CDD5D746466B7F4* PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C (const RuntimeMethod* method)
 {
@@ -8744,14 +8765,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAction__ctor_mC53E20D6B66E0D5688CD8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___call0, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___format0, RuntimeObject* ___arg01, const RuntimeMethod* method) ;
+// System.String System.Int32::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 // System.Int32 PlayerData::get_Gem()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayerData_get_Gem_mB29DFF5AF2C79CECD6336FC17B28B1DDACB596FB_inline (PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* __this, const RuntimeMethod* method) ;
 // System.Void PlayerData::set_Gem(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_set_Gem_m3C95598C5D2D39C711A8A58DA2D9709434DD8387 (PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Int32 PlayerData::get_Coin()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayerData_get_Coin_m218FB350007D0851A5BB7505B364510FA5108369_inline (PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* __this, const RuntimeMethod* method) ;
+// System.Void PlayerData::set_Coin(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_set_Coin_mF771CF9348D758543181E8E68684876A75F28E7F (PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// T SinhTon.Singleton`1<ToastManager>::get_Instance()
+inline ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* Singleton_1_get_Instance_mF6DFF344529BA10077D5B2B36796E34EAE79B55C (const RuntimeMethod* method)
+{
+	return ((  ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* (*) (const RuntimeMethod*))Singleton_1_get_Instance_mF91935D79F7A29524E55E2D87F944DD957BEDB3E_gshared)(method);
+}
+// System.Void ToastManager::ShowWarningToast(System.String,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ToastManager_ShowWarningToast_m09BCC4AE9CBE18C8196704768A67C6AC2E19C7D7 (ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* __this, String_t* ___toastMessage0, float ___duration1, float ___interval2, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void Skill.HashIDSkill::InitData()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashIDSkill_InitData_mF45B1247EE6DEB4D55B10D1D91ECB43A504E85EF (const RuntimeMethod* method) ;
 // System.Void Skill.LevelSkillConstant::InitData()
@@ -9346,8 +9378,6 @@ inline void Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87 (Action_1_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___a0, Delegate_t* ___b1, const RuntimeMethod* method) ;
 // System.Void SinhTon.Scripts.UI.CoinText::ShowCurrentCoin()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CoinText_ShowCurrentCoin_mD44A0A5C1AB6C5C3A50B175B9A832A2B30430F51 (CoinText_t6C9D2D751421F63049D36B74F83C026C189758D8* __this, const RuntimeMethod* method) ;
-// System.Int32 PlayerData::get_Coin()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayerData_get_Coin_m218FB350007D0851A5BB7505B364510FA5108369_inline (PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* __this, const RuntimeMethod* method) ;
 // System.Void TMPro.TMP_Text::SetText(System.String,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_SetText_m848189C290727009A95A00E432B66DFB2F2C3454 (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, String_t* ___sourceText0, bool ___syncTextInputBox1, const RuntimeMethod* method) ;
 // T[] UnityEngine.Component::GetComponentsInChildren<TabButton>()
@@ -9361,11 +9391,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass2_0__ctor_m2547C019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabButtonGroup_ChooseButton_m56E1626AB15F0B3501074D2D5908287064D5899F (TabButtonGroup_t50C3A2B557F7AD4A66346FB12378D2307F478DF1* __this, int32_t ___indexButton0, const RuntimeMethod* method) ;
 // System.Boolean TabButton::get_IsLock()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TabButton_get_IsLock_m2EAAAAF332C9DC4A7AD3B745D0786885E79042B8_inline (TabButton_tDB870015AE49121A5A3258E3BCB960AC185951FC* __this, const RuntimeMethod* method) ;
-// T SinhTon.Singleton`1<ToastManager>::get_Instance()
-inline ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* Singleton_1_get_Instance_mF6DFF344529BA10077D5B2B36796E34EAE79B55C (const RuntimeMethod* method)
-{
-	return ((  ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* (*) (const RuntimeMethod*))Singleton_1_get_Instance_mF91935D79F7A29524E55E2D87F944DD957BEDB3E_gshared)(method);
-}
 // System.Void ToastManager::ShowMessageToast(System.String,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ToastManager_ShowMessageToast_mEB65160243BF038867E4EB23FA16A730FBB9D8F3 (ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* __this, String_t* ___toastMessage0, float ___duration1, float ___interval2, const RuntimeMethod* method) ;
 // System.Single UnityEngine.AnimatorStateInfo::get_length()
@@ -10088,8 +10113,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialAd_add_OnAdFailedToLoad_m7E2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialAd_LoadAd_mE7FE14FCDE21B4728A824701D09C095C2B673117 (InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC* __this, AdRequest_tB2AC2CD266CFD5D636C917BC2D938BE96E72BF4D* ___request0, const RuntimeMethod* method) ;
 // System.Void GleyMobileAds.CustomAdmob/<CompleteMethodInterstitial>d__52::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCompleteMethodInterstitialU3Ed__52__ctor_mC602B1B6791EEB76956E1AAD5AF9705CE529B633 (U3CCompleteMethodInterstitialU3Ed__52_t0DD4558F0A3DB542BE0F79D09D80CC4B5C66FF22* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
-// System.String System.Int32::ToString()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 // System.Void GleyMobileAds.CustomAdmob/<ReloadInterstitial>d__54::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReloadInterstitialU3Ed__54__ctor_mECE2C552BF7F7D6591994EE59F133B9A9F0D132E (U3CReloadInterstitialU3Ed__54_t7D5974FD7C4976190EF133CB714A381B00BDE7F1* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
 // System.Void GoogleMobileAds.Api.RewardedAd::remove_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
@@ -10519,6 +10542,149 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vector0, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Division(UnityEngine.Vector3,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void _TonNgoKhong.ResultModel::.ctor(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResultModel__ctor_mFB0CF418FADF62F3802C76D85C9CDA882047BD63 (ResultModel_tB930462746CB59C1665952C0BE129C25006084CF* __this, bool ___b0, const RuntimeMethod* method) 
+{
+	{
+		// public ResultModel(bool b)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// isWin = b;
+		bool L_0 = ___b0;
+		__this->___isWin_0 = L_0;
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void _TonNgoKhong.Shop.ShopCoinBtn::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShopCoinBtn_Start_m9F36E6E5C4AEDDF7C012D446BED2712D1B8D8CB4 (ShopCoinBtn_t3D37EA8EAAF874BF6E34C2BF1A4F96A25574D864* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShopCoinBtn_OnClickButton_mEA40AE711A5ACA89D123C03518414B4A8FBF2383_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral74C4A77E1B3ECB6A5B85BCCEEE8B01AD9BD645C2);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _player = GameDataManager.Instance.playerData;
+		GameDataManager_t334227F400FA22E9A3C850D53CDD5D746466B7F4* L_0;
+		L_0 = PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C(PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C_RuntimeMethod_var);
+		NullCheck(L_0);
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_1 = L_0->___playerData_8;
+		__this->____player_9 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____player_9), (void*)L_1);
+		// _button.onClick.AddListener(OnClickButton);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->____button_6;
+		NullCheck(L_2);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_3;
+		L_3 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_2, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_4 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_4, __this, (intptr_t)((void*)ShopCoinBtn_OnClickButton_mEA40AE711A5ACA89D123C03518414B4A8FBF2383_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_3, L_4, NULL);
+		// _amountText.text = $"x{_amount}";
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_5 = __this->____amountText_7;
+		int32_t L_6 = __this->____amount_4;
+		int32_t L_7 = L_6;
+		RuntimeObject* L_8 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_7);
+		String_t* L_9;
+		L_9 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral74C4A77E1B3ECB6A5B85BCCEEE8B01AD9BD645C2, L_8, NULL);
+		NullCheck(L_5);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_5, L_9);
+		// _priceText.text = _price.ToString();
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->____priceText_8;
+		int32_t* L_11 = (&__this->____price_5);
+		String_t* L_12;
+		L_12 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_11, NULL);
+		NullCheck(L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_10, L_12);
+		// }
+		return;
+	}
+}
+// System.Void _TonNgoKhong.Shop.ShopCoinBtn::OnClickButton()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShopCoinBtn_OnClickButton_mEA40AE711A5ACA89D123C03518414B4A8FBF2383 (ShopCoinBtn_t3D37EA8EAAF874BF6E34C2BF1A4F96A25574D864* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Singleton_1_get_Instance_mF6DFF344529BA10077D5B2B36796E34EAE79B55C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral51111928B302866B7E270C7165D0FED9A410B453);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (_player.Gem >= _price)
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_0 = __this->____player_9;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = PlayerData_get_Gem_mB29DFF5AF2C79CECD6336FC17B28B1DDACB596FB_inline(L_0, NULL);
+		int32_t L_2 = __this->____price_5;
+		if ((((int32_t)L_1) < ((int32_t)L_2)))
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		// _player.Gem -= _price;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_3 = __this->____player_9;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_4 = L_3;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = PlayerData_get_Gem_mB29DFF5AF2C79CECD6336FC17B28B1DDACB596FB_inline(L_4, NULL);
+		int32_t L_6 = __this->____price_5;
+		NullCheck(L_4);
+		PlayerData_set_Gem_m3C95598C5D2D39C711A8A58DA2D9709434DD8387(L_4, ((int32_t)il2cpp_codegen_subtract(L_5, L_6)), NULL);
+		// _player.Coin += _amount;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_7 = __this->____player_9;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_8 = L_7;
+		NullCheck(L_8);
+		int32_t L_9;
+		L_9 = PlayerData_get_Coin_m218FB350007D0851A5BB7505B364510FA5108369_inline(L_8, NULL);
+		int32_t L_10 = __this->____amount_4;
+		NullCheck(L_8);
+		PlayerData_set_Coin_mF771CF9348D758543181E8E68684876A75F28E7F(L_8, ((int32_t)il2cpp_codegen_add(L_9, L_10)), NULL);
+		return;
+	}
+
+IL_0044:
+	{
+		// ToastManager.Instance.ShowWarningToast("Kh?ng ?? linh ?an. H?y n?p th?m.");
+		ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* L_11;
+		L_11 = Singleton_1_get_Instance_mF6DFF344529BA10077D5B2B36796E34EAE79B55C(Singleton_1_get_Instance_mF6DFF344529BA10077D5B2B36796E34EAE79B55C_RuntimeMethod_var);
+		NullCheck(L_11);
+		ToastManager_ShowWarningToast_m09BCC4AE9CBE18C8196704768A67C6AC2E19C7D7(L_11, _stringLiteral51111928B302866B7E270C7165D0FED9A410B453, (0.400000006f), (0.400000006f), NULL);
+		// }
+		return;
+	}
+}
+// System.Void _TonNgoKhong.Shop.ShopCoinBtn::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShopCoinBtn__ctor_m9B274FA177A898C94FF9509F2DF41BEB018ED5A0 (ShopCoinBtn_t3D37EA8EAAF874BF6E34C2BF1A4F96A25574D864* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -15564,7 +15730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterScreen_Back_m620E88CD2B4D9318763
 		NullCheck(L_0);
 		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_1 = L_0->___playerData_8;
 		NullCheck(L_1);
-		float L_2 = L_1->___time_12;
+		float L_2 = L_1->___time_11;
 		if ((!(((float)L_2) > ((float)(0.0f)))))
 		{
 			goto IL_001c;
@@ -34971,6 +35137,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayerData_get_Gem_mB29DF
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayerData_get_Coin_m218FB350007D0851A5BB7505B364510FA5108369_inline (PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => _coin;
+		int32_t L_0 = __this->____coin_5;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___a0, int32_t ___b1, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -35265,14 +35439,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		float L_1 = ___y1;
 		__this->___y_1 = L_1;
 		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayerData_get_Coin_m218FB350007D0851A5BB7505B364510FA5108369_inline (PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* __this, const RuntimeMethod* method) 
-{
-	{
-		// get => _coin;
-		int32_t L_0 = __this->____coin_5;
-		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TabButton_get_IsLock_m2EAAAAF332C9DC4A7AD3B745D0786885E79042B8_inline (TabButton_tDB870015AE49121A5A3258E3BCB960AC185951FC* __this, const RuntimeMethod* method) 

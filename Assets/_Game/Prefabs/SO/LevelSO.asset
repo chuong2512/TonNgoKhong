@@ -27,5 +27,6 @@ MonoBehaviour:
       H\u1ED5 \u0111\xE3 ba l\u1EA7n bi\u1EBFn h\xF3a \u0111\u1EC3 l\u1EEBa b\u1EAFt
       \u0110\u01B0\u1EDDng T\u0103ng v\xE0 ba l\u1EA7n b\u1ECB T\xF4n Ng\u1ED9 Kh\xF4ng
       \u0111\xE1nh ch\u1EBFt."
-    icon: {fileID: 21300000, guid: 00bb785e41c4e474ab589f2371c1b3c7, type: 3}
-    isLock: 1
+    icon: {fileID: 21300000, guid: 5e998b52ecf131247b0196984c050d02, type: 3}
+    isLock: 0
+  _listExpLevel: 

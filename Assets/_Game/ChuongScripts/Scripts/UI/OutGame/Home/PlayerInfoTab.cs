@@ -30,6 +30,13 @@ namespace _TonNgoKhong
             _energyTxt.text = "--/--";
         }
 
+        private void OnDestroy()
+        {
+            OutGameManager.OnChangeCoin -= InfoCoin;
+            OutGameManager.OnChangeExp -= InfoExp;
+            OutGameManager.OnChangeGem -= InfoGem;
+        }
+
         private void SetInfo()
         {
             InfoExp();

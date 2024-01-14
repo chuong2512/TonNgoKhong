@@ -6879,7 +6879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_InitiatePurchase_m2795
 		ArrayElementTypeCheck (L_6, L_7);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_7);
 		NullCheck(L_4);
-		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_4, 2, _stringLiteral4DE23968783D5DEB5F6BE143939E06BD12233E54, L_6);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(10 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_4, 2, _stringLiteral4DE23968783D5DEB5F6BE143939E06BD12233E54, L_6);
 	}
 
 IL_002b:
@@ -7522,7 +7522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_OnPurchaseFailed_m3F24
 		ArrayElementTypeCheck (L_8, L_24);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_24);
 		NullCheck(L_6);
-		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_6, 0, _stringLiteral0D0B37FF71B4D60D0DEBB7B5FC4A114D5D152406, L_8);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(10 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_6, 0, _stringLiteral0D0B37FF71B4D60D0DEBB7B5FC4A114D5D152406, L_8);
 		// return;
 		return;
 	}
@@ -7550,7 +7550,7 @@ IL_0082:
 		ArrayElementTypeCheck (L_27, L_33);
 		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_33);
 		NullCheck(L_25);
-		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_25, 2, _stringLiteralC12B0525FE4A7F52BA51C6514949B9777123CD42, L_27);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(10 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_25, 2, _stringLiteralC12B0525FE4A7F52BA51C6514949B9777123CD42, L_27);
 		// m_Listener?.OnPurchaseFailed(product, description);
 		RuntimeObject* L_34 = __this->___m_Listener_1;
 		RuntimeObject* L_35 = L_34;
@@ -8418,7 +8418,7 @@ IL_0029_1:
 				ArrayElementTypeCheck (L_13, L_16);
 				(L_13)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_16);
 				NullCheck(L_7);
-				InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_7, 2, _stringLiteral89C49DC40879EC998EC0B3FD9E005123B80E7297, L_13);
+				InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(10 /* System.Void UnityEngine.ILogger::LogFormat(UnityEngine.LogType,System.String,System.Object[]) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_7, 2, _stringLiteral89C49DC40879EC998EC0B3FD9E005123B80E7297, L_13);
 			}
 
 IL_005f_1:
@@ -9043,7 +9043,7 @@ CATCH_0026:
 		RuntimeObject* L_8 = __this->___logger_0;
 		Exception_t* L_9 = V_1;
 		NullCheck(L_8);
-		InterfaceActionInvoker1< Exception_t* >::Invoke(10 /* System.Void UnityEngine.ILogger::LogException(System.Exception) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_8, L_9);
+		InterfaceActionInvoker1< Exception_t* >::Invoke(11 /* System.Void UnityEngine.ILogger::LogException(System.Exception) */, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_8, L_9);
 		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_0035;
@@ -9762,7 +9762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoggerExtensions_LogIAPWarning_m458D0E47
 		RuntimeObject* L_0 = ___logger0;
 		String_t* L_1 = ___message1;
 		NullCheck(L_0);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7 /* System.Void UnityEngine.ILogger::LogWarning(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8 /* System.Void UnityEngine.ILogger::LogWarning(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
 		// }
 		return;
 	}
@@ -9782,7 +9782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoggerExtensions_LogIAPError_mD1B9F54F05
 		RuntimeObject* L_0 = ___logger0;
 		String_t* L_1 = ___message1;
 		NullCheck(L_0);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(9 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
 		// }
 		return;
 	}

@@ -132,7 +132,7 @@ Transform:
   m_GameObject: {fileID: 3537171100188795310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.38, y: 6.05, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 0.852273, y: 0.852273, z: 0.852273}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8672863140539376602}
@@ -217,6 +217,9 @@ MonoBehaviour:
   _animator: {fileID: 0}
   _enemySize: 0.4
   colliderTarget: {fileID: 3537171100188795311}
+  _audio: {fileID: 4235804376522667059}
+  _rigidbody: {fileID: 3537171100188795296}
+  _collision2D: {fileID: 3537171100188795298}
 --- !u!61 &3537171100188795298
 BoxCollider2D:
   m_ObjectHideFlags: 0

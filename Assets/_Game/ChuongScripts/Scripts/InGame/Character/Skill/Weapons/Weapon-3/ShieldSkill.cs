@@ -43,7 +43,7 @@ public class ShieldAttribute : ISpeedAttribute, IDamageAttribute, IRangeAttribut
 {
     public ShieldAttribute()
     {
-        Range = 1;
+        Range = 1.3f;
     }
 
     public float Speed { get; set; }
