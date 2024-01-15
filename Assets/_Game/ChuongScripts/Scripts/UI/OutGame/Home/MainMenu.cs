@@ -31,6 +31,7 @@ public class MainMenu : MonoBehaviour
     private void ClickPlayBtn()
     {
         SceneLoader.Instance.LoadMap(_playerData.choosingMap);
+        FirebaseInit.Instance.Log("Play", "Map", _playerData.choosingMap);
     }
 
     private void OnChooseMap(int mapIndex)

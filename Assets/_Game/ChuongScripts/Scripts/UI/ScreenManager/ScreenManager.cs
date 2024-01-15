@@ -21,7 +21,8 @@ public enum ScreenType
     SelectMap,
     AddSkill,
     Pause,
-    Result
+    Result,
+    Privacy
 }
 
 [DefaultExecutionOrder(-99)]

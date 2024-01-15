@@ -2475,6 +2475,9 @@ MonoBehaviour:
   _canvasGroup: {fileID: 2101310483791439883}
   _closeBtn: {fileID: 1623873089613974092}
   _type: 6
+  OnOpenAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1623873090985908319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2824,7 @@ GameObject:
   - component: {fileID: 4713189376759488902}
   - component: {fileID: 6115470487659963651}
   - component: {fileID: 7408503921286540957}
+  - component: {fileID: 7005555748525707563}
   m_Layer: 5
   m_Name: Button Privacy Policy
   m_TagString: Untagged
@@ -2931,6 +2935,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7005555748525707563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204188546541371543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee4c4ca6cfa61144afedeeae597be3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _screenType: 11
 --- !u!1 &7243818765782881227
 GameObject:
   m_ObjectHideFlags: 0

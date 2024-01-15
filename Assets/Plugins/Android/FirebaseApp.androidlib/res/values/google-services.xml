@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id">
+  <string name="gcm_defaultSenderId" translatable="false">495069607727</string>
+  <string name="google_storage_bucket" translatable="false">ngo-khong-dai-chien.appspot.com</string>
+  <string name="project_id" translatable="false">ngo-khong-dai-chien</string>
+  <string name="google_api_key" translatable="false">AIzaSyCd_6WHqMK8qVJx6rKx6wga1oAem9egX4o</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCd_6WHqMK8qVJx6rKx6wga1oAem9egX4o</string>
+  <string name="google_app_id" translatable="false">1:495069607727:android:443c7ff3532373c22053da</string>
+</resources>
