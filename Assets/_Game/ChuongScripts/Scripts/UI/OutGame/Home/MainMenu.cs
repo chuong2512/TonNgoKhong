@@ -60,4 +60,9 @@ public class MainMenu : MonoBehaviour
     {
         ScreenManager.Instance.OpenScreen(ScreenType.SelectMap);
     }
+
+    private void OnDestroy()
+    {
+        OutGameManager.OnChooseMap -= OnChooseMap;
+    }
 }

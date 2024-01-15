@@ -486,6 +486,8 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 struct HUDInGame_tA2AFC0DCFA7CBFD1979F527769D9EE22B54E742F;
 // HomeMenu
 struct HomeMenu_tE7F56267D8E3A3BA76394CF8AA24EE314B20D9B6;
+// UnityEngine.UI.Extensions.HorizontalScrollSnap
+struct HorizontalScrollSnap_tACC0865DA7AC11919160A4F2EB95C26A9D1928ED;
 // System.IAsyncResult
 struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 // System.Collections.IDictionary
@@ -538,6 +540,8 @@ struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 // OpenPopupButton
 struct OpenPopupButton_tDFE054517D5CE2D1E2C5E05B1FE59BE03B123828;
+// OutGameAction
+struct OutGameAction_t63CEA4163E63E8D22E5A38C53F66FE5DC75C63C1;
 // OutGameManager
 struct OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D;
 // PausePanel
@@ -580,6 +584,10 @@ struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct SceneLoader_tA44FA11011BD4FB136D8ACFDB56E4750B325ED0F;
 // ScreenManager
 struct ScreenManager_t74B00CC32B0370204F289774CED60C5963251C50;
+// UnityEngine.UI.ScrollRect
+struct ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E;
+// UnityEngine.UI.Extensions.ScrollSnapBase
+struct ScrollSnapBase_t87A83E6D8114D11602ACABFDC0584DD41488CAD2;
 // SelectMapManager
 struct SelectMapManager_t965A12965F9355817462CA4F4A0928041A287647;
 // UnityEngine.UI.Selectable
@@ -780,6 +788,12 @@ struct U3CU3Ec_t984D015FC50EF40272A37E0EF3825891FDE8EBC5;
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
 // ScreenManager/<>c__DisplayClass13_0
 struct U3CU3Ec__DisplayClass13_0_t7BD19315E32F52F47B4F88E5934CD4634E172424;
+// UnityEngine.UI.Extensions.ScrollSnapBase/SelectionChangeEndEvent
+struct SelectionChangeEndEvent_tD9B32D6BD6B4329C7C5D6F1A80F60B448D352743;
+// UnityEngine.UI.Extensions.ScrollSnapBase/SelectionChangeStartEvent
+struct SelectionChangeStartEvent_t96CFF52FD6EEFEA8BADBEE8DE4CAD229B59B9A52;
+// UnityEngine.UI.Extensions.ScrollSnapBase/SelectionPageChangedEvent
+struct SelectionPageChangedEvent_tF74A5559D81E0E8DA3D385F7E8061C7D0188D839;
 // Splash/<FadeLoadingScreen>d__4
 struct U3CFadeLoadingScreenU3Ed__4_tEBEF9040E20D07255D3552706AA0DEFB8A47829F;
 // Splash/<StartLoad>d__3
@@ -1602,6 +1616,25 @@ struct MapRecord_t1E733B23B52CC15F3B6919F3AE054C62C4E9C9FE  : public RuntimeObje
 	int32_t ___mapID_0;
 	// System.Int64 MapRecord::time
 	int64_t ___time_1;
+};
+
+// OutGameAction
+struct OutGameAction_t63CEA4163E63E8D22E5A38C53F66FE5DC75C63C1  : public RuntimeObject
+{
+};
+
+struct OutGameAction_t63CEA4163E63E8D22E5A38C53F66FE5DC75C63C1_StaticFields
+{
+	// System.Action`1<System.Int32> OutGameAction::OnChangeGem
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___OnChangeGem_0;
+	// System.Action`1<System.Int32> OutGameAction::OnChangeCoin
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___OnChangeCoin_1;
+	// System.Action`1<System.Int32> OutGameAction::OnChangeExp
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___OnChangeExp_2;
+	// System.Action`1<System.Single> OutGameAction::SetRegisterTime
+	Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* ___SetRegisterTime_3;
+	// System.Action`1<System.Int32> OutGameAction::OnChooseMap
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___OnChooseMap_4;
 };
 
 // Game.PlayerStat
@@ -4404,6 +4437,107 @@ struct RateApp_t31A65CB5EB8BE0CE95643747E5769628C7415229  : public MonoBehaviour
 {
 };
 
+// UnityEngine.UI.Extensions.ScrollSnapBase
+struct ScrollSnapBase_t87A83E6D8114D11602ACABFDC0584DD41488CAD2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Rect UnityEngine.UI.Extensions.ScrollSnapBase::panelDimensions
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___panelDimensions_4;
+	// UnityEngine.RectTransform UnityEngine.UI.Extensions.ScrollSnapBase::_screensContainer
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ____screensContainer_5;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_isVertical
+	bool ____isVertical_6;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::_screens
+	int32_t ____screens_7;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::_scrollStartPosition
+	float ____scrollStartPosition_8;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::_childSize
+	float ____childSize_9;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::_childPos
+	float ____childPos_10;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::_maskSize
+	float ____maskSize_11;
+	// UnityEngine.Vector2 UnityEngine.UI.Extensions.ScrollSnapBase::_childAnchorPoint
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____childAnchorPoint_12;
+	// UnityEngine.UI.ScrollRect UnityEngine.UI.Extensions.ScrollSnapBase::_scroll_rect
+	ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* ____scroll_rect_13;
+	// UnityEngine.Vector3 UnityEngine.UI.Extensions.ScrollSnapBase::_lerp_target
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____lerp_target_14;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_lerp
+	bool ____lerp_15;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_pointerDown
+	bool ____pointerDown_16;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_settled
+	bool ____settled_17;
+	// UnityEngine.Vector3 UnityEngine.UI.Extensions.ScrollSnapBase::_startPosition
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____startPosition_18;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::_currentPage
+	int32_t ____currentPage_19;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::_previousPage
+	int32_t ____previousPage_20;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::_halfNoVisibleItems
+	int32_t ____halfNoVisibleItems_21;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_isInfinite
+	bool ____isInfinite_22;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::_infiniteWindow
+	int32_t ____infiniteWindow_23;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::_infiniteOffset
+	float ____infiniteOffset_24;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::_bottomItem
+	int32_t ____bottomItem_25;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::_topItem
+	int32_t ____topItem_26;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_startEventCalled
+	bool ____startEventCalled_27;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_endEventCalled
+	bool ____endEventCalled_28;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::_suspendEvents
+	bool ____suspendEvents_29;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::StartingScreen
+	int32_t ___StartingScreen_30;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::PageStep
+	float ___PageStep_31;
+	// UnityEngine.GameObject UnityEngine.UI.Extensions.ScrollSnapBase::Pagination
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Pagination_32;
+	// UnityEngine.GameObject UnityEngine.UI.Extensions.ScrollSnapBase::PrevButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PrevButton_33;
+	// UnityEngine.GameObject UnityEngine.UI.Extensions.ScrollSnapBase::NextButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___NextButton_34;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::transitionSpeed
+	float ___transitionSpeed_35;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::UseHardSwipe
+	bool ___UseHardSwipe_36;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::UseFastSwipe
+	bool ___UseFastSwipe_37;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::UseSwipeDeltaThreshold
+	bool ___UseSwipeDeltaThreshold_38;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::FastSwipeThreshold
+	int32_t ___FastSwipeThreshold_39;
+	// System.Int32 UnityEngine.UI.Extensions.ScrollSnapBase::SwipeVelocityThreshold
+	int32_t ___SwipeVelocityThreshold_40;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::SwipeDeltaThreshold
+	float ___SwipeDeltaThreshold_41;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::UseTimeScale
+	bool ___UseTimeScale_42;
+	// UnityEngine.RectTransform UnityEngine.UI.Extensions.ScrollSnapBase::MaskArea
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___MaskArea_43;
+	// System.Single UnityEngine.UI.Extensions.ScrollSnapBase::MaskBuffer
+	float ___MaskBuffer_44;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::JumpOnEnable
+	bool ___JumpOnEnable_45;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::RestartOnEnable
+	bool ___RestartOnEnable_46;
+	// System.Boolean UnityEngine.UI.Extensions.ScrollSnapBase::UseParentTransform
+	bool ___UseParentTransform_47;
+	// UnityEngine.GameObject[] UnityEngine.UI.Extensions.ScrollSnapBase::ChildObjects
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___ChildObjects_48;
+	// UnityEngine.UI.Extensions.ScrollSnapBase/SelectionChangeStartEvent UnityEngine.UI.Extensions.ScrollSnapBase::m_OnSelectionChangeStartEvent
+	SelectionChangeStartEvent_t96CFF52FD6EEFEA8BADBEE8DE4CAD229B59B9A52* ___m_OnSelectionChangeStartEvent_49;
+	// UnityEngine.UI.Extensions.ScrollSnapBase/SelectionPageChangedEvent UnityEngine.UI.Extensions.ScrollSnapBase::m_OnSelectionPageChangedEvent
+	SelectionPageChangedEvent_tF74A5559D81E0E8DA3D385F7E8061C7D0188D839* ___m_OnSelectionPageChangedEvent_50;
+	// UnityEngine.UI.Extensions.ScrollSnapBase/SelectionChangeEndEvent UnityEngine.UI.Extensions.ScrollSnapBase::m_OnSelectionChangeEndEvent
+	SelectionChangeEndEvent_tD9B32D6BD6B4329C7C5D6F1A80F60B448D352743* ___m_OnSelectionChangeEndEvent_51;
+};
+
 // SelectMapManager
 struct SelectMapManager_t965A12965F9355817462CA4F4A0928041A287647  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4417,12 +4551,14 @@ struct SelectMapManager_t965A12965F9355817462CA4F4A0928041A287647  : public Mono
 	InfoMapItemU5BU5D_t9D34A2539AF2031B679F2263AFE88AF1022DFD14* ____infoMapItems_7;
 	// UnityEngine.UI.Button SelectMapManager::_chooseBtn
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ____chooseBtn_8;
+	// UnityEngine.UI.Extensions.HorizontalScrollSnap SelectMapManager::_horizontalScroll
+	HorizontalScrollSnap_tACC0865DA7AC11919160A4F2EB95C26A9D1928ED* ____horizontalScroll_9;
 	// System.Int32 SelectMapManager::_mapIndex
-	int32_t ____mapIndex_9;
+	int32_t ____mapIndex_10;
 	// _TonNgoKhong.LevelSO SelectMapManager::_levelSo
-	LevelSO_tC7BCAF904BD211ECEEBCAB5E5C349F8BE6E70F14* ____levelSo_10;
+	LevelSO_tC7BCAF904BD211ECEEBCAB5E5C349F8BE6E70F14* ____levelSo_11;
 	// PlayerData SelectMapManager::_playerData
-	PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* ____playerData_11;
+	PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* ____playerData_12;
 };
 
 // Sirenix.OdinInspector.SerializedMonoBehaviour
@@ -4708,6 +4844,13 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___s_Mesh_21;
 	// UnityEngine.UI.VertexHelper UnityEngine.UI.Graphic::s_VertexHelper
 	VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE* ___s_VertexHelper_22;
+};
+
+// UnityEngine.UI.Extensions.HorizontalScrollSnap
+struct HorizontalScrollSnap_tACC0865DA7AC11919160A4F2EB95C26A9D1928ED  : public ScrollSnapBase_t87A83E6D8114D11602ACABFDC0584DD41488CAD2
+{
+	// System.Boolean UnityEngine.UI.Extensions.HorizontalScrollSnap::updated
+	bool ___updated_52;
 };
 
 // InGameManager
@@ -7981,8 +8124,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkillButton_ClosePopUp_mD906742FD29AD13A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenManager_Back_m072DBB810BED2F6341AB33549FD378DAA03ED05C (ScreenManager_t74B00CC32B0370204F289774CED60C5963251C50* __this, const RuntimeMethod* method) ;
 // System.Void SelectMapManager::SetInfoMaps()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_SetInfoMaps_m6B6DAD694C4E056DDA0A8552CB47C1E0197AFAC3 (SelectMapManager_t965A12965F9355817462CA4F4A0928041A287647* __this, const RuntimeMethod* method) ;
-// System.Void SelectMapManager::OnChooseMap(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_OnChooseMap_mA7550B51F7504C987533E787B6C6D193DC87DAEE (SelectMapManager_t965A12965F9355817462CA4F4A0928041A287647* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Extensions.ScrollSnapBase::ChangePage(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScrollSnapBase_ChangePage_m251CB73D20A31E4AAAB8E60800260F7EED128497 (ScrollSnapBase_t87A83E6D8114D11602ACABFDC0584DD41488CAD2* __this, int32_t ___page0, const RuntimeMethod* method) ;
 // T SinhTon.Singleton`1<ToastManager>::get_Instance()
 inline ToastManager_t111D9CC954C5593A334ACBB15C890CAA05F0C2EF* Singleton_1_get_Instance_mF6DFF344529BA10077D5B2B36796E34EAE79B55C (const RuntimeMethod* method)
 {
@@ -24779,6 +24922,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFadeLoadingScreenU3Ed__4_Sy
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void OutGameAction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutGameAction__ctor_m842A6BB7687452F6AA3F5AB61708C36067FF8FC7 (OutGameAction_t63CEA4163E63E8D22E5A38C53F66FE5DC75C63C1* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void OutGameManager::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutGameManager_Start_mABBFCFE8E7A5A34A825B32512D6FDA67BA743873 (OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D* __this, const RuntimeMethod* method) 
 {
@@ -25882,15 +26041,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_Start_mE0ABBDFA591011F5
 		L_0 = PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C(PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C_RuntimeMethod_var);
 		NullCheck(L_0);
 		LevelSO_tC7BCAF904BD211ECEEBCAB5E5C349F8BE6E70F14* L_1 = L_0->___LevelSo_6;
-		__this->____levelSo_10 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____levelSo_10), (void*)L_1);
+		__this->____levelSo_11 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____levelSo_11), (void*)L_1);
 		// _playerData = GameDataManager.Instance.playerData;
 		GameDataManager_t334227F400FA22E9A3C850D53CDD5D746466B7F4* L_2;
 		L_2 = PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C(PersistentSingleton_1_get_Instance_m2AF3979B36BDD6842E6C57E1927477388D16501C_RuntimeMethod_var);
 		NullCheck(L_2);
 		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_3 = L_2->___playerData_8;
-		__this->____playerData_11 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____playerData_11), (void*)L_3);
+		__this->____playerData_12 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____playerData_12), (void*)L_3);
 		// _chooseBtn.onClick.AddListener(OnChooseBtn);
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_4 = __this->____chooseBtn_8;
 		NullCheck(L_4);
@@ -25903,8 +26062,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_Start_mE0ABBDFA591011F5
 		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_5, L_6, NULL);
 		// SetInfoMaps();
 		SelectMapManager_SetInfoMaps_m6B6DAD694C4E056DDA0A8552CB47C1E0197AFAC3(__this, NULL);
-		// OnChooseMap(0);
-		SelectMapManager_OnChooseMap_mA7550B51F7504C987533E787B6C6D193DC87DAEE(__this, 0, NULL);
+		// _horizontalScroll.ChangePage(0);
+		HorizontalScrollSnap_tACC0865DA7AC11919160A4F2EB95C26A9D1928ED* L_7 = __this->____horizontalScroll_9;
+		NullCheck(L_7);
+		ScrollSnapBase_ChangePage_m251CB73D20A31E4AAAB8E60800260F7EED128497(L_7, 0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SelectMapManager::OnOpen()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_OnOpen_mFDBCB59E1F2AF608ACEBE98ACA75854F86877752 (SelectMapManager_t965A12965F9355817462CA4F4A0928041A287647* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (_playerData)
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_0 = __this->____playerData_12;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// _horizontalScroll.ChangePage(0);
+		HorizontalScrollSnap_tACC0865DA7AC11919160A4F2EB95C26A9D1928ED* L_2 = __this->____horizontalScroll_9;
+		NullCheck(L_2);
+		ScrollSnapBase_ChangePage_m251CB73D20A31E4AAAB8E60800260F7EED128497(L_2, 0, NULL);
+	}
+
+IL_0019:
+	{
 		// }
 		return;
 	}
@@ -25923,8 +26117,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_OnChooseBtn_m9354B28B6F
 	}
 	{
 		// if (_playerData.IsUnlockMap(_mapIndex))
-		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_0 = __this->____playerData_11;
-		int32_t L_1 = __this->____mapIndex_9;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_0 = __this->____playerData_12;
+		int32_t L_1 = __this->____mapIndex_10;
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = PlayerData_IsUnlockMap_m0E613AD73AB4DDF9393CC95F96DB8883B0FFCFBD(L_0, L_1, NULL);
@@ -25935,8 +26129,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_OnChooseBtn_m9354B28B6F
 	}
 	{
 		// _playerData.choosingMap = _mapIndex;
-		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_3 = __this->____playerData_11;
-		int32_t L_4 = __this->____mapIndex_9;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_3 = __this->____playerData_12;
+		int32_t L_4 = __this->____mapIndex_10;
 		NullCheck(L_3);
 		L_3->___choosingMap_9 = L_4;
 		// _chooseTxt.text = "?? ch?n";
@@ -25945,7 +26139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_OnChooseBtn_m9354B28B6F
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_5, _stringLiteralF53308A994E88BFD4151EFCBBD8C6CBD4CEDCC29);
 		// OutGameManager.OnChooseMap.Invoke(_mapIndex);
 		Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_6 = ((OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_StaticFields*)il2cpp_codegen_static_fields_for(OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_il2cpp_TypeInfo_var))->___OnChooseMap_11;
-		int32_t L_7 = __this->____mapIndex_9;
+		int32_t L_7 = __this->____mapIndex_10;
 		NullCheck(L_6);
 		Action_1_Invoke_mAC3C34BA1905AB5B79E483CD9BB082B7D667F703_inline(L_6, L_7, NULL);
 		return;
@@ -25980,14 +26174,14 @@ IL_0004:
 		NullCheck(L_0);
 		int32_t L_2 = L_1;
 		InfoMapItem_t92C000C4A6FCEDC075F348177D180DBF7A6A7F88* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
-		LevelSO_tC7BCAF904BD211ECEEBCAB5E5C349F8BE6E70F14* L_4 = __this->____levelSo_10;
+		LevelSO_tC7BCAF904BD211ECEEBCAB5E5C349F8BE6E70F14* L_4 = __this->____levelSo_11;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
 		MapItem_t0A516EE7690E084F509EBEE6B2C11AF43925D659* L_6;
 		L_6 = LevelSO_GetMapItem_m4DF8236F6BD2169BA3AB8262919B44071D3A3A70(L_4, L_5, NULL);
 		NullCheck(L_6);
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_7 = L_6->___icon_3;
-		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_8 = __this->____playerData_11;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_8 = __this->____playerData_12;
 		int32_t L_9 = V_0;
 		NullCheck(L_8);
 		bool L_10;
@@ -26033,10 +26227,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_OnChooseMap_mA7550B51F7
 	{
 		// _mapIndex = index;
 		int32_t L_0 = ___index0;
-		__this->____mapIndex_9 = L_0;
+		__this->____mapIndex_10 = L_0;
 		// var mapItem = _levelSo.GetMapItem(_mapIndex);
-		LevelSO_tC7BCAF904BD211ECEEBCAB5E5C349F8BE6E70F14* L_1 = __this->____levelSo_10;
-		int32_t L_2 = __this->____mapIndex_9;
+		LevelSO_tC7BCAF904BD211ECEEBCAB5E5C349F8BE6E70F14* L_1 = __this->____levelSo_11;
+		int32_t L_2 = __this->____mapIndex_10;
 		NullCheck(L_1);
 		MapItem_t0A516EE7690E084F509EBEE6B2C11AF43925D659* L_3;
 		L_3 = LevelSO_GetMapItem_m4DF8236F6BD2169BA3AB8262919B44071D3A3A70(L_1, L_2, NULL);
@@ -26057,7 +26251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectMapManager_OnChooseMap_mA7550B51F7
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_7, L_9);
 		// _chooseTxt.text = IsChoosingMap(_mapIndex) ? "?? ch?n" : "Ch?n";
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->____chooseTxt_4;
-		int32_t L_11 = __this->____mapIndex_9;
+		int32_t L_11 = __this->____mapIndex_10;
 		bool L_12;
 		L_12 = SelectMapManager_IsChoosingMap_m7E4F2374B789517FD242B924E5918556416173BF(__this, L_11, NULL);
 		G_B1_0 = L_10;
@@ -26092,7 +26286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SelectMapManager_IsChoosingMap_m7E4F2374
 {
 	{
 		// return _playerData.choosingMap == index;
-		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_0 = __this->____playerData_11;
+		PlayerData_t04178AFFCFAF35DA6472B839034F672FFE5EB64A* L_0 = __this->____playerData_12;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___choosingMap_9;
 		int32_t L_2 = ___index0;
@@ -26342,6 +26536,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainMenu_OpenSelectMap_mE8C56CE469B47D42
 		L_0 = Singleton_1_get_Instance_mB71529191B3841F2AD5850522073625F79DA465D(Singleton_1_get_Instance_mB71529191B3841F2AD5850522073625F79DA465D_RuntimeMethod_var);
 		NullCheck(L_0);
 		ScreenManager_OpenScreen_m11D582EEC4A9F230EE03BEF842C2B5E72570003A(L_0, 7, NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainMenu::OnDestroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainMenu_OnDestroy_mFED82B1AC88557009DE68BCF3827DE154CE284CE (MainMenu_t5A8A8E4906FD2B24D16567A6BFFDAA6B91DD12DF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainMenu_OnChooseMap_m52435EBAC71D586AD5AC47D1AA5725D2D8130B50_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// OutGameManager.OnChooseMap -= OnChooseMap;
+		Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_0 = ((OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_StaticFields*)il2cpp_codegen_static_fields_for(OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_il2cpp_TypeInfo_var))->___OnChooseMap_11;
+		Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_1 = (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*)il2cpp_codegen_object_new(Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87(L_1, __this, (intptr_t)((void*)MainMenu_OnChooseMap_m52435EBAC71D586AD5AC47D1AA5725D2D8130B50_RuntimeMethod_var), NULL);
+		Delegate_t* L_2;
+		L_2 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_0, L_1, NULL);
+		((OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_StaticFields*)il2cpp_codegen_static_fields_for(OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_il2cpp_TypeInfo_var))->___OnChooseMap_11 = ((Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*)Castclass((RuntimeObject*)L_2, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404_il2cpp_TypeInfo_var));
+		Il2CppCodeGenWriteBarrier((void**)(&((OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_StaticFields*)il2cpp_codegen_static_fields_for(OutGameManager_tA66CA0CB9893070A239E091EB59345E174FAC25D_il2cpp_TypeInfo_var))->___OnChooseMap_11), (void*)((Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*)Castclass((RuntimeObject*)L_2, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404_il2cpp_TypeInfo_var)));
 		// }
 		return;
 	}

@@ -1,6 +1,16 @@
 using System;
 using SinhTon;
 
+public class OutGameAction
+{
+    public static Action<int> OnChangeGem;
+    public static Action<int> OnChangeCoin;
+    public static Action<int> OnChangeExp;
+    public static Action<float> SetRegisterTime;
+
+    public static Action<int> OnChooseMap;
+}
+
 public class OutGameManager : Singleton<OutGameManager>
 {
     private GameDataManager _gameData;

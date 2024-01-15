@@ -10,7 +10,7 @@ namespace Game
         public override void Upgrade()
         {
             hp.Play();
-            PlayerManager.Instance.Combat.Healing(0, 15);
+            PlayerManager.Instance.Combat.Healing(0, 25);
         }
 
         public override SuppliesType SuppliesType => SuppliesType.AddHP;

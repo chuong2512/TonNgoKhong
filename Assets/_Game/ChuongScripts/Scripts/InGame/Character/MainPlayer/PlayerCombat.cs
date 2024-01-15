@@ -18,6 +18,7 @@ namespace Game
         public void InitHealth()
         {
             Health = MaxHealth;
+            InGameAction.OnHealthChange?.Invoke();
         }
 
         public void RestoreHP()

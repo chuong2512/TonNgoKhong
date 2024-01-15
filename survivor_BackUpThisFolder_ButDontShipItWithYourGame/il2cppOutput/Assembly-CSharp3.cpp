@@ -7467,6 +7467,8 @@ struct SimplePopup_tDA62186572C03563BABD529B1E147A70ABD376E5  : public AppPopup_
 {
 	// ScreenType SinhTon.SimplePopup::_type
 	int32_t ____type_7;
+	// UnityEngine.Events.UnityEvent SinhTon.SimplePopup::OnOpenAction
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___OnOpenAction_8;
 };
 
 // Game.SpeedShotSupply
@@ -9364,6 +9366,8 @@ inline SetTimeButtonU5BU5D_tC7F990E4F3B4A2B2A287FB887C7CD286AB56D4CB* Component_
 }
 // System.Void SetTimeButton::SetTime(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetTimeButton_SetTime_m6C61771D7979CBD5FE80AC65F2C6EBAB2FFB4871 (SetTimeButton_t1F2D3EA818CEFECAC4D2D4D817D525CE92B391B0* __this, int32_t ___i0, const RuntimeMethod* method) ;
+// System.Void SinhTon.AppPopup::OnOpen()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppPopup_OnOpen_mCB902800F7E882D2D05EED1B03A6CA1A05C2753C (AppPopup_tB16ED20DD9DE7353EB9E7AC616413EF4E35B330D* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponentInChildren<TMPro.TextMeshProUGUI>()
 inline TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* Component_GetComponentInChildren_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m60A1B193FDBBFB3719065622DB5E0BB21CA4ABDC (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -9725,14 +9729,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mCD12AEEC619E728A3699F9142
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerCombat_get_MaxHealth_mCBC6C24D36959766AE290C4968272CD6CA532893 (PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* __this, const RuntimeMethod* method) ;
 // System.Void Game.PlayerCombat::set_Health(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerCombat_set_Health_m38375FA7DF2E9661A9DDB8F9B8B56908EBFEC497 (PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* __this, float ___value0, const RuntimeMethod* method) ;
+// System.Void System.Action::Invoke()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
 // System.Void Game.PlayerCombat::InitHealth()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerCombat_InitHealth_m25408A0D157A4BE28276A9BB3CB174860CE756A9 (PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* __this, const RuntimeMethod* method) ;
 // System.Single Game.PlayerCombat::get_Health()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerCombat_get_Health_mD40A1ACB2B746614D4A86A9EC30A871D7548DE9B (PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* __this, const RuntimeMethod* method) ;
 // System.Void Game.PlayerCombat::Healing(System.Single,System.Single,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerCombat_Healing_m441DD1A64E2F8D0BDEFFB4A4A84FD40DE775943C (PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* __this, float ___flatHeal0, float ___percent1, bool ___isExtra2, const RuntimeMethod* method) ;
-// System.Void System.Action::Invoke()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
 // System.Single Game.PlayerCombat::get_Defense()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerCombat_get_Defense_m2051D652EE3DA2F8B471B2842AB2AB561F46C423 (PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* __this, const RuntimeMethod* method) ;
 // System.Void _TonNgoKhong.ResultModel::.ctor(System.Boolean)
@@ -15893,6 +15897,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimplePopup_GetID_mC6B72650F6FB465A19
 		return L_0;
 	}
 }
+// System.Void SinhTon.SimplePopup::OnOpen()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimplePopup_OnOpen_mFB055A5A54179BCEA04FC76BFE182C2E86FB48C9 (SimplePopup_tDA62186572C03563BABD529B1E147A70ABD376E5* __this, const RuntimeMethod* method) 
+{
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B2_0 = NULL;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B1_0 = NULL;
+	{
+		// base.OnOpen();
+		AppPopup_OnOpen_mCB902800F7E882D2D05EED1B03A6CA1A05C2753C(__this, NULL);
+		// OnOpenAction?.Invoke();
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->___OnOpenAction_8;
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_1 = L_0;
+		G_B1_0 = L_1;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_0011;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0011:
+	{
+		NullCheck(G_B2_0);
+		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B2_0, NULL);
+		// }
+		return;
+	}
+}
 // System.Void SinhTon.SimplePopup::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimplePopup__ctor_m209A5B6ABC384F1E4471385EC493CF58D55D9AC9 (SimplePopup_tDA62186572C03563BABD529B1E147A70ABD376E5* __this, const RuntimeMethod* method) 
 {
@@ -19985,11 +20019,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerCombat_set_PlayerStatus_m44F923E03
 // System.Void Game.PlayerCombat::InitHealth()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerCombat_InitHealth_m25408A0D157A4BE28276A9BB3CB174860CE756A9 (PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameAction_tECB5B4761E9E99017DF3CDE83F6B78FF30DD74A1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B2_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B1_0 = NULL;
 	{
 		// Health = MaxHealth;
 		float L_0;
 		L_0 = PlayerCombat_get_MaxHealth_mCBC6C24D36959766AE290C4968272CD6CA532893(__this, NULL);
 		PlayerCombat_set_Health_m38375FA7DF2E9661A9DDB8F9B8B56908EBFEC497(__this, L_0, NULL);
+		// InGameAction.OnHealthChange?.Invoke();
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = ((InGameAction_tECB5B4761E9E99017DF3CDE83F6B78FF30DD74A1_StaticFields*)il2cpp_codegen_static_fields_for(InGameAction_tECB5B4761E9E99017DF3CDE83F6B78FF30DD74A1_il2cpp_TypeInfo_var))->___OnHealthChange_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = L_1;
+		G_B1_0 = L_2;
+		if (L_2)
+		{
+			G_B2_0 = L_2;
+			goto IL_0016;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0016:
+	{
+		NullCheck(G_B2_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B2_0, NULL);
 		// }
 		return;
 	}
@@ -20678,13 +20738,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddHPSupply_Upgrade_mEA50AA391BF01596BC0
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_0 = __this->___hp_6;
 		NullCheck(L_0);
 		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_0, NULL);
-		// PlayerManager.Instance.Combat.Healing(0, 15);
+		// PlayerManager.Instance.Combat.Healing(0, 25);
 		PlayerManager_tFCA057D2BB0C684CAB1A27194F6D1E2C85251F84* L_1;
 		L_1 = Singleton_1_get_Instance_mDA46022C78D67C687D4C162863A5AC92441E278A(Singleton_1_get_Instance_mDA46022C78D67C687D4C162863A5AC92441E278A_RuntimeMethod_var);
 		NullCheck(L_1);
 		PlayerCombat_tBDB75C856BDEFD0B1118055F944E346273C30EE6* L_2 = L_1->___Combat_6;
 		NullCheck(L_2);
-		PlayerCombat_Healing_m441DD1A64E2F8D0BDEFFB4A4A84FD40DE775943C(L_2, (0.0f), (15.0f), (bool)0, NULL);
+		PlayerCombat_Healing_m441DD1A64E2F8D0BDEFFB4A4A84FD40DE775943C(L_2, (0.0f), (25.0f), (bool)0, NULL);
 		// }
 		return;
 	}

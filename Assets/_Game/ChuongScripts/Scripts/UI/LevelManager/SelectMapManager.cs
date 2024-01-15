@@ -28,15 +28,15 @@ public class SelectMapManager : MonoBehaviour
         _chooseBtn.onClick.AddListener(OnChooseBtn);
 
         SetInfoMaps();
-        OnChooseMap(_playerData.choosingMap);
+
+        _horizontalScroll.ChangePage(0);
     }
 
-    private void OnEnable()
+    public void OnOpen()
     {
         if (_playerData)
         {
-            _horizontalScroll.ChangePage(_playerData.choosingMap);
-            OnChooseMap(_playerData.choosingMap);
+            _horizontalScroll.ChangePage(0);
         }
     }
 
