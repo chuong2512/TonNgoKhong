@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using _TonNgoKhong;
+using Game;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;

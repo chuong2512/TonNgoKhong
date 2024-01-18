@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Game;
+using TMPro;
 using UnityEngine;
 
 namespace SinhTon

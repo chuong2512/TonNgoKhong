@@ -1,4 +1,5 @@
 ﻿using System;
+using Game;
 using SinhTon.Scripts.UI;
 using TMPro;
 using UnityEngine;

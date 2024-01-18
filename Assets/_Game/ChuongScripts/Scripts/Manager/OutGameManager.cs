@@ -1,4 +1,5 @@
 using System;
+using Game;
 using SinhTon;
 
 public class OutGameAction

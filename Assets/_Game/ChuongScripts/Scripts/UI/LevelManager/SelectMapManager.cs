@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using _TonNgoKhong;
+using Game;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.UI;

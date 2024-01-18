@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
