@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-using _TonNgoKhong;
-using UnityEngine;
+using Game;
 
-namespace Skill
+namespace Game
 {
     public abstract class WeaponSkill : BaseSkill, IWeaponSkill
     {

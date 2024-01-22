@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace _TonNgoKhong
+namespace Game
 {
     public class ResultPopup : BaseScreenWithModel<ResultModel>
     {

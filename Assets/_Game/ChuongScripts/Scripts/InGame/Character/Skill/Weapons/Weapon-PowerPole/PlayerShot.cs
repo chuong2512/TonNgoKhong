@@ -2,7 +2,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Skill.Weapons
+namespace Game.Weapons
 {
     public abstract class PlayerShot : SerializedMonoBehaviour
     {

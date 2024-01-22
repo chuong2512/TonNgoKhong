@@ -2,11 +2,16 @@ using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Skill
+namespace Game
 {
     public interface IUpgradeSkill
     {
         void Upgrade(IAttribute weaponBuilder);
+    }
+    
+    public interface IMultiple
+    {
+        float Multipler { get; set; }
     }
 
     public interface IUpgradeSkill<in T> : IUpgradeSkill where T : IAttribute
@@ -116,6 +121,11 @@ namespace Skill
     {
         [SerializeField] private float hp;
 
+        public HPUpgrade(float HP)
+        {
+            hp = HP;
+        }
+
         public void Upgrade(IMaxHealthAttribute weaponBuilder)
         {
             weaponBuilder.MaxHealth += hp;
@@ -130,6 +140,17 @@ namespace Skill
         public void Upgrade(ISpeedShotAttribute weaponBuilder)
         {
             weaponBuilder.SpeedShot += speed;
+        }
+    }
+
+    [Serializable]
+    public class IDefenseUpgrade : IUpgradeSkill<IDefenseAttribute>
+    {
+        [SerializeField] private float def;
+
+        public void Upgrade(IDefenseAttribute weaponBuilder)
+        {
+            weaponBuilder.Defense += def;
         }
     }
 

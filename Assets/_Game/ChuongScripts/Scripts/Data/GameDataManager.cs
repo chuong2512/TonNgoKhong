@@ -1,9 +1,7 @@
 namespace Game
 {
-    using _TonNgoKhong;
     using SinhTon;
     using Sirenix.OdinInspector;
-    using Skill;
     using UnityEngine;
 
     public class Constant
@@ -20,6 +18,9 @@ namespace Game
         /*----Scriptable data-----------------------------------------------------------------------------------------------*/
         [InlineEditor()] public LevelSO LevelSo;
         [InlineEditor()] public SkillSO SkillSo;
+        [InlineEditor()] public StatDescriptionSO StatDescriptionSO;
+        [InlineEditor()] public EquipmentSO EquipmentSO;
+        [InlineEditor()] public RankBGSO RankBGSO;
 
         /*----Data variable-------------------------------------------------------------------------------------------------*/
         [HideInInspector] public PlayerData playerData;
@@ -60,6 +61,11 @@ namespace Game
         public int GetLevel(out float f)
         {
             return LevelSo.GetLevel(playerData.Exp, out f);
+        }
+
+        public DataMap GetCurrentDataMap()
+        {
+            return LevelSo.GetMapItem(playerData.choosingMap).dataMap;
         }
     }
 }

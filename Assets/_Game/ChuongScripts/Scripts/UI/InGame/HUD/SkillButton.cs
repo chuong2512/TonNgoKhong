@@ -1,5 +1,4 @@
 using Game;
-using Skill;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

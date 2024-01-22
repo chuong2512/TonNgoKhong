@@ -1,0 +1,524 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010806757cf30f1429b03a6d04fc535a, type: 3}
+  m_Name: EquipmentSO
+  m_EditorClassIdentifier: 
+  EquipmentDatas:
+  - rid: 3794718576576823296
+  - rid: 3794718604520325121
+  - rid: 3794718576576823298
+  - rid: 3794718576576823299
+  - rid: 3794718576576823300
+  RankInfos:
+  - multipler: 1
+  - multipler: 1.2
+  - multipler: 1.3
+  - multipler: 1.5
+  - multipler: 1.7
+  - multipler: 1.8
+  - multipler: 1.9
+  - multipler: 2
+  - multipler: 2.2
+  - multipler: 2.5
+  references:
+    version: 2
+    RefIds:
+    - rid: 3794718576576823296
+      type: {class: ArmorData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 0
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 10
+        equipmentUpgradeInfos:
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325263
+          price:
+            Type: 0
+            Value: 100
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325264
+          price:
+            Type: 0
+            Value: 200
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325265
+          price:
+            Type: 0
+            Value: 300
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325266
+          price:
+            Type: 0
+            Value: 400
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325267
+          price:
+            Type: 0
+            Value: 500
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325268
+          price:
+            Type: 0
+            Value: 600
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325269
+          price:
+            Type: 0
+            Value: 700
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325270
+          price:
+            Type: 0
+            Value: 800
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325271
+          price:
+            Type: 0
+            Value: 900
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325272
+          price:
+            Type: 0
+            Value: 1000
+    - rid: 3794718576576823298
+      type: {class: NeckData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 2
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 10
+        equipmentUpgradeInfos:
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325283
+          price:
+            Type: 0
+            Value: 100
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325284
+          price:
+            Type: 0
+            Value: 200
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325285
+          price:
+            Type: 0
+            Value: 300
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325286
+          price:
+            Type: 0
+            Value: 400
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325287
+          price:
+            Type: 0
+            Value: 500
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325288
+          price:
+            Type: 0
+            Value: 600
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325289
+          price:
+            Type: 0
+            Value: 700
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325290
+          price:
+            Type: 0
+            Value: 800
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325291
+          price:
+            Type: 0
+            Value: 900
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325292
+          price:
+            Type: 0
+            Value: 1000
+    - rid: 3794718576576823299
+      type: {class: RingData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 3
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 10
+        equipmentUpgradeInfos:
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325293
+          price:
+            Type: 0
+            Value: 100
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325294
+          price:
+            Type: 0
+            Value: 200
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325295
+          price:
+            Type: 0
+            Value: 300
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325296
+          price:
+            Type: 0
+            Value: 400
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325297
+          price:
+            Type: 0
+            Value: 500
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325298
+          price:
+            Type: 0
+            Value: 600
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325299
+          price:
+            Type: 0
+            Value: 700
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325300
+          price:
+            Type: 0
+            Value: 800
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325301
+          price:
+            Type: 0
+            Value: 900
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325302
+          price:
+            Type: 0
+            Value: 1000
+    - rid: 3794718576576823300
+      type: {class: ShoeData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 4
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 10
+        equipmentUpgradeInfos:
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325303
+          price:
+            Type: 0
+            Value: 100
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325304
+          price:
+            Type: 0
+            Value: 200
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325305
+          price:
+            Type: 0
+            Value: 300
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325306
+          price:
+            Type: 0
+            Value: 400
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325307
+          price:
+            Type: 0
+            Value: 500
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325308
+          price:
+            Type: 0
+            Value: 600
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325309
+          price:
+            Type: 0
+            Value: 700
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325310
+          price:
+            Type: 0
+            Value: 800
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325311
+          price:
+            Type: 0
+            Value: 900
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325312
+          price:
+            Type: 0
+            Value: 1000
+    - rid: 3794718604520325121
+      type: {class: GloveData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 1
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 9
+        equipmentUpgradeInfos:
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325273
+          price:
+            Type: 0
+            Value: 100
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325274
+          price:
+            Type: 0
+            Value: 200
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325275
+          price:
+            Type: 0
+            Value: 300
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325276
+          price:
+            Type: 0
+            Value: 400
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325277
+          price:
+            Type: 0
+            Value: 500
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325278
+          price:
+            Type: 0
+            Value: 600
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325279
+          price:
+            Type: 0
+            Value: 700
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325280
+          price:
+            Type: 0
+            Value: 800
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325281
+          price:
+            Type: 0
+            Value: 900
+        - SkillUpgradeInfo:
+          - rid: 3794718604520325282
+          price:
+            Type: 0
+            Value: 1000
+    - rid: 3794718604520325263
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 10
+    - rid: 3794718604520325264
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 20
+    - rid: 3794718604520325265
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 30
+    - rid: 3794718604520325266
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 40
+    - rid: 3794718604520325267
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 50
+    - rid: 3794718604520325268
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 60
+    - rid: 3794718604520325269
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 70
+    - rid: 3794718604520325270
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 80
+    - rid: 3794718604520325271
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 90
+    - rid: 3794718604520325272
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 100
+    - rid: 3794718604520325273
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 10
+    - rid: 3794718604520325274
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 20
+    - rid: 3794718604520325275
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 30
+    - rid: 3794718604520325276
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 40
+    - rid: 3794718604520325277
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 50
+    - rid: 3794718604520325278
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 60
+    - rid: 3794718604520325279
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 70
+    - rid: 3794718604520325280
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 80
+    - rid: 3794718604520325281
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 90
+    - rid: 3794718604520325282
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 100
+    - rid: 3794718604520325283
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 7
+    - rid: 3794718604520325284
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 14
+    - rid: 3794718604520325285
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 21
+    - rid: 3794718604520325286
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 28
+    - rid: 3794718604520325287
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 35
+    - rid: 3794718604520325288
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 42
+    - rid: 3794718604520325289
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 49
+    - rid: 3794718604520325290
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 56
+    - rid: 3794718604520325291
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 63
+    - rid: 3794718604520325292
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 70
+    - rid: 3794718604520325293
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 8
+    - rid: 3794718604520325294
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 16
+    - rid: 3794718604520325295
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 24
+    - rid: 3794718604520325296
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 32
+    - rid: 3794718604520325297
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 40
+    - rid: 3794718604520325298
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 48
+    - rid: 3794718604520325299
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 56
+    - rid: 3794718604520325300
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 64
+    - rid: 3794718604520325301
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 72
+    - rid: 3794718604520325302
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 80
+    - rid: 3794718604520325303
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 7
+    - rid: 3794718604520325304
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 14
+    - rid: 3794718604520325305
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 21
+    - rid: 3794718604520325306
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 28
+    - rid: 3794718604520325307
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 35
+    - rid: 3794718604520325308
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 42
+    - rid: 3794718604520325309
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 49
+    - rid: 3794718604520325310
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 56
+    - rid: 3794718604520325311
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 63
+    - rid: 3794718604520325312
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 70

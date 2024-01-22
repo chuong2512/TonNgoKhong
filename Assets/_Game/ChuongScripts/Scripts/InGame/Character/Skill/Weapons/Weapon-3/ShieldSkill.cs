@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using _TonNgoKhong;
-using Skill;
+using Game;
 using UnityEngine;
 
 public class ShieldSkill : WeaponSkill

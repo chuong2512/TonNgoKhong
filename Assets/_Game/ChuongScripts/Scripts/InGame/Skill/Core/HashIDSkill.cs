@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using SinhTon;
 using UnityEngine;
 
-namespace Skill
+namespace Game
 {
     public static class HashIDSkill
     {

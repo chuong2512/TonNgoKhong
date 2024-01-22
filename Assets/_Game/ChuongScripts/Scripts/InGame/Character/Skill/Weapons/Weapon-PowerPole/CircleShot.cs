@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Game;
 using Jackal;
-using Skill.Weapons;
+using Game.Weapons;
 using UnityEngine;
 
 public class CircleShot : PlayerShot

@@ -3,7 +3,7 @@ using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace _TonNgoKhong
+namespace Game
 {
     public class PlayerInfoTab : MonoBehaviour
     {

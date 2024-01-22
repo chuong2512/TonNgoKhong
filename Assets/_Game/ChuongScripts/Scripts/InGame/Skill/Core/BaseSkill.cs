@@ -1,9 +1,8 @@
-﻿using _TonNgoKhong;
-using Game;
+﻿using Game;
 using UnityEngine;
 using UnityEngine.UI.Extensions;
 
-namespace Skill
+namespace Game
 {
     public abstract class BaseSkill : MonoBehaviour, IInfoSkill, IUpgradable
     {
@@ -11,7 +10,7 @@ namespace Skill
 
         [ReadOnly][SerializeField] private int TestLevel = 0;
 
-        private void UpgradeSkill()
+        private void UpgradeSkill() 
         {
             if (SkillSelector.Instance.IsMaxLevel(HashID)) return;
             

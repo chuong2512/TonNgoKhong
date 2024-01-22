@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Skill;
+using Game;
 using UnityEngine;
 
-namespace _Game
+namespace Game
 {
     public abstract class SkillContainer<T> : MonoBehaviour where T : BaseSkill
     {

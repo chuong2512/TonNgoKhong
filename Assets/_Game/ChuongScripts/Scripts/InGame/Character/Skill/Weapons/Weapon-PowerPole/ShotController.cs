@@ -1,7 +1,7 @@
 ﻿using Game;
 using UnityEngine;
 
-namespace Skill.Weapons
+namespace Game.Weapons
 {
     public class ShotController : BaseSkillController<ShotWeaponAttribute>
     {

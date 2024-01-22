@@ -1,5 +1,5 @@
 using System.Collections;
-using _TonNgoKhong;
+using Game;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;

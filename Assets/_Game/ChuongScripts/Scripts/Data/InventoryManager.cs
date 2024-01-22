@@ -6,12 +6,62 @@ namespace Game
     {
         public List<IEquipment> Equipments => inventoryData.Equipments;
 
+        public int CurrentNecklace
+        {
+            get => inventoryData.CurrentNecklace;
+            set => inventoryData.CurrentNecklace = value;
+        }
+
+        public int CurrentArmor
+        {
+            get => inventoryData.CurrentArmor;
+            set => inventoryData.CurrentArmor = value;
+        }
+
+        public int CurrentGlove
+        {
+            get => inventoryData.CurrentGlove;
+            set => inventoryData.CurrentGlove = value;
+        }
+
+        public int CurrentRing
+        {
+            get => inventoryData.CurrentRing;
+            set => inventoryData.CurrentRing = value;
+        }
+
+        public int CurrentShoe
+        {
+            get => inventoryData.CurrentShoe;
+            set => inventoryData.CurrentShoe = value;
+        }
+
         public void AddItem(IEquipment equipment)
         {
             equipment.MapID = inventoryData.mapID;
             inventoryData.mapID++;
 
             Equipments.Add(equipment);
+        }
+
+        public void AddItem(int ID)
+        {
+            var eData = EquipmentSO.GetEquipmentData(ID);
+
+            var e = eData.CreateEquipment();
+
+            AddItem(e);
+        }
+        
+        public void AddItemWithRank(int ID, int rank)
+        {
+            var eData = EquipmentSO.GetEquipmentData(ID);
+
+            var e = eData.CreateEquipment();
+
+            e.Rank = rank;
+            
+            AddItem(e);
         }
 
         public IEquipment GetItemWithMapID(int mapID)
@@ -35,6 +85,32 @@ namespace Game
             if (equipment != null)
             {
                 Equipments.Remove(equipment);
+            }
+        }
+
+        public void UpgradeLevelEquipment(IEquipment equipment)
+        {
+            if (equipment != null)
+            {
+                var eData = EquipmentSO.GetEquipmentData(equipment.ID);
+
+                if (equipment.Level < eData.MaxLevel)
+                {
+                    equipment.UpgradeLevel();
+                }
+            }
+        }
+
+        public void UpgradeRankEquipment(IEquipment equipment)
+        {
+            if (equipment != null)
+            {
+                var eData = EquipmentSO.GetEquipmentData(equipment.ID);
+
+                if (equipment.Rank < eData.MaxRank)
+                {
+                    equipment.UpgradeRank();
+                }
             }
         }
 

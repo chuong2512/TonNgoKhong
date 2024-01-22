@@ -20,7 +20,32 @@ MonoBehaviour:
       ch\u1EEF cho \u0111\u1EBFn ng\xE0y Ng\u1ED9 Kh\xF4ng ch\xEDnh th\u1EE9c ph\xF2
       gi\xE1 \u0110\u01B0\u1EDDng T\u0103ng sang T\xE2y Thi\xEAn th\u1EC9nh kinh."
     icon: {fileID: 21300000, guid: d9991d608bb22284ea36aeabc93f67a3, type: 3}
+    dataMap:
+      EnemyAttribute:
+        <Health>k__BackingField: 0
+        <MaxHealth>k__BackingField: 0
+        <Defense>k__BackingField: 0
+        <ExpValue>k__BackingField: 0
+        <CoinValue>k__BackingField: 0
+        <Piority>k__BackingField: 0
+        <Speed>k__BackingField: 0
+        <Damage>k__BackingField: 0
+      AddDMGPerTime: 20
+      AddHPPerTime: 15
+      MaxEnemies: 100
+      TimeAddAttribute: 0
+      ZoneSpawnTime: 0
+      TimeSpawnBoss: 5
+      Enemies:
+      - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
+      - {fileID: 3537171100188795310, guid: 7fd860da0f056bd4f90cb38aada23101, type: 3}
+      - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}
+      - {fileID: 3537171100188795310, guid: 887c83d071b0afe4b9c3e1b5982434ae, type: 3}
+      - {fileID: 3537171100188795310, guid: bd55a62da43d15d4f96b3223088cb8ff, type: 3}
+      - {fileID: 3537171100188795310, guid: ee483b13f0559c44a96b7ddddb914ce4, type: 3}
+      Boss: []
     isLock: 0
+    lockPrice: 0
   - mapID: 1
     name: "2. \u0110\u1ED9ng B\u1EA1ch H\u1ED5"
     info: "B\u1EA1ch C\u1ED1t Tinh l\xE0 y\xEAu qu\xE1i \u1EDF \u0111\u1ED9ng B\u1EA1ch
@@ -28,5 +53,30 @@ MonoBehaviour:
       \u0110\u01B0\u1EDDng T\u0103ng v\xE0 ba l\u1EA7n b\u1ECB T\xF4n Ng\u1ED9 Kh\xF4ng
       \u0111\xE1nh ch\u1EBFt."
     icon: {fileID: 21300000, guid: 5e998b52ecf131247b0196984c050d02, type: 3}
+    dataMap:
+      EnemyAttribute:
+        <Health>k__BackingField: 0
+        <MaxHealth>k__BackingField: 0
+        <Defense>k__BackingField: 0
+        <ExpValue>k__BackingField: 0
+        <CoinValue>k__BackingField: 0
+        <Piority>k__BackingField: 0
+        <Speed>k__BackingField: 0
+        <Damage>k__BackingField: 0
+      AddDMGPerTime: 20
+      AddHPPerTime: 15
+      MaxEnemies: 100
+      TimeAddAttribute: 0
+      ZoneSpawnTime: 0
+      TimeSpawnBoss: 5
+      Enemies:
+      - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
+      - {fileID: 3537171100188795310, guid: 7fd860da0f056bd4f90cb38aada23101, type: 3}
+      - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}
+      - {fileID: 3537171100188795310, guid: 887c83d071b0afe4b9c3e1b5982434ae, type: 3}
+      - {fileID: 3537171100188795310, guid: bd55a62da43d15d4f96b3223088cb8ff, type: 3}
+      - {fileID: 3537171100188795310, guid: ee483b13f0559c44a96b7ddddb914ce4, type: 3}
+      Boss: []
     isLock: 0
+    lockPrice: 0
   _listExpLevel: 

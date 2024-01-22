@@ -6,7 +6,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Skill.Weapons
+namespace Game.Weapons
 {
     public class MultipleShot : PlayerShot
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Skill
+namespace Game
 {
     public abstract class BaseSkillController<T> : MonoBehaviour where T : IAttribute
     {

@@ -1,6 +1,4 @@
 ﻿using System;
-using _TonNgoKhong;
-using SinhTon;
 using UnityEngine;
 
 namespace Game

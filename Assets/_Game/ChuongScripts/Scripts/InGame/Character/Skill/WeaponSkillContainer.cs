@@ -1,6 +1,6 @@
-using Skill;
+using Game;
 
-namespace _Game
+namespace Game
 {
     public class WeaponSkillContainer : SkillContainer<WeaponSkill>
     {

@@ -1,15 +1,11 @@
 using System.Collections.Generic;
-using _Game;
-using _TonNgoKhong;
 using Game;
 using SinhTon;
-using Skill;
 using UnityEngine;
 
 [DefaultExecutionOrder(-99)]
 public class PlayerManager : Singleton<PlayerManager>
 {
-    [SerializeField] private PlayerStatus _baseStat;
     [SerializeField] public PlayerCombat Combat;
     [SerializeField] public JoystickManager Controller;
 
@@ -47,7 +43,7 @@ public class PlayerManager : Singleton<PlayerManager>
     {
         _listBuff = new SkillUpgradeInfo();
 
-        _currentStatus = _baseStat;
+        _currentStatus = GameManager.Instance.GetPlayerStatus();
 
         Combat.PlayerStatus = _currentStatus;
         Combat.InitHealth();

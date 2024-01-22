@@ -23,3 +23,5 @@ MonoBehaviour:
       EditorTypeName: Sirenix.OdinInspector.Editor.OdinEditor, Sirenix.OdinInspector.Editor
     - DrawnTypeName: _TonNgoKhong.SkillSO, Assembly-CSharp
       EditorTypeName: 
+    - DrawnTypeName: Game.EquipmentSO, Assembly-CSharp
+      EditorTypeName: Sirenix.OdinInspector.Editor.OdinEditor, Sirenix.OdinInspector.Editor

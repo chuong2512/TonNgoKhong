@@ -15,8 +15,13 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
     private bool _isSpawning;
 
     float _timeCounter = 0;
+    float _timeCounter1 = 0;
+    float _timeCounter2 = 0;
     float _timeSpawn = 0.8f;
     float _timeAddAttribute = 0;
+
+    private LevelSO _levelSo;
+    private DataMap _dataMap;
 
     private void Awake()
     {
@@ -27,6 +32,10 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
     {
         _isSpawning = true;
         _playerTrans = PlayerManager.Instance.PlayerTransform;
+
+        _dataMap = GameDataManager.Instance.GetCurrentDataMap();
+
+        Enemies = _dataMap.Enemies;
     }
 
     private void OnGameStateChange()
@@ -45,6 +54,9 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
             return;
 
         _timeCounter += Time.deltaTime;
+        _timeCounter1 += Time.deltaTime;
+        _timeCounter1 += Time.deltaTime;
+
         _timeAddAttribute += Time.deltaTime;
 
         if (_timeCounter >= _timeSpawn)
@@ -53,11 +65,25 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
 
             Spawn();
         }
+
+        if (_timeCounter1 >= _dataMap.ZoneSpawnTime)
+        {
+            _timeCounter1 = 0;
+
+            Spawn();
+        }
+
+        if (_timeCounter2 >= _dataMap.TimeSpawnBoss)
+        {
+            _timeCounter2 = 0;
+
+            Spawn();
+        }
     }
 
     private void Spawn()
     {
-        if (EnemiesCount < 100)
+        if (EnemiesCount < _dataMap.MaxEnemies)
         {
             SpawnRandom();
             SpawnRandom();
@@ -89,16 +115,18 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
         var DMG = (int) _timeAddAttribute / 20;
         var HP = (int) _timeAddAttribute / 15;
 
+        var baseAttribute = _dataMap.EnemyAttribute;
+
         return new EnemyAttribute()
         {
-            MaxHealth = 10 + HP * 1.8f,
-            Defense = 0,
-            Health = 10,
-            ExpValue = 1,
-            Piority = 1,
-            CoinValue = 1,
-            Speed = 1,
-            Damage = 2 + DMG * 0.1f
+            MaxHealth = baseAttribute.MaxHealth + HP * _dataMap.AddHPPerTime,
+            Defense = baseAttribute.Defense,
+            Health = baseAttribute.Health,
+            ExpValue = baseAttribute.ExpValue,
+            Piority = baseAttribute.Piority,
+            CoinValue = baseAttribute.CoinValue,
+            Speed = baseAttribute.Speed,
+            Damage = baseAttribute.Damage + DMG * _dataMap.AddDMGPerTime
         };
     }
 

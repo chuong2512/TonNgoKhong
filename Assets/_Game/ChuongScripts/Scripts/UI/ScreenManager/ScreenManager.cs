@@ -22,7 +22,8 @@ public enum ScreenType
     AddSkill,
     Pause,
     Result,
-    Privacy
+    Privacy,
+    EquipmentInfo
 }
 
 [DefaultExecutionOrder(-99)]

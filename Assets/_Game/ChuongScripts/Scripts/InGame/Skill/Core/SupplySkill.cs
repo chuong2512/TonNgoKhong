@@ -1,7 +1,4 @@
-﻿using _TonNgoKhong;
-using UnityEngine;
-
-namespace Skill
+﻿namespace Game
 {
     public abstract class SupplySkill : BaseSkill, ISuppliesSkill
     {

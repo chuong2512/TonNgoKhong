@@ -21,5 +21,6 @@ public class TabContainer : MonoBehaviour
     {
         Manager.ScreenHome.SetActive(tab == ScreenTab.ScreenHome);
         Manager.ScreenShop.SetActive(tab == ScreenTab.ScreenShop);
+        Manager.ScreenEquipment.SetActive(tab == ScreenTab.ScreenEquipement);
     }
 }

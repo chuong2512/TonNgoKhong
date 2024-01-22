@@ -1,4 +1,4 @@
-namespace Skill
+namespace Game
 {
     public interface IAttribute
     {

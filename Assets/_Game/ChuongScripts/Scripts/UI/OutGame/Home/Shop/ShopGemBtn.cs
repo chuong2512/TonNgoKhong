@@ -1,9 +1,7 @@
-﻿using System.Globalization;
-using Game;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace _TonNgoKhong.Shop
+namespace Game
 {
     public class ShopGemBtn : MonoBehaviour
     {

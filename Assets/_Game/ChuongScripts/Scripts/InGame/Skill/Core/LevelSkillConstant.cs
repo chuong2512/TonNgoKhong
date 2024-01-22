@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Skill
+namespace Game
 {
     public static class LevelSkillConstant
     {

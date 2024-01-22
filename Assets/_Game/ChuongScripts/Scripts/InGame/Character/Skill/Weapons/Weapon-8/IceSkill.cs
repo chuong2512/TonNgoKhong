@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using _TonNgoKhong;
-using Skill;
-using Skill.Weapons;
+using Game;
+using Game.Weapons;
 using UnityEngine;
 using UnityEngine.Serialization;
 

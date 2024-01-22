@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace _TonNgoKhong
+namespace Game
 {
     [CreateAssetMenu(fileName = "LevelSO", menuName = "ScriptableObjects/LevelSO", order = 1)]
     public class LevelSO : ScriptableObject
@@ -20,13 +20,13 @@ namespace _TonNgoKhong
         public void SetLevelInfo(int count)
         {
             _listExpLevel = new List<int>(count);
-            
+
             for (int i = 0; i < count; i++)
             {
                 _listExpLevel[i] = ((i / 5) + 1) * 50;
             }
         }
-        
+
         public int GetLevel(int exp, out float expPercent)
         {
             int level = 1;
@@ -59,6 +59,21 @@ namespace _TonNgoKhong
         [FoldoutGroup("Visual")] public string info;
         [FoldoutGroup("Visual")] public Sprite icon;
 
+        [Header("Data")] public DataMap dataMap;
+
         public bool isLock;
+        public int lockPrice;
+        
+    }
+
+    [Serializable]
+    public class DataMap
+    {
+        public EnemyAttribute EnemyAttribute;
+        public float AddDMGPerTime = 0.2f, AddHPPerTime = 1.8f;
+        public int MaxEnemies = 100;
+        public int ZoneSpawnTime = 999;
+        public int TimeSpawnBoss = 5;
+        public GameObject[] Enemies, Boss;
     }
 }

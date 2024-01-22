@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using _TonNgoKhong;
 using Game;
-using Skill;
 using UnityEngine;
 
 public class TowerSkill : WeaponSkill

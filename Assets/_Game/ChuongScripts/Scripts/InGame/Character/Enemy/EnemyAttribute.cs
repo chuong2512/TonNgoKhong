@@ -1,4 +1,4 @@
-﻿using Skill;
+﻿using Game;
 
 namespace Game
 {

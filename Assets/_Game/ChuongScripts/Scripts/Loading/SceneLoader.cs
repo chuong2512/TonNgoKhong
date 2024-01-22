@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace _TonNgoKhong
+namespace Game
 {
     public class SceneLoader : PersistentSingleton<SceneLoader>
     {

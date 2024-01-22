@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace _TonNgoKhong
+namespace Game
 {
     public class InfoMapItem : MonoBehaviour
     {

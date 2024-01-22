@@ -7,7 +7,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Skill
+namespace Game
 {
     public class SkillConstant
     {

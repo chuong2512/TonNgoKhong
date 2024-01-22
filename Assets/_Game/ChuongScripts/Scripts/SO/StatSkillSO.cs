@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using Skill;
+using Game;
 using UnityEngine;
 
-namespace _TonNgoKhong
+namespace Game
 {
     [CreateAssetMenu(fileName = "SkillStatSO", menuName = "ScriptableObjects/SkillStatSO", order = 1)]
     public class StatSkillSO : SerializedScriptableObject

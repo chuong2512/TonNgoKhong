@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Skill
+namespace Game
 {
     public class SkillUpgrader : MonoBehaviour
     {

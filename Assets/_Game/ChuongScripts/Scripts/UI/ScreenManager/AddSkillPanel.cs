@@ -1,5 +1,5 @@
 using SinhTon;
-using Skill;
+using Game;
 using UnityEngine;
 
 public class AddSkillPanel : BasePopup

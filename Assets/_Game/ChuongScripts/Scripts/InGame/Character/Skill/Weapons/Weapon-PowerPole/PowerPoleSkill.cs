@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using _TonNgoKhong;
+using Game;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Skill.Weapons
+namespace Game.Weapons
 {
     public class PowerPoleSkill : WeaponSkill
     {

@@ -1,9 +1,8 @@
-using Skill;
+using Game;
 
-namespace _Game
+namespace Game
 {
     public class SuppliesSkillContainer : SkillContainer<SupplySkill>
     {
-        
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Skill
+namespace Game
 {
     public class Test : MonoBehaviour
     {
