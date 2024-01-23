@@ -2,7 +2,6 @@ using System;
 using EnhancedUI;
 using EnhancedUI.EnhancedScroller;
 using Game;
-using Jackal;
 
 public class EquipmentCellView : ConstantSizeCellView
 {

@@ -12,3 +12,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216df6893c554d5f87511dc14bee732b, type: 3}
   m_Name: StatDescriptionSO
   m_EditorClassIdentifier: 
+  EquipmentTypes:
+  - EquipmentData:
+      rid: 3794718628216569911
+    TypeImg: {fileID: 21300076, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+  - EquipmentData:
+      rid: 3794718628216569912
+    TypeImg: {fileID: 21300124, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+  - EquipmentData:
+      rid: 3794718628216569913
+    TypeImg: {fileID: 21300086, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+  - EquipmentData:
+      rid: 3794718628216569914
+    TypeImg: {fileID: 21300036, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+  - EquipmentData:
+      rid: 3794718628216569915
+    TypeImg: {fileID: 21300100, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+  references:
+    version: 2
+    RefIds:
+    - rid: 3794718628216569911
+      type: {class: ArmorData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 0
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 9
+        equipmentUpgradeInfos: []
+    - rid: 3794718628216569912
+      type: {class: GloveData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 0
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 9
+        equipmentUpgradeInfos: []
+    - rid: 3794718628216569913
+      type: {class: NeckData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 0
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 9
+        equipmentUpgradeInfos: []
+    - rid: 3794718628216569914
+      type: {class: RingData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 0
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 9
+        equipmentUpgradeInfos: []
+    - rid: 3794718628216569915
+      type: {class: ShoeData, ns: Game, asm: Assembly-CSharp}
+      data:
+        ID: 0
+        name: 
+        icon: {fileID: 0}
+        MaxRank: 9
+        equipmentUpgradeInfos: []

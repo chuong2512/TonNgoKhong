@@ -1,4 +1,4 @@
-﻿namespace Jackal
+﻿namespace Game
 {
 	using EnhancedUI.EnhancedScroller;
 	using System;

@@ -6,19 +6,8 @@ namespace Game
 {
     public partial class GameManager : PersistentSingleton<GameManager>
     {
-        private GameDataManager _gameData;
-        private ScreenManager _uiManager;
-
-        private void Start()
-        {
-            BindData();
-        }
-
-        private void BindData()
-        {
-            _gameData = GameDataManager.Instance;
-            _uiManager = ScreenManager.Instance;
-        }
+        private GameDataManager _gameData => GameDataManager.Instance;
+        private ScreenManager _uiManager => ScreenManager.Instance;
 
         [Button]
         public void AddEquipment(int ID)

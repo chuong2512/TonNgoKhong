@@ -14,8 +14,8 @@ public class OutGameAction
 
 public class OutGameManager : Singleton<OutGameManager>
 {
-    private GameDataManager _gameData;
-    private ScreenManager _uiManager;
+    private GameDataManager _gameData => GameDataManager.Instance;
+    private ScreenManager _uiManager => ScreenManager.Instance;
 
     public static Action<int> OnChangeGem;
     public static Action<int> OnChangeCoin;
@@ -23,15 +23,4 @@ public class OutGameManager : Singleton<OutGameManager>
     public static Action<float> SetRegisterTime;
 
     public static Action<int> OnChooseMap;
-
-    private void Start()
-    {
-        BindData();
-    }
-
-    private void BindData()
-    {
-        _gameData = GameDataManager.Instance;
-        _uiManager = ScreenManager.Instance;
-    }
 }

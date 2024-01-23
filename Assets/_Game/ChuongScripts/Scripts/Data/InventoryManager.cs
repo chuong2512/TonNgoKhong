@@ -4,7 +4,7 @@ namespace Game
 {
     public partial class GameDataManager
     {
-        public List<IEquipment> Equipments => inventoryData.Equipments;
+        public List<AEquipment> Equipments => inventoryData.Equipments;
 
         public int CurrentNecklace
         {
@@ -36,7 +36,7 @@ namespace Game
             set => inventoryData.CurrentShoe = value;
         }
 
-        public void AddItem(IEquipment equipment)
+        public void AddItem(AEquipment equipment)
         {
             equipment.MapID = inventoryData.mapID;
             inventoryData.mapID++;
@@ -52,7 +52,7 @@ namespace Game
 
             AddItem(e);
         }
-        
+
         public void AddItemWithRank(int ID, int rank)
         {
             var eData = EquipmentSO.GetEquipmentData(ID);
@@ -60,11 +60,11 @@ namespace Game
             var e = eData.CreateEquipment();
 
             e.Rank = rank;
-            
+
             AddItem(e);
         }
 
-        public IEquipment GetItemWithMapID(int mapID)
+        public AEquipment GetItemWithMapID(int mapID)
         {
             var find = Equipments.Find(equipment => equipment.MapID == mapID);
             return find;
@@ -80,12 +80,33 @@ namespace Game
             RemoveItem(item);
         }
 
-        public void RemoveItem(IEquipment equipment)
+        public void RemoveItem(AEquipment equipment)
         {
             if (equipment != null)
             {
                 Equipments.Remove(equipment);
             }
+        }
+
+        public bool IsUsingMapID(int mapID)
+        {
+            if (mapID < 0)
+            {
+                return false;
+            }
+
+            if (CurrentNecklace == mapID)
+                return true;
+            if (CurrentGlove == mapID)
+                return true;
+            if (CurrentRing == mapID)
+                return true;
+            if (CurrentShoe == mapID)
+                return true;
+            if (CurrentArmor == mapID)
+                return true;
+
+            return false;
         }
 
         public void UpgradeLevelEquipment(IEquipment equipment)
@@ -114,10 +135,10 @@ namespace Game
             }
         }
 
-        public List<IEquipment> Necklaces => Equipments.FindAll(equipment => equipment is Necklace);
-        public List<IEquipment> Armors => Equipments.FindAll(equipment => equipment is Armor);
-        public List<IEquipment> Gloves => Equipments.FindAll(equipment => equipment is Glove);
-        public List<IEquipment> Shoes => Equipments.FindAll(equipment => equipment is Shoe);
-        public List<IEquipment> Rings => Equipments.FindAll(equipment => equipment is Ring);
+        public List<AEquipment> Necklaces => Equipments.FindAll(equipment => equipment is Necklace);
+        public List<AEquipment> Armors => Equipments.FindAll(equipment => equipment is Armor);
+        public List<AEquipment> Gloves => Equipments.FindAll(equipment => equipment is Glove);
+        public List<AEquipment> Shoes => Equipments.FindAll(equipment => equipment is Shoe);
+        public List<AEquipment> Rings => Equipments.FindAll(equipment => equipment is Ring);
     }
 }

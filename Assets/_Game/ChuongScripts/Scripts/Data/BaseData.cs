@@ -13,7 +13,7 @@ public class BaseData : MonoBehaviour
     protected virtual void CheckAppendData()
     {
     }
-    
+
     public virtual void ValidateData()
     {
     }
@@ -23,6 +23,8 @@ public class BaseData : MonoBehaviour
         try
         {
             JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(prefString), this);
+
+            Debug.Log($"{PlayerPrefs.GetString(prefString)}");
         }
         catch (Exception e)
         {
@@ -40,6 +42,7 @@ public class BaseData : MonoBehaviour
         // Debug.Log("json_______" + json);
         PlayerPrefs.SetString(prefString, json);
     }
+
     private void OnDestroy()
     {
         Save();

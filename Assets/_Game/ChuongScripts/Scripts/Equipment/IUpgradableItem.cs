@@ -1,9 +1,44 @@
-﻿namespace Game
+﻿using System;
+
+namespace Game
 {
     public interface IUpgradableItem
     {
         public int Level { get; set; }
         public int Rank { get; set; }
+    }
+
+    [Serializable]
+    public abstract class AEquipment : IEquipment
+    {
+        public int _level;
+        public int _rank;
+        public int _id;
+        public int _mapID;
+
+        public int Level
+        {
+            get => _level;
+            set => _level = value;
+        }
+
+        public int Rank
+        {
+            get => _rank;
+            set => _rank = value;
+        }
+
+        public int ID
+        {
+            get => _id;
+            set => _id = value;
+        }
+
+        public int MapID
+        {
+            get => _mapID;
+            set => _mapID = value;
+        }
     }
 
     public interface IEquipment : IUpgradableItem
@@ -22,48 +57,28 @@
         }
     }
 
-    public class Necklace : IEquipment
+    [Serializable]
+    public class Necklace : AEquipment
     {
-        public int Level { get; set; }
-        public int Rank { get; set; }
-
-        public int ID { get; set; }
-        public int MapID { get; set; }
     }
 
-    public class Armor : IEquipment
+    [Serializable]
+    public class Armor : AEquipment
     {
-        public int Level { get; set; }
-        public int Rank { get; set; }
-
-        public int ID { get; set; }
-        public int MapID { get; set; }
     }
 
-    public class Glove : IEquipment
+    [Serializable]
+    public class Glove : AEquipment
     {
-        public int Level { get; set; }
-        public int Rank { get; set; }
-
-        public int ID { get; set; }
-        public int MapID { get; set; }
     }
 
-    public class Shoe : IEquipment
+    [Serializable]
+    public class Shoe : AEquipment
     {
-        public int Level { get; set; }
-        public int Rank { get; set; }
-
-        public int ID { get; set; }
-        public int MapID { get; set; }
     }
 
-    public class Ring : IEquipment
+    [Serializable]
+    public class Ring : AEquipment
     {
-        public int Level { get; set; }
-        public int Rank { get; set; }
-
-        public int ID { get; set; }
-        public int MapID { get; set; }
     }
 }

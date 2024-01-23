@@ -4,11 +4,9 @@ namespace Game
 {
     public partial class GameManager
     {
-        [SerializeField] private PlayerStatus _baseStat;
-
         public PlayerStatus GetPlayerStatus()
         {
-            var status = _baseStat;
+            var status = _gameData.StatDescriptionSO.baseStat;
 
             //equipment
             var armorID = _gameData.CurrentArmor;

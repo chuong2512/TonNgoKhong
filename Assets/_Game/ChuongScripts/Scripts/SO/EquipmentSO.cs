@@ -88,7 +88,7 @@ namespace Game
         [FormerlySerializedAs("ListUpgradeSkill")]
         public List<EquipmentUpgradeInfo> equipmentUpgradeInfos;
 
-        public abstract IEquipment CreateEquipment();
+        public abstract AEquipment CreateEquipment();
 
         public abstract void InitData(float baseData);
     }
@@ -96,7 +96,7 @@ namespace Game
     [Serializable]
     public class NeckData : EquipmentData
     {
-        public override IEquipment CreateEquipment()
+        public override AEquipment CreateEquipment()
         {
             return new Necklace()
             {
@@ -127,7 +127,7 @@ namespace Game
     [Serializable]
     public class ArmorData : EquipmentData
     {
-        public override IEquipment CreateEquipment()
+        public override AEquipment CreateEquipment()
         {
             return new Armor()
             {
@@ -158,7 +158,7 @@ namespace Game
     [Serializable]
     public class GloveData : EquipmentData
     {
-        public override IEquipment CreateEquipment()
+        public override AEquipment CreateEquipment()
         {
             return new Glove()
             {
@@ -189,7 +189,7 @@ namespace Game
     [Serializable]
     public class ShoeData : EquipmentData
     {
-        public override IEquipment CreateEquipment()
+        public override AEquipment CreateEquipment()
         {
             return new Shoe()
             {
@@ -220,7 +220,7 @@ namespace Game
     [Serializable]
     public class RingData : EquipmentData
     {
-        public override IEquipment CreateEquipment()
+        public override AEquipment CreateEquipment()
         {
             return new Ring()
             {

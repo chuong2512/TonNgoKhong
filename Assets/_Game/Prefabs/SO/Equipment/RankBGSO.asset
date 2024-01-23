@@ -12,7 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60feefae52d244568fc713ba4de6bf40, type: 3}
   m_Name: RankBGSO
   m_EditorClassIdentifier: 
-  MaxRank: 0
-  RankColors: []
-  InnerBG: {fileID: 0}
-  OuterBG: {fileID: 0}
+  RankColors:
+  - serializedVersion: 2
+    rgba: 4294967295
+  - serializedVersion: 2
+    rgba: 4291611852
+  - serializedVersion: 2
+    rgba: 4282441826
+  - serializedVersion: 2
+    rgba: 4294049536
+  - serializedVersion: 2
+    rgba: 4294930432
+  - serializedVersion: 2
+    rgba: 4294901891
+  - serializedVersion: 2
+    rgba: 4293722367
+  - serializedVersion: 2
+    rgba: 4280942847
+  - serializedVersion: 2
+    rgba: 4278219007
+  - serializedVersion: 2
+    rgba: 4278255614
+  InnerBG: {fileID: 21300228, guid: 49632d1339282f5499fbc1e9ba542c28, type: 3}
+  OuterBG: {fileID: 21300228, guid: 49632d1339282f5499fbc1e9ba542c28, type: 3}

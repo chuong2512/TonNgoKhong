@@ -3,7 +3,7 @@ using Game;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Jackal
+namespace Game
 {
     public class OneBulletShot : UbhBaseShot, IPlayerShot
     {

@@ -1,4 +1,7 @@
 using System;
+using EnhancedUI;
+using EnhancedUI.EnhancedScroller;
+using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,15 +11,14 @@ namespace Game
     {
         public CurrentEquipment CurrentEquipment;
         public Button MergeBtn, SortBtn;
+        public AdvanceScrollView AdvanceScrollView;
 
-        private GameDataManager _gameDataManager;
+        private GameDataManager _gameDataManager=> GameDataManager.Instance;
 
         private void Start()
         {
             MergeBtn?.onClick.AddListener(OnClickMerge);
             SortBtn?.onClick.AddListener(OnClickSort);
-
-            _gameDataManager = GameDataManager.Instance;
         }
 
         private void OnClickMerge()
@@ -41,6 +43,20 @@ namespace Game
         private void LoadData()
         {
             CurrentEquipment.BindData();
+
+            var listData = new SmallList<ScrollData>();
+
+            for (int i = 0; i < _gameDataManager.Equipments.Count; i++)
+            {
+                var e = _gameDataManager.Equipments[i];
+                
+                if (!_gameDataManager.IsUsingMapID(e.MapID))
+                {
+                    listData.Add(new EScrollData(e.MapID));
+                }
+            }
+            
+            AdvanceScrollView.LoadData(listData);
         }
     }
 }

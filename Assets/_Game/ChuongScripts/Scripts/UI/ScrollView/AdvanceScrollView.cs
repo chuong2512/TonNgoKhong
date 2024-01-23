@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using EnhancedScrollerDemos.CellEvents;
 using EnhancedUI;
 using EnhancedUI.EnhancedScroller;
-using Sirenix.OdinInspector.Editor;
 using UnityEngine;
 
-namespace Jackal
+namespace Game
 {
     public class AdvanceScrollView : MonoBehaviour, IEnhancedScrollerDelegate
     {

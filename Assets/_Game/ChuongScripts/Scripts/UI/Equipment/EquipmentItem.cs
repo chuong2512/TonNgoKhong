@@ -1,6 +1,6 @@
 ﻿using System;
 using EnhancedUI.EnhancedScroller;
-using Jackal;
+using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,16 +11,13 @@ namespace Game
         public Button itemBtn;
         public Image iconImg;
         public Image bgImg;
-        public EquipmentStat equipmentStat;
-        
-        
+        public Image typeImg;
+
         private EScrollData _eData;
-        private GameDataManager _dataManager;
+        private GameDataManager _dataManager => GameDataManager.Instance;
 
         private void Start()
         {
-            _dataManager = GameDataManager.Instance;
-
             itemBtn.onClick.AddListener(OnClickItem);
         }
 
@@ -47,6 +44,16 @@ namespace Game
             }
         }
 
+        public void SetNone(EquipmentData equipmentData)
+        {
+            typeImg.sprite = _dataManager.StatDescriptionSO.GetTypeImg(equipmentData);
+
+            iconImg.sprite = _dataManager.StatDescriptionSO.GetTypeImg(equipmentData);
+            bgImg.sprite = _dataManager.RankBGSO.OuterBG;
+            bgImg.color = _dataManager.RankBGSO.RankColors[0];
+            typeImg.sprite = _dataManager.StatDescriptionSO.GetTypeImg(equipmentData);
+        }
+
         private void ShowEquipmentInfo()
         {
             var info = _dataManager.GetItemWithMapID(_eData.MapID);
@@ -56,8 +63,7 @@ namespace Game
             iconImg.sprite = equipmentData.icon;
             bgImg.sprite = _dataManager.RankBGSO.OuterBG;
             bgImg.color = _dataManager.RankBGSO.RankColors[info.Rank];
-            
-           equipmentStat.SetStat(_dataManager.EquipmentSO.GetListUpgradeSkill(info)[0]);
+            typeImg.sprite = _dataManager.StatDescriptionSO.GetTypeImg(equipmentData);
         }
     }
 }

@@ -1,11 +1,14 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using Game;
+using UnityEngine;
 
 public class InventoryData : BaseData
 {
     public int mapID;
-    public List<IEquipment> Equipments;
+
+    [SubclassSelector, SerializeReference] 
+    public List<AEquipment> Equipments;
 
     public int CurrentNecklace,
         CurrentArmor,
@@ -15,20 +18,32 @@ public class InventoryData : BaseData
 
     public override void Init()
     {
-        base.Init();
+        prefString = Constant.DataKey_InventoryData;
 
-        Equipments = new List<IEquipment>();
+        if (PlayerPrefs.GetString(prefString).Equals(""))
+        {
+            ResetData();
+        }
+
+        base.Init();
+    }
+
+    public override void ResetData()
+    {
+        Equipments = new List<AEquipment>();
 
         CurrentNecklace = -1;
         CurrentArmor = -1;
         CurrentGlove = -1;
         CurrentShoe = -1;
         CurrentRing = -1;
+
+        Save();
     }
 
     public override void ValidateData()
     {
-        Equipments ??= new List<IEquipment>();
+        Equipments ??= new List<AEquipment>();
 
         if (Equipments.Count != 0) return;
         CurrentNecklace = -1;
