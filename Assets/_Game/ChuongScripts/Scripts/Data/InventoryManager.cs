@@ -69,11 +69,7 @@ namespace Game
             var find = Equipments.Find(equipment => equipment.MapID == mapID);
             return find;
         }
-
-        public void UpgradeItem(int mapID)
-        {
-        }
-
+        
         public void RemoveItem(int mapID)
         {
             var item = GetItemWithMapID(mapID);
@@ -109,17 +105,18 @@ namespace Game
             return false;
         }
 
-        public void UpgradeLevelEquipment(IEquipment equipment)
+        public bool UpgradeLevelEquipment(IEquipment equipment)
         {
             if (equipment != null)
             {
                 var eData = EquipmentSO.GetEquipmentData(equipment.ID);
 
-                if (equipment.Level < eData.MaxLevel)
-                {
-                    equipment.UpgradeLevel();
-                }
+                if (equipment.Level >= eData.MaxLevel) return false;
+                equipment.UpgradeLevel();
+                return true;
             }
+
+            return false;
         }
 
         public void UpgradeRankEquipment(IEquipment equipment)

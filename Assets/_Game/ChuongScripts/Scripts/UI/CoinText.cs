@@ -15,7 +15,7 @@ namespace SinhTon.Scripts.UI
 
         void Start()
         {
-            OutGameManager.OnChangeCoin += OnChangeCoin;
+            OutGameAction.OnChangeCoin += OnChangeCoin;
             ShowCurrentCoin();
         }
 

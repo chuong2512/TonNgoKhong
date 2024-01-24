@@ -10,9 +10,9 @@ namespace Game
         private ScreenManager _uiManager => ScreenManager.Instance;
 
         [Button]
-        public void AddEquipment(int ID)
+        public void AddEquipment(int ID, int rank)
         {
-            _gameData.AddItem(ID);
+            _gameData.AddItemWithRank(ID, rank);
         }
     }
 }

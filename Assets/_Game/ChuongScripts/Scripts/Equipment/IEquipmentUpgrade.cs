@@ -44,7 +44,7 @@ namespace Game
         }
 
         public string StatName => "Tăng máu";
-        public string StatValue => $"+{(hp * Multipler):F1}%";
+        public string StatValue => $"+{(hp * Multipler):F1}";
 
         public float Multipler { get; set; }
     }
@@ -70,7 +70,7 @@ namespace Game
         }
 
         public string StatName => "Tăng tấn công";
-        public string StatValue => $"+{(dmg * Multipler):F0}%";
+        public string StatValue => $"+{(dmg * Multipler):F0}";
 
         public float Multipler { get; set; }
     }

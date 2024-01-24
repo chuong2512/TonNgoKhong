@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Game;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class PlayerData : BaseData
 {
-    private int _coin, _gem, _exp;
+    public int _coin, _gem, _exp;
 
-    public int levelUnlock;
     public int choosingMap;
     public List<MapRecord> mapUnlocks;
 
@@ -24,7 +22,7 @@ public class PlayerData : BaseData
         set
         {
             _coin = value;
-            OutGameManager.OnChangeCoin?.Invoke(value);
+            OutGameAction.OnChangeCoin?.Invoke(value);
         }
     }
 
@@ -34,7 +32,7 @@ public class PlayerData : BaseData
         set
         {
             _gem = value;
-            OutGameManager.OnChangeGem?.Invoke(value);
+            OutGameAction.OnChangeGem?.Invoke(value);
         }
     }
 
@@ -44,7 +42,7 @@ public class PlayerData : BaseData
         set
         {
             _exp = value;
-            OutGameManager.OnChangeExp?.Invoke(value);
+            OutGameAction.OnChangeExp?.Invoke(value);
         }
     }
 
@@ -101,7 +99,6 @@ public class PlayerData : BaseData
         _gem = 0;
         _exp = 0;
 
-        levelUnlock = 0;
         mapUnlocks = new List<MapRecord>();
         mapUnlocks.Add(new MapRecord()
         {

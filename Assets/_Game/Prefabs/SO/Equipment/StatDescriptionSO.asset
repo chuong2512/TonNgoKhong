@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216df6893c554d5f87511dc14bee732b, type: 3}
   m_Name: StatDescriptionSO
   m_EditorClassIdentifier: 
+  baseStat:
+    <MaxHealth>k__BackingField: 50
+    <VirtualHealth>k__BackingField: 0
+    <Damage>k__BackingField: 1
+    <Defense>k__BackingField: 0
+    <Speed>k__BackingField: 3
+    <Magnet>k__BackingField: 0
+    <Health>k__BackingField: 50
   EquipmentTypes:
   - EquipmentData:
       rid: 3794718628216569911

@@ -42,7 +42,7 @@ public class SelectMapManager : MonoBehaviour
         {
             _playerData.choosingMap = _mapIndex;
             _chooseTxt.text = "Đã chọn";
-            OutGameManager.OnChooseMap.Invoke(_mapIndex);
+            OutGameAction.OnChooseMap.Invoke(_mapIndex);
         }
         else
         {

@@ -6,7 +6,7 @@ namespace Game
     {
         public PlayerStatus GetPlayerStatus()
         {
-            var status = _gameData.StatDescriptionSO.baseStat;
+            var status = _gameData.StatDescriptionSO.BaseStat;
 
             //equipment
             var armorID = _gameData.CurrentArmor;

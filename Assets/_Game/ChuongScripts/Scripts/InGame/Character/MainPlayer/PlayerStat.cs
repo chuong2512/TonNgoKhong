@@ -7,6 +7,13 @@ namespace Game
     [Serializable]
     public class PlayerStatus : PlayerStat, IHealthAttribute
     {
+        public PlayerStatus(float maxHealth, float damage, float speed)
+        {
+            MaxHealth = maxHealth;
+            Damage = damage;
+            Speed = speed;
+        }
+
         [field: SerializeField] public float Health { get; set; }
     }
 

@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
         _playBtn.onClick.AddListener(ClickPlayBtn);
 
-        OutGameManager.OnChooseMap += OnChooseMap;
+        OutGameAction.OnChooseMap += OnChooseMap;
 
         SetInfo();
     }
@@ -63,6 +63,6 @@ public class MainMenu : MonoBehaviour
 
     private void OnDestroy()
     {
-        OutGameManager.OnChooseMap -= OnChooseMap;
+        OutGameAction.OnChooseMap -= OnChooseMap;
     }
 }

@@ -24,18 +24,18 @@ namespace Game
             
             SetInfo();
 
-            OutGameManager.OnChangeCoin += InfoCoin;
-            OutGameManager.OnChangeExp += InfoExp;
-            OutGameManager.OnChangeGem += InfoGem;
+            OutGameAction.OnChangeCoin += InfoCoin;
+            OutGameAction.OnChangeExp += InfoExp;
+            OutGameAction.OnChangeGem += InfoGem;
 
             _energyTxt.text = "--/--";
         }
 
         private void OnDestroy()
         {
-            OutGameManager.OnChangeCoin -= InfoCoin;
-            OutGameManager.OnChangeExp -= InfoExp;
-            OutGameManager.OnChangeGem -= InfoGem;
+            OutGameAction.OnChangeCoin -= InfoCoin;
+            OutGameAction.OnChangeExp -= InfoExp;
+            OutGameAction.OnChangeGem -= InfoGem;
         }
 
         private void SetInfo()
