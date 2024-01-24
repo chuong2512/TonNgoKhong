@@ -11,6 +11,8 @@ namespace Game
         [SerializeField] private List<MapItem> _infoMapItems;
         [SerializeField] private List<int> _listExpLevel;
 
+        public int CountMap => _infoMapItems.Count;
+
         public MapItem GetMapItem(int mapID)
         {
             return _infoMapItems.Find(item => item.mapID == mapID);
@@ -60,16 +62,23 @@ namespace Game
         [FoldoutGroup("Visual")] public Sprite icon;
 
         [Header("Data")] public DataMap dataMap;
-
-        public bool isLock;
-        public int lockPrice;
-        
     }
 
     [Serializable]
     public class DataMap
     {
-        public EnemyAttribute EnemyAttribute;
+        public EnemyAttribute EnemyAttribute = new EnemyAttribute()
+        {
+            MaxHealth = 10,
+            Defense = 0,
+            Health = 10,
+            ExpValue = 1,
+            Piority = 1,
+            CoinValue = 1,
+            Speed = 1,
+            Damage = 2
+        };
+
         public float AddDMGPerTime = 0.2f, AddHPPerTime = 1.8f;
         public int MaxEnemies = 100;
         public int ZoneSpawnTime = 999;

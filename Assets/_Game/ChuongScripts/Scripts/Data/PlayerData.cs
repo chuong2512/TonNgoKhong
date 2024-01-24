@@ -96,18 +96,13 @@ public class PlayerData : BaseData
         time = 3 * 24 * 60 * 60;
 
         _coin = 0;
-        _gem = 0;
+        _gem = 100000;
         _exp = 0;
 
         mapUnlocks = new List<MapRecord>();
         mapUnlocks.Add(new MapRecord()
         {
             mapID = 0,
-            time = 0
-        });
-        mapUnlocks.Add(new MapRecord()
-        {
-            mapID = 1,
             time = 0
         });
 

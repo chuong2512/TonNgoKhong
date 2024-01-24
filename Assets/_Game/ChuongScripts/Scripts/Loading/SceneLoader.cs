@@ -16,6 +16,7 @@ namespace Game
 
         public void LoadMap(int mapID)
         {
+            GameDataManager.Instance.playerData.choosingMap = mapID;
             LoadScene($"Map_{mapID + 1}");
         }
         

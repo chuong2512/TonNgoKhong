@@ -29,6 +29,11 @@ public class TimerManager : Singleton<TimerManager>
         {
             DisplayTime();
         }
+
+        if (_timeToDisplay >= GameConstant.TimeWin)
+        {
+            ScreenManager.Instance.OpenScreen(ScreenType.Result, new ResultModel(true));
+        }
     }
 
     void DisplayTime()

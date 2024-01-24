@@ -25,3 +25,5 @@ MonoBehaviour:
       EditorTypeName: 
     - DrawnTypeName: Game.EquipmentSO, Assembly-CSharp
       EditorTypeName: Sirenix.OdinInspector.Editor.OdinEditor, Sirenix.OdinInspector.Editor
+    - DrawnTypeName: Game.StatSkillSO, Assembly-CSharp
+      EditorTypeName: 

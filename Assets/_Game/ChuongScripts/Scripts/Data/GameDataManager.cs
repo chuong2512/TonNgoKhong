@@ -67,5 +67,10 @@ namespace Game
         {
             return LevelSo.GetMapItem(playerData.choosingMap).dataMap;
         }
+
+        public bool IsMaxLevel()
+        {
+            return playerData.choosingMap + 1 >= LevelSo.CountMap;
+        }
     }
 }

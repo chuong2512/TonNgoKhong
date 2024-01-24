@@ -7,7 +7,7 @@ public class EnemySpawnManager : Singleton<EnemySpawnManager>
 {
     public static int EnemiesCount = 0;
 
-    public GameObject[] Enemies;
+    private GameObject[] Enemies;
     public Transform[] SpawnPoints;
 
     private Transform _playerTrans;

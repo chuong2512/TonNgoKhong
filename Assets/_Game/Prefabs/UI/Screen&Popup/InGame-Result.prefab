@@ -728,6 +728,11 @@ MonoBehaviour:
   ExpTMP: {fileID: 3192453981806496874}
   MaxTimeTMP: {fileID: 8264824258873523622}
   ChapterTMP: {fileID: 5364826145820431254}
+  resultSprite: {fileID: 4556339783935004831}
+  loseImg: {fileID: 21300000, guid: 67fc03356b1225b4a849c17cbe9eb6f5, type: 3}
+  winImg: {fileID: 21300000, guid: 129135ae3e6e38c458aecd997a252d97, type: 3}
+  resultTxt: {fileID: 7077088989005870343}
+  buttonTxt: {fileID: 7106711551100227642}
 --- !u!1 &1834606423056517097
 GameObject:
   m_ObjectHideFlags: 0
