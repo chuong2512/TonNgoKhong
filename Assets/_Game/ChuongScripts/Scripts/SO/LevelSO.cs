@@ -15,7 +15,14 @@ namespace Game
 
         public MapItem GetMapItem(int mapID)
         {
-            return _infoMapItems.Find(item => item.mapID == mapID);
+            var find = _infoMapItems.Find(item => item.mapID == mapID);
+
+            if (find != null)
+            {
+                return find;
+            }
+
+            return _infoMapItems[0];
         }
 
         [Button]

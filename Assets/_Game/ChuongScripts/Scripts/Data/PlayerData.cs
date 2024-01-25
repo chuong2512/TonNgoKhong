@@ -69,12 +69,6 @@ public class PlayerData : BaseData
                 mapID = 0,
                 time = 0
             });
-
-            mapUnlocks.Add(new MapRecord()
-            {
-                mapID = 1,
-                time = 0
-            });
         }
     }
 
@@ -96,7 +90,7 @@ public class PlayerData : BaseData
         time = 3 * 24 * 60 * 60;
 
         _coin = 0;
-        _gem = 100000;
+        _gem = 0;
         _exp = 0;
 
         mapUnlocks = new List<MapRecord>();
@@ -127,6 +121,8 @@ public class PlayerData : BaseData
             });
             mapUnlocks = mapUnlocks.OrderBy(i => i.mapID).ToList();
         }
+        
+        Save();
     }
 
     public MapRecord GetMapWithID(int mapID)
@@ -145,6 +141,7 @@ public class PlayerData : BaseData
     }
 }
 
+[Serializable]
 public class MapRecord
 {
     public int mapID;

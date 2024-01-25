@@ -23,41 +23,41 @@ MonoBehaviour:
     SerializationNodes: []
   ListUpgradeSkill:
   - listUpgradeSkill:
-    - rid: 4881752630806183946
+    - rid: 3794718671322742797
   - listUpgradeSkill:
-    - rid: 4881752630806183947
+    - rid: 3794718671322742798
   - listUpgradeSkill:
-    - rid: 4881752630806183948
+    - rid: 3794718671322742799
   - listUpgradeSkill:
-    - rid: 4881752630806183949
+    - rid: 3794718671322742800
   - listUpgradeSkill:
-    - rid: 4881752630806183950
+    - rid: 3794718671322742801
   - listUpgradeSkill:
-    - rid: 4881752630806183951
+    - rid: 3794718671322742802
   references:
     version: 2
     RefIds:
-    - rid: 4881752630806183946
-      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742797
+      type: {class: MagnetUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addMagnetRange: 1
-    - rid: 4881752630806183947
-      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742798
+      type: {class: MagnetUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addMagnetRange: 0.5
-    - rid: 4881752630806183948
-      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742799
+      type: {class: MagnetUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addMagnetRange: 0.5
-    - rid: 4881752630806183949
-      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742800
+      type: {class: MagnetUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addMagnetRange: 1
-    - rid: 4881752630806183950
-      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742801
+      type: {class: MagnetUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addMagnetRange: 0.5
-    - rid: 4881752630806183951
-      type: {class: MagnetUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742802
+      type: {class: MagnetUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addMagnetRange: 1

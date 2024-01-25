@@ -8,7 +8,7 @@ namespace Game
     {
         void Upgrade(IAttribute weaponBuilder);
     }
-    
+
     public interface IMultiple
     {
         float Multipler { get; set; }
@@ -126,6 +126,10 @@ namespace Game
             hp = HP;
         }
 
+        public HPUpgrade()
+        {
+        }
+
         public void Upgrade(IMaxHealthAttribute weaponBuilder)
         {
             weaponBuilder.MaxHealth += hp;
@@ -151,6 +155,17 @@ namespace Game
         public void Upgrade(IDefenseAttribute weaponBuilder)
         {
             weaponBuilder.Defense += def;
+        }
+    }
+    
+    [Serializable]
+    public class RangeUpgrade : IUpgradeSkill<IRangeAttribute>
+    {
+        [SerializeField] private float range;
+
+        public void Upgrade(IRangeAttribute weaponBuilder)
+        {
+            weaponBuilder.Range += range;
         }
     }
 

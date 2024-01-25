@@ -24,25 +24,25 @@ MonoBehaviour:
   ListUpgradeSkill:
   - listUpgradeSkill: []
   - listUpgradeSkill:
-    - rid: 3794718355998900257
+    - rid: 3794718671322742865
   - listUpgradeSkill: []
   - listUpgradeSkill:
-    - rid: 3794718355998900258
+    - rid: 3794718671322742866
   - listUpgradeSkill: []
   - listUpgradeSkill:
-    - rid: 3794718355998900259
+    - rid: 3794718671322742867
   references:
     version: 2
     RefIds:
-    - rid: 3794718355998900257
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742865
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 1
-    - rid: 3794718355998900258
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742866
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 1
-    - rid: 3794718355998900259
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742867
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 1

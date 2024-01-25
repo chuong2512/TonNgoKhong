@@ -37,6 +37,10 @@ namespace Game
         {
             hp = HP;
         }
+        
+        public HPEquipment()
+        {
+        }
 
         public void Upgrade(IMaxHealthAttribute weaponBuilder)
         {

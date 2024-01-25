@@ -23,41 +23,41 @@ MonoBehaviour:
     SerializationNodes: []
   ListUpgradeSkill:
   - listUpgradeSkill:
-    - rid: 4881752630806183936
+    - rid: 3794718671322742809
   - listUpgradeSkill:
-    - rid: 4881752630806183937
+    - rid: 3794718671322742810
   - listUpgradeSkill:
-    - rid: 4881752630806183938
+    - rid: 3794718671322742811
   - listUpgradeSkill:
-    - rid: 4881752630806183939
+    - rid: 3794718671322742812
   - listUpgradeSkill:
-    - rid: 4881752630806183940
+    - rid: 3794718671322742813
   - listUpgradeSkill:
-    - rid: 4881752630806183941
+    - rid: 3794718671322742814
   references:
     version: 2
     RefIds:
-    - rid: 4881752630806183936
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742809
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 3
-    - rid: 4881752630806183937
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742810
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 3
-    - rid: 4881752630806183938
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742811
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 4
-    - rid: 4881752630806183939
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742812
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 4
-    - rid: 4881752630806183940
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742813
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 5
-    - rid: 4881752630806183941
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742814
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 5

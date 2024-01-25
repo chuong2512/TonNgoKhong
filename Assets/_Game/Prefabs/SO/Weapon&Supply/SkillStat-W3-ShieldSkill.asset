@@ -22,12 +22,42 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   ListUpgradeSkill:
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
-  - listUpgradeSkill: []
+  - listUpgradeSkill:
+    - rid: 3794718671322742859
+  - listUpgradeSkill:
+    - rid: 3794718671322742864
+  - listUpgradeSkill:
+    - rid: 3794718671322742863
+  - listUpgradeSkill:
+    - rid: 3794718671322742862
+  - listUpgradeSkill:
+    - rid: 3794718671322742861
+  - listUpgradeSkill:
+    - rid: 3794718671322742860
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 3794718671322742859
+      type: {class: RangeUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        range: 0.6
+    - rid: 3794718671322742860
+      type: {class: RangeUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        range: 0.3
+    - rid: 3794718671322742861
+      type: {class: RangeUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        range: 0.6
+    - rid: 3794718671322742862
+      type: {class: RangeUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        range: 0.3
+    - rid: 3794718671322742863
+      type: {class: RangeUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        range: 0.6
+    - rid: 3794718671322742864
+      type: {class: RangeUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        range: 0.3

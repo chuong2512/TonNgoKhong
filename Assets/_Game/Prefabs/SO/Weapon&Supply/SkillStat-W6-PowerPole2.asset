@@ -24,35 +24,35 @@ MonoBehaviour:
   ListUpgradeSkill:
   - listUpgradeSkill: []
   - listUpgradeSkill:
-    - rid: 3794718355998900250
+    - rid: 3794718671322742868
   - listUpgradeSkill:
-    - rid: 3794718355998900252
+    - rid: 3794718671322742873
   - listUpgradeSkill:
-    - rid: 3794718355998900253
+    - rid: 3794718671322742870
   - listUpgradeSkill:
-    - rid: 3794718355998900255
+    - rid: 3794718671322742874
   - listUpgradeSkill:
-    - rid: 3794718355998900256
+    - rid: 3794718671322742872
   references:
     version: 2
     RefIds:
-    - rid: 3794718355998900250
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742868
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 1
-    - rid: 3794718355998900252
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742870
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        amount: 1
+    - rid: 3794718671322742872
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        amount: 1
+    - rid: 3794718671322742873
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 2
-    - rid: 3794718355998900253
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742874
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        amount: 1
-    - rid: 3794718355998900255
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
-      data:
-        addDamage: 3
-    - rid: 3794718355998900256
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
-      data:
-        amount: 1
+        addDamage: 2

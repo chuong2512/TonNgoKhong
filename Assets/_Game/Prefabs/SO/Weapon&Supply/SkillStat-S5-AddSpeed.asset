@@ -23,41 +23,41 @@ MonoBehaviour:
     SerializationNodes: []
   ListUpgradeSkill:
   - listUpgradeSkill:
-    - rid: 3794718355998900260
+    - rid: 3794718671322742815
   - listUpgradeSkill:
-    - rid: 3794718355998900261
+    - rid: 3794718671322742816
   - listUpgradeSkill:
-    - rid: 3794718355998900262
+    - rid: 3794718671322742817
   - listUpgradeSkill:
-    - rid: 3794718355998900263
+    - rid: 3794718671322742818
   - listUpgradeSkill:
-    - rid: 3794718355998900264
+    - rid: 3794718671322742819
   - listUpgradeSkill:
-    - rid: 3794718355998900265
+    - rid: 3794718671322742820
   references:
     version: 2
     RefIds:
-    - rid: 3794718355998900260
-      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742815
+      type: {class: PlayerSpeedUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addSpeed: 0.2
-    - rid: 3794718355998900261
-      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742816
+      type: {class: PlayerSpeedUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addSpeed: 0.3
-    - rid: 3794718355998900262
-      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742817
+      type: {class: PlayerSpeedUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addSpeed: 0.2
-    - rid: 3794718355998900263
-      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
-      data:
-        addSpeed: 0.3
-    - rid: 3794718355998900264
-      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742818
+      type: {class: PlayerSpeedUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addSpeed: 0.2
-    - rid: 3794718355998900265
-      type: {class: PlayerSpeedUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742819
+      type: {class: PlayerSpeedUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addSpeed: 0.2
+    - rid: 3794718671322742820
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 0.3

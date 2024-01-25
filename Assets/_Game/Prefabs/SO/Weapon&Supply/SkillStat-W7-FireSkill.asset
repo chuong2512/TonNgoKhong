@@ -23,41 +23,41 @@ MonoBehaviour:
     SerializationNodes: []
   ListUpgradeSkill:
   - listUpgradeSkill:
-    - rid: 3794718310463438853
+    - rid: 3794718671322742875
   - listUpgradeSkill:
-    - rid: 3794718355998900245
+    - rid: 3794718671322742876
   - listUpgradeSkill:
-    - rid: 3794718355998900246
+    - rid: 3794718671322742877
   - listUpgradeSkill:
-    - rid: 3794718355998900249
+    - rid: 3794718671322742878
   - listUpgradeSkill:
-    - rid: 3794718355998900247
+    - rid: 3794718671322742879
   - listUpgradeSkill:
-    - rid: 3794718355998900248
+    - rid: 3794718671322742880
   references:
     version: 2
     RefIds:
-    - rid: 3794718310463438853
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742875
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        amount: 18
-    - rid: 3794718355998900245
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+        amount: 12
+    - rid: 3794718671322742876
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        amount: 12
+    - rid: 3794718671322742877
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 6
-    - rid: 3794718355998900246
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742878
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 3
-    - rid: 3794718355998900247
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742879
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 3
-    - rid: 3794718355998900248
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742880
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        amount: 3
-    - rid: 3794718355998900249
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
-      data:
-        amount: 3
+        addDamage: 5

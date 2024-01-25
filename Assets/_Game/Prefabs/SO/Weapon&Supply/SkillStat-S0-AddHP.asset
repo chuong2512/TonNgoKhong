@@ -23,41 +23,41 @@ MonoBehaviour:
     SerializationNodes: []
   ListUpgradeSkill:
   - listUpgradeSkill:
-    - rid: 3794718355998900224
+    - rid: 3794718671322742791
   - listUpgradeSkill:
-    - rid: 3794718355998900225
+    - rid: 3794718671322742792
   - listUpgradeSkill:
-    - rid: 3794718355998900226
+    - rid: 3794718671322742793
   - listUpgradeSkill:
-    - rid: 3794718355998900227
+    - rid: 3794718671322742794
   - listUpgradeSkill:
-    - rid: 3794718355998900228
+    - rid: 3794718671322742795
   - listUpgradeSkill:
-    - rid: 3794718355998900229
+    - rid: 3794718671322742796
   references:
     version: 2
     RefIds:
-    - rid: 3794718355998900224
-      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742791
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         hp: 30
-    - rid: 3794718355998900225
-      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742792
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         hp: 40
-    - rid: 3794718355998900226
-      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742793
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         hp: 50
-    - rid: 3794718355998900227
-      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742794
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         hp: 50
-    - rid: 3794718355998900228
-      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742795
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         hp: 50
-    - rid: 3794718355998900229
-      type: {class: HPUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742796
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         hp: 100

@@ -23,41 +23,41 @@ MonoBehaviour:
     SerializationNodes: []
   ListUpgradeSkill:
   - listUpgradeSkill:
-    - rid: 3794718355998900266
+    - rid: 3794718671322742803
   - listUpgradeSkill:
-    - rid: 3794718355998900267
+    - rid: 3794718671322742804
   - listUpgradeSkill:
-    - rid: 3794718355998900268
+    - rid: 3794718671322742805
   - listUpgradeSkill:
-    - rid: 3794718355998900269
+    - rid: 3794718671322742806
   - listUpgradeSkill:
-    - rid: 3794718355998900270
+    - rid: 3794718671322742807
   - listUpgradeSkill:
-    - rid: 3794718355998900271
+    - rid: 3794718671322742808
   references:
     version: 2
     RefIds:
-    - rid: 3794718355998900266
-      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742803
+      type: {class: SpeedShotUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        speed: 0.05
-    - rid: 3794718355998900267
-      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+        speed: 0.5
+    - rid: 3794718671322742804
+      type: {class: SpeedShotUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        speed: 0.05
-    - rid: 3794718355998900268
-      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+        speed: 0.5
+    - rid: 3794718671322742805
+      type: {class: SpeedShotUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        speed: 0.05
-    - rid: 3794718355998900269
-      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+        speed: 0.5
+    - rid: 3794718671322742806
+      type: {class: SpeedShotUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        speed: 0.05
-    - rid: 3794718355998900270
-      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+        speed: 0.5
+    - rid: 3794718671322742807
+      type: {class: SpeedShotUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        speed: 0.05
-    - rid: 3794718355998900271
-      type: {class: SpeedShotUpgrade, ns: Skill, asm: Assembly-CSharp}
+        speed: 0.5
+    - rid: 3794718671322742808
+      type: {class: SpeedShotUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
-        speed: 0.05
+        speed: 0.5

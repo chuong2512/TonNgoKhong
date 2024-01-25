@@ -23,46 +23,46 @@ MonoBehaviour:
     SerializationNodes: []
   ListUpgradeSkill:
   - listUpgradeSkill:
-    - rid: 3794718310463438852
+    - rid: 3794718671322742881
   - listUpgradeSkill:
-    - rid: 3794718355998900239
+    - rid: 3794718671322742888
   - listUpgradeSkill:
-    - rid: 3794718355998900240
+    - rid: 3794718671322742883
   - listUpgradeSkill:
-    - rid: 3794718355998900241
+    - rid: 3794718671322742889
   - listUpgradeSkill:
-    - rid: 3794718355998900242
-    - rid: 3794718355998900243
+    - rid: 3794718671322742890
+    - rid: 3794718671322742887
   - listUpgradeSkill:
-    - rid: 3794718355998900244
+    - rid: 3794718671322742891
   references:
     version: 2
     RefIds:
-    - rid: 3794718310463438852
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742881
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 1
-    - rid: 3794718355998900239
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742883
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        amount: 1
+    - rid: 3794718671322742887
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 1
+    - rid: 3794718671322742888
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 2
-    - rid: 3794718355998900240
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
-      data:
-        amount: 1
-    - rid: 3794718355998900241
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742889
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         addDamage: 3
-    - rid: 3794718355998900242
-      type: {class: AddDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
-      data:
-        addDamage: 0
-    - rid: 3794718355998900243
-      type: {class: AddRateDamageUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742890
+      type: {class: AddRateDamageUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         rate: 1
-    - rid: 3794718355998900244
-      type: {class: AmountUpgrade, ns: Skill, asm: Assembly-CSharp}
+    - rid: 3794718671322742891
+      type: {class: AmountUpgrade, ns: Game, asm: Assembly-CSharp}
       data:
         amount: 1

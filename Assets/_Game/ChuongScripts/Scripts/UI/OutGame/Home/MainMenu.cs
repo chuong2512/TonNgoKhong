@@ -36,8 +36,8 @@ public class MainMenu : MonoBehaviour
     {
         var mapItem = _levelSo.GetMapItem(mapIndex);
 
-        var record = _playerData.GetMapWithID(mapIndex);
-        var time = TimeSpan.FromSeconds(record.time);
+        var record = _playerData.GetMapWithID(mapItem.mapID);
+        var time = record != null ? TimeSpan.FromSeconds(record.time) : TimeSpan.Zero;
 
         _nameMapTxt.text = mapItem.name;
         _infoMapText.text =
