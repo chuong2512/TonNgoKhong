@@ -168,6 +168,7 @@ Library: lib_burst_generated
 --root-assembly=E:\Unity Games\Survivor.IO+doc\Survivor.IO+doc\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.Stores.dll
 --root-assembly=E:\Unity Games\Survivor.IO+doc\Survivor.IO+doc\Temp\StagingArea\Data\Managed\UnityEngine.Advertisements.dll
 --root-assembly=E:\Unity Games\Survivor.IO+doc\Survivor.IO+doc\Temp\StagingArea\Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+--root-assembly=E:\Unity Games\Survivor.IO+doc\Survivor.IO+doc\Temp\StagingArea\Data\Managed\EnhancedScroller_asmdef.dll
 --root-assembly=E:\Unity Games\Survivor.IO+doc\Survivor.IO+doc\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.dll
 --root-assembly=E:\Unity Games\Survivor.IO+doc\Survivor.IO+doc\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
 --root-assembly=E:\Unity Games\Survivor.IO+doc\Survivor.IO+doc\Temp\StagingArea\Data\Managed\Unity.2D.SpriteShape.Runtime.dll
