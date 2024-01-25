@@ -12,30 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216df6893c554d5f87511dc14bee732b, type: 3}
   m_Name: StatDescriptionSO
   m_EditorClassIdentifier: 
-  baseStat:
-    <MaxHealth>k__BackingField: 50
-    <VirtualHealth>k__BackingField: 0
-    <Damage>k__BackingField: 1
-    <Defense>k__BackingField: 0
-    <Speed>k__BackingField: 3
-    <Magnet>k__BackingField: 0
-    <Health>k__BackingField: 50
   EquipmentTypes:
   - EquipmentData:
       rid: 3794718628216569911
-    TypeImg: {fileID: 21300076, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+    TypeImg: {fileID: 21300000, guid: 419465fcfc5beb44d8c14d48f415f3da, type: 3}
   - EquipmentData:
       rid: 3794718628216569912
-    TypeImg: {fileID: 21300124, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+    TypeImg: {fileID: 21300000, guid: 20b507e7ddf084049b9aa103a319705d, type: 3}
   - EquipmentData:
       rid: 3794718628216569913
-    TypeImg: {fileID: 21300086, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+    TypeImg: {fileID: 21300000, guid: 0ef5bf52a7af48340802cb4ca3bffef6, type: 3}
   - EquipmentData:
       rid: 3794718628216569914
-    TypeImg: {fileID: 21300036, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+    TypeImg: {fileID: 21300000, guid: 247410fc570746246ba6d1133b8c4b85, type: 3}
   - EquipmentData:
       rid: 3794718628216569915
-    TypeImg: {fileID: 21300100, guid: 85165b344aa784048a7747c34315a3e7, type: 3}
+    TypeImg: {fileID: 21300000, guid: ca60abb071bac114090d4ea82326f51b, type: 3}
   references:
     version: 2
     RefIds:
