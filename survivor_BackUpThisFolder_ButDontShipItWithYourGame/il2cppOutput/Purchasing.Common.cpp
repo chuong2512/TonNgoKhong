@@ -54,25 +54,25 @@ struct InterfaceFuncInvoker1
 		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
-template <typename T1, typename T2, typename T3, typename T4, typename T5>
-struct InvokerActionInvoker5;
-template <typename T1, typename T2, typename T3, typename T4, typename T5>
-struct InvokerActionInvoker5<T1*, T2*, T3*, T4*, T5*>
-{
-	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3, T4* p4, T5* p5)
-	{
-		void* params[5] = { p1, p2, p3, p4, p5 };
-		method->invoker_method(methodPtr, method, obj, params, NULL);
-	}
-};
 template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6>
 struct InvokerActionInvoker6;
 template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6>
-struct InvokerActionInvoker6<T1*, T2*, T3*, T4*, T5*, T6*>
+struct InvokerActionInvoker6<T1*, T2*, T3*, T4*, T5*, T6>
 {
-	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3, T4* p4, T5* p5, T6* p6)
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3, T4* p4, T5* p5, T6 p6)
 	{
-		void* params[6] = { p1, p2, p3, p4, p5, p6 };
+		void* params[6] = { p1, p2, p3, p4, p5, &p6 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
+template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7>
+struct InvokerActionInvoker7;
+template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7>
+struct InvokerActionInvoker7<T1*, T2*, T3*, T4*, T5*, T6*, T7>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3, T4* p4, T5* p5, T6* p6, T7 p7)
+	{
+		void* params[7] = { p1, p2, p3, p4, p5, p6, &p7 };
 		method->invoker_method(methodPtr, method, obj, params, NULL);
 	}
 };
@@ -1296,39 +1296,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MiniJson_JsonDecode_m5B62B33DF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-void UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_Multicast(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method)
+void UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_Multicast(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
 	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
 	for (il2cpp_array_size_t i = 0; i < length; i++)
 	{
 		UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* currentDelegate = reinterpret_cast<UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, String_t*, String_t*, String_t*, String_t*, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+		typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, String_t*, String_t*, String_t*, String_t*, bool, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, ___isRestored5, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_OpenInst(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method)
+void UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_OpenInst(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method)
 {
 	NullCheck(___subject0);
-	typedef void (*FunctionPointerType) (String_t*, String_t*, String_t*, String_t*, String_t*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, method);
+	typedef void (*FunctionPointerType) (String_t*, String_t*, String_t*, String_t*, String_t*, bool, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, ___isRestored5, method);
 }
-void UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_OpenStatic(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method)
+void UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_OpenStatic(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method)
 {
-	typedef void (*FunctionPointerType) (String_t*, String_t*, String_t*, String_t*, String_t*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, method);
+	typedef void (*FunctionPointerType) (String_t*, String_t*, String_t*, String_t*, String_t*, bool, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, ___isRestored5, method);
 }
-void UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_OpenStaticInvoker(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method)
+void UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_OpenStaticInvoker(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method)
 {
-	InvokerActionInvoker5< String_t*, String_t*, String_t*, String_t*, String_t* >::Invoke(__this->___method_ptr_0, method, NULL, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4);
+	InvokerActionInvoker6< String_t*, String_t*, String_t*, String_t*, String_t*, bool >::Invoke(__this->___method_ptr_0, method, NULL, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, ___isRestored5);
 }
-void UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_ClosedStaticInvoker(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method)
+void UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_ClosedStaticInvoker(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method)
 {
-	InvokerActionInvoker6< RuntimeObject*, String_t*, String_t*, String_t*, String_t*, String_t* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4);
+	InvokerActionInvoker7< RuntimeObject*, String_t*, String_t*, String_t*, String_t*, String_t*, bool >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, ___isRestored5);
 }
-IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method)
 {
-	typedef void (DEFAULT_CALL *PInvokeFunc)(char*, char*, char*, char*, char*);
+	typedef void (DEFAULT_CALL *PInvokeFunc)(char*, char*, char*, char*, char*, int32_t);
 	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_reverse_pinvoke_function_ptr(__this));
 	// Marshaling of parameter '___subject0' to native representation
 	char* ____subject0_marshaled = NULL;
@@ -1351,7 +1351,7 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_UnityPurchasingCallback_tFC58410D7A
 	____originalTransactionId4_marshaled = il2cpp_codegen_marshal_string(___originalTransactionId4);
 
 	// Native function invocation
-	il2cppPInvokeFunc(____subject0_marshaled, ____payload1_marshaled, ____receipt2_marshaled, ____transactionId3_marshaled, ____originalTransactionId4_marshaled);
+	il2cppPInvokeFunc(____subject0_marshaled, ____payload1_marshaled, ____receipt2_marshaled, ____transactionId3_marshaled, ____originalTransactionId4_marshaled, static_cast<int32_t>(___isRestored5));
 
 	// Marshaling cleanup of parameter '___subject0' native representation
 	il2cpp_codegen_marshal_free(____subject0_marshaled);
@@ -1385,15 +1385,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityPurchasingCallback__ctor_mF6C91FDD1
 	__this->___method_code_6 = (intptr_t)__this;
 	if (MethodIsStatic((RuntimeMethod*)___method1))
 	{
-		bool isOpen = parameterCount == 5;
+		bool isOpen = parameterCount == 6;
 		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_OpenStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_OpenStaticInvoker;
 			else
-				__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_ClosedStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_ClosedStaticInvoker;
 		else
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_OpenStatic;
+				__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_OpenStatic;
 			else
 				{
 					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -1402,10 +1402,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityPurchasingCallback__ctor_mF6C91FDD1
 	}
 	else
 	{
-		bool isOpen = parameterCount == 4;
+		bool isOpen = parameterCount == 5;
 		if (isOpen)
 		{
-			__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_OpenInst;
+			__this->___invoke_impl_1 = (intptr_t)&UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_OpenInst;
 		}
 		else
 		{
@@ -1415,24 +1415,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityPurchasingCallback__ctor_mF6C91FDD1
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
 	}
-	__this->___extra_arg_5 = (intptr_t)&UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0_Multicast;
+	__this->___extra_arg_5 = (intptr_t)&UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A_Multicast;
 }
-// System.Void UnityEngine.Purchasing.UnityPurchasingCallback::Invoke(System.String,System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityPurchasingCallback_Invoke_m0F05D96994D5D9CF3F9DAE457764FA18E55CFCE0 (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.UnityPurchasingCallback::Invoke(System.String,System.String,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityPurchasingCallback_Invoke_mE6A42E5FA4CA666A5D1ACBFBF1D010E2BA72801A (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method) 
 {
-	typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, String_t*, String_t*, String_t*, String_t*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+	typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, String_t*, String_t*, String_t*, String_t*, bool, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___subject0, ___payload1, ___receipt2, ___transactionId3, ___originalTransactionId4, ___isRestored5, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
-// System.IAsyncResult UnityEngine.Purchasing.UnityPurchasingCallback::BeginInvoke(System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UnityPurchasingCallback_BeginInvoke_mF9E079F879B7853C701180170789DEB1FDB64B36 (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback5, RuntimeObject* ___object6, const RuntimeMethod* method) 
+// System.IAsyncResult UnityEngine.Purchasing.UnityPurchasingCallback::BeginInvoke(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UnityPurchasingCallback_BeginInvoke_mB75E43D3920198570C93C4509CEC970E2544A542 (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback6, RuntimeObject* ___object7, const RuntimeMethod* method) 
 {
-	void *__d_args[6] = {0};
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[7] = {0};
 	__d_args[0] = ___subject0;
 	__d_args[1] = ___payload1;
 	__d_args[2] = ___receipt2;
 	__d_args[3] = ___transactionId3;
 	__d_args[4] = ___originalTransactionId4;
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback5, (RuntimeObject*)___object6);
+	__d_args[5] = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &___isRestored5);
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback6, (RuntimeObject*)___object7);
 }
 // System.Void UnityEngine.Purchasing.UnityPurchasingCallback::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityPurchasingCallback_EndInvoke_m048526672E91F6764201A48784A7C16B0BEF8E9A (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* __this, RuntimeObject* ___result0, const RuntimeMethod* method) 

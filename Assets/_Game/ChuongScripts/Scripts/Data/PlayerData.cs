@@ -90,7 +90,7 @@ public class PlayerData : BaseData
         time = 3 * 24 * 60 * 60;
 
         _coin = 0;
-        _gem = 0;
+        _gem = 100000;
         _exp = 0;
 
         mapUnlocks = new List<MapRecord>();

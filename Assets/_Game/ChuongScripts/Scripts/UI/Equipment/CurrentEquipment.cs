@@ -40,8 +40,8 @@ namespace Game
 
             var playerStatus = GameManager.Instance.GetPlayerStatus();
 
-            hpTMP.SetText($"HP : {playerStatus.MaxHealth:F1}");
-            atkTMP.SetText($"ATK : {playerStatus.Damage:F1}");
+            hpTMP.SetText($"{playerStatus.MaxHealth:F1}");
+            atkTMP.SetText($"{playerStatus.Damage:F1}");
         }
     }
 }

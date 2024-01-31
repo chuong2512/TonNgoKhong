@@ -988,8 +988,10 @@ struct iOSStoreBindings_tDE97C3D8BF1A4E4E04A582AB778E727D39BD0A8F;
 struct U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220;
 // UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass39_0
 struct U3CU3Ec__DisplayClass39_0_tB6C9B81FA5208266A077C3FF0BCD10B2F0214CBB;
-// UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0
-struct U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15;
+// UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass44_0
+struct U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13;
+// UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0
+struct U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF;
 // UnityEngine.Purchasing.FakeStore/<>c__DisplayClass13_0
 struct U3CU3Ec__DisplayClass13_0_tBA8804D098026C9E5E6789553472F13C3A46A751;
 // UnityEngine.Purchasing.FakeStore/<>c__DisplayClass15_0
@@ -1120,6 +1122,7 @@ struct U3CU3Ec_t70E2EE65C322165BD4D1FA160EB148C0AF8296B8;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t254259DCF1ABC6B970C5C97CF265938C6642BA94_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t2B19F012A80A9EBFC24E68FCFF5A4F4488B86145_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t3137749576010DD307B29662A2E47C43C7F7D04C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t57FE6DB317EE052754DABCCA2C8DA475F46E78D4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t5971E6CA96730A21B6373D988864E4DC2BEEBA5D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t697794677665726C94809C618C5BC9615AF0F913_il2cpp_TypeInfo_var;
@@ -1333,6 +1336,7 @@ IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass3_0_t1E6D1871F92A238504C8254A
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass3_0_t5D0C1A8685917EF7616795EDAC231A5109E7083F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass3_0_t970DAD2D4D2422DE0F4EEB87660E4C9AE97ECB89_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass3_0_tEADDD60446A012B5BD7D1B69F22B2D4B9A1099CC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass4_0_t24A01CBC8C0752B38F048F93DB017B34E454EE80_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass4_0_t279C2AB3C4223290503B866391DA598D063755A5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass4_0_t40E7E076FE503C74BA009D8A9429AFB2824F9149_il2cpp_TypeInfo_var;
@@ -1345,7 +1349,7 @@ IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass5_0_t896F849EB1CFA3A2BC7C4711
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass5_0_tD347AAA84BFE1F2105B53A55C22DCBB0162753F7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass5_0_tD8DE2C8FD90EDEA8047997C87A0D0AB2A6FDF3D0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass5_0_tE3F75509C99A5CF9AE39BD228BAD1E8204E826DE_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass6_0_t1C8F1A53FE82232D11C6E1C75A16F230F9B473BA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass6_0_t4EBC3FC745530B8A8DE11850E7A29FA57A6883E4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass6_0_t8239D50B079A7CE2531C27AB8FE2180FA378A13B_il2cpp_TypeInfo_var;
@@ -1467,6 +1471,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral4EC0FCDA8D5F7B9765A5007FF4D30DC4D002A055
 IL2CPP_EXTERN_C String_t* _stringLiteral4F7579260D4E21D507DB3C0F00F4343D036BAE2B;
 IL2CPP_EXTERN_C String_t* _stringLiteral51FECA0AA5F873E67DDD4DCD06C23741725A63EF;
 IL2CPP_EXTERN_C String_t* _stringLiteral54DDDB80453AF3297A854385817DAA0740AAFF3B;
+IL2CPP_EXTERN_C String_t* _stringLiteral55A14DBCC799259BF81E033F6B96517EE17EB5F8;
 IL2CPP_EXTERN_C String_t* _stringLiteral55FF688AF78C878A3CD94D0F8CC9551438239DC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral56F269E7A39C28B97DCBF01E14C5E8E54026A1A7;
 IL2CPP_EXTERN_C String_t* _stringLiteral57755B36642ACCC948A92CA2E16CF33DA420A755;
@@ -1617,7 +1622,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisBoolean_t09A6377A
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisString_t_m67FC2931E81004C3F259008314180511C3D2AF40_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AppleStoreImpl_ContinuePromotionalPurchases_m8774AE3243A7E9E54886DCAB90A8AD850E13AA76_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AppleStoreImpl_MessageCallback_m120CC4C82B492CEBAE252859F8FABDE9A5C281F3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppleStoreImpl_MessageCallback_m0AD0DB81744B171D2269DC04000AFDF6A2F41F3C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AppleStoreImpl_PresentCodeRedemptionSheet_mF1D94A529408905B169C1FFFB7E6D13034187B50_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AppleStoreImpl_SetStorePromotionVisibility_m1B6AFF0B9D88D121B68FDF55D0864DFF5135B0F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisGUILayoutOption_t8B0AA056521747053A3176FCC43E9C3608940A14_mC7F345AC4C0CA86560FAA00174268F70FBBE577F_RuntimeMethod_var;
@@ -1837,8 +1842,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CCreateRetrieveProductsQuestionU3
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CFindMostRecentReceiptU3Eb__39_1_m0EAF11F86324724479F8DE02108184315C7E402E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CGetCachedQueriedSkusU3Eb__4_0_m97CCC55CE423849A46AB06521CC1ACA3EDA9FAB8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CIsRecoverableU3Eb__3_0_m1A76167A7F99A09EB3E740994456801369558615_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_0_m7BD71D4905C993A4B5ABD8B02887912DB7412E73_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_1_m3101E015DBC0111711386B8336792456C8CBC6FA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_0_m3D710E919FC9C1C18A2A353A6AF6DC700DF5C6F5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_1_mEE957FEAECE8D83314CBD242345297AECB3E0BB3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CPurchaseIsPendingU3Eb__12_0_m39A95DB2A2EBD4FBA010242D5A8A7C179EC58D7B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CPurchaseIsPurchasedU3Eb__11_0_mA0F316BEF7E02821ED1013153E9A1489F535A57A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CQueryInAppsAsyncU3Eb__16_0_m1A6386563405257CE9A0980CDC6AEBFE29441E5C_RuntimeMethod_var;
@@ -1875,6 +1880,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass3_0_U3COnSetupFailedU3
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass3_0_U3CPriceChangeU3Eb__0_m0AE276C83C68FA67AB54B226EEA138B64148AAAC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass3_0_U3CPurchaseU3Eb__0_mB695025A890C2770D2064621F70C70A317D6728B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass3_0_U3CRestoreTransactionsU3Eb__0_mAE30BD373B382847623DBCEC17A08B6F309322AA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass44_0_U3CRefreshAppReceiptU3Eb__0_m0C0F225186862D2FBAB3C98AF392AF5EEF84BDDD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass4_0_U3CFindPurchaseU3Eb__0_m2EF37032672732A91958420A1AB805BB3E3EB3E9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass4_0_U3COnProductsRetrievedU3Eb__0_m31155E61081093F8490396B1069BE1C8B46294A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass4_0_U3CPurchaseU3Eb__0_m3722933ED78BFF71ECF3927C27AA23CAAB6EB9C9_RuntimeMethod_var;
@@ -1888,7 +1894,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3COnSetupFailedU3
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3CRestoreTransactionsU3Eb__0_m5C35ACF4C73C16D261F7D681C91A8981B3B77862_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3CRetrieveProductsU3Eb__0_mABD44FFE6CCE382E6AADD9D77BCFD984B5A3AE0B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3ConSkuDetailsResponseU3Eb__0_mBCE7C10C936B50A6D8787CBE5283763495490AD7_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass63_0_U3CMessageCallbackU3Eb__0_m4BF0F84A5CE5E87F7DAE217A6300A737A6D1090F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass64_0_U3CMessageCallbackU3Eb__0_m707C03C1BB2C18BFE669B84303F966E2E8C4D094_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass6_0_U3CFetchPurchasesU3Eb__0_m428B81E2341006BE8162324D3EEEA47F815006A3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass6_0_U3CGetTypeByNameU3Eb__0_mE562C8B0ECB0EDD67151846249850549E5396DE1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass6_0_U3COnPurchaseFailedU3Eb__0_m93B065B3519672AA868E19CA9F710541D9AA0972_RuntimeMethod_var;
@@ -3323,10 +3329,10 @@ struct U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields
 	U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220* ___U3CU3E9_0;
 	// System.Comparison`1<UnityEngine.Purchasing.Security.AppleInAppPurchaseReceipt> UnityEngine.Purchasing.AppleStoreImpl/<>c::<>9__39_1
 	Comparison_1_t9272FEBA2ED9918EE39A8ADFDA4A6348F5AC5606* ___U3CU3E9__39_1_1;
-	// System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>,System.String> UnityEngine.Purchasing.AppleStoreImpl/<>c::<>9__61_0
-	Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* ___U3CU3E9__61_0_2;
-	// System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>,System.String> UnityEngine.Purchasing.AppleStoreImpl/<>c::<>9__61_1
-	Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* ___U3CU3E9__61_1_3;
+	// System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>,System.String> UnityEngine.Purchasing.AppleStoreImpl/<>c::<>9__62_0
+	Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* ___U3CU3E9__62_0_2;
+	// System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>,System.String> UnityEngine.Purchasing.AppleStoreImpl/<>c::<>9__62_1
+	Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* ___U3CU3E9__62_1_3;
 };
 
 // UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass39_0
@@ -3336,19 +3342,28 @@ struct U3CU3Ec__DisplayClass39_0_tB6C9B81FA5208266A077C3FF0BCD10B2F0214CBB  : pu
 	String_t* ___productId_0;
 };
 
-// UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0
-struct U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15  : public RuntimeObject
+// UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass44_0
+struct U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13  : public RuntimeObject
 {
-	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::subject
+	// System.Action UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass44_0::errorCallback
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback_0;
+};
+
+// UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0
+struct U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF  : public RuntimeObject
+{
+	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::subject
 	String_t* ___subject_0;
-	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::payload
+	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::payload
 	String_t* ___payload_1;
-	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::receipt
+	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::receipt
 	String_t* ___receipt_2;
-	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::transactionId
+	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::transactionId
 	String_t* ___transactionId_3;
-	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::originalTransactionId
+	// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::originalTransactionId
 	String_t* ___originalTransactionId_4;
+	// System.Boolean UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::isRestored
+	bool ___isRestored_5;
 };
 
 // UnityEngine.Purchasing.FakeStore/<>c__DisplayClass13_0
@@ -3617,8 +3632,8 @@ struct U3CU3Ec__DisplayClass7_0_t93128021B5B18293390FD344E1D331EFBEA04D77  : pub
 	MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* ___U3CU3E4__this_0;
 	// System.Action`1<System.String> UnityEngine.Purchasing.MetricizedAppleStoreImpl/<>c__DisplayClass7_0::successCallback
 	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback_1;
-	// System.Action UnityEngine.Purchasing.MetricizedAppleStoreImpl/<>c__DisplayClass7_0::errorCallback
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback_2;
+	// System.Action`1<System.String> UnityEngine.Purchasing.MetricizedAppleStoreImpl/<>c__DisplayClass7_0::errorCallback
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___errorCallback_2;
 };
 
 // UnityEngine.Purchasing.MetricizedGooglePlayStoreExtensions/<>c__DisplayClass2_0
@@ -4987,8 +5002,8 @@ struct AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14  : public JSONSt
 	Action_1_tDA104653FA5A324B3D61E32BD15E60D0C4AE63CE* ___m_DeferredCallback_11;
 	// System.Action`1<System.Collections.Generic.List`1<UnityEngine.Purchasing.Product>> UnityEngine.Purchasing.AppleStoreImpl::m_RevokedCallback
 	Action_1_t697794677665726C94809C618C5BC9615AF0F913* ___m_RevokedCallback_12;
-	// System.Action UnityEngine.Purchasing.AppleStoreImpl::m_RefreshReceiptError
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___m_RefreshReceiptError_13;
+	// System.Action`1<System.String> UnityEngine.Purchasing.AppleStoreImpl::m_RefreshReceiptError
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___m_RefreshReceiptError_13;
 	// System.Action`1<System.String> UnityEngine.Purchasing.AppleStoreImpl::m_RefreshReceiptSuccess
 	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___m_RefreshReceiptSuccess_14;
 	// System.Action`1<System.Boolean> UnityEngine.Purchasing.AppleStoreImpl::m_ObsoleteRestoreCallback
@@ -8607,8 +8622,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleProductMetadata__ctor_mD8E3F61B922C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonProductDescriptionsDeserializer__ctor_m20F016896A6A95110F9AD437F085398023F9BE05 (JsonProductDescriptionsDeserializer_t72472C8FB06674E5AA27CC1B3788FA050896E0C4* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.ProductMetadata::.ctor(UnityEngine.Purchasing.ProductMetadata)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProductMetadata__ctor_m3701E6FF0C87A13264E963FFCE2EA1AF0D0837C6 (ProductMetadata_t8C8138607558F5A57C08B6257B38FC2C77B32164* __this, ProductMetadata_t8C8138607558F5A57C08B6257B38FC2C77B32164* ___productMetadata0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::MessageCallback(System.String,System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_MessageCallback_m120CC4C82B492CEBAE252859F8FABDE9A5C281F3 (String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::MessageCallback(System.String,System.String,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_MessageCallback_m0AD0DB81744B171D2269DC04000AFDF6A2F41F3C (String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.AppleJsonProductDescriptionsDeserializer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleJsonProductDescriptionsDeserializer__ctor_m1F845020E3FFCD14A440A2A36BEF4CB11D68ACF4 (AppleJsonProductDescriptionsDeserializer_tEAE76F289DDB976EF41926C2AB09014731D2BB50* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.JSONStore::SetNativeStore(UnityEngine.Purchasing.INativeStore)
@@ -8723,6 +8738,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppleInAppPurchaseReceipt_t45E81B173E0600832D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D AppleInAppPurchaseReceipt_get_cancellationDate_mDF2DD93796406B22172FBB7670D94A28F9AB0DC7_inline (AppleInAppPurchaseReceipt_t45E81B173E0600832D2E259DA4A6CFA9C54A7CD6* __this, const RuntimeMethod* method) ;
 // System.Boolean System.DateTime::op_Equality(System.DateTime,System.DateTime)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DateTime_op_Equality_m568A6320E27F3F7708C77BF8751925C8775DD921 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___d10, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___d21, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass44_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass44_0__ctor_mEBA6E01BE590A72ACB1C662ACA65B26203CFFB62 (U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.String>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_m9DC2953C55C4D7D4B7BEFE03D84DA1F9362D652C (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___object0, ___method1, method);
+}
 // System.Collections.Generic.Dictionary`2<System.String,System.String> UnityEngine.Purchasing.JSONSerializer::DeserializeSubscriptionDescriptions(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* JSONSerializer_DeserializeSubscriptionDescriptions_m26785519EA245967E88EDDE4377CAEE7C6EABB62 (String_t* ___json0, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2<System.String,System.String> UnityEngine.Purchasing.JSONSerializer::DeserializeProductDetails(System.String)
@@ -8772,14 +8794,14 @@ inline void Action_2_Invoke_mB0FE5AF84FA3595215D776D70C481C537550653D_inline (Ac
 {
 	((  void (*) (Action_2_tA14B21CCF3C0A41FEBFFA42445AF2A84130BE37D*, String_t*, int32_t, const RuntimeMethod*))Action_2_Invoke_m3BFB5987F7235AEF25980B76D635DBD5B56B0F7A_gshared_inline)(__this, ___arg10, ___arg21, method);
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass63_0__ctor_m0561253C4AF50B417C3CAA08808F7F5A1B6DFAC4 (U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0__ctor_m3A3126A85E3F8159D79D151B4984A67101EAD4DF (U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* __this, const RuntimeMethod* method) ;
 // System.UInt32 <PrivateImplementationDetails>::ComputeStringHash(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t U3CPrivateImplementationDetailsU3E_ComputeStringHash_m88B6F9ABC0B2644814DC58FB9602948572F7E971 (String_t* ___s0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.JSONStore::OnSetupFailed(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONStore_OnSetupFailed_mA82E1D0BF98A86C54303784CBD84FFE724564CCA (JSONStore_t4F4299E0B4B18E75E186730A5F005114C144B696* __this, String_t* ___reason0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnPurchaseSucceeded(System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnPurchaseSucceeded_m36FA8705AC9B6925CAB7A0FA6EA96A55DC615F2A (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___id0, String_t* ___receipt1, String_t* ___transactionId2, String_t* ___originalTransactionId3, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnPurchaseSucceeded(System.String,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnPurchaseSucceeded_mDF3F5F43794A92ED87BC1646383E2CF6EB7CB083 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___id0, String_t* ___receipt1, String_t* ___transactionId2, String_t* ___originalTransactionId3, bool ___isRestored4, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.JSONStore::OnPurchaseFailed(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONStore_OnPurchaseFailed_mB029FDC26201096ED60C8F5EF06072581F07DF6D (JSONStore_t4F4299E0B4B18E75E186730A5F005114C144B696* __this, String_t* ___json0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.AppleStoreImpl::OnPurchaseDeferred(System.String)
@@ -8800,8 +8822,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnTransactionsRestoredSuc
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnTransactionsRestoredFail_m3973CE52BCA38F157074CE96657F42276547CEBD (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___error0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.AppleStoreImpl::OnAppReceiptRetrieved(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnAppReceiptRetrieved_m07A1C89BD8A58041B10710852AC0AFBB1391310F (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___receipt0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnAppReceiptRefreshedFailed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnAppReceiptRefreshedFailed_mBA66997AC9DFC064C3A65A155B86242A8693AE54 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnAppReceiptRefreshedFailed(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnAppReceiptRefreshedFailed_mA3A2B42ACADD43CB7244C05880415BB476FBF37F (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___error0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.AppleStoreImpl::OnEntitlementsRevoked(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnEntitlementsRevoked_m7E93E0684D4CC581523F49843E41D49861FEF85D (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___productIds0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Purchasing.AppleStoreImpl::IsValidPurchaseState(UnityEngine.Purchasing.Security.AppleInAppPurchaseReceipt,System.String)
@@ -8873,8 +8895,8 @@ inline RuntimeObject* KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B29
 {
 	return ((  RuntimeObject* (*) (KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::ProcessMessage(System.String,System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_ProcessMessage_m11639235B114033D34C358F07F744AB6C1526041 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::ProcessMessage(System.String,System.String,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_ProcessMessage_mC2157FC76D7DBC1E2FC7BBDB7BBCF2A446DF4E39 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.AppleStoreImpl::.ctor(Uniject.IUtil,UnityEngine.Purchasing.Telemetry.ITelemetryDiagnostics)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl__ctor_mBD0FC70F117D699AE7E7F1A9AE371A89E09F20E0 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, RuntimeObject* ___util0, RuntimeObject* ___telemetryDiagnostics1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl/<>c__DisplayClass2_0::.ctor()
@@ -8903,8 +8925,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_SetStorePromotionOrder_m0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RestoreTransactions_m523EC9CF1E7C8B5351ECDE961E251CD1FF5F2D87 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___callback0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.AppleStoreImpl::RestoreTransactions(System.Action`2<System.Boolean,System.String>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RestoreTransactions_m07B711679BF7B7CE24BD8137E7CC0F2D6291184C (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, Action_2_t8EADE87044ADE97906736D729EA2E3EF97F34F3D* ___callback0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::RefreshAppReceipt(System.Action`1<System.String>,System.Action)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RefreshAppReceipt_m25746F8D68B4008193CEDACA63462AA71B2A5D3E (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::RefreshAppReceipt(System.Action`1<System.String>,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RefreshAppReceipt_m53985EF49CF56A7D9CA512964F4D6636D4377C67 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___errorCallback1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.JSONStore::RetrieveProducts(System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Purchasing.ProductDefinition>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONStore_RetrieveProducts_m3A4C2A6A378D100A71E674DE95281779D55692CE (JSONStore_t4F4299E0B4B18E75E186730A5F005114C144B696* __this, ReadOnlyCollection_1_tA49701F42E3782EB8804C53D26901317BAD43A9E* ___products0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.JSONStore::Purchase(UnityEngine.Purchasing.ProductDefinition,System.String)
@@ -8919,8 +8941,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__2_m84E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__3_m9B5A631BA5F7C4DB5A307AB760A03320E122DB1C (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___callback0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::<>n__4(System.Action`2<System.Boolean,System.String>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__4_m014B0E29A6614AF0D1F0719B9843531389FD47B2 (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_2_t8EADE87044ADE97906736D729EA2E3EF97F34F3D* ___callback0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::<>n__5(System.Action`1<System.String>,System.Action)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__5_m0E5EB5B354D232054AE9D1BF2C296E2803E2CA8B (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::<>n__5(System.Action`1<System.String>,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__5_m38A5BA8C828FC1EFD24C1C261CDA0FD344934F97 (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___errorCallback1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::<>n__6(System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Purchasing.ProductDefinition>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__6_mC8110AE2E5F10AD50CC0DF3BD1E55F6FBCF46DA7 (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, ReadOnlyCollection_1_tA49701F42E3782EB8804C53D26901317BAD43A9E* ___products0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::<>n__7(UnityEngine.Purchasing.ProductDefinition,System.String)
@@ -28195,7 +28217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleProductMetadata__ctor_m308C37B41935
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_AppleStoreImpl_MessageCallback_m120CC4C82B492CEBAE252859F8FABDE9A5C281F3(char* ___subject0, char* ___payload1, char* ___receipt2, char* ___transactionId3, char* ___originalTransactionId4)
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_AppleStoreImpl_MessageCallback_m0AD0DB81744B171D2269DC04000AFDF6A2F41F3C(char* ___subject0, char* ___payload1, char* ___receipt2, char* ___transactionId3, char* ___originalTransactionId4, int32_t ___isRestored5)
 {
 	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
 
@@ -28220,7 +28242,7 @@ extern "C" void DEFAULT_CALL ReversePInvokeWrapper_AppleStoreImpl_MessageCallbac
 	____originalTransactionId4_unmarshaled = il2cpp_codegen_marshal_string_result(___originalTransactionId4);
 
 	// Managed method invocation
-	AppleStoreImpl_MessageCallback_m120CC4C82B492CEBAE252859F8FABDE9A5C281F3(____subject0_unmarshaled, ____payload1_unmarshaled, ____receipt2_unmarshaled, ____transactionId3_unmarshaled, ____originalTransactionId4_unmarshaled, NULL);
+	AppleStoreImpl_MessageCallback_m0AD0DB81744B171D2269DC04000AFDF6A2F41F3C(____subject0_unmarshaled, ____payload1_unmarshaled, ____receipt2_unmarshaled, ____transactionId3_unmarshaled, ____originalTransactionId4_unmarshaled, static_cast<bool>(___isRestored5), NULL);
 
 }
 // System.Void UnityEngine.Purchasing.AppleStoreImpl::.ctor(Uniject.IUtil,UnityEngine.Purchasing.Telemetry.ITelemetryDiagnostics)
@@ -28263,7 +28285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_SetNativeStore_mCAA38D79F
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppleStoreImpl_MessageCallback_m120CC4C82B492CEBAE252859F8FABDE9A5C281F3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppleStoreImpl_MessageCallback_m0AD0DB81744B171D2269DC04000AFDF6A2F41F3C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INativeAppleStore_t46A20D0283D83022624334D2408C2261BD845A44_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -28280,7 +28302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_SetNativeStore_mCAA38D79F
 		RuntimeObject* L_2 = ___apple0;
 		UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* L_3 = (UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D*)il2cpp_codegen_object_new(UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
-		UnityPurchasingCallback__ctor_mF6C91FDD1AD84B6A8A603BCFDB392928C849E5A4(L_3, NULL, (intptr_t)((void*)AppleStoreImpl_MessageCallback_m120CC4C82B492CEBAE252859F8FABDE9A5C281F3_RuntimeMethod_var), NULL);
+		UnityPurchasingCallback__ctor_mF6C91FDD1AD84B6A8A603BCFDB392928C849E5A4(L_3, NULL, (intptr_t)((void*)AppleStoreImpl_MessageCallback_m0AD0DB81744B171D2269DC04000AFDF6A2F41F3C_RuntimeMethod_var), NULL);
 		NullCheck(L_2);
 		InterfaceActionInvoker1< UnityPurchasingCallback_tFC58410D7A50DD05CC7430C76C7E0277A213757D* >::Invoke(0 /* System.Void UnityEngine.Purchasing.INativeAppleStore::SetUnityPurchasingCallback(UnityEngine.Purchasing.UnityPurchasingCallback) */, INativeAppleStore_t46A20D0283D83022624334D2408C2261BD845A44_il2cpp_TypeInfo_var, L_2, L_3);
 		// }
@@ -29664,8 +29686,8 @@ IL_0012:
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::RefreshAppReceipt(System.Action`1<System.String>,System.Action)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RefreshAppReceipt_m25746F8D68B4008193CEDACA63462AA71B2A5D3E (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback1, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::RefreshAppReceipt(System.Action`1<System.String>,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RefreshAppReceipt_m53985EF49CF56A7D9CA512964F4D6636D4377C67 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___errorCallback1, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -29681,7 +29703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RefreshAppReceipt_m25746F
 		__this->___m_RefreshReceiptSuccess_14 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RefreshReceiptSuccess_14), (void*)L_0);
 		// m_RefreshReceiptError = errorCallback;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = ___errorCallback1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = ___errorCallback1;
 		__this->___m_RefreshReceiptError_13 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RefreshReceiptError_13), (void*)L_1);
 		// m_Native?.RefreshAppReceipt();
@@ -29699,6 +29721,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RefreshAppReceipt_m25746F
 	}
 
 IL_0019:
+	{
+		NullCheck(G_B2_0);
+		InterfaceActionInvoker0::Invoke(2 /* System.Void UnityEngine.Purchasing.INativeAppleStore::RefreshAppReceipt() */, INativeAppleStore_t46A20D0283D83022624334D2408C2261BD845A44_il2cpp_TypeInfo_var, G_B2_0);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::RefreshAppReceipt(System.Action`1<System.String>,System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_RefreshAppReceipt_m25746F8D68B4008193CEDACA63462AA71B2A5D3E (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INativeAppleStore_t46A20D0283D83022624334D2408C2261BD845A44_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass44_0_U3CRefreshAppReceiptU3Eb__0_m0C0F225186862D2FBAB3C98AF392AF5EEF84BDDD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13* V_0 = NULL;
+	RuntimeObject* G_B2_0 = NULL;
+	RuntimeObject* G_B1_0 = NULL;
+	{
+		U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13* L_0 = (U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass44_0__ctor_mEBA6E01BE590A72ACB1C662ACA65B26203CFFB62(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13* L_1 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = ___errorCallback1;
+		NullCheck(L_1);
+		L_1->___errorCallback_0 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___errorCallback_0), (void*)L_2);
+		// m_RefreshReceiptSuccess = successCallback;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_3 = ___successCallback0;
+		__this->___m_RefreshReceiptSuccess_14 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RefreshReceiptSuccess_14), (void*)L_3);
+		// m_RefreshReceiptError = _ =>
+		// {
+		//     errorCallback();
+		// };
+		U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13* L_4 = V_0;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_5 = (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)il2cpp_codegen_object_new(Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		Action_1__ctor_m9DC2953C55C4D7D4B7BEFE03D84DA1F9362D652C(L_5, L_4, (intptr_t)((void*)U3CU3Ec__DisplayClass44_0_U3CRefreshAppReceiptU3Eb__0_m0C0F225186862D2FBAB3C98AF392AF5EEF84BDDD_RuntimeMethod_var), NULL);
+		__this->___m_RefreshReceiptError_13 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RefreshReceiptError_13), (void*)L_5);
+		// m_Native?.RefreshAppReceipt();
+		RuntimeObject* L_6 = __this->___m_Native_22;
+		RuntimeObject* L_7 = L_6;
+		G_B1_0 = L_7;
+		if (L_7)
+		{
+			G_B2_0 = L_7;
+			goto IL_0031;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0031:
 	{
 		NullCheck(G_B2_0);
 		InterfaceActionInvoker0::Invoke(2 /* System.Void UnityEngine.Purchasing.INativeAppleStore::RefreshAppReceipt() */, INativeAppleStore_t46A20D0283D83022624334D2408C2261BD845A44_il2cpp_TypeInfo_var, G_B2_0);
@@ -30054,15 +30137,15 @@ IL_000b:
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnAppReceiptRefreshedFailed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnAppReceiptRefreshedFailed_mBA66997AC9DFC064C3A65A155B86242A8693AE54 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnAppReceiptRefreshedFailed(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnAppReceiptRefreshedFailed_mA3A2B42ACADD43CB7244C05880415BB476FBF37F (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___error0, const RuntimeMethod* method) 
 {
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B2_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B1_0 = NULL;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* G_B2_0 = NULL;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* G_B1_0 = NULL;
 	{
-		// m_RefreshReceiptError?.Invoke();
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___m_RefreshReceiptError_13;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = L_0;
+		// m_RefreshReceiptError?.Invoke(error);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = __this->___m_RefreshReceiptError_13;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = L_0;
 		G_B1_0 = L_1;
 		if (L_1)
 		{
@@ -30076,8 +30159,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnAppReceiptRefreshedFail
 
 IL_000b:
 	{
+		String_t* L_2 = ___error0;
 		NullCheck(G_B2_0);
-		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B2_0, NULL);
+		Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline(G_B2_0, L_2, NULL);
 		// }
 		return;
 	}
@@ -30482,8 +30566,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnFetchStorePromotionVisi
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_ToDictionary_TisKeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9_TisString_t_TisString_t_m6EABED0DB50E367DAA2AFA6131C368614733A2BC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_0_m7BD71D4905C993A4B5ABD8B02887912DB7412E73_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_1_m3101E015DBC0111711386B8336792456C8CBC6FA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_0_m3D710E919FC9C1C18A2A353A6AF6DC700DF5C6F5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_1_mEE957FEAECE8D83314CBD242345297AECB3E0BB3_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral269B276065AA2FD25E2FC1E4ED6E8FBDFB83D44D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB5A25DFD49101A49CE6D38178ACB2F07A3F74B74);
@@ -30544,7 +30628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnFetchStorePromotionVisi
 IL_001d:
 	{
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var);
-		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_4 = ((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__61_0_2;
+		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_4 = ((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__62_0_2;
 		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_5 = L_4;
 		G_B4_0 = L_5;
 		G_B4_1 = G_B3_0;
@@ -30560,10 +30644,10 @@ IL_001d:
 		U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220* L_6 = ((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9_0;
 		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_7 = (Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B*)il2cpp_codegen_object_new(Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B_il2cpp_TypeInfo_var);
 		NullCheck(L_7);
-		Func_2__ctor_m4F049E2C488DF6CAE688DA027C6FC95F6174AC4C(L_7, L_6, (intptr_t)((void*)U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_0_m7BD71D4905C993A4B5ABD8B02887912DB7412E73_RuntimeMethod_var), NULL);
+		Func_2__ctor_m4F049E2C488DF6CAE688DA027C6FC95F6174AC4C(L_7, L_6, (intptr_t)((void*)U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_0_m3D710E919FC9C1C18A2A353A6AF6DC700DF5C6F5_RuntimeMethod_var), NULL);
 		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_8 = L_7;
-		((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__61_0_2 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__61_0_2), (void*)L_8);
+		((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__62_0_2 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__62_0_2), (void*)L_8);
 		G_B5_0 = L_8;
 		G_B5_1 = G_B4_1;
 	}
@@ -30571,7 +30655,7 @@ IL_001d:
 IL_003c:
 	{
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var);
-		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_9 = ((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__61_1_3;
+		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_9 = ((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__62_1_3;
 		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_10 = L_9;
 		G_B6_0 = L_10;
 		G_B6_1 = G_B5_0;
@@ -30589,10 +30673,10 @@ IL_003c:
 		U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220* L_11 = ((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9_0;
 		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_12 = (Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B*)il2cpp_codegen_object_new(Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B_il2cpp_TypeInfo_var);
 		NullCheck(L_12);
-		Func_2__ctor_m4F049E2C488DF6CAE688DA027C6FC95F6174AC4C(L_12, L_11, (intptr_t)((void*)U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_1_m3101E015DBC0111711386B8336792456C8CBC6FA_RuntimeMethod_var), NULL);
+		Func_2__ctor_m4F049E2C488DF6CAE688DA027C6FC95F6174AC4C(L_12, L_11, (intptr_t)((void*)U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_1_mEE957FEAECE8D83314CBD242345297AECB3E0BB3_RuntimeMethod_var), NULL);
 		Func_2_tCB5E9F24E1D4A5E6665E1C163977F878E203DD5B* L_13 = L_12;
-		((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__61_1_3 = L_13;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__61_1_3), (void*)L_13);
+		((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__62_1_3 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220_il2cpp_TypeInfo_var))->___U3CU3E9__62_1_3), (void*)L_13);
 		G_B7_0 = L_13;
 		G_B7_1 = G_B6_1;
 		G_B7_2 = G_B6_2;
@@ -30715,8 +30799,8 @@ IL_000b:
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::MessageCallback(System.String,System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_MessageCallback_m120CC4C82B492CEBAE252859F8FABDE9A5C281F3 (String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::MessageCallback(System.String,System.String,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_MessageCallback_m0AD0DB81744B171D2269DC04000AFDF6A2F41F3C (String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -30724,74 +30808,78 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_MessageCallback_m120CC4C8
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IUtil_t57381F702008EC2AD5F50703BDD602CCA678BE66_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass63_0_U3CMessageCallbackU3Eb__0_m4BF0F84A5CE5E87F7DAE217A6300A737A6D1090F_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass64_0_U3CMessageCallbackU3Eb__0_m707C03C1BB2C18BFE669B84303F966E2E8C4D094_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* V_0 = NULL;
+	U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* V_0 = NULL;
 	RuntimeObject* G_B2_0 = NULL;
 	RuntimeObject* G_B1_0 = NULL;
 	{
-		U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* L_0 = (U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_0 = (U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CU3Ec__DisplayClass63_0__ctor_m0561253C4AF50B417C3CAA08808F7F5A1B6DFAC4(L_0, NULL);
+		U3CU3Ec__DisplayClass64_0__ctor_m3A3126A85E3F8159D79D151B4984A67101EAD4DF(L_0, NULL);
 		V_0 = L_0;
-		U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* L_1 = V_0;
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_1 = V_0;
 		String_t* L_2 = ___subject0;
 		NullCheck(L_1);
 		L_1->___subject_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___subject_0), (void*)L_2);
-		U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* L_3 = V_0;
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_3 = V_0;
 		String_t* L_4 = ___payload1;
 		NullCheck(L_3);
 		L_3->___payload_1 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___payload_1), (void*)L_4);
-		U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* L_5 = V_0;
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_5 = V_0;
 		String_t* L_6 = ___receipt2;
 		NullCheck(L_5);
 		L_5->___receipt_2 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___receipt_2), (void*)L_6);
-		U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* L_7 = V_0;
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_7 = V_0;
 		String_t* L_8 = ___transactionId3;
 		NullCheck(L_7);
 		L_7->___transactionId_3 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___transactionId_3), (void*)L_8);
-		U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* L_9 = V_0;
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_9 = V_0;
 		String_t* L_10 = ___originalTransactionId4;
 		NullCheck(L_9);
 		L_9->___originalTransactionId_4 = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&L_9->___originalTransactionId_4), (void*)L_10);
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_11 = V_0;
+		bool L_12 = ___isRestored5;
+		NullCheck(L_11);
+		L_11->___isRestored_5 = L_12;
 		// s_Util?.RunOnMainThread(() =>
 		// {
-		//     s_Instance?.ProcessMessage(subject, payload, receipt, transactionId, originalTransactionId);
+		//     s_Instance?.ProcessMessage(subject, payload, receipt, transactionId, originalTransactionId, isRestored);
 		// });
-		RuntimeObject* L_11 = ((AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14_StaticFields*)il2cpp_codegen_static_fields_for(AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14_il2cpp_TypeInfo_var))->___s_Util_24;
-		RuntimeObject* L_12 = L_11;
-		G_B1_0 = L_12;
-		if (L_12)
+		RuntimeObject* L_13 = ((AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14_StaticFields*)il2cpp_codegen_static_fields_for(AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14_il2cpp_TypeInfo_var))->___s_Util_24;
+		RuntimeObject* L_14 = L_13;
+		G_B1_0 = L_14;
+		if (L_14)
 		{
-			G_B2_0 = L_12;
-			goto IL_0034;
+			G_B2_0 = L_14;
+			goto IL_003c;
 		}
 	}
 	{
 		return;
 	}
 
-IL_0034:
+IL_003c:
 	{
-		U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* L_13 = V_0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_14 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_14);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_14, L_13, (intptr_t)((void*)U3CU3Ec__DisplayClass63_0_U3CMessageCallbackU3Eb__0_m4BF0F84A5CE5E87F7DAE217A6300A737A6D1090F_RuntimeMethod_var), NULL);
+		U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* L_15 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_16 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_16, L_15, (intptr_t)((void*)U3CU3Ec__DisplayClass64_0_U3CMessageCallbackU3Eb__0_m707C03C1BB2C18BFE669B84303F966E2E8C4D094_RuntimeMethod_var), NULL);
 		NullCheck(G_B2_0);
-		InterfaceActionInvoker1< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* >::Invoke(22 /* System.Void Uniject.IUtil::RunOnMainThread(System.Action) */, IUtil_t57381F702008EC2AD5F50703BDD602CCA678BE66_il2cpp_TypeInfo_var, G_B2_0, L_14);
+		InterfaceActionInvoker1< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* >::Invoke(22 /* System.Void Uniject.IUtil::RunOnMainThread(System.Action) */, IUtil_t57381F702008EC2AD5F50703BDD602CCA678BE66_il2cpp_TypeInfo_var, G_B2_0, L_16);
 		// }
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::ProcessMessage(System.String,System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_ProcessMessage_m11639235B114033D34C358F07F744AB6C1526041 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::ProcessMessage(System.String,System.String,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_ProcessMessage_mC2157FC76D7DBC1E2FC7BBDB7BBCF2A446DF4E39 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___subject0, String_t* ___payload1, String_t* ___receipt2, String_t* ___transactionId3, String_t* ___originalTransactionId4, bool ___isRestored5, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -30904,7 +30992,7 @@ IL_0052:
 		uint32_t L_12 = V_0;
 		if ((((int32_t)L_12) == ((int32_t)((int32_t)1372923298))))
 		{
-			goto IL_01d5;
+			goto IL_01d8;
 		}
 	}
 	{
@@ -30923,7 +31011,7 @@ IL_0071:
 		uint32_t L_14 = V_0;
 		if ((((int32_t)L_14) == ((int32_t)((int32_t)1523640433))))
 		{
-			goto IL_01c7;
+			goto IL_01ca;
 		}
 	}
 	{
@@ -31041,7 +31129,7 @@ IL_00ed:
 		L_28 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_27, _stringLiteral8AFB716D201F7F7401165581474A3E25D6750022, NULL);
 		if (L_28)
 		{
-			goto IL_01e3;
+			goto IL_01e6;
 		}
 	}
 	{
@@ -31055,7 +31143,7 @@ IL_00fe:
 		L_30 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_29, _stringLiteralC77ABE60735AA0F587122346879BFFD0568E453F, NULL);
 		if (L_30)
 		{
-			goto IL_01eb;
+			goto IL_01ee;
 		}
 	}
 	{
@@ -31069,7 +31157,7 @@ IL_010f:
 		L_32 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_31, _stringLiteral397F72223732C78BEE2804FC119F1CA2F6030847, NULL);
 		if (L_32)
 		{
-			goto IL_01f3;
+			goto IL_01f6;
 		}
 	}
 	{
@@ -31083,7 +31171,7 @@ IL_0120:
 		L_34 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_33, _stringLiteral9E0C62F8411D918A86F81324666D63F40CFA6482, NULL);
 		if (L_34)
 		{
-			goto IL_0200;
+			goto IL_0205;
 		}
 	}
 	{
@@ -31097,7 +31185,7 @@ IL_0131:
 		L_36 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_35, _stringLiteral951044EFAC0036BBE198A929FB2BB5721E4FC871, NULL);
 		if (L_36)
 		{
-			goto IL_0208;
+			goto IL_020d;
 		}
 	}
 	{
@@ -31111,7 +31199,7 @@ IL_0142:
 		L_38 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_37, _stringLiteral54DDDB80453AF3297A854385817DAA0740AAFF3B, NULL);
 		if (L_38)
 		{
-			goto IL_0210;
+			goto IL_0215;
 		}
 	}
 	{
@@ -31125,7 +31213,7 @@ IL_0153:
 		L_40 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_39, _stringLiteralD9EF5BD4087C7D93E7391F867CB64844DAF8CA94, NULL);
 		if (L_40)
 		{
-			goto IL_0218;
+			goto IL_021d;
 		}
 	}
 	{
@@ -31139,7 +31227,7 @@ IL_0164:
 		L_42 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_41, _stringLiteralFB9E1160D96023381414C50BB2F7D3889C20FC50, NULL);
 		if (L_42)
 		{
-			goto IL_0220;
+			goto IL_0225;
 		}
 	}
 	{
@@ -31153,7 +31241,7 @@ IL_0175:
 		L_44 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_43, _stringLiteral35FF0983389434C6D8A8284B0360BF25A86E8EC3, NULL);
 		if (L_44)
 		{
-			goto IL_0227;
+			goto IL_022c;
 		}
 	}
 	{
@@ -31167,7 +31255,7 @@ IL_0186:
 		L_46 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_45, _stringLiteral36C853812EB8CE05118F3A9DD33720328D607DFF, NULL);
 		if (L_46)
 		{
-			goto IL_022f;
+			goto IL_0234;
 		}
 	}
 	{
@@ -31181,7 +31269,7 @@ IL_0197:
 		L_48 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_47, _stringLiteral1DAD61D1E8F8EBABA6CE52BAC46586F299710389, NULL);
 		if (L_48)
 		{
-			goto IL_0236;
+			goto IL_023b;
 		}
 	}
 	{
@@ -31195,7 +31283,7 @@ IL_01a8:
 		L_50 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_49, _stringLiteral9FAE3C72B8EAA62F06E6FCD42FD770B488EBE3A7, NULL);
 		if (L_50)
 		{
-			goto IL_023d;
+			goto IL_0242;
 		}
 	}
 	{
@@ -31209,42 +31297,42 @@ IL_01b9:
 		L_52 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_51, _stringLiteral1BCB470A834DEDA9F11DF978A352DB1DABF7A8CE, NULL);
 		if (L_52)
 		{
-			goto IL_0245;
+			goto IL_024a;
 		}
 	}
 	{
 		return;
 	}
 
-IL_01c7:
+IL_01ca:
 	{
 		String_t* L_53 = ___subject0;
 		bool L_54;
 		L_54 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_53, _stringLiteralD8EDEC5E40B44D799F7C9D3659B334992A400C1E, NULL);
 		if (L_54)
 		{
-			goto IL_024d;
+			goto IL_0252;
 		}
 	}
 	{
 		return;
 	}
 
-IL_01d5:
+IL_01d8:
 	{
 		String_t* L_55 = ___subject0;
 		bool L_56;
 		L_56 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_55, _stringLiteral0FE33572EDAF77EDA5D338B3D95A9ACEE3F2E849, NULL);
 		if (L_56)
 		{
-			goto IL_0254;
+			goto IL_025a;
 		}
 	}
 	{
 		return;
 	}
 
-IL_01e3:
+IL_01e6:
 	{
 		// OnSetupFailed(payload);
 		String_t* L_57 = ___payload1;
@@ -31253,7 +31341,7 @@ IL_01e3:
 		return;
 	}
 
-IL_01eb:
+IL_01ee:
 	{
 		// OnProductsRetrieved(payload);
 		String_t* L_58 = ___payload1;
@@ -31262,55 +31350,56 @@ IL_01eb:
 		return;
 	}
 
-IL_01f3:
+IL_01f6:
 	{
-		// OnPurchaseSucceeded(payload, receipt, transactionId, originalTransactionId);
+		// OnPurchaseSucceeded(payload, receipt, transactionId, originalTransactionId, isRestored);
 		String_t* L_59 = ___payload1;
 		String_t* L_60 = ___receipt2;
 		String_t* L_61 = ___transactionId3;
 		String_t* L_62 = ___originalTransactionId4;
-		AppleStoreImpl_OnPurchaseSucceeded_m36FA8705AC9B6925CAB7A0FA6EA96A55DC615F2A(__this, L_59, L_60, L_61, L_62, NULL);
+		bool L_63 = ___isRestored5;
+		AppleStoreImpl_OnPurchaseSucceeded_mDF3F5F43794A92ED87BC1646383E2CF6EB7CB083(__this, L_59, L_60, L_61, L_62, L_63, NULL);
 		// break;
 		return;
 	}
 
-IL_0200:
+IL_0205:
 	{
 		// OnPurchaseFailed(payload);
-		String_t* L_63 = ___payload1;
-		JSONStore_OnPurchaseFailed_mB029FDC26201096ED60C8F5EF06072581F07DF6D(__this, L_63, NULL);
+		String_t* L_64 = ___payload1;
+		JSONStore_OnPurchaseFailed_mB029FDC26201096ED60C8F5EF06072581F07DF6D(__this, L_64, NULL);
 		// break;
 		return;
 	}
 
-IL_0208:
+IL_020d:
 	{
 		// OnPurchaseDeferred(payload);
-		String_t* L_64 = ___payload1;
-		AppleStoreImpl_OnPurchaseDeferred_m6CE392E89FC84BFAE015141AE7D933875F05948C(__this, L_64, NULL);
+		String_t* L_65 = ___payload1;
+		AppleStoreImpl_OnPurchaseDeferred_m6CE392E89FC84BFAE015141AE7D933875F05948C(__this, L_65, NULL);
 		// break;
 		return;
 	}
 
-IL_0210:
+IL_0215:
 	{
 		// OnPromotionalPurchaseAttempted(payload);
-		String_t* L_65 = ___payload1;
-		AppleStoreImpl_OnPromotionalPurchaseAttempted_m018CC2E31C3E716DF380FBA0C42715420DD4C20B(__this, L_65, NULL);
+		String_t* L_66 = ___payload1;
+		AppleStoreImpl_OnPromotionalPurchaseAttempted_m018CC2E31C3E716DF380FBA0C42715420DD4C20B(__this, L_66, NULL);
 		// break;
 		return;
 	}
 
-IL_0218:
+IL_021d:
 	{
 		// OnFetchStorePromotionOrderSucceeded(payload);
-		String_t* L_66 = ___payload1;
-		AppleStoreImpl_OnFetchStorePromotionOrderSucceeded_m77087CC477DACA11276EAC56DE4642CA0204E94C(__this, L_66, NULL);
+		String_t* L_67 = ___payload1;
+		AppleStoreImpl_OnFetchStorePromotionOrderSucceeded_m77087CC477DACA11276EAC56DE4642CA0204E94C(__this, L_67, NULL);
 		// break;
 		return;
 	}
 
-IL_0220:
+IL_0225:
 	{
 		// OnFetchStorePromotionOrderFailed();
 		AppleStoreImpl_OnFetchStorePromotionOrderFailed_m72F451614574601471846DD036E5F3DC87E40B25(__this, NULL);
@@ -31318,16 +31407,16 @@ IL_0220:
 		return;
 	}
 
-IL_0227:
+IL_022c:
 	{
 		// OnFetchStorePromotionVisibilitySucceeded(payload);
-		String_t* L_67 = ___payload1;
-		AppleStoreImpl_OnFetchStorePromotionVisibilitySucceeded_mDE57FA25C43AE60A3CB9E1A57CE04319BE221E31(__this, L_67, NULL);
+		String_t* L_68 = ___payload1;
+		AppleStoreImpl_OnFetchStorePromotionVisibilitySucceeded_mDE57FA25C43AE60A3CB9E1A57CE04319BE221E31(__this, L_68, NULL);
 		// break;
 		return;
 	}
 
-IL_022f:
+IL_0234:
 	{
 		// OnFetchStorePromotionVisibilityFailed();
 		AppleStoreImpl_OnFetchStorePromotionVisibilityFailed_m21E497011356CBA519B6C5A706FE613843C02D5F(__this, NULL);
@@ -31335,7 +31424,7 @@ IL_022f:
 		return;
 	}
 
-IL_0236:
+IL_023b:
 	{
 		// OnTransactionsRestoredSuccess();
 		AppleStoreImpl_OnTransactionsRestoredSuccess_mCF4359ADC99EB4F78ED748EBDF2B94D78C2034F1(__this, NULL);
@@ -31343,46 +31432,47 @@ IL_0236:
 		return;
 	}
 
-IL_023d:
+IL_0242:
 	{
 		// OnTransactionsRestoredFail(payload);
-		String_t* L_68 = ___payload1;
-		AppleStoreImpl_OnTransactionsRestoredFail_m3973CE52BCA38F157074CE96657F42276547CEBD(__this, L_68, NULL);
+		String_t* L_69 = ___payload1;
+		AppleStoreImpl_OnTransactionsRestoredFail_m3973CE52BCA38F157074CE96657F42276547CEBD(__this, L_69, NULL);
 		// break;
 		return;
 	}
 
-IL_0245:
+IL_024a:
 	{
 		// OnAppReceiptRetrieved(payload);
-		String_t* L_69 = ___payload1;
-		AppleStoreImpl_OnAppReceiptRetrieved_m07A1C89BD8A58041B10710852AC0AFBB1391310F(__this, L_69, NULL);
+		String_t* L_70 = ___payload1;
+		AppleStoreImpl_OnAppReceiptRetrieved_m07A1C89BD8A58041B10710852AC0AFBB1391310F(__this, L_70, NULL);
 		// break;
 		return;
 	}
 
-IL_024d:
+IL_0252:
 	{
-		// OnAppReceiptRefreshedFailed();
-		AppleStoreImpl_OnAppReceiptRefreshedFailed_mBA66997AC9DFC064C3A65A155B86242A8693AE54(__this, NULL);
+		// OnAppReceiptRefreshedFailed(payload);
+		String_t* L_71 = ___payload1;
+		AppleStoreImpl_OnAppReceiptRefreshedFailed_mA3A2B42ACADD43CB7244C05880415BB476FBF37F(__this, L_71, NULL);
 		// break;
 		return;
 	}
 
-IL_0254:
+IL_025a:
 	{
 		// OnEntitlementsRevoked(payload);
-		String_t* L_70 = ___payload1;
-		AppleStoreImpl_OnEntitlementsRevoked_m7E93E0684D4CC581523F49843E41D49861FEF85D(__this, L_70, NULL);
+		String_t* L_72 = ___payload1;
+		AppleStoreImpl_OnEntitlementsRevoked_m7E93E0684D4CC581523F49843E41D49861FEF85D(__this, L_72, NULL);
 		// }
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnPurchaseSucceeded(System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnPurchaseSucceeded_m36FA8705AC9B6925CAB7A0FA6EA96A55DC615F2A (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___id0, String_t* ___receipt1, String_t* ___transactionId2, String_t* ___originalTransactionId3, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.AppleStoreImpl::OnPurchaseSucceeded(System.String,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnPurchaseSucceeded_mDF3F5F43794A92ED87BC1646383E2CF6EB7CB083 (AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* __this, String_t* ___id0, String_t* ___receipt1, String_t* ___transactionId2, String_t* ___originalTransactionId3, bool ___isRestored4, const RuntimeMethod* method) 
 {
 	AppleInAppPurchaseReceipt_t45E81B173E0600832D2E259DA4A6CFA9C54A7CD6* V_0 = NULL;
-	bool V_1 = false;
+	int32_t G_B4_0 = 0;
 	{
 		// var appleReceipt = GetAppleReceiptFromBase64String(receipt);
 		String_t* L_0 = ___receipt1;
@@ -31400,36 +31490,54 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppleStoreImpl_OnPurchaseSucceeded_m36FA
 		L_6 = AppleStoreImpl_IsValidPurchaseState_mE2B8D7C431D213BE21C85965912FD361DEAFFFA0(L_4, L_5, NULL);
 		if (!L_6)
 		{
-			goto IL_0037;
+			goto IL_0040;
 		}
 	}
 	{
-		// var isRestored = IsRestored(id, mostRecentReceipt, transactionId, originalTransactionId);
-		String_t* L_7 = ___id0;
-		AppleInAppPurchaseReceipt_t45E81B173E0600832D2E259DA4A6CFA9C54A7CD6* L_8 = V_0;
-		String_t* L_9 = ___transactionId2;
-		String_t* L_10 = ___originalTransactionId3;
-		bool L_11;
-		L_11 = AppleStoreImpl_IsRestored_m2DBB3F30FC6B9598EA221FD38934C68D80DF6AE2(__this, L_7, L_8, L_9, L_10, NULL);
-		V_1 = L_11;
+		// isRestored = isRestored || IsRestored(id, mostRecentReceipt, transactionId, originalTransactionId);
+		bool L_7 = ___isRestored4;
+		if (L_7)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		String_t* L_8 = ___id0;
+		AppleInAppPurchaseReceipt_t45E81B173E0600832D2E259DA4A6CFA9C54A7CD6* L_9 = V_0;
+		String_t* L_10 = ___transactionId2;
+		String_t* L_11 = ___originalTransactionId3;
+		bool L_12;
+		L_12 = AppleStoreImpl_IsRestored_m2DBB3F30FC6B9598EA221FD38934C68D80DF6AE2(__this, L_8, L_9, L_10, L_11, NULL);
+		G_B4_0 = ((int32_t)(L_12));
+		goto IL_0029;
+	}
+
+IL_0028:
+	{
+		G_B4_0 = 1;
+	}
+
+IL_0029:
+	{
+		___isRestored4 = (bool)G_B4_0;
 		// UpdateAppleProductFields(id, originalTransactionId, isRestored);
-		String_t* L_12 = ___id0;
-		String_t* L_13 = ___originalTransactionId3;
-		bool L_14 = V_1;
-		AppleStoreImpl_UpdateAppleProductFields_m0538B8029D6D13B5219133386F86D43AB93B22EA(__this, L_12, L_13, L_14, NULL);
+		String_t* L_13 = ___id0;
+		String_t* L_14 = ___originalTransactionId3;
+		bool L_15 = ___isRestored4;
+		AppleStoreImpl_UpdateAppleProductFields_m0538B8029D6D13B5219133386F86D43AB93B22EA(__this, L_13, L_14, L_15, NULL);
 		// base.OnPurchaseSucceeded(id, receipt, transactionId);
-		String_t* L_15 = ___id0;
-		String_t* L_16 = ___receipt1;
-		String_t* L_17 = ___transactionId2;
-		JSONStore_OnPurchaseSucceeded_m09A0AB98491589C368AA8C977FE51CCC6DD98D13(__this, L_15, L_16, L_17, NULL);
+		String_t* L_16 = ___id0;
+		String_t* L_17 = ___receipt1;
+		String_t* L_18 = ___transactionId2;
+		JSONStore_OnPurchaseSucceeded_m09A0AB98491589C368AA8C977FE51CCC6DD98D13(__this, L_16, L_17, L_18, NULL);
 		return;
 	}
 
-IL_0037:
+IL_0040:
 	{
 		// base.FinishTransaction(null, transactionId);
-		String_t* L_18 = ___transactionId2;
-		JSONStore_FinishTransaction_m18575AA2005FB1428C7EFCCEE479FC1296CDF9E3(__this, (ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517*)NULL, L_18, NULL);
+		String_t* L_19 = ___transactionId2;
+		JSONStore_FinishTransaction_m18575AA2005FB1428C7EFCCEE479FC1296CDF9E3(__this, (ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517*)NULL, L_19, NULL);
 		// }
 		return;
 	}
@@ -31972,8 +32080,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CFindMostRecentReceiptU3Eb_
 		return L_4;
 	}
 }
-// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c::<OnFetchStorePromotionVisibilitySucceeded>b__61_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_0_m7BD71D4905C993A4B5ABD8B02887912DB7412E73 (U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220* __this, KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 ___k0, const RuntimeMethod* method) 
+// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c::<OnFetchStorePromotionVisibilitySucceeded>b__62_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_0_m3D710E919FC9C1C18A2A353A6AF6DC700DF5C6F5 (U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220* __this, KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 ___k0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -31988,8 +32096,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3COnFetchStorePromotionVis
 		return L_0;
 	}
 }
-// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c::<OnFetchStorePromotionVisibilitySucceeded>b__61_1(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__61_1_m3101E015DBC0111711386B8336792456C8CBC6FA (U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220* __this, KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 ___k0, const RuntimeMethod* method) 
+// System.String UnityEngine.Purchasing.AppleStoreImpl/<>c::<OnFetchStorePromotionVisibilitySucceeded>b__62_1(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3COnFetchStorePromotionVisibilitySucceededU3Eb__62_1_mEE957FEAECE8D83314CBD242345297AECB3E0BB3 (U3CU3Ec_tB4A6B4B0DC86451E99044DFD019563E3C557E220* __this, KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 ___k0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -32015,16 +32123,44 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3COnFetchStorePromotionVis
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass63_0__ctor_m0561253C4AF50B417C3CAA08808F7F5A1B6DFAC4 (U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* __this, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass44_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass44_0__ctor_mEBA6E01BE590A72ACB1C662ACA65B26203CFFB62 (U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass63_0::<MessageCallback>b__0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass63_0_U3CMessageCallbackU3Eb__0_m4BF0F84A5CE5E87F7DAE217A6300A737A6D1090F (U3CU3Ec__DisplayClass63_0_t655BA37138878FA697B6F9081E32F482CDD95C15* __this, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass44_0::<RefreshAppReceipt>b__0(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass44_0_U3CRefreshAppReceiptU3Eb__0_m0C0F225186862D2FBAB3C98AF392AF5EEF84BDDD (U3CU3Ec__DisplayClass44_0_t0105B6F5A73A709A5E5795E3C36C59E37CC1DC13* __this, String_t* ____0, const RuntimeMethod* method) 
+{
+	{
+		// errorCallback();
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___errorCallback_0;
+		NullCheck(L_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(L_0, NULL);
+		// };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0__ctor_m3A3126A85E3F8159D79D151B4984A67101EAD4DF (U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Purchasing.AppleStoreImpl/<>c__DisplayClass64_0::<MessageCallback>b__0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0_U3CMessageCallbackU3Eb__0_m707C03C1BB2C18BFE669B84303F966E2E8C4D094 (U3CU3Ec__DisplayClass64_0_tAB761197D0639E8BBDF3319D3D631F481BF859AF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -32035,7 +32171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass63_0_U3CMessageCall
 	AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* G_B2_0 = NULL;
 	AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* G_B1_0 = NULL;
 	{
-		// s_Instance?.ProcessMessage(subject, payload, receipt, transactionId, originalTransactionId);
+		// s_Instance?.ProcessMessage(subject, payload, receipt, transactionId, originalTransactionId, isRestored);
 		AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* L_0 = ((AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14_StaticFields*)il2cpp_codegen_static_fields_for(AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14_il2cpp_TypeInfo_var))->___s_Instance_25;
 		AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14* L_1 = L_0;
 		G_B1_0 = L_1;
@@ -32056,8 +32192,9 @@ IL_000a:
 		String_t* L_4 = __this->___receipt_2;
 		String_t* L_5 = __this->___transactionId_3;
 		String_t* L_6 = __this->___originalTransactionId_4;
+		bool L_7 = __this->___isRestored_5;
 		NullCheck(G_B2_0);
-		AppleStoreImpl_ProcessMessage_m11639235B114033D34C358F07F744AB6C1526041(G_B2_0, L_2, L_3, L_4, L_5, L_6, NULL);
+		AppleStoreImpl_ProcessMessage_mC2157FC76D7DBC1E2FC7BBDB7BBCF2A446DF4E39(G_B2_0, L_2, L_3, L_4, L_5, L_6, L_7, NULL);
 		// });
 		return;
 	}
@@ -32124,6 +32261,49 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FakeAppleConfiguration__ctor_m63E4505C8C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.Purchasing.FakeAppleExtensions::RefreshAppReceipt(System.Action`1<System.String>,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FakeAppleExtensions_RefreshAppReceipt_m1E2C363A655DFAC1B2D1329799E6364E8FDAD048 (FakeAppleExtensions_t043F3D5F84FFE499BDD87D931F558F2DA7FB56F6* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___errorCallback1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3687E33A175DD0D55294E3722F95D57C88BCE5E2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral55A14DBCC799259BF81E033F6B96517EE17EB5F8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (m_FailRefresh)
+		bool L_0 = __this->___m_FailRefresh_0;
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		// errorCallback("A fake error message");
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = ___errorCallback1;
+		NullCheck(L_1);
+		Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline(L_1, _stringLiteral55A14DBCC799259BF81E033F6B96517EE17EB5F8, NULL);
+		goto IL_0020;
+	}
+
+IL_0015:
+	{
+		// successCallback("A fake refreshed receipt!");
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_2 = ___successCallback0;
+		NullCheck(L_2);
+		Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline(L_2, _stringLiteral3687E33A175DD0D55294E3722F95D57C88BCE5E2, NULL);
+	}
+
+IL_0020:
+	{
+		// m_FailRefresh = !m_FailRefresh;
+		bool L_3 = __this->___m_FailRefresh_0;
+		__this->___m_FailRefresh_0 = (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+		// }
+		return;
+	}
+}
 // System.Void UnityEngine.Purchasing.FakeAppleExtensions::RefreshAppReceipt(System.Action`1<System.String>,System.Action)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FakeAppleExtensions_RefreshAppReceipt_m82206590631D182214403AA83EAF4E63E99D4739 (FakeAppleExtensions_t043F3D5F84FFE499BDD87D931F558F2DA7FB56F6* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback1, const RuntimeMethod* method) 
 {
@@ -32656,8 +32836,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_RestoreTransact
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::RefreshAppReceipt(System.Action`1<System.String>,System.Action)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_RefreshAppReceipt_mF7316DB5A3D1BDABEE6CC008015AAA7ADF871E88 (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback1, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::RefreshAppReceipt(System.Action`1<System.String>,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_RefreshAppReceipt_m469C69066F3E3714A98D732F1BBAFF085432D230 (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___errorCallback1, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -32685,7 +32865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_RefreshAppRecei
 		L_2->___successCallback_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___successCallback_1), (void*)L_3);
 		U3CU3Ec__DisplayClass7_0_t93128021B5B18293390FD344E1D331EFBEA04D77* L_4 = V_0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = ___errorCallback1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_5 = ___errorCallback1;
 		NullCheck(L_4);
 		L_4->___errorCallback_2 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___errorCallback_2), (void*)L_5);
@@ -32899,13 +33079,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__4_m014
 		return;
 	}
 }
-// System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::<>n__5(System.Action`1<System.String>,System.Action)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__5_m0E5EB5B354D232054AE9D1BF2C296E2803E2CA8B (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___errorCallback1, const RuntimeMethod* method) 
+// System.Void UnityEngine.Purchasing.MetricizedAppleStoreImpl::<>n__5(System.Action`1<System.String>,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricizedAppleStoreImpl_U3CU3En__5_m38A5BA8C828FC1EFD24C1C261CDA0FD344934F97 (MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___successCallback0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___errorCallback1, const RuntimeMethod* method) 
 {
 	{
 		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = ___successCallback0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = ___errorCallback1;
-		AppleStoreImpl_RefreshAppReceipt_m25746F8D68B4008193CEDACA63462AA71B2A5D3E(__this, L_0, L_1, NULL);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = ___errorCallback1;
+		AppleStoreImpl_RefreshAppReceipt_m53985EF49CF56A7D9CA512964F4D6636D4377C67(__this, L_0, L_1, NULL);
 		return;
 	}
 }
@@ -33094,9 +33274,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass7_0_U3CRefreshAppRe
 		// () => base.RefreshAppReceipt(successCallback, errorCallback),
 		MetricizedAppleStoreImpl_t20F106AB08C02472CBAF01515A1CC041468AFB2C* L_0 = __this->___U3CU3E4__this_0;
 		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = __this->___successCallback_1;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = __this->___errorCallback_2;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_2 = __this->___errorCallback_2;
 		NullCheck(L_0);
-		MetricizedAppleStoreImpl_U3CU3En__5_m0E5EB5B354D232054AE9D1BF2C296E2803E2CA8B(L_0, L_1, L_2, NULL);
+		MetricizedAppleStoreImpl_U3CU3En__5_m38A5BA8C828FC1EFD24C1C261CDA0FD344934F97(L_0, L_1, L_2, NULL);
 		return;
 	}
 }

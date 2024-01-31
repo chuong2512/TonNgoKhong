@@ -1,4 +1,5 @@
 ﻿using EnhancedUI.EnhancedScroller;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ namespace Game
         public Image iconImg;
         public Image bgImg;
         public Image typeImg;
+        public TextMeshProUGUI levelTMP;
 
         protected EScrollData _eData;
         private GameDataManager _dataManager => GameDataManager.Instance;
@@ -38,6 +40,7 @@ namespace Game
             bgImg.sprite = _dataManager.RankBGSO.OuterBG;
             bgImg.color = _dataManager.RankBGSO.RankColors[0];
             typeImg.sprite = _dataManager.StatDescriptionSO.GetTypeImg(equipmentData);
+            levelTMP?.SetText("");
         }
 
         private void ShowEquipmentInfo()
@@ -50,6 +53,7 @@ namespace Game
             bgImg.sprite = _dataManager.RankBGSO.OuterBG;
             bgImg.color = _dataManager.RankBGSO.RankColors[info.Rank];
             typeImg.sprite = _dataManager.StatDescriptionSO.GetTypeImg(equipmentData);
+            levelTMP?.SetText($"Lv.{info.Level + 1}");
         }
 
         protected void ShowInfoWithID(int ID)
@@ -60,6 +64,7 @@ namespace Game
             bgImg.sprite = _dataManager.RankBGSO.OuterBG;
             bgImg.color = _dataManager.RankBGSO.RankColors[0];
             typeImg.sprite = _dataManager.StatDescriptionSO.GetTypeImg(equipmentData);
+            levelTMP?.SetText("Lv.1");
         }
     }
 }

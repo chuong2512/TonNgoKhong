@@ -2672,14 +2672,16 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DistinguishedName_t1056C40C651181
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DistinguishedName_t1056C40C651181736219D6609E0B39B2D5295AEF* X509Cert_get_Subject_mB6B832685F7A158C61A2CF876999262ECA7A86E1_inline (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Purchasing.Security.DistinguishedName::Equals(UnityEngine.Purchasing.Security.DistinguishedName)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DistinguishedName_Equals_m9D700F2E2A7A44D1DD70DF3A1179C6985D9133EF (DistinguishedName_t1056C40C651181736219D6609E0B39B2D5295AEF* __this, DistinguishedName_t1056C40C651181736219D6609E0B39B2D5295AEF* ___n20, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.X509Cert::VerifySignatureWithSha256OrSha1(UnityEngine.Purchasing.Security.X509Cert)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_VerifySignatureWithSha256OrSha1_mD77CB99ACEFC08CF5E7896143527919969F2788F (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signer0, const RuntimeMethod* method) ;
 // UnityEngine.Purchasing.Security.RSAKey UnityEngine.Purchasing.Security.X509Cert::get_PubKey()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, const RuntimeMethod* method) ;
 // LipingShare.LCLib.Asn1Processor.Asn1Node UnityEngine.Purchasing.Security.X509Cert::get_Signature()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* X509Cert_get_Signature_m60E7D0A6339EEE5BBD524A43173BC453604C0D00_inline (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Purchasing.Security.RSAKey::Verify(System.Byte[],System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_Verify_mCD70998FAB9EEB02D7CFB1927E1C4A2DABA3DACF (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Purchasing.Security.RSAKey::Verify256(System.Byte[],System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_Verify256_m9E7DD02F75DB5999F04456CC84E207B89F7D7F1C (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.RSAKey::VerifySha256(System.Byte[],System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_VerifySha256_m77FE4F836B02E38B96558E8D05C4553F25395EFC (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.RSAKey::VerifySha1(System.Byte[],System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_VerifySha1_m912262B619D59F8299FC2C17145E8B5002A53716 (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) ;
 // System.Byte LipingShare.LCLib.Asn1Processor.Asn1Node::get_Tag()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t Asn1Node_get_Tag_m8CF399FC4AEB2259B779D517B89CE18AC4AE4B8A_inline (Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* __this, const RuntimeMethod* method) ;
 // System.Void System.Array::Copy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
@@ -2828,6 +2830,30 @@ inline SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* Enumerator_get_Curr
 {
 	return ((  SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* (*) (Enumerator_t5283BB8158B0CD21CD330BC2A4462397A39D8C7E*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
 }
+// UnityEngine.Purchasing.Security.X509Cert UnityEngine.Purchasing.Security.PKCS7::FindSignCert(UnityEngine.Purchasing.Security.SignerInfo)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* PKCS7_FindSignCert_m97A9BA49F67D018B6DACC0DEE499EEDD83EBFA9B (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* ___sinfo0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.X509Cert::CheckCertTime(System.DateTime)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckCertTime_mE5A3920AC2BC20DE5506CDC820E196900E10A231 (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___time0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.PKCS7::IsStoreKitSimulatorData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_IsStoreKitSimulatorData_m4F3DD07C633015D2F8959657CA4125328E9F4CB9 (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, const RuntimeMethod* method) ;
+// System.Byte[] UnityEngine.Purchasing.Security.SignerInfo::get_EncryptedDigest()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline (SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* __this, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.PKCS7::ValidateStoreKitSimulatorCertRoot(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.X509Cert)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_ValidateStoreKitSimulatorCertRoot_mBA1156E365C9D1AD1EC676AF8E2B4EF2599BA832 (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___root0, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___cert1, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.PKCS7::VerifyPublicKeyWithSha256OrSha1(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.SignerInfo)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_VerifyPublicKeyWithSha256OrSha1_mBAC5FF8DA2EB413BB887A378DDE1E91716537760 (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signCert0, SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* ___sinfo1, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.PKCS7::ValidateChain(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.X509Cert,System.DateTime)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_ValidateChain_mC58971CD6FAE25AA8D448E33E6F361276DCB705F (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___root0, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___cert1, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___certificateCreationTime2, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.Purchasing.Security.SignerInfo>::MoveNext()
+inline bool Enumerator_MoveNext_m5D6C4A8103BF3A3354AEE270818B74AAE5F2054E (Enumerator_t5283BB8158B0CD21CD330BC2A4462397A39D8C7E* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t5283BB8158B0CD21CD330BC2A4462397A39D8C7E*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+// System.Int32 System.Collections.Generic.List`1<UnityEngine.Purchasing.Security.SignerInfo>::get_Count()
+inline int32_t List_1_get_Count_m50E594622DF855643D1130EE1A7FD556B8CBB727_inline (List_1_tDD7D043B5F959D2CDEE97064E881AE1D4E4C531D* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tDD7D043B5F959D2CDEE97064E881AE1D4E4C531D*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
 // System.Collections.Generic.List`1<UnityEngine.Purchasing.Security.X509Cert> UnityEngine.Purchasing.Security.PKCS7::get_certChain()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t3B70287F1ACD8661BC748CB28B5E9781D74994F2* PKCS7_get_certChain_mE900FB92D5B6994FB82529237FF7C3435CEFC79A_inline (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<UnityEngine.Purchasing.Security.X509Cert>::GetEnumerator()
@@ -2854,28 +2880,8 @@ inline bool Enumerator_MoveNext_mEF9C4F74BE6226E1EAC15461DDEB0BB387ACD80E (Enume
 {
 	return ((  bool (*) (Enumerator_t93FCFC152329790BB42881106F1367DE0573B6CF*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
-// System.Boolean UnityEngine.Purchasing.Security.X509Cert::CheckCertTime(System.DateTime)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckCertTime_mE5A3920AC2BC20DE5506CDC820E196900E10A231 (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___time0, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Purchasing.Security.PKCS7::IsStoreKitSimulatorData()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_IsStoreKitSimulatorData_m4F3DD07C633015D2F8959657CA4125328E9F4CB9 (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, const RuntimeMethod* method) ;
-// System.Byte[] UnityEngine.Purchasing.Security.SignerInfo::get_EncryptedDigest()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline (SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* __this, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Purchasing.Security.PKCS7::ValidateStorekitSimulatorCertRoot(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.X509Cert)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_ValidateStorekitSimulatorCertRoot_mB8CE940534A514B11E8FD720231B654B0B8E7CE5 (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___root0, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___cert1, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Purchasing.Security.PKCS7::ValidateChain(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.X509Cert,System.DateTime)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_ValidateChain_mC58971CD6FAE25AA8D448E33E6F361276DCB705F (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___root0, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___cert1, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___certificateCreationTime2, const RuntimeMethod* method) ;
-// System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.Purchasing.Security.SignerInfo>::MoveNext()
-inline bool Enumerator_MoveNext_m5D6C4A8103BF3A3354AEE270818B74AAE5F2054E (Enumerator_t5283BB8158B0CD21CD330BC2A4462397A39D8C7E* __this, const RuntimeMethod* method)
-{
-	return ((  bool (*) (Enumerator_t5283BB8158B0CD21CD330BC2A4462397A39D8C7E*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
-}
-// System.Int32 System.Collections.Generic.List`1<UnityEngine.Purchasing.Security.SignerInfo>::get_Count()
-inline int32_t List_1_get_Count_m50E594622DF855643D1130EE1A7FD556B8CBB727_inline (List_1_tDD7D043B5F959D2CDEE97064E881AE1D4E4C531D* __this, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (List_1_tDD7D043B5F959D2CDEE97064E881AE1D4E4C531D*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
-}
-// System.Boolean UnityEngine.Purchasing.Security.X509Cert::CheckSignature256(UnityEngine.Purchasing.Security.X509Cert)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignature256_mA469717035315C5E66732E473809AEFCC970EDBF (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signer0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Purchasing.Security.X509Cert::CheckSignatureSha256(UnityEngine.Purchasing.Security.X509Cert)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignatureSha256_m8797C071567EC4BC6DCEA244094676810AD60EDD (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signer0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Purchasing.Security.X509Cert::CheckSignature(UnityEngine.Purchasing.Security.X509Cert)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignature_m726980DBC31762E06D81D865B0C9E53337940CA2 (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signer0, const RuntimeMethod* method) ;
 // System.String LipingShare.LCLib.Asn1Processor.Asn1Node::GetDataStr(System.Boolean)
@@ -15855,35 +15861,72 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignature_m726980DBC31762E
 		L_3 = DistinguishedName_Equals_m9D700F2E2A7A44D1DD70DF3A1179C6985D9133EF(L_0, L_2, NULL);
 		if (!L_3)
 		{
-			goto IL_0030;
+			goto IL_001b;
 		}
 	}
 	{
-		// return signer.PubKey.Verify(rawTBSCertificate, Signature.Data);
+		// return VerifySignatureWithSha256OrSha1(signer);
 		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_4 = ___signer0;
-		NullCheck(L_4);
-		RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_5;
-		L_5 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_4, NULL);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = __this->___rawTBSCertificate_9;
-		Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_7;
-		L_7 = X509Cert_get_Signature_m60E7D0A6339EEE5BBD524A43173BC453604C0D00_inline(__this, NULL);
-		NullCheck(L_7);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8;
-		L_8 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_7, NULL);
-		NullCheck(L_5);
-		bool L_9;
-		L_9 = RSAKey_Verify_mCD70998FAB9EEB02D7CFB1927E1C4A2DABA3DACF(L_5, L_6, L_8, NULL);
-		return L_9;
+		bool L_5;
+		L_5 = X509Cert_VerifySignatureWithSha256OrSha1_mD77CB99ACEFC08CF5E7896143527919969F2788F(__this, L_4, NULL);
+		return L_5;
 	}
 
-IL_0030:
+IL_001b:
 	{
 		// return false;
 		return (bool)0;
 	}
 }
-// System.Boolean UnityEngine.Purchasing.Security.X509Cert::CheckSignature256(UnityEngine.Purchasing.Security.X509Cert)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignature256_mA469717035315C5E66732E473809AEFCC970EDBF (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signer0, const RuntimeMethod* method) 
+// System.Boolean UnityEngine.Purchasing.Security.X509Cert::VerifySignatureWithSha256OrSha1(UnityEngine.Purchasing.Security.X509Cert)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_VerifySignatureWithSha256OrSha1_mD77CB99ACEFC08CF5E7896143527919969F2788F (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signer0, const RuntimeMethod* method) 
+{
+	{
+		// if (signer.PubKey.VerifySha256(rawTBSCertificate, Signature.Data))
+		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_0 = ___signer0;
+		NullCheck(L_0);
+		RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_1;
+		L_1 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_0, NULL);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = __this->___rawTBSCertificate_9;
+		Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_3;
+		L_3 = X509Cert_get_Signature_m60E7D0A6339EEE5BBD524A43173BC453604C0D00_inline(__this, NULL);
+		NullCheck(L_3);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4;
+		L_4 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_3, NULL);
+		NullCheck(L_1);
+		bool L_5;
+		L_5 = RSAKey_VerifySha256_m77FE4F836B02E38B96558E8D05C4553F25395EFC(L_1, L_2, L_4, NULL);
+		if (!L_5)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		// return true;
+		return (bool)1;
+	}
+
+IL_0020:
+	{
+		// return signer.PubKey.VerifySha1(rawTBSCertificate, Signature.Data);
+		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_6 = ___signer0;
+		NullCheck(L_6);
+		RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_7;
+		L_7 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_6, NULL);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8 = __this->___rawTBSCertificate_9;
+		Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_9;
+		L_9 = X509Cert_get_Signature_m60E7D0A6339EEE5BBD524A43173BC453604C0D00_inline(__this, NULL);
+		NullCheck(L_9);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10;
+		L_10 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_9, NULL);
+		NullCheck(L_7);
+		bool L_11;
+		L_11 = RSAKey_VerifySha1_m912262B619D59F8299FC2C17145E8B5002A53716(L_7, L_8, L_10, NULL);
+		return L_11;
+	}
+}
+// System.Boolean UnityEngine.Purchasing.Security.X509Cert::CheckSignatureSha256(UnityEngine.Purchasing.Security.X509Cert)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignatureSha256_m8797C071567EC4BC6DCEA244094676810AD60EDD (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signer0, const RuntimeMethod* method) 
 {
 	{
 		// if (Issuer.Equals(signer.Subject))
@@ -15902,7 +15945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignature256_mA46971703531
 		}
 	}
 	{
-		// return signer.PubKey.Verify256(rawTBSCertificate, Signature.Data);
+		// return signer.PubKey.VerifySha256(rawTBSCertificate, Signature.Data);
 		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_4 = ___signer0;
 		NullCheck(L_4);
 		RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_5;
@@ -15915,7 +15958,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509Cert_CheckSignature256_mA46971703531
 		L_8 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_7, NULL);
 		NullCheck(L_5);
 		bool L_9;
-		L_9 = RSAKey_Verify256_m9E7DD02F75DB5999F04456CC84E207B89F7D7F1C(L_5, L_6, L_8, NULL);
+		L_9 = RSAKey_VerifySha256_m77FE4F836B02E38B96558E8D05C4553F25395EFC(L_5, L_6, L_8, NULL);
 		return L_9;
 	}
 
@@ -17270,13 +17313,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GooglePlayReceipt_tD1B83973512816E23782CD7DB2
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4;
 		L_4 = Convert_FromBase64String_m267327B074B41D93C9622D142B95CFAA4ACCCA9C(L_3, NULL);
 		V_1 = L_4;
-		// if (!key.Verify(rawReceipt, rawSignature))
+		// if (!key.VerifySha1(rawReceipt, rawSignature))
 		RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_5 = __this->___key_0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = V_0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_1;
 		NullCheck(L_5);
 		bool L_8;
-		L_8 = RSAKey_Verify_mCD70998FAB9EEB02D7CFB1927E1C4A2DABA3DACF(L_5, L_6, L_7, NULL);
+		L_8 = RSAKey_VerifySha1_m912262B619D59F8299FC2C17145E8B5002A53716(L_5, L_6, L_7, NULL);
 		if (L_8)
 		{
 			goto IL_0028;
@@ -17710,12 +17753,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_Verify_m99DBFDE3E2233F3B8C8E57E87E
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m2555C5E63607066BA40999A869A0DC064B25F979_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mAB98065EB892DD7C2C11723EEE27F7158B5591DE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m5D6C4A8103BF3A3354AEE270818B74AAE5F2054E_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mEF9C4F74BE6226E1EAC15461DDEB0BB387ACD80E_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m3802BD325991D05284DD7C6312362EF4AF029CD3_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m3A5F19FF234B59BEEE3842C977E8277DDA9603CD_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m4006DC528956B51D9C3E7183ECC3615EADB9F6CE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m7D193ABF381365FBC81328010A9C6B3039F93436_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m50E594622DF855643D1130EE1A7FD556B8CBB727_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
@@ -17725,20 +17764,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_Verify_m99DBFDE3E2233F3B8C8E57E87E
 	memset((&V_1), 0, sizeof(V_1));
 	SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* V_2 = NULL;
 	X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* V_3 = NULL;
-	Enumerator_t93FCFC152329790BB42881106F1367DE0573B6CF V_4;
-	memset((&V_4), 0, sizeof(V_4));
-	X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* V_5 = NULL;
+	int32_t G_B8_0 = 0;
+	int32_t G_B12_0 = 0;
 	int32_t G_B15_0 = 0;
 	int32_t G_B19_0 = 0;
 	int32_t G_B22_0 = 0;
-	int32_t G_B26_0 = 0;
-	int32_t G_B29_0 = 0;
 	{
 		// if (validStructure)
 		bool L_0 = __this->___validStructure_4;
 		if (!L_0)
 		{
-			goto IL_0136;
+			goto IL_00d7;
 		}
 	}
 	{
@@ -17756,7 +17792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_Verify_m99DBFDE3E2233F3B8C8E57E87E
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0114:
+FINALLY_00b5:
 			{// begin finally (depth: 1)
 				Enumerator_Dispose_m2555C5E63607066BA40999A869A0DC064B25F979((&V_1), Enumerator_Dispose_m2555C5E63607066BA40999A869A0DC064B25F979_RuntimeMethod_var);
 				return;
@@ -17765,7 +17801,7 @@ FINALLY_0114:
 		try
 		{// begin try (depth: 1)
 			{
-				goto IL_0106_1;
+				goto IL_00a7_1;
 			}
 
 IL_001e_1:
@@ -17774,89 +17810,68 @@ IL_001e_1:
 				SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_3;
 				L_3 = Enumerator_get_Current_m3A5F19FF234B59BEEE3842C977E8277DDA9603CD_inline((&V_1), Enumerator_get_Current_m3A5F19FF234B59BEEE3842C977E8277DDA9603CD_RuntimeMethod_var);
 				V_2 = L_3;
-				// X509Cert signCert = null;
-				V_3 = (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38*)NULL;
-				// foreach (var c in certChain)
-				List_1_t3B70287F1ACD8661BC748CB28B5E9781D74994F2* L_4;
-				L_4 = PKCS7_get_certChain_mE900FB92D5B6994FB82529237FF7C3435CEFC79A_inline(__this, NULL);
-				NullCheck(L_4);
-				Enumerator_t93FCFC152329790BB42881106F1367DE0573B6CF L_5;
-				L_5 = List_1_GetEnumerator_m4006DC528956B51D9C3E7183ECC3615EADB9F6CE(L_4, List_1_GetEnumerator_m4006DC528956B51D9C3E7183ECC3615EADB9F6CE_RuntimeMethod_var);
-				V_4 = L_5;
-			}
-			{
-				auto __finallyBlock = il2cpp::utils::Finally([&]
+				// X509Cert signCert = FindSignCert(sinfo);
+				SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_4 = V_2;
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_5;
+				L_5 = PKCS7_FindSignCert_m97A9BA49F67D018B6DACC0DEE499EEDD83EBFA9B(__this, L_4, NULL);
+				V_3 = L_5;
+				// if (signCert != null && signCert.PubKey != null)
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_6 = V_3;
+				if (!L_6)
 				{
-
-FINALLY_0064_1:
-					{// begin finally (depth: 2)
-						Enumerator_Dispose_mAB98065EB892DD7C2C11723EEE27F7158B5591DE((&V_4), Enumerator_Dispose_mAB98065EB892DD7C2C11723EEE27F7158B5591DE_RuntimeMethod_var);
-						return;
-					}// end finally (depth: 2)
-				});
-				try
-				{// begin try (depth: 2)
-					{
-						goto IL_0059_2;
-					}
-
-IL_0037_2:
-					{
-						// foreach (var c in certChain)
-						X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_6;
-						L_6 = Enumerator_get_Current_m3802BD325991D05284DD7C6312362EF4AF029CD3_inline((&V_4), Enumerator_get_Current_m3802BD325991D05284DD7C6312362EF4AF029CD3_RuntimeMethod_var);
-						V_5 = L_6;
-						// if (c.SerialNumber == sinfo.IssuerSerialNumber)
-						X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_7 = V_5;
-						NullCheck(L_7);
-						String_t* L_8;
-						L_8 = X509Cert_get_SerialNumber_mAB87F841AA6232AAA07456FD217EE09CE02CE57D_inline(L_7, NULL);
-						SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_9 = V_2;
-						NullCheck(L_9);
-						String_t* L_10;
-						L_10 = SignerInfo_get_IssuerSerialNumber_m9C70F7548043716C65B096D6037EDA76202673FE_inline(L_9, NULL);
-						bool L_11;
-						L_11 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_8, L_10, NULL);
-						if (!L_11)
-						{
-							goto IL_0059_2;
-						}
-					}
-					{
-						// signCert = c;
-						X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_12 = V_5;
-						V_3 = L_12;
-						// break;
-						goto IL_0072_1;
-					}
-
-IL_0059_2:
-					{
-						// foreach (var c in certChain)
-						bool L_13;
-						L_13 = Enumerator_MoveNext_mEF9C4F74BE6226E1EAC15461DDEB0BB387ACD80E((&V_4), Enumerator_MoveNext_mEF9C4F74BE6226E1EAC15461DDEB0BB387ACD80E_RuntimeMethod_var);
-						if (L_13)
-						{
-							goto IL_0037_2;
-						}
-					}
-					{
-						goto IL_0072_1;
-					}
-				}// end try (depth: 2)
-				catch(Il2CppExceptionWrapper& e)
-				{
-					__finallyBlock.StoreException(e.ex);
+					goto IL_00a7_1;
 				}
 			}
-
-IL_0072_1:
 			{
-				// if (signCert != null && signCert.PubKey != null)
-				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_14 = V_3;
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_7 = V_3;
+				NullCheck(L_7);
+				RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_8;
+				L_8 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_7, NULL);
+				if (!L_8)
+				{
+					goto IL_00a7_1;
+				}
+			}
+			{
+				// ok = ok && signCert.CheckCertTime(certificateCreationTime);
+				bool L_9 = V_0;
+				if (!L_9)
+				{
+					goto IL_0045_1;
+				}
+			}
+			{
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_10 = V_3;
+				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_11 = ___certificateCreationTime1;
+				NullCheck(L_10);
+				bool L_12;
+				L_12 = X509Cert_CheckCertTime_mE5A3920AC2BC20DE5506CDC820E196900E10A231(L_10, L_11, NULL);
+				G_B8_0 = ((int32_t)(L_12));
+				goto IL_0046_1;
+			}
+
+IL_0045_1:
+			{
+				G_B8_0 = 0;
+			}
+
+IL_0046_1:
+			{
+				V_0 = (bool)G_B8_0;
+				// if (IsStoreKitSimulatorData())
+				bool L_13;
+				L_13 = PKCS7_IsStoreKitSimulatorData_m4F3DD07C633015D2F8959657CA4125328E9F4CB9(__this, NULL);
+				if (!L_13)
+				{
+					goto IL_0088_1;
+				}
+			}
+			{
+				// ok = ok && signCert.PubKey.VerifySha256(data.GetChildNode(0).Data, sinfo.EncryptedDigest);
+				bool L_14 = V_0;
 				if (!L_14)
 				{
-					goto IL_0106_1;
+					goto IL_0076_1;
 				}
 			}
 			{
@@ -17864,189 +17879,125 @@ IL_0072_1:
 				NullCheck(L_15);
 				RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_16;
 				L_16 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_15, NULL);
-				if (!L_16)
-				{
-					goto IL_0106_1;
-				}
-			}
-			{
-				// ok = ok && signCert.CheckCertTime(certificateCreationTime);
-				bool L_17 = V_0;
-				if (!L_17)
-				{
-					goto IL_008f_1;
-				}
-			}
-			{
-				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_18 = V_3;
-				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_19 = ___certificateCreationTime1;
+				Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_17;
+				L_17 = PKCS7_get_data_mEB6DF0379C4FF24664A75717B8EC82A3053EA0C4_inline(__this, NULL);
+				NullCheck(L_17);
+				Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_18;
+				L_18 = Asn1Node_GetChildNode_m1AA652B0C87E8041A7CFF482C353176A3BDE0F33(L_17, 0, NULL);
 				NullCheck(L_18);
-				bool L_20;
-				L_20 = X509Cert_CheckCertTime_mE5A3920AC2BC20DE5506CDC820E196900E10A231(L_18, L_19, NULL);
-				G_B15_0 = ((int32_t)(L_20));
-				goto IL_0090_1;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_19;
+				L_19 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_18, NULL);
+				SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_20 = V_2;
+				NullCheck(L_20);
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_21;
+				L_21 = SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline(L_20, NULL);
+				NullCheck(L_16);
+				bool L_22;
+				L_22 = RSAKey_VerifySha256_m77FE4F836B02E38B96558E8D05C4553F25395EFC(L_16, L_19, L_21, NULL);
+				G_B12_0 = ((int32_t)(L_22));
+				goto IL_0077_1;
 			}
 
-IL_008f_1:
+IL_0076_1:
+			{
+				G_B12_0 = 0;
+			}
+
+IL_0077_1:
+			{
+				V_0 = (bool)G_B12_0;
+				// ok = ok && ValidateStoreKitSimulatorCertRoot(cert, signCert);
+				bool L_23 = V_0;
+				if (!L_23)
+				{
+					goto IL_0084_1;
+				}
+			}
+			{
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_24 = ___cert0;
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_25 = V_3;
+				bool L_26;
+				L_26 = PKCS7_ValidateStoreKitSimulatorCertRoot_mBA1156E365C9D1AD1EC676AF8E2B4EF2599BA832(L_24, L_25, NULL);
+				G_B15_0 = ((int32_t)(L_26));
+				goto IL_0085_1;
+			}
+
+IL_0084_1:
 			{
 				G_B15_0 = 0;
 			}
 
-IL_0090_1:
+IL_0085_1:
 			{
 				V_0 = (bool)G_B15_0;
-				// if (IsStoreKitSimulatorData())
-				bool L_21;
-				L_21 = PKCS7_IsStoreKitSimulatorData_m4F3DD07C633015D2F8959657CA4125328E9F4CB9(__this, NULL);
-				if (!L_21)
-				{
-					goto IL_00d3_1;
-				}
-			}
-			{
-				// ok = ok && signCert.PubKey.Verify256(data.GetChildNode(0).Data, sinfo.EncryptedDigest);
-				bool L_22 = V_0;
-				if (!L_22)
-				{
-					goto IL_00c0_1;
-				}
-			}
-			{
-				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_23 = V_3;
-				NullCheck(L_23);
-				RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_24;
-				L_24 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_23, NULL);
-				Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_25;
-				L_25 = PKCS7_get_data_mEB6DF0379C4FF24664A75717B8EC82A3053EA0C4_inline(__this, NULL);
-				NullCheck(L_25);
-				Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_26;
-				L_26 = Asn1Node_GetChildNode_m1AA652B0C87E8041A7CFF482C353176A3BDE0F33(L_25, 0, NULL);
-				NullCheck(L_26);
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_27;
-				L_27 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_26, NULL);
-				SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_28 = V_2;
-				NullCheck(L_28);
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_29;
-				L_29 = SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline(L_28, NULL);
-				NullCheck(L_24);
-				bool L_30;
-				L_30 = RSAKey_Verify256_m9E7DD02F75DB5999F04456CC84E207B89F7D7F1C(L_24, L_27, L_29, NULL);
-				G_B19_0 = ((int32_t)(L_30));
-				goto IL_00c1_1;
+				goto IL_00a7_1;
 			}
 
-IL_00c0_1:
+IL_0088_1:
+			{
+				// ok = ok && VerifyPublicKeyWithSha256OrSha1(signCert, sinfo);
+				bool L_27 = V_0;
+				if (!L_27)
+				{
+					goto IL_0095_1;
+				}
+			}
+			{
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_28 = V_3;
+				SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_29 = V_2;
+				bool L_30;
+				L_30 = PKCS7_VerifyPublicKeyWithSha256OrSha1_mBAC5FF8DA2EB413BB887A378DDE1E91716537760(__this, L_28, L_29, NULL);
+				G_B19_0 = ((int32_t)(L_30));
+				goto IL_0096_1;
+			}
+
+IL_0095_1:
 			{
 				G_B19_0 = 0;
 			}
 
-IL_00c1_1:
+IL_0096_1:
 			{
 				V_0 = (bool)G_B19_0;
-				// ok = ok && ValidateStorekitSimulatorCertRoot(cert, signCert);
+				// ok = ok && ValidateChain(cert, signCert, certificateCreationTime);
 				bool L_31 = V_0;
 				if (!L_31)
 				{
-					goto IL_00cf_1;
+					goto IL_00a5_1;
 				}
 			}
 			{
 				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_32 = ___cert0;
 				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_33 = V_3;
-				bool L_34;
-				L_34 = PKCS7_ValidateStorekitSimulatorCertRoot_mB8CE940534A514B11E8FD720231B654B0B8E7CE5(__this, L_32, L_33, NULL);
-				G_B22_0 = ((int32_t)(L_34));
-				goto IL_00d0_1;
+				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_34 = ___certificateCreationTime1;
+				bool L_35;
+				L_35 = PKCS7_ValidateChain_mC58971CD6FAE25AA8D448E33E6F361276DCB705F(__this, L_32, L_33, L_34, NULL);
+				G_B22_0 = ((int32_t)(L_35));
+				goto IL_00a6_1;
 			}
 
-IL_00cf_1:
+IL_00a5_1:
 			{
 				G_B22_0 = 0;
 			}
 
-IL_00d0_1:
+IL_00a6_1:
 			{
 				V_0 = (bool)G_B22_0;
-				goto IL_0106_1;
 			}
 
-IL_00d3_1:
-			{
-				// ok = ok && signCert.PubKey.Verify(data.Data, sinfo.EncryptedDigest);
-				bool L_35 = V_0;
-				if (!L_35)
-				{
-					goto IL_00f4_1;
-				}
-			}
-			{
-				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_36 = V_3;
-				NullCheck(L_36);
-				RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_37;
-				L_37 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_36, NULL);
-				Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_38;
-				L_38 = PKCS7_get_data_mEB6DF0379C4FF24664A75717B8EC82A3053EA0C4_inline(__this, NULL);
-				NullCheck(L_38);
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_39;
-				L_39 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_38, NULL);
-				SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_40 = V_2;
-				NullCheck(L_40);
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_41;
-				L_41 = SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline(L_40, NULL);
-				NullCheck(L_37);
-				bool L_42;
-				L_42 = RSAKey_Verify_mCD70998FAB9EEB02D7CFB1927E1C4A2DABA3DACF(L_37, L_39, L_41, NULL);
-				G_B26_0 = ((int32_t)(L_42));
-				goto IL_00f5_1;
-			}
-
-IL_00f4_1:
-			{
-				G_B26_0 = 0;
-			}
-
-IL_00f5_1:
-			{
-				V_0 = (bool)G_B26_0;
-				// ok = ok && ValidateChain(cert, signCert, certificateCreationTime);
-				bool L_43 = V_0;
-				if (!L_43)
-				{
-					goto IL_0104_1;
-				}
-			}
-			{
-				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_44 = ___cert0;
-				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_45 = V_3;
-				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_46 = ___certificateCreationTime1;
-				bool L_47;
-				L_47 = PKCS7_ValidateChain_mC58971CD6FAE25AA8D448E33E6F361276DCB705F(__this, L_44, L_45, L_46, NULL);
-				G_B29_0 = ((int32_t)(L_47));
-				goto IL_0105_1;
-			}
-
-IL_0104_1:
-			{
-				G_B29_0 = 0;
-			}
-
-IL_0105_1:
-			{
-				V_0 = (bool)G_B29_0;
-			}
-
-IL_0106_1:
+IL_00a7_1:
 			{
 				// foreach (var sinfo in sinfos)
-				bool L_48;
-				L_48 = Enumerator_MoveNext_m5D6C4A8103BF3A3354AEE270818B74AAE5F2054E((&V_1), Enumerator_MoveNext_m5D6C4A8103BF3A3354AEE270818B74AAE5F2054E_RuntimeMethod_var);
-				if (L_48)
+				bool L_36;
+				L_36 = Enumerator_MoveNext_m5D6C4A8103BF3A3354AEE270818B74AAE5F2054E((&V_1), Enumerator_MoveNext_m5D6C4A8103BF3A3354AEE270818B74AAE5F2054E_RuntimeMethod_var);
+				if (L_36)
 				{
 					goto IL_001e_1;
 				}
 			}
 			{
-				goto IL_0122;
+				goto IL_00c3;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -18055,33 +18006,136 @@ IL_0106_1:
 		}
 	}
 
-IL_0122:
+IL_00c3:
 	{
 		// return ok && sinfos.Count > 0;
-		bool L_49 = V_0;
-		if (!L_49)
+		bool L_37 = V_0;
+		if (!L_37)
 		{
-			goto IL_0134;
+			goto IL_00d5;
 		}
 	}
 	{
-		List_1_tDD7D043B5F959D2CDEE97064E881AE1D4E4C531D* L_50;
-		L_50 = PKCS7_get_sinfos_m7B49930876D0931B3779677864B9D4CDD761E7DC_inline(__this, NULL);
-		NullCheck(L_50);
-		int32_t L_51;
-		L_51 = List_1_get_Count_m50E594622DF855643D1130EE1A7FD556B8CBB727_inline(L_50, List_1_get_Count_m50E594622DF855643D1130EE1A7FD556B8CBB727_RuntimeMethod_var);
-		return (bool)((((int32_t)L_51) > ((int32_t)0))? 1 : 0);
+		List_1_tDD7D043B5F959D2CDEE97064E881AE1D4E4C531D* L_38;
+		L_38 = PKCS7_get_sinfos_m7B49930876D0931B3779677864B9D4CDD761E7DC_inline(__this, NULL);
+		NullCheck(L_38);
+		int32_t L_39;
+		L_39 = List_1_get_Count_m50E594622DF855643D1130EE1A7FD556B8CBB727_inline(L_38, List_1_get_Count_m50E594622DF855643D1130EE1A7FD556B8CBB727_RuntimeMethod_var);
+		return (bool)((((int32_t)L_39) > ((int32_t)0))? 1 : 0);
 	}
 
-IL_0134:
+IL_00d5:
 	{
 		return (bool)0;
 	}
 
-IL_0136:
+IL_00d7:
 	{
 		// return false;
 		return (bool)0;
+	}
+}
+// UnityEngine.Purchasing.Security.X509Cert UnityEngine.Purchasing.Security.PKCS7::FindSignCert(UnityEngine.Purchasing.Security.SignerInfo)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* PKCS7_FindSignCert_m97A9BA49F67D018B6DACC0DEE499EEDD83EBFA9B (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* ___sinfo0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mAB98065EB892DD7C2C11723EEE27F7158B5591DE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mEF9C4F74BE6226E1EAC15461DDEB0BB387ACD80E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m3802BD325991D05284DD7C6312362EF4AF029CD3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m4006DC528956B51D9C3E7183ECC3615EADB9F6CE_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t93FCFC152329790BB42881106F1367DE0573B6CF V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* V_1 = NULL;
+	X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* V_2 = NULL;
+	{
+		// foreach (var cert in certChain)
+		List_1_t3B70287F1ACD8661BC748CB28B5E9781D74994F2* L_0;
+		L_0 = PKCS7_get_certChain_mE900FB92D5B6994FB82529237FF7C3435CEFC79A_inline(__this, NULL);
+		NullCheck(L_0);
+		Enumerator_t93FCFC152329790BB42881106F1367DE0573B6CF L_1;
+		L_1 = List_1_GetEnumerator_m4006DC528956B51D9C3E7183ECC3615EADB9F6CE(L_0, List_1_GetEnumerator_m4006DC528956B51D9C3E7183ECC3615EADB9F6CE_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0038:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mAB98065EB892DD7C2C11723EEE27F7158B5591DE((&V_0), Enumerator_Dispose_mAB98065EB892DD7C2C11723EEE27F7158B5591DE_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002d_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (var cert in certChain)
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_2;
+				L_2 = Enumerator_get_Current_m3802BD325991D05284DD7C6312362EF4AF029CD3_inline((&V_0), Enumerator_get_Current_m3802BD325991D05284DD7C6312362EF4AF029CD3_RuntimeMethod_var);
+				V_1 = L_2;
+				// if (cert.SerialNumber == sinfo.IssuerSerialNumber)
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_3 = V_1;
+				NullCheck(L_3);
+				String_t* L_4;
+				L_4 = X509Cert_get_SerialNumber_mAB87F841AA6232AAA07456FD217EE09CE02CE57D_inline(L_3, NULL);
+				SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_5 = ___sinfo0;
+				NullCheck(L_5);
+				String_t* L_6;
+				L_6 = SignerInfo_get_IssuerSerialNumber_m9C70F7548043716C65B096D6037EDA76202673FE_inline(L_5, NULL);
+				bool L_7;
+				L_7 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_4, L_6, NULL);
+				if (!L_7)
+				{
+					goto IL_002d_1;
+				}
+			}
+			{
+				// return cert;
+				X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_8 = V_1;
+				V_2 = L_8;
+				goto IL_0048;
+			}
+
+IL_002d_1:
+			{
+				// foreach (var cert in certChain)
+				bool L_9;
+				L_9 = Enumerator_MoveNext_mEF9C4F74BE6226E1EAC15461DDEB0BB387ACD80E((&V_0), Enumerator_MoveNext_mEF9C4F74BE6226E1EAC15461DDEB0BB387ACD80E_RuntimeMethod_var);
+				if (L_9)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0046;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0046:
+	{
+		// return null;
+		return (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38*)NULL;
+	}
+
+IL_0048:
+	{
+		// }
+		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_10 = V_2;
+		return L_10;
 	}
 }
 // System.Boolean UnityEngine.Purchasing.Security.PKCS7::IsStoreKitSimulatorData()
@@ -18113,16 +18167,69 @@ IL_001d:
 		return (bool)0;
 	}
 }
-// System.Boolean UnityEngine.Purchasing.Security.PKCS7::ValidateStorekitSimulatorCertRoot(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.X509Cert)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_ValidateStorekitSimulatorCertRoot_mB8CE940534A514B11E8FD720231B654B0B8E7CE5 (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___root0, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___cert1, const RuntimeMethod* method) 
+// System.Boolean UnityEngine.Purchasing.Security.PKCS7::VerifyPublicKeyWithSha256OrSha1(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.SignerInfo)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_VerifyPublicKeyWithSha256OrSha1_mBAC5FF8DA2EB413BB887A378DDE1E91716537760 (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___signCert0, SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* ___sinfo1, const RuntimeMethod* method) 
 {
 	{
-		// return cert.CheckSignature256(root);
+		// if (signCert.PubKey.VerifySha256(data.Data, sinfo.EncryptedDigest))
+		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_0 = ___signCert0;
+		NullCheck(L_0);
+		RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_1;
+		L_1 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_0, NULL);
+		Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_2;
+		L_2 = PKCS7_get_data_mEB6DF0379C4FF24664A75717B8EC82A3053EA0C4_inline(__this, NULL);
+		NullCheck(L_2);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3;
+		L_3 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_2, NULL);
+		SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_4 = ___sinfo1;
+		NullCheck(L_4);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5;
+		L_5 = SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline(L_4, NULL);
+		NullCheck(L_1);
+		bool L_6;
+		L_6 = RSAKey_VerifySha256_m77FE4F836B02E38B96558E8D05C4553F25395EFC(L_1, L_3, L_5, NULL);
+		if (!L_6)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		// return true;
+		return (bool)1;
+	}
+
+IL_0020:
+	{
+		// return signCert.PubKey.VerifySha1(data.Data, sinfo.EncryptedDigest);
+		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_7 = ___signCert0;
+		NullCheck(L_7);
+		RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* L_8;
+		L_8 = X509Cert_get_PubKey_m56DDD174702F24395A0B153DD35895D11D27EF37_inline(L_7, NULL);
+		Asn1Node_t68F0C3384C041F285C56ACEFC7455605F7D94F0F* L_9;
+		L_9 = PKCS7_get_data_mEB6DF0379C4FF24664A75717B8EC82A3053EA0C4_inline(__this, NULL);
+		NullCheck(L_9);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10;
+		L_10 = Asn1Node_get_Data_mF0542FB774E959A58F78259DC1D50BDC2137C0E4(L_9, NULL);
+		SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* L_11 = ___sinfo1;
+		NullCheck(L_11);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12;
+		L_12 = SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline(L_11, NULL);
+		NullCheck(L_8);
+		bool L_13;
+		L_13 = RSAKey_VerifySha1_m912262B619D59F8299FC2C17145E8B5002A53716(L_8, L_10, L_12, NULL);
+		return L_13;
+	}
+}
+// System.Boolean UnityEngine.Purchasing.Security.PKCS7::ValidateStoreKitSimulatorCertRoot(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.X509Cert)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PKCS7_ValidateStoreKitSimulatorCertRoot_mBA1156E365C9D1AD1EC676AF8E2B4EF2599BA832 (X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___root0, X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* ___cert1, const RuntimeMethod* method) 
+{
+	{
+		// return cert.CheckSignatureSha256(root);
 		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_0 = ___cert1;
 		X509Cert_tB08174A05CD178BD732D2F3785F158F2D46AFB38* L_1 = ___root0;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = X509Cert_CheckSignature256_mA469717035315C5E66732E473809AEFCC970EDBF(L_0, L_1, NULL);
+		L_2 = X509Cert_CheckSignatureSha256_m8797C071567EC4BC6DCEA244094676810AD60EDD(L_0, L_1, NULL);
 		return L_2;
 	}
 }
@@ -19214,8 +19321,8 @@ IL_0038:
 		return;
 	}
 }
-// System.Boolean UnityEngine.Purchasing.Security.RSAKey::Verify(System.Byte[],System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_Verify_mCD70998FAB9EEB02D7CFB1927E1C4A2DABA3DACF (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) 
+// System.Boolean UnityEngine.Purchasing.Security.RSAKey::VerifySha1(System.Byte[],System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_VerifySha1_m912262B619D59F8299FC2C17145E8B5002A53716 (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19246,8 +19353,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_Verify_mCD70998FAB9EEB02D7CFB1927
 		return L_6;
 	}
 }
-// System.Boolean UnityEngine.Purchasing.Security.RSAKey::Verify256(System.Byte[],System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_Verify256_m9E7DD02F75DB5999F04456CC84E207B89F7D7F1C (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) 
+// System.Boolean UnityEngine.Purchasing.Security.RSAKey::VerifySha256(System.Byte[],System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RSAKey_VerifySha256_m77FE4F836B02E38B96558E8D05C4553F25395EFC (RSAKey_t95B593D50096137F354B737942F102C3ECF062B6* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___message0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature1, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20180,6 +20287,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tDD7D043B5F959D2CDEE97064E
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline (SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* __this, const RuntimeMethod* method) 
+{
+	{
+		// public byte[] EncryptedDigest { get; private set; }
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CEncryptedDigestU3Ek__BackingField_2;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t3B70287F1ACD8661BC748CB28B5E9781D74994F2* PKCS7_get_certChain_mE900FB92D5B6994FB82529237FF7C3435CEFC79A_inline (PKCS7_t5971054D2B4B1F2E2266AC7DB27D071CE2AE827A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20201,14 +20316,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* SignerInfo_get_IssuerSe
 	{
 		// public string IssuerSerialNumber { get; private set; }
 		String_t* L_0 = __this->___U3CIssuerSerialNumberU3Ek__BackingField_1;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* SignerInfo_get_EncryptedDigest_m9887BDFC85A27F02DC67C70D8B9776452B873608_inline (SignerInfo_tD69D458CBF7546C2E024451C25093CA36EB3B998* __this, const RuntimeMethod* method) 
-{
-	{
-		// public byte[] EncryptedDigest { get; private set; }
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CEncryptedDigestU3Ek__BackingField_2;
 		return L_0;
 	}
 }

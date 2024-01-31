@@ -2835,6 +2835,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DateTime_op_Inequality_mFB20C42AFEA4EEDE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArithmeticException__ctor_m84E573C2093803DC9E6219461275B351D225C16A (ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA* __this, String_t* ___message0, const RuntimeMethod* method) ;
 // System.Void System.Exception::set_HResult(System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline (Exception_t* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void System.ArithmeticException::.ctor(System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArithmeticException__ctor_m880D58CC9B6CD2F0E867298BA748343216D89A8B (ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA* __this, String_t* ___message0, Exception_t* ___innerException1, const RuntimeMethod* method) ;
 // System.Void System.ArithmeticException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArithmeticException__ctor_m9F97AB2FDC9EED4A59627F1F2F6165AB592F8942 (ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___info0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___context1, const RuntimeMethod* method) ;
 // System.Void System.TypeLoadException::.ctor(System.String)
@@ -9943,6 +9945,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DivideByZeroException__ctor_m17FBAE3DCEF
 	{
 		String_t* L_0 = ___message0;
 		ArithmeticException__ctor_m84E573C2093803DC9E6219461275B351D225C16A(__this, L_0, NULL);
+		Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline(__this, ((int32_t)-2147352558), NULL);
+		return;
+	}
+}
+// System.Void System.DivideByZeroException::.ctor(System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DivideByZeroException__ctor_mE15900048AEEE9B66A4DD9F2ACAC4448D85D4F23 (DivideByZeroException_tC43171E50A38F5CD4242D258D0B0C6B74898C279* __this, String_t* ___message0, Exception_t* ___innerException1, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___message0;
+		Exception_t* L_1 = ___innerException1;
+		ArithmeticException__ctor_m880D58CC9B6CD2F0E867298BA748343216D89A8B(__this, L_0, L_1, NULL);
 		Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline(__this, ((int32_t)-2147352558), NULL);
 		return;
 	}

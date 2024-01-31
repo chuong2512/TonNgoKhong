@@ -19738,6 +19738,31 @@ IL_000c:
 		return L_2;
 	}
 }
+// System.Single UnityEngine.Mathf::Asin(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Asin_m42E3ACFD7F17FDD8277200B0291EC81CD8C0EB86 (float ___f0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___f0;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_1;
+		L_1 = asin(((double)L_0));
+		V_0 = ((float)L_1);
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		float L_2 = V_0;
+		return L_2;
+	}
+}
 // System.Single UnityEngine.Mathf::Acos(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Acos_m18B78367C77DC32AA04D2623FB860CF7DF587093 (float ___f0, const RuntimeMethod* method) 
 {
@@ -25268,6 +25293,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_SetLogCallbackDefined_m24B29
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Application_SetLogCallbackDefined_m24B29D62C19DE5B080BAA86CBCAC7C97922B2BEC_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::SetLogCallbackDefined(System.Boolean)");
 	_il2cpp_icall_func(___defined0);
+}
+// UnityEngine.StackTraceLogType UnityEngine.Application::GetStackTraceLogType(UnityEngine.LogType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_GetStackTraceLogType_m0A2F6C123A6DC537F865C3831D53935879566A7F (int32_t ___logType0, const RuntimeMethod* method) 
+{
+	typedef int32_t (*Application_GetStackTraceLogType_m0A2F6C123A6DC537F865C3831D53935879566A7F_ftn) (int32_t);
+	static Application_GetStackTraceLogType_m0A2F6C123A6DC537F865C3831D53935879566A7F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_GetStackTraceLogType_m0A2F6C123A6DC537F865C3831D53935879566A7F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::GetStackTraceLogType(UnityEngine.LogType)");
+	int32_t icallRetVal = _il2cpp_icall_func(___logType0);
+	return icallRetVal;
 }
 // System.Boolean UnityEngine.Application::get_genuine()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_genuine_m809A0E5A68D890B8BED1FD2A5CF13637C773AEC6 (const RuntimeMethod* method) 

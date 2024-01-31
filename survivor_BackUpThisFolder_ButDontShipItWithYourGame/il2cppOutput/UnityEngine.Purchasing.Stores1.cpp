@@ -1039,7 +1039,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral411E87C498A4A4314946F553A3D07376685F8798
 IL2CPP_EXTERN_C String_t* _stringLiteral41EAC32469BB72FE3CF9159FA4EA177B9C648F90;
 IL2CPP_EXTERN_C String_t* _stringLiteral43187C90BBB5DFB063A95733C9BD65ECD25A2E84;
 IL2CPP_EXTERN_C String_t* _stringLiteral450C8EF3D0450ABCD23C53730AAA221835C6A350;
-IL2CPP_EXTERN_C String_t* _stringLiteral451751B372D06F01DEB0BD6459614F811BFB12F6;
 IL2CPP_EXTERN_C String_t* _stringLiteral453AB3DD067900F362DA1819E17FF5B89C76EB1A;
 IL2CPP_EXTERN_C String_t* _stringLiteral47E748C1D4F5ED6AB450AB9945E9B2AC2A79D152;
 IL2CPP_EXTERN_C String_t* _stringLiteral4AB2B70CADC85FDC6915309B826BAACC5034EDD4;
@@ -1149,6 +1148,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralFB88AAE385568D0221A016B76B92B8F4ACC87ED7
 IL2CPP_EXTERN_C String_t* _stringLiteralFDA8274FF56B7EDE4851D24817AB1EABB77A5CB1;
 IL2CPP_EXTERN_C String_t* _stringLiteralFDDA0E2D635BC7B9C335D0CAD680D884795E20A6;
 IL2CPP_EXTERN_C String_t* _stringLiteralFDFB95D88D302FE3783E3EC9EC0F5494FF55AC4D;
+IL2CPP_EXTERN_C String_t* _stringLiteralFF3C7A775DE3D8C0ADB1F2424E664D6A85873394;
 IL2CPP_EXTERN_C String_t* _stringLiteralFFA59E17C5130FD6E7E1D5621F39533B1120F332;
 IL2CPP_EXTERN_C const RuntimeMethod* AbstractPurchasingModule_BindConfiguration_TisIAmazonConfiguration_tB9AFF38569BD6A65577275E908C68A7E1864C234_m5CA2DAD1ECC69533D4A7E212631274657EF46A5C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AbstractPurchasingModule_BindConfiguration_TisIAndroidStoreSelection_tF4F3AD39E855725AF4412E029D4268661DA44C5E_m52F9AA646172353B8F82624B40C36B5911893051_RuntimeMethod_var;
@@ -3562,8 +3562,8 @@ struct AppleStoreImpl_t6AF0033DE5593A0D019BA107012C9C83D21FBD14  : public JSONSt
 	Action_1_tDA104653FA5A324B3D61E32BD15E60D0C4AE63CE* ___m_DeferredCallback_11;
 	// System.Action`1<System.Collections.Generic.List`1<UnityEngine.Purchasing.Product>> UnityEngine.Purchasing.AppleStoreImpl::m_RevokedCallback
 	Action_1_t697794677665726C94809C618C5BC9615AF0F913* ___m_RevokedCallback_12;
-	// System.Action UnityEngine.Purchasing.AppleStoreImpl::m_RefreshReceiptError
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___m_RefreshReceiptError_13;
+	// System.Action`1<System.String> UnityEngine.Purchasing.AppleStoreImpl::m_RefreshReceiptError
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___m_RefreshReceiptError_13;
 	// System.Action`1<System.String> UnityEngine.Purchasing.AppleStoreImpl::m_RefreshReceiptSuccess
 	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___m_RefreshReceiptSuccess_14;
 	// System.Action`1<System.Boolean> UnityEngine.Purchasing.AppleStoreImpl::m_ObsoleteRestoreCallback
@@ -8537,13 +8537,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StandardPurchasingModule__ctor_mE2C1F89F
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral451751B372D06F01DEB0BD6459614F811BFB12F6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFF3C7A775DE3D8C0ADB1F2424E664D6A85873394);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// internal readonly string k_Version = "4.8.0"; // NOTE: Changed using GenerateUnifiedIAP.sh before pack step.
-		__this->___k_Version_2 = _stringLiteral451751B372D06F01DEB0BD6459614F811BFB12F6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___k_Version_2), (void*)_stringLiteral451751B372D06F01DEB0BD6459614F811BFB12F6);
+		// internal readonly string k_Version = "4.9.4"; // NOTE: Changed using GenerateUnifiedIAP.sh before pack step.
+		__this->___k_Version_2 = _stringLiteralFF3C7A775DE3D8C0ADB1F2424E664D6A85873394;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___k_Version_2), (void*)_stringLiteralFF3C7A775DE3D8C0ADB1F2424E664D6A85873394);
 		// internal StandardPurchasingModule(IUtil util, ILogger logger, INativeStoreProvider nativeStoreProvider,
 		//     RuntimePlatform platform, AppStore android, ITelemetryDiagnosticsInstanceWrapper telemetryDiagnosticsInstanceWrapper, ITelemetryMetricsInstanceWrapper telemetryMetricsInstanceWrapper)
 		AbstractPurchasingModule__ctor_mBED233D75772B5243C0D2590A37B1BEF331BAB68(__this, NULL);

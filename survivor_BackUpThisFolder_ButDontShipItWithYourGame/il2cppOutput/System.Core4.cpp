@@ -816,6 +816,11 @@ struct String_t_StaticFields
 	String_t* ___Empty_6;
 };
 
+// System.Threading.Tasks.TaskExtensions
+struct TaskExtensions_t42E5DF414FEA6C24A159498E2923737D73E950EB  : public RuntimeObject
+{
+};
+
 // System.Dynamic.Utils.TypeExtensions
 struct TypeExtensions_t3ECEF5C4EFF4A8B50F70EF5C26D9120485701470  : public RuntimeObject
 {
@@ -12987,6 +12992,14 @@ IL2CPP_EXTERN_C  bool TimeoutTracker_get_IsExpired_m5E08DCC01117EF66ADEBA5472B27
 	_returnValue = TimeoutTracker_get_IsExpired_m5E08DCC01117EF66ADEBA5472B27833577289813(_thisAdjusted, method);
 	return _returnValue;
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

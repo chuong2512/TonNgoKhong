@@ -15578,7 +15578,7 @@ IL_0023:
 IL_0056:
 	{
 		NullCheck(G_B6_1);
-		InterfaceActionInvoker1< Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* >::Invoke(2 /* System.Void UnityEngine.Purchasing.IAppleExtensions::RestoreTransactions(System.Action`1<System.Boolean>) */, IAppleExtensions_t41229C4C01DD93794E730B8AFB9EEEBEC33C0238_il2cpp_TypeInfo_var, G_B6_1, G_B6_0);
+		InterfaceActionInvoker1< Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* >::Invoke(3 /* System.Void UnityEngine.Purchasing.IAppleExtensions::RestoreTransactions(System.Action`1<System.Boolean>) */, IAppleExtensions_t41229C4C01DD93794E730B8AFB9EEEBEC33C0238_il2cpp_TypeInfo_var, G_B6_1, G_B6_0);
 		return;
 	}
 
