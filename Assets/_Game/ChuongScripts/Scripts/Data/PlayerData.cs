@@ -89,8 +89,8 @@ public class PlayerData : BaseData
         timeRegister = DateTime.Now.ToBinary().ToString();
         time = 3 * 24 * 60 * 60;
 
-        _coin = 0;
-        _gem = 100000;
+        _coin = 10;
+        _gem = 10;
         _exp = 0;
 
         mapUnlocks = new List<MapRecord>();
