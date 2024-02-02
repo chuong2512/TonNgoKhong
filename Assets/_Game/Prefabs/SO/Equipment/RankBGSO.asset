@@ -14,24 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RankColors:
   - serializedVersion: 2
-    rgba: 4294967295
-  - serializedVersion: 2
     rgba: 4291611852
   - serializedVersion: 2
-    rgba: 4282441826
+    rgba: 4290641875
+  - serializedVersion: 2
+    rgba: 4285923235
   - serializedVersion: 2
     rgba: 4294049536
   - serializedVersion: 2
-    rgba: 4294930432
+    rgba: 4294944609
   - serializedVersion: 2
-    rgba: 4294901891
+    rgba: 4294927540
   - serializedVersion: 2
-    rgba: 4293722367
+    rgba: 4294136831
   - serializedVersion: 2
-    rgba: 4280942847
+    rgba: 4287066367
   - serializedVersion: 2
-    rgba: 4278219007
+    rgba: 4282882303
   - serializedVersion: 2
-    rgba: 4278255614
+    rgba: 4283562746
   InnerBG: {fileID: 21300000, guid: 5881dc3de1816d045b77966236f550e8, type: 3}
   OuterBG: {fileID: 21300000, guid: 5881dc3de1816d045b77966236f550e8, type: 3}
