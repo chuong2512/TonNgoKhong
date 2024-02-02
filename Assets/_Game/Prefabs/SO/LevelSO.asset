@@ -42,6 +42,9 @@ MonoBehaviour:
       - {fileID: 3537171100188795310, guid: 887c83d071b0afe4b9c3e1b5982434ae, type: 3}
       - {fileID: 3537171100188795310, guid: bd55a62da43d15d4f96b3223088cb8ff, type: 3}
       - {fileID: 3537171100188795310, guid: ee483b13f0559c44a96b7ddddb914ce4, type: 3}
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
+      - {fileID: 3537171100188795310, guid: fd4f305029771814db0d47f86b2d04bf, type: 3}
       Boss: []
   - mapID: 1
     name: "2. \u0110\u1ED9ng B\u1EA1ch H\u1ED5"
@@ -66,12 +69,16 @@ MonoBehaviour:
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: cb36071bb3b8fb6429df7039ffeb314c, type: 3}
+      - {fileID: 3537171100188795310, guid: fd4f305029771814db0d47f86b2d04bf, type: 3}
       - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
       - {fileID: 3537171100188795310, guid: 7fd860da0f056bd4f90cb38aada23101, type: 3}
       - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}
       - {fileID: 3537171100188795310, guid: 887c83d071b0afe4b9c3e1b5982434ae, type: 3}
       - {fileID: 3537171100188795310, guid: bd55a62da43d15d4f96b3223088cb8ff, type: 3}
       - {fileID: 3537171100188795310, guid: ee483b13f0559c44a96b7ddddb914ce4, type: 3}
+      - {fileID: 3537171100188795310, guid: b6675e95900e8474ca01e96fbd3ab2bd, type: 3}
       Boss: []
   - mapID: 2
     name: 3. Cao gia trang
@@ -96,6 +103,11 @@ MonoBehaviour:
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:
+      - {fileID: 3537171100188795310, guid: b6675e95900e8474ca01e96fbd3ab2bd, type: 3}
+      - {fileID: 3537171100188795310, guid: 11b24a89dcc587e4f975a94f3297d9b8, type: 3}
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: cb36071bb3b8fb6429df7039ffeb314c, type: 3}
+      - {fileID: 3537171100188795310, guid: fd4f305029771814db0d47f86b2d04bf, type: 3}
       - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
       - {fileID: 3537171100188795310, guid: 7fd860da0f056bd4f90cb38aada23101, type: 3}
       - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}
@@ -126,6 +138,13 @@ MonoBehaviour:
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: cb36071bb3b8fb6429df7039ffeb314c, type: 3}
+      - {fileID: 3537171100188795310, guid: b6675e95900e8474ca01e96fbd3ab2bd, type: 3}
+      - {fileID: 3537171100188795310, guid: 11b24a89dcc587e4f975a94f3297d9b8, type: 3}
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: cb36071bb3b8fb6429df7039ffeb314c, type: 3}
+      - {fileID: 3537171100188795310, guid: fd4f305029771814db0d47f86b2d04bf, type: 3}
       - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
       - {fileID: 3537171100188795310, guid: 7fd860da0f056bd4f90cb38aada23101, type: 3}
       - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}
@@ -156,6 +175,14 @@ MonoBehaviour:
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: cb36071bb3b8fb6429df7039ffeb314c, type: 3}
+      - {fileID: 3537171100188795310, guid: fd4f305029771814db0d47f86b2d04bf, type: 3}
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: cb36071bb3b8fb6429df7039ffeb314c, type: 3}
+      - {fileID: 3537171100188795310, guid: bd55a62da43d15d4f96b3223088cb8ff, type: 3}
+      - {fileID: 3537171100188795310, guid: b6675e95900e8474ca01e96fbd3ab2bd, type: 3}
+      - {fileID: 3537171100188795310, guid: 11b24a89dcc587e4f975a94f3297d9b8, type: 3}
       - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
       - {fileID: 3537171100188795310, guid: 7fd860da0f056bd4f90cb38aada23101, type: 3}
       - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}
@@ -186,6 +213,16 @@ MonoBehaviour:
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:
+      - {fileID: 3537171100188795310, guid: bd55a62da43d15d4f96b3223088cb8ff, type: 3}
+      - {fileID: 3537171100188795310, guid: b6675e95900e8474ca01e96fbd3ab2bd, type: 3}
+      - {fileID: 3537171100188795310, guid: 11b24a89dcc587e4f975a94f3297d9b8, type: 3}
+      - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}
+      - {fileID: 3537171100188795310, guid: 887c83d071b0afe4b9c3e1b5982434ae, type: 3}
+      - {fileID: 3537171100188795310, guid: b6675e95900e8474ca01e96fbd3ab2bd, type: 3}
+      - {fileID: 3537171100188795310, guid: 11b24a89dcc587e4f975a94f3297d9b8, type: 3}
+      - {fileID: 3537171100188795310, guid: f5988bece832bc44fb6311ed8e429675, type: 3}
+      - {fileID: 3537171100188795310, guid: cb36071bb3b8fb6429df7039ffeb314c, type: 3}
+      - {fileID: 3537171100188795310, guid: fd4f305029771814db0d47f86b2d04bf, type: 3}
       - {fileID: 3537171100188795310, guid: 34cbf1f613473ec4c86d2b3b9dded148, type: 3}
       - {fileID: 3537171100188795310, guid: 7fd860da0f056bd4f90cb38aada23101, type: 3}
       - {fileID: 3537171100188795310, guid: f6a587f8b3fd50340975cc3b9dbd5409, type: 3}

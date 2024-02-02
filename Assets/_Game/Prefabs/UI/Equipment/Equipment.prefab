@@ -164,8 +164,8 @@ GameObject:
   - component: {fileID: 6294446555702840684}
   - component: {fileID: 5747439580459461569}
   - component: {fileID: 7277753390103643640}
-  - component: {fileID: 8872034509698998432}
   - component: {fileID: 184680010535777274}
+  - component: {fileID: 2698445347384851052}
   m_Layer: 5
   m_Name: Scroller
   m_TagString: Untagged
@@ -298,19 +298,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8872034509698998432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6955104341352597612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
 --- !u!114 &184680010535777274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,6 +314,20 @@ MonoBehaviour:
   cellViewPrefabs:
   - {fileID: 2515363666287746501, guid: 22528c50b81f0164b8fa2f2073e8a4e1, type: 3}
   numberOfCellsPerRow: 4
+--- !u!114 &2698445347384851052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955104341352597612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &8307335104559166679
 GameObject:
   m_ObjectHideFlags: 0
