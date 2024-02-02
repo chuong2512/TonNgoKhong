@@ -40,7 +40,12 @@ namespace Game
             _player.Exp += 10;
             _player.Coin += _game.CoinValue;
 
-            var time = TimerManager.Instance.TimeToDisplay;
+            if (_result)
+            {
+                _player.Gem += 10;
+            }
+
+var time = TimerManager.Instance.TimeToDisplay;
 
             _player.SetMaxTime(time, _player.choosingMap);
         }
