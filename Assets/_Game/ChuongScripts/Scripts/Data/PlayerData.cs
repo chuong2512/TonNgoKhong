@@ -23,6 +23,7 @@ public class PlayerData : BaseData
         {
             _coin = value;
             OutGameAction.OnChangeCoin?.Invoke(value);
+            Save();
         }
     }
 
@@ -33,6 +34,7 @@ public class PlayerData : BaseData
         {
             _gem = value;
             OutGameAction.OnChangeGem?.Invoke(value);
+            Save();
         }
     }
 
@@ -43,6 +45,7 @@ public class PlayerData : BaseData
         {
             _exp = value;
             OutGameAction.OnChangeExp?.Invoke(value);
+            Save();
         }
     }
 

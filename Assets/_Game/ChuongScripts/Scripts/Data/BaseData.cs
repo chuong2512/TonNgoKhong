@@ -47,4 +47,19 @@ public class BaseData : MonoBehaviour
     {
         Save();
     }
+    
+    private void OnDisable()
+    {
+        Save();
+    }
+
+    private void OnApplicationQuit()
+    {
+        Save();
+    }
+
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        Save();
+    }
 }

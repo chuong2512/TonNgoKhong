@@ -4721,8 +4721,10 @@ struct EquipmentIcon_t8F66248416BB31F92E20FFECF43D4A4622733FC5  : public MonoBeh
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___bgImg_5;
 	// UnityEngine.UI.Image Game.EquipmentIcon::typeImg
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___typeImg_6;
+	// TMPro.TextMeshProUGUI Game.EquipmentIcon::levelTMP
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___levelTMP_7;
 	// Game.EScrollData Game.EquipmentIcon::_eData
-	EScrollData_tD9851C9C343F4E06E83CDDD918C820A061722DC5* ____eData_7;
+	EScrollData_tD9851C9C343F4E06E83CDDD918C820A061722DC5* ____eData_8;
 };
 
 // FakeLoading
@@ -5204,7 +5206,7 @@ struct EnemySpawnManager_t24B0AD314D6AE4980235C30B187AFCD0FF84E2C2_StaticFields
 struct EquipmentItem_t7B4C597494DACD98B159CE1278BA7B61BF8A2294  : public EquipmentIcon_t8F66248416BB31F92E20FFECF43D4A4622733FC5
 {
 	// UnityEngine.UI.Button Game.EquipmentItem::itemBtn
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___itemBtn_8;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___itemBtn_9;
 };
 
 // FirebaseInit
@@ -20729,8 +20731,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_ResetData_m3FFAAA65CB12F997E1
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___timeRegister_11), (void*)L_2);
 		// time = 3 * 24 * 60 * 60;
 		__this->___time_10 = (259200.0f);
-		// _coin = 0;
-		__this->____coin_5 = 0;
+		// _coin = 10;
+		__this->____coin_5 = ((int32_t)10);
 		// _gem = 100000;
 		__this->____gem_6 = ((int32_t)100000);
 		// _exp = 0;
