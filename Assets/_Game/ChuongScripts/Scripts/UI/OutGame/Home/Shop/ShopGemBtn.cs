@@ -5,6 +5,8 @@ namespace Game
 {
     public class ShopGemBtn : MonoBehaviour
     {
+        [SerializeField] private string package_id = "buy_linh_dan_tnk_1";
+
         [SerializeField] private int _amount;
         [SerializeField] private float _price;
         [SerializeField] private Button _button;
@@ -24,7 +26,8 @@ namespace Game
 
         private void OnClickButton()
         {
-            _player.Gem += _amount;
+            IAPManager.OnPurchaseSuccess = () => { _player.Gem += _amount; };
+            IAPManager.Instance.BuyProductID(package_id);
         }
     }
 }

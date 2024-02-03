@@ -20782,7 +20782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_ResetData_m3FFAAA65CB12F997E1
 		// _coin = 10;
 		__this->____coin_5 = ((int32_t)10);
 		// _gem = 10;
-		__this->____gem_6 = ((int32_t)100000);
+		__this->____gem_6 = ((int32_t)10);
 		// _exp = 0;
 		__this->____exp_7 = 0;
 		// mapUnlocks = new List<MapRecord>();
@@ -21280,6 +21280,16 @@ IL_0021:
 		__this->___CurrentShoe_10 = (-1);
 		// CurrentRing = -1;
 		__this->___CurrentRing_11 = (-1);
+		// }
+		return;
+	}
+}
+// System.Void InventoryData::SaveData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD (InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* __this, const RuntimeMethod* method) 
+{
+	{
+		// Save();
+		BaseData_Save_m836E419296D0C33556E5A4AAE02D4153E3504B0E(__this, NULL);
 		// }
 		return;
 	}

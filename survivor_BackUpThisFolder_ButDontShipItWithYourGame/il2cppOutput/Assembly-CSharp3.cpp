@@ -9301,6 +9301,8 @@ inline void List_1_Add_m29E7C123CE8B30EAA16F321421ECAD05DFF0B38B_inline (List_1_
 {
 	((  void (*) (List_1_t708010F43678C212220AED5B11A616B6FF2708FB*, AEquipment_t91797DE4BF0FDCC43734F46C5E8B1DF273B57A09*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
+// System.Void InventoryData::SaveData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD (InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* __this, const RuntimeMethod* method) ;
 // Game.EquipmentData Game.EquipmentSO::GetEquipmentData(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EquipmentData_t455EC88396C59BFB27446ACFC8FBBB95B447C58B* EquipmentSO_GetEquipmentData_m428353FDABA236C8A61E84ED36C7A24DBA591E48 (EquipmentSO_tD6D761C6B7B4AB153DE501F99B30D4ECFCC0EE62* __this, int32_t ___ID0, const RuntimeMethod* method) ;
 // System.Void Game.GameDataManager::AddItem(Game.AEquipment)
@@ -13213,6 +13215,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameDataManager_AddItem_mE5D565420BC41BE
 		AEquipment_t91797DE4BF0FDCC43734F46C5E8B1DF273B57A09* L_7 = ___equipment0;
 		NullCheck(L_6);
 		List_1_Add_m29E7C123CE8B30EAA16F321421ECAD05DFF0B38B_inline(L_6, L_7, List_1_Add_m29E7C123CE8B30EAA16F321421ECAD05DFF0B38B_RuntimeMethod_var);
+		// inventoryData.SaveData();
+		InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* L_8 = __this->___inventoryData_13;
+		NullCheck(L_8);
+		InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD(L_8, NULL);
 		// }
 		return;
 	}
@@ -13236,6 +13242,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameDataManager_AddItem_m681E8899D910AF1
 		// AddItem(e);
 		AEquipment_t91797DE4BF0FDCC43734F46C5E8B1DF273B57A09* L_4 = V_0;
 		GameDataManager_AddItem_mE5D565420BC41BEAF7C0590E1D9237F0816336E1(__this, L_4, NULL);
+		// inventoryData.SaveData();
+		InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* L_5 = __this->___inventoryData_13;
+		NullCheck(L_5);
+		InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD(L_5, NULL);
 		// }
 		return;
 	}
@@ -13264,6 +13274,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameDataManager_AddItemWithRank_m0FC9E5D
 		// AddItem(e);
 		AEquipment_t91797DE4BF0FDCC43734F46C5E8B1DF273B57A09* L_6 = V_0;
 		GameDataManager_AddItem_mE5D565420BC41BEAF7C0590E1D9237F0816336E1(__this, L_6, NULL);
+		// inventoryData.SaveData();
+		InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* L_7 = __this->___inventoryData_13;
+		NullCheck(L_7);
+		InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD(L_7, NULL);
 		// }
 		return;
 	}
@@ -13317,6 +13331,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameDataManager_RemoveItem_m574FE5973D7A
 		// RemoveItem(item);
 		AEquipment_t91797DE4BF0FDCC43734F46C5E8B1DF273B57A09* L_2 = V_0;
 		GameDataManager_RemoveItem_mCCD3FD9858972415A6BF02F1B4F18A5C1289366A(__this, L_2, NULL);
+		// inventoryData.SaveData();
+		InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* L_3 = __this->___inventoryData_13;
+		NullCheck(L_3);
+		InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD(L_3, NULL);
 		// }
 		return;
 	}
@@ -13350,6 +13368,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameDataManager_RemoveItem_mCCD3FD985897
 
 IL_0010:
 	{
+		// inventoryData.SaveData();
+		InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* L_4 = __this->___inventoryData_13;
+		NullCheck(L_4);
+		InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD(L_4, NULL);
 		// }
 		return;
 	}
@@ -13472,7 +13494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameDataManager_UpgradeLevelEquipment_m2
 		RuntimeObject* L_0 = ___equipment0;
 		if (!L_0)
 		{
-			goto IL_002d;
+			goto IL_0038;
 		}
 	}
 	{
@@ -13511,11 +13533,15 @@ IL_0025:
 		RuntimeObject* L_9 = ___equipment0;
 		NullCheck(L_9);
 		InterfaceActionInvoker0::Invoke(4 /* System.Void Game.IEquipment::UpgradeLevel() */, IEquipment_t1DCE1089E88F9A21568C55A6EAB19D30F2F9E020_il2cpp_TypeInfo_var, L_9);
+		// inventoryData.SaveData();
+		InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* L_10 = __this->___inventoryData_13;
+		NullCheck(L_10);
+		InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD(L_10, NULL);
 		// return true;
 		return (bool)1;
 	}
 
-IL_002d:
+IL_0038:
 	{
 		// return false;
 		return (bool)0;
@@ -13573,6 +13599,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameDataManager_UpgradeRankEquipment_m87
 
 IL_0029:
 	{
+		// inventoryData.SaveData();
+		InventoryData_t35699202C58B617D6215A45897660A5C259CD95F* L_10 = __this->___inventoryData_13;
+		NullCheck(L_10);
+		InventoryData_SaveData_mCFFD83C0D843C85236AD1F74E2955D3690A27CFD(L_10, NULL);
 		// }
 		return;
 	}
@@ -24434,10 +24464,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayerStatus_t625323A817F4E116DDF8453C4F2DDFE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public PlayerStatus BaseStat => new PlayerStatus(50, 1, 3);
+		// public PlayerStatus BaseStat => new PlayerStatus(80, 1, 3);
 		PlayerStatus_t625323A817F4E116DDF8453C4F2DDFECA81BA78A* L_0 = (PlayerStatus_t625323A817F4E116DDF8453C4F2DDFECA81BA78A*)il2cpp_codegen_object_new(PlayerStatus_t625323A817F4E116DDF8453C4F2DDFECA81BA78A_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		PlayerStatus__ctor_m6D8F6399421A1E7B6B84C87E64320AF8B8B018C0(L_0, (50.0f), (1.0f), (3.0f), NULL);
+		PlayerStatus__ctor_m6D8F6399421A1E7B6B84C87E64320AF8B8B018C0(L_0, (80.0f), (1.0f), (3.0f), NULL);
 		return L_0;
 	}
 }

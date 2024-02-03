@@ -1,220 +1,244 @@
-﻿using System;
+using System;
+using System.Collections;
+using SinhTon;
 using UnityEngine;
 using UnityEngine.Purchasing;
-using UnityEngine.UI;
+using UnityEngine.Purchasing.Security;
 
-
-
-public class IAPManager : MonoBehaviour, IStoreListener
+public class IAPKey
 {
-    public GameObject RestoreButton;
+    public const string PACK1 = "buy_linh_dan_tnk_1";
+    public const string PACK2 = "buy_linh_dan_tnk_2";
+    public const string PACK3 = "buy_linh_dan_tnk_3";
+    public const string PACK4 = "buy_linh_dan_tnk_4";
+    public const string PACK5 = "buy_linh_dan_tnk_5";
+    public const string PACK6 = "buy_linh_dan_tnk_6";
+}
 
-    public GameObject PanelReward;
-    
-    public static IAPManager instance;
-    private static IStoreController m_StoreController;
-    private static IExtensionProvider m_StoreExtensionProvider;
+public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
+{
+    private static IStoreController storeController;
+    private static IExtensionProvider extensionProvider;
+    public static Action OnPurchaseSuccess;
 
-    //Step 1 create your products
-    private string PackCharacters;
-    private string ads;
+    private bool _isBuyFromShop;
 
-    public GameObject PackCharactersPrice;
-    public GameObject AdsPrice;
-
-    public Button PackCharactersButton;
-    public Button AdsButton;
-    
-
-    //************************** Adjust these methods **************************************
-    public void InitializePurchasing()
+    private void Start()
     {
-       
-#if UNITY_ANDROID
-        RestoreButton.SetActive(false);
-        PackCharacters = "pack_characters";
-        ads = "remove_ads";
+        InitIAP();
+    }
 
-#endif
-#if UNITY_IOS
-         PackCharacters = "pack_characters";
-        ads = "remove_ads";
-         RestoreButton.SetActive(true);
-
-#endif
-        if (PlayerPrefs.HasKey("pack_characters"))
+    private void InitIAP()
+    {
+        if (storeController == null)
         {
-            PackCharactersPrice.SetActive(false);
-            PackCharactersButton.interactable = false;
+            InitProduct();
         }
-        if (PlayerPrefs.HasKey("ads"))
+    }
+
+    private void InitProduct()
+    {
+        if (IsInitialized())
         {
-            AdsPrice.SetActive(false);
-            AdsButton.interactable = false;
+            return;
         }
 
-       
-       
-        if (IsInitialized()) { return; }
         var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 
-        //Step 2 choose if your product is a consumable or non consumable
-        builder.AddProduct(PackCharacters, ProductType.NonConsumable);
-        builder.AddProduct(ads, ProductType.NonConsumable);
+        builder.AddProduct(IAPKey.PACK1, ProductType.Consumable);
+        builder.AddProduct(IAPKey.PACK2, ProductType.Consumable);
+        builder.AddProduct(IAPKey.PACK3, ProductType.Consumable);
+        builder.AddProduct(IAPKey.PACK4, ProductType.Consumable);
+        builder.AddProduct(IAPKey.PACK5, ProductType.Consumable);
+        builder.AddProduct(IAPKey.PACK6, ProductType.Consumable);
 
         UnityPurchasing.Initialize(this, builder);
     }
 
-   
-    private bool IsInitialized()
+    public void BuyProductID(string productId)
     {
-        return m_StoreController != null && m_StoreExtensionProvider != null;
-    }
+        _isBuyFromShop = true;
 
-
-    //Step 3 Create methods
-
-    public void BuyCharacters()
-    {
-        if (!PlayerPrefs.HasKey("pack_characters"))
-        {
-            BuyProductID(PackCharacters);
-        }
-        
-    }
-    public void BuyAds()
-    {
-        if (!PlayerPrefs.HasKey("ads"))
-        {
-            BuyProductID(ads);
-        }
-
-    }
-
-
-    //Step 4 modify purchasing
-    public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
-    {
-        if (String.Equals(args.purchasedProduct.definition.id, PackCharacters, StringComparison.Ordinal))
-        {
-          
-            PlayerPrefs.SetInt("ads", 1);
-            AdsPrice.SetActive(false);
-            AdsButton.interactable = false;
-            PanelReward.SetActive(true);
-            PlayerPrefs.SetInt("pack_characters", 1);
-            PackCharactersPrice.SetActive(false);
-            PackCharactersButton.interactable = false;
-            Debug.Log("PackCharacters Purchased + ads");
-        }
-        else if(String.Equals(args.purchasedProduct.definition.id, ads, StringComparison.Ordinal))
-        {
-            PlayerPrefs.SetInt("ads", 1);
-            AdsPrice.SetActive(false);
-            AdsButton.interactable = false;
-            Debug.Log("Ads Purchased");
-            PanelReward.SetActive(true);
-           
-        }
-        else
-        {
-            Debug.Log("Purchase Failed");
-        }
-        return PurchaseProcessingResult.Complete;
-    }
-
-
-
-
-
-
-
-
-
-
-    //**************************** Dont worry about these methods ***********************************
-    private void Awake()
-    {
-        TestSingleton();
-    }
-
-    void Start()
-    {
-        if (m_StoreController == null) { InitializePurchasing(); }
-    }
-
-    private void TestSingleton()
-    {
-        if (instance != null) { Destroy(gameObject); return; }
-        instance = this;
-        //DontDestroyOnLoad(gameObject);
-    }
-
-    void BuyProductID(string productId)
-    {
-        if (IsInitialized())
-        {
-            Product product = m_StoreController.products.WithID(productId);
-            if (product != null && product.availableToPurchase)
+#if UNITY_EDITOR
+        OnPurchaseComplete(productId);
+#else
+            // If Purchasing has been initialized ...
+            if (IsInitialized())
             {
-                Debug.Log(string.Format("Purchasing product asychronously: '{0}'", product.definition.id));
-                m_StoreController.InitiatePurchase(product);
+                Product product = storeController.products.WithID(productId);
+
+                if (product != null && product.availableToPurchase)
+                {
+                    Debug.Log(string.Format("Purchasing product asychronously: '{0}'", product.definition.id));
+                    storeController.InitiatePurchase(product);
+                }
+                else
+                {
+                    // ... report the product look-up failure situation  
+                    Debug.Log("BuyProductID: FAIL. Not purchasing product, either is not found or is not available for purchase");
+                }
             }
             else
             {
-                Debug.Log("BuyProductID: FAIL. Not purchasing product, either is not found or is not available for purchase");
+                // ... report the fact Purchasing has not succeeded initializing yet. Consider waiting longer or 
+                // retrying initialization.
+                Debug.Log("BuyProductID FAIL. Not initialized.");
             }
-        }
-        else
-        {
-            Debug.Log("BuyProductID FAIL. Not initialized.");
-        }
+#endif
     }
 
-    public void RestorePurchases()
+    private bool IsInitialized()
     {
+        // Only say we are initialized if both the Purchasing references are set.
+        return storeController != null && extensionProvider != null;
+        ;
+    }
+
+    public void OnPurchaseFailed(UnityEngine.Purchasing.Product product, PurchaseFailureReason failureReason)
+    {
+    }
+
+    public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
+    {
+        // Purchasing has succeeded initializing. Collect our Purchasing references.
+        Debug.Log("OnInitialized: PASS");
+
+        // Overall Purchasing system, configured with products for this application.
+        storeController = controller;
+        // Store specific subsystem, for accessing device-specific store features.
+        extensionProvider = extensions;
+    }
+
+    public void RestorePurchases(System.Action<bool> OnRestored)
+    {
+        // If Purchasing has not yet been set up ...
         if (!IsInitialized())
         {
+            // ... report the situation and stop restoring. Consider either waiting longer, or retrying initialization.
             Debug.Log("RestorePurchases FAIL. Not initialized.");
+            OnRestored?.Invoke(false);
             return;
         }
 
+        // If we are running on an Apple device ... 
         if (Application.platform == RuntimePlatform.IPhonePlayer ||
             Application.platform == RuntimePlatform.OSXPlayer)
         {
             Debug.Log("RestorePurchases started ...");
 
-            var apple = m_StoreExtensionProvider.GetExtension<IAppleExtensions>();
-            apple.RestoreTransactions((result) => {
-                Debug.Log("RestorePurchases continuing: " + result + ". If no further messages, no purchases available to restore.");
+            var apple = extensionProvider.GetExtension<IAppleExtensions>();
+            apple.RestoreTransactions((result) =>
+            {
+                Debug.Log("Transactions restored: " + (result ? "Succeed" : "Failed"));
+                OnRestored?.Invoke(result);
             });
         }
         else
         {
             Debug.Log("RestorePurchases FAIL. Not supported on this platform. Current = " + Application.platform);
+            OnRestored?.Invoke(false);
         }
     }
-
-    public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
-    {
-        Debug.Log("OnInitialized: PASS");
-        m_StoreController = controller;
-        m_StoreExtensionProvider = extensions;
-    }
-
 
     public void OnInitializeFailed(InitializationFailureReason error)
     {
         Debug.Log("OnInitializeFailed InitializationFailureReason:" + error);
     }
 
-    public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
-    {
-        Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}", product.definition.storeSpecificId, failureReason));
-    }
-
     public void OnInitializeFailed(InitializationFailureReason error, string message)
     {
-        ((IStoreListener)instance).OnInitializeFailed(error, message);
+    }
+
+    public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
+    {
+        bool validPurchase = true; // Presume valid for platforms with no R.V.
+
+        // Unity IAP's validation logic is only included on these platforms.
+#if UNITY_ANDROID || UNITY_IOS || UNITY_STANDALONE_OSX
+        // Prepare the validator with the secrets we prepared in the Editor
+        // obfuscation window.
+        var validator = new CrossPlatformValidator(GooglePlayTangle.Data(), AppleTangle.Data(), Application.identifier);
+        try
+        {
+            // On Google Play, result has a single product ID.
+            // On Apple stores, receipts contain multiple products.
+            var result = validator.Validate(args.purchasedProduct.receipt);
+
+            // If Restore Purchase, handle it here and do not Log
+            if (!_isBuyFromShop)
+            {
+                HandleRestorePurchase(args.purchasedProduct.definition.id);
+                return PurchaseProcessingResult.Complete;
+            }
+
+            // For informational purposes, we list the receipt(s)
+            Debug.Log("Receipt is valid. Contents:");
+            foreach (IPurchaseReceipt productReceipt in result)
+            {
+                Debug.Log(productReceipt.productID);
+                Debug.Log(productReceipt.purchaseDate);
+                Debug.Log(productReceipt.transactionID);
+
+                if (Application.platform == RuntimePlatform.Android)
+                {
+                    var googleReceipt = (GooglePlayReceipt) productReceipt;
+                    var pId = googleReceipt.productID;
+                    var metadata = storeController.products.WithID(pId).metadata;
+                }
+
+                if (Application.platform == RuntimePlatform.IPhonePlayer)
+                {
+                    var appleReceipt = (AppleInAppPurchaseReceipt) productReceipt;
+                    var pId = appleReceipt.productID;
+                    var metadata = storeController.products.WithID(pId).metadata;
+                }
+            }
+        }
+        catch (IAPSecurityException)
+        {
+            Debug.Log("Invalid receipt, not unlocking content");
+            validPurchase = false;
+        }
+#endif
+
+        _isBuyFromShop = false;
+        if (validPurchase)
+        {
+            // Unlock the appropriate content here.
+            OnPurchaseComplete(args.purchasedProduct.definition.id);
+        }
+
+        // Return a flag indicating whether this product has completely been received, or if the application needs 
+        // to be reminded of this purchase at next app launch. Use PurchaseProcessingResult.Pending when still 
+        // saving purchased products to the cloud, and when that save is delayed. 
+        return PurchaseProcessingResult.Complete;
+    }
+
+    private void HandleRestorePurchase(string productId)
+    {
+        StartCoroutine(CoHandleRestore(productId));
+    }
+
+    private void OnPurchaseComplete(string productId)
+    {
+        OnPurchaseSuccess?.Invoke();
+    }
+
+    private void BuyPack()
+    {
+        //todo: buy pack
+    }
+
+
+    private IEnumerator CoHandleRestore(string productId)
+    {
+        yield return new WaitForSeconds(0.15f);
+    }
+
+    public static string GetLocalizePrice(string key, string defaultPriceText)
+    {
+        if (storeController != null)
+            return storeController.products.WithID(key).metadata.localizedPriceString;
+        return defaultPriceText;
     }
 }
