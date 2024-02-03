@@ -20406,6 +20406,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseData_OnDestroy_mD7335EA8F1057B7D3F94
 		return;
 	}
 }
+// System.Void BaseData::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseData_OnDisable_m399A08C9389E7FF1C967C259C68A55EC7507DFDF (BaseData_t5144136E89F73ED714F412780B5FC9AD12F42B90* __this, const RuntimeMethod* method) 
+{
+	{
+		// Save();
+		BaseData_Save_m836E419296D0C33556E5A4AAE02D4153E3504B0E(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void BaseData::OnApplicationQuit()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseData_OnApplicationQuit_mE9FE7301553226648461C4E4A487EF4C11147F4F (BaseData_t5144136E89F73ED714F412780B5FC9AD12F42B90* __this, const RuntimeMethod* method) 
+{
+	{
+		// Save();
+		BaseData_Save_m836E419296D0C33556E5A4AAE02D4153E3504B0E(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void BaseData::OnApplicationFocus(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseData_OnApplicationFocus_m959874D5BC79314F007FEA2A0C9CFF7F9E4B4993 (BaseData_t5144136E89F73ED714F412780B5FC9AD12F42B90* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+{
+	{
+		// Save();
+		BaseData_Save_m836E419296D0C33556E5A4AAE02D4153E3504B0E(__this, NULL);
+		// }
+		return;
+	}
+}
 // System.Void BaseData::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseData__ctor_m0D7676FB9252C0457345B0FA1934222BD0F5B3A6 (BaseData_t5144136E89F73ED714F412780B5FC9AD12F42B90* __this, const RuntimeMethod* method) 
 {
@@ -20453,18 +20483,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_set_Coin_mF771CF9348D75854318
 		if (L_2)
 		{
 			G_B2_0 = L_2;
-			goto IL_0011;
+			goto IL_0012;
 		}
 	}
 	{
-		return;
+		goto IL_0018;
 	}
 
-IL_0011:
+IL_0012:
 	{
 		int32_t L_3 = ___value0;
 		NullCheck(G_B2_0);
 		Action_1_Invoke_mAC3C34BA1905AB5B79E483CD9BB082B7D667F703_inline(G_B2_0, L_3, NULL);
+	}
+
+IL_0018:
+	{
+		// Save();
+		BaseData_Save_m836E419296D0C33556E5A4AAE02D4153E3504B0E(__this, NULL);
 		// }
 		return;
 	}
@@ -20500,18 +20536,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_set_Gem_m3C95598C5D2D39C711A8
 		if (L_2)
 		{
 			G_B2_0 = L_2;
-			goto IL_0011;
+			goto IL_0012;
 		}
 	}
 	{
-		return;
+		goto IL_0018;
 	}
 
-IL_0011:
+IL_0012:
 	{
 		int32_t L_3 = ___value0;
 		NullCheck(G_B2_0);
 		Action_1_Invoke_mAC3C34BA1905AB5B79E483CD9BB082B7D667F703_inline(G_B2_0, L_3, NULL);
+	}
+
+IL_0018:
+	{
+		// Save();
+		BaseData_Save_m836E419296D0C33556E5A4AAE02D4153E3504B0E(__this, NULL);
 		// }
 		return;
 	}
@@ -20547,18 +20589,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_set_Exp_m430D6C300DC3F25EB3C1
 		if (L_2)
 		{
 			G_B2_0 = L_2;
-			goto IL_0011;
+			goto IL_0012;
 		}
 	}
 	{
-		return;
+		goto IL_0018;
 	}
 
-IL_0011:
+IL_0012:
 	{
 		int32_t L_3 = ___value0;
 		NullCheck(G_B2_0);
 		Action_1_Invoke_mAC3C34BA1905AB5B79E483CD9BB082B7D667F703_inline(G_B2_0, L_3, NULL);
+	}
+
+IL_0018:
+	{
+		// Save();
+		BaseData_Save_m836E419296D0C33556E5A4AAE02D4153E3504B0E(__this, NULL);
 		// }
 		return;
 	}
@@ -20733,7 +20781,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerData_ResetData_m3FFAAA65CB12F997E1
 		__this->___time_10 = (259200.0f);
 		// _coin = 10;
 		__this->____coin_5 = ((int32_t)10);
-		// _gem = 100000;
+		// _gem = 10;
 		__this->____gem_6 = ((int32_t)100000);
 		// _exp = 0;
 		__this->____exp_7 = 0;
