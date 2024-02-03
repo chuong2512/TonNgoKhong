@@ -52,4 +52,9 @@ public class InventoryData : BaseData
         CurrentShoe = -1;
         CurrentRing = -1;
     }
+
+    public void SaveData()
+    {
+        Save();
+    }
 }

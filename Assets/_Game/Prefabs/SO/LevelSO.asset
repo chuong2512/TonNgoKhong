@@ -30,8 +30,8 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
-      AddDMGPerTime: 20
-      AddHPPerTime: 15
+      AddDMGPerTime: 0.2
+      AddHPPerTime: 5
       MaxEnemies: 100
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 2
@@ -63,8 +63,8 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
-      AddDMGPerTime: 20
-      AddHPPerTime: 15
+      AddDMGPerTime: 0.3
+      AddHPPerTime: 10
       MaxEnemies: 100
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
@@ -97,9 +97,9 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
-      AddDMGPerTime: 20
-      AddHPPerTime: 15
-      MaxEnemies: 100
+      AddDMGPerTime: 0.3
+      AddHPPerTime: 1
+      MaxEnemies: 15
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:
@@ -132,7 +132,7 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
-      AddDMGPerTime: 20
+      AddDMGPerTime: 0.4
       AddHPPerTime: 15
       MaxEnemies: 100
       ZoneSpawnTime: 9999
@@ -168,10 +168,10 @@ MonoBehaviour:
         <CoinValue>k__BackingField: 1
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
-        <Damage>k__BackingField: 2
-      AddDMGPerTime: 20
-      AddHPPerTime: 15
-      MaxEnemies: 100
+        <Damage>k__BackingField: 3
+      AddDMGPerTime: 0.2
+      AddHPPerTime: 20
+      MaxEnemies: 200
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:
@@ -206,10 +206,10 @@ MonoBehaviour:
         <CoinValue>k__BackingField: 1
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
-        <Damage>k__BackingField: 2
-      AddDMGPerTime: 20
+        <Damage>k__BackingField: 3
+      AddDMGPerTime: 0.5
       AddHPPerTime: 15
-      MaxEnemies: 100
+      MaxEnemies: 200
       ZoneSpawnTime: 9999
       TimeSpawnBoss: 5
       Enemies:

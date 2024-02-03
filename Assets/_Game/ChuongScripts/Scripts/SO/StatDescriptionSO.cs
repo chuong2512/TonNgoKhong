@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,7 +8,7 @@ namespace Game
     [CreateAssetMenu(fileName = "StatDescriptionSO", menuName = "ScriptableObjects/StatDescriptionSO", order = 1)]
     public class StatDescriptionSO : ScriptableObject
     {
-        public PlayerStatus BaseStat => new PlayerStatus(50, 1, 3);
+        public PlayerStatus BaseStat => new PlayerStatus(80, 1, 3);
 
         public List<EquipmentType> EquipmentTypes;
 

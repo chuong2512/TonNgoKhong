@@ -42,6 +42,8 @@ namespace Game
             inventoryData.mapID++;
 
             Equipments.Add(equipment);
+
+            inventoryData.SaveData();
         }
 
         public void AddItem(int ID)
@@ -51,6 +53,7 @@ namespace Game
             var e = eData.CreateEquipment();
 
             AddItem(e);
+            inventoryData.SaveData();
         }
 
         public void AddItemWithRank(int ID, int rank)
@@ -62,6 +65,7 @@ namespace Game
             e.Rank = rank;
 
             AddItem(e);
+            inventoryData.SaveData();
         }
 
         public AEquipment GetItemWithMapID(int mapID)
@@ -69,11 +73,12 @@ namespace Game
             var find = Equipments.Find(equipment => equipment.MapID == mapID);
             return find;
         }
-        
+
         public void RemoveItem(int mapID)
         {
             var item = GetItemWithMapID(mapID);
             RemoveItem(item);
+            inventoryData.SaveData();
         }
 
         public void RemoveItem(AEquipment equipment)
@@ -82,6 +87,8 @@ namespace Game
             {
                 Equipments.Remove(equipment);
             }
+
+            inventoryData.SaveData();
         }
 
         public bool IsUsingMapID(int mapID)
@@ -113,6 +120,7 @@ namespace Game
 
                 if (equipment.Level >= eData.MaxLevel) return false;
                 equipment.UpgradeLevel();
+                inventoryData.SaveData();
                 return true;
             }
 
@@ -130,6 +138,8 @@ namespace Game
                     equipment.UpgradeRank();
                 }
             }
+
+            inventoryData.SaveData();
         }
 
         public List<AEquipment> Necklaces => Equipments.FindAll(equipment => equipment is Necklace);
