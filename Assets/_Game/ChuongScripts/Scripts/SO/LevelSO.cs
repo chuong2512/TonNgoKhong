@@ -86,6 +86,8 @@ namespace Game
             Damage = 2
         };
 
+        public int TimeToWin = 10 * 60;
+        
         public float AddDMGPerTime = 0.2f, AddHPPerTime = 1.8f;
         public int MaxEnemies = 100;
         public int ZoneSpawnTime = 999;

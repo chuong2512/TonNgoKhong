@@ -30,6 +30,7 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
+      TimeToWin: 300
       AddDMGPerTime: 0.2
       AddHPPerTime: 5
       MaxEnemies: 100
@@ -63,6 +64,7 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
+      TimeToWin: 360
       AddDMGPerTime: 0.3
       AddHPPerTime: 10
       MaxEnemies: 100
@@ -97,6 +99,7 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
+      TimeToWin: 420
       AddDMGPerTime: 0.3
       AddHPPerTime: 1
       MaxEnemies: 15
@@ -132,6 +135,7 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 2
+      TimeToWin: 600
       AddDMGPerTime: 0.4
       AddHPPerTime: 15
       MaxEnemies: 100
@@ -169,6 +173,7 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 3
+      TimeToWin: 720
       AddDMGPerTime: 0.2
       AddHPPerTime: 20
       MaxEnemies: 200
@@ -207,6 +212,7 @@ MonoBehaviour:
         <Piority>k__BackingField: 1
         <Speed>k__BackingField: 1
         <Damage>k__BackingField: 3
+      TimeToWin: 900
       AddDMGPerTime: 0.5
       AddHPPerTime: 15
       MaxEnemies: 200

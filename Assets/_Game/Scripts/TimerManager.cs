@@ -12,11 +12,15 @@ public class TimerManager : Singleton<TimerManager>
 
     public long TimeToDisplay => _timeToDisplay;
 
+    private DataMap _dataMap;
+    
     public TimeSpan PlayTime => TimeSpan.FromSeconds(_timeToDisplay);
 
     private void Start()
     {
         _timeToDisplay = 0;
+        
+        _dataMap = GameDataManager.Instance.GetCurrentDataMap();
     }
 
     void Update()
@@ -30,7 +34,7 @@ public class TimerManager : Singleton<TimerManager>
             DisplayTime();
         }
 
-        if (_timeToDisplay >= GameConstant.TimeWin)
+        if (_timeToDisplay >= _dataMap.TimeToWin)
         {
             ScreenManager.Instance.OpenScreen(ScreenType.Result, new ResultModel(true));
         }
