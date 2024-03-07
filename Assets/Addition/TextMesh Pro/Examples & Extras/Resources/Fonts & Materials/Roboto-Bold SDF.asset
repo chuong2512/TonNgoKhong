@@ -132,6 +132,7 @@ MonoBehaviour:
     m_StyleName: Bold
     m_PointSize: 90
     m_Scale: 1
+    m_UnitsPerEM: 0
     m_LineHeight: 105.46875
     m_AscentLine: 83.49609
     m_CapLine: 64
