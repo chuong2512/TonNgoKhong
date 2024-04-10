@@ -7,4 +7,5 @@ public class TabManager : MonoBehaviour
     public GameObject ScreenHome;
     public GameObject ScreenShop;
     public GameObject ScreenEquipment;
+    public GameObject ScreenEvolve;
 }
