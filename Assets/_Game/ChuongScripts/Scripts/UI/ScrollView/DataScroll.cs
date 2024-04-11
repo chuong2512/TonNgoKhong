@@ -11,4 +11,14 @@ namespace Game
             MapID = mapID;
         }
     }
+
+    public class EvovleLevelData: ScrollData
+    {
+        public int level;
+    }
+    
+    public class V2EvovleLevelData : EvovleLevelData
+    {
+        
+    }
 }

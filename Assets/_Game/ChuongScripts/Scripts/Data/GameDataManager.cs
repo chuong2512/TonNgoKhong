@@ -9,6 +9,7 @@ namespace Game
         public static string DataKey_PlayerData = "player_data";
         public static string DataKey_SettingData = "setting_data";
         public static string DataKey_InventoryData = "inventory_data";
+        public static string DataKey_EvolveData = "evolve_data";
     }
 
 
