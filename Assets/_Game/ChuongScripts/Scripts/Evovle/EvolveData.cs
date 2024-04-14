@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Game
 {
-    public class EvovleData : BaseData
+    public class EvolveData : BaseData
     {
         public int evolveLevel;
 
@@ -22,6 +22,7 @@ namespace Game
         public void Upgrade()
         {
             evolveLevel++;
+            OutGameAction.UpgradeEvolve?.Invoke();
         }
         
         public override void ResetData()

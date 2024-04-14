@@ -9,6 +9,7 @@ public class OutGameAction
     public static Action<int> OnChangeExp;
     public static Action<float> SetRegisterTime;
     public static Action ChangeEquipment;
+    public static Action UpgradeEvolve;
 
     public static Action<int> OnChooseMap;
 }

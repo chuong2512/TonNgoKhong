@@ -23,7 +23,8 @@ public enum ScreenType
     Pause,
     Result,
     Privacy,
-    EquipmentInfo
+    EquipmentInfo,
+    EvolvePopup
 }
 
 [DefaultExecutionOrder(-99)]

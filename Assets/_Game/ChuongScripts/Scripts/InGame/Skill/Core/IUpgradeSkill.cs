@@ -152,12 +152,17 @@ namespace Game
     {
         [SerializeField] private float def;
 
+        public IDefenseUpgrade(float def)
+        {
+            this.def = def;
+        }
+
         public void Upgrade(IDefenseAttribute weaponBuilder)
         {
             weaponBuilder.Defense += def;
         }
     }
-    
+
     [Serializable]
     public class RangeUpgrade : IUpgradeSkill<IRangeAttribute>
     {
@@ -168,6 +173,8 @@ namespace Game
             weaponBuilder.Range += range;
         }
     }
+    
+    
 
     /*[Serializable]
     public class AddBlueFire : IUpgradeSkill<IFireAttribute>

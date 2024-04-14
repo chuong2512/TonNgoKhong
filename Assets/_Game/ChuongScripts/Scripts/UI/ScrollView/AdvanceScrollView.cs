@@ -46,13 +46,17 @@ namespace Game
         /// <summary>
         /// Populates the data with a lot of records
         /// </summary>
-        public void LoadData(SmallList<ScrollData> data)
+        public void LoadData(SmallList<ScrollData> data, int index = 0)
         {
             _data = data;
 
             // tell the scroller to reload now that we have the data
             scroller.ReloadData();
-            ScrollToTop();
+
+            if (index >= 0)
+            {
+                scroller.JumpToDataIndex(index, forceCalculateRange: true);
+            }
         }
 
         public void UpdateData(SmallList<ScrollData> data)

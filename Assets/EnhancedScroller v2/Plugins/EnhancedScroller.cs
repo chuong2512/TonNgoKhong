@@ -628,6 +628,12 @@ namespace EnhancedUI.EnhancedScroller
         {
             get
             {
+                if (_scrollRectTransform == null)
+                {
+                    _scrollRect = this.GetComponent<ScrollRect>();
+                    _scrollRectTransform = _scrollRect.GetComponent<RectTransform>();
+                }
+                
                 if (scrollDirection == ScrollDirectionEnum.Vertical)
                     return _scrollRectTransform.rect.height;
                 else

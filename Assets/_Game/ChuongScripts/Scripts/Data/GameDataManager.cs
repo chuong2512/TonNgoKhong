@@ -1,3 +1,5 @@
+using UnityEngine.Serialization;
+
 namespace Game
 {
     using SinhTon;
@@ -22,11 +24,13 @@ namespace Game
         [InlineEditor()] public StatDescriptionSO StatDescriptionSO;
         [InlineEditor()] public EquipmentSO EquipmentSO;
         [InlineEditor()] public RankBGSO RankBGSO;
+        [InlineEditor()] public EvolveSO EvolveSo;
 
         /*----Data variable-------------------------------------------------------------------------------------------------*/
         [HideInInspector] public PlayerData playerData;
         [HideInInspector] public SettingData settingData;
         [HideInInspector] public InventoryData inventoryData;
+        [HideInInspector] public EvolveData evolveData;
 
         private void OnEnable()
         {
@@ -44,6 +48,12 @@ namespace Game
             inventoryData.transform.parent = transform;
             inventoryData.Init();
             inventoryData.ValidateData();
+
+            evolveData = new GameObject(Constant.DataKey_EvolveData).AddComponent<EvolveData>();
+            evolveData.transform.parent = transform;
+            evolveData.Init();
+            evolveData.ValidateData();
+
 
             HashIDSkill.InitData();
             LevelSkillConstant.InitData();

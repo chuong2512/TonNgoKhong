@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08bae94a9ea40d49bd6c18bcc09d9e2, type: 3}
+  m_Name: EvolveSO
+  m_EditorClassIdentifier: 
+  levels:
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101504
+    value: 2
+    price:
+      Type: 0
+      Value: 150
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101505
+    value: 8
+    price:
+      Type: 0
+      Value: 300
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101506
+    value: 4
+    price:
+      Type: 0
+      Value: 450
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101507
+    value: 5
+    price:
+      Type: 0
+      Value: 600
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101508
+    value: 14
+    price:
+      Type: 0
+      Value: 750
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101509
+    value: 7
+    price:
+      Type: 0
+      Value: 900
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101510
+    value: 8
+    price:
+      Type: 0
+      Value: 1050
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101511
+    value: 20
+    price:
+      Type: 0
+      Value: 1200
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101512
+    value: 10
+    price:
+      Type: 0
+      Value: 1350
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101513
+    value: 11
+    price:
+      Type: 0
+      Value: 1500
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101514
+    value: 26
+    price:
+      Type: 0
+      Value: 1650
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101515
+    value: 13
+    price:
+      Type: 0
+      Value: 1800
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101516
+    value: 14
+    price:
+      Type: 0
+      Value: 1950
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101517
+    value: 32
+    price:
+      Type: 0
+      Value: 2100
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101518
+    value: 16
+    price:
+      Type: 0
+      Value: 2250
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101519
+    value: 17
+    price:
+      Type: 0
+      Value: 2400
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101520
+    value: 38
+    price:
+      Type: 0
+      Value: 2550
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101521
+    value: 19
+    price:
+      Type: 0
+      Value: 2700
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101522
+    value: 20
+    price:
+      Type: 0
+      Value: 2850
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101523
+    value: 44
+    price:
+      Type: 0
+      Value: 3000
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101524
+    value: 22
+    price:
+      Type: 0
+      Value: 3150
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101525
+    value: 23
+    price:
+      Type: 0
+      Value: 3300
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101526
+    value: 50
+    price:
+      Type: 0
+      Value: 3450
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101527
+    value: 25
+    price:
+      Type: 0
+      Value: 3600
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101528
+    value: 26
+    price:
+      Type: 0
+      Value: 3750
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101529
+    value: 56
+    price:
+      Type: 0
+      Value: 3900
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101530
+    value: 28
+    price:
+      Type: 0
+      Value: 4050
+  - ID: 0
+    upgradeInfo:
+      rid: 4013183687902101531
+    value: 29
+    price:
+      Type: 0
+      Value: 4200
+  - ID: 1
+    upgradeInfo:
+      rid: 4013183687902101532
+    value: 62
+    price:
+      Type: 0
+      Value: 4350
+  - ID: 2
+    upgradeInfo:
+      rid: 4013183687902101533
+    value: 31
+    price:
+      Type: 0
+      Value: 4500
+  statVisuals:
+  - icon: {fileID: 21300000, guid: 74f83087bd60d0948a36f3e4ebb2862e, type: 3}
+    name: "T\u1EA5n c\xF4ng"
+  - icon: {fileID: 21300000, guid: 11d2f3a1d07b4114b9d9223ea7b87b31, type: 3}
+    name: "M\xE1u"
+  - icon: {fileID: 21300000, guid: 839debac7159e11499def7afcd0070d6, type: 3}
+    name: "Gi\xE1p"
+  references:
+    version: 2
+    RefIds:
+    - rid: 4013183687902101504
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 2
+    - rid: 4013183687902101505
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 8
+    - rid: 4013183687902101506
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 4
+    - rid: 4013183687902101507
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 5
+    - rid: 4013183687902101508
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 14
+    - rid: 4013183687902101509
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 7
+    - rid: 4013183687902101510
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 8
+    - rid: 4013183687902101511
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 20
+    - rid: 4013183687902101512
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 10
+    - rid: 4013183687902101513
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 11
+    - rid: 4013183687902101514
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 26
+    - rid: 4013183687902101515
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 13
+    - rid: 4013183687902101516
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 14
+    - rid: 4013183687902101517
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 32
+    - rid: 4013183687902101518
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 16
+    - rid: 4013183687902101519
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 17
+    - rid: 4013183687902101520
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 38
+    - rid: 4013183687902101521
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 19
+    - rid: 4013183687902101522
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 20
+    - rid: 4013183687902101523
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 44
+    - rid: 4013183687902101524
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 22
+    - rid: 4013183687902101525
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 23
+    - rid: 4013183687902101526
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 50
+    - rid: 4013183687902101527
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 25
+    - rid: 4013183687902101528
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 26
+    - rid: 4013183687902101529
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 56
+    - rid: 4013183687902101530
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 28
+    - rid: 4013183687902101531
+      type: {class: AddDamageUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        addDamage: 29
+    - rid: 4013183687902101532
+      type: {class: HPUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        hp: 62
+    - rid: 4013183687902101533
+      type: {class: IDefenseUpgrade, ns: Game, asm: Assembly-CSharp}
+      data:
+        def: 31

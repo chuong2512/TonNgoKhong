@@ -49,6 +49,7 @@ MonoBehaviour:
   StatDescriptionSO: {fileID: 11400000, guid: d0be89a7e034a5c478dc8a83c24abc6c, type: 2}
   EquipmentSO: {fileID: 11400000, guid: 4325aad9b682cd4478641907558b9529, type: 2}
   RankBGSO: {fileID: 11400000, guid: ad00e85dea54e704aa97aeaae153f6c5, type: 2}
+  EvolveSo: {fileID: 11400000, guid: 65aac4029d7772045bcc9f57e370c2ce, type: 2}
   playerData: {fileID: 0}
   settingData: {fileID: 0}
   inventoryData: {fileID: 0}
