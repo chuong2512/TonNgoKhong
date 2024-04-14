@@ -38,13 +38,13 @@ static Il2CppMethodPointer s_methodPointers[7] =
 };
 static const int32_t s_InvokerIndices[7] = 
 {
-	7563,
-	7530,
-	3569,
-	7563,
-	7563,
-	13563,
-	7711,
+	7569,
+	7536,
+	3574,
+	7569,
+	7569,
+	13578,
+	7717,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_MackySoft_SerializeReferenceExtensions_CodeGenModule;
 const Il2CppCodeGenModule g_MackySoft_SerializeReferenceExtensions_CodeGenModule = 

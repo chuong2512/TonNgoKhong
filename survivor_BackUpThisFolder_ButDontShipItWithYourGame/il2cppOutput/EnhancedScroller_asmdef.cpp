@@ -3902,6 +3902,8 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 
 // T EnhancedUI.SmallList`1<System.Single>::Last()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SmallList_1_Last_mBF91A50F768E6C7FBA0A10C4F3CA4820414703A8_gshared (SmallList_1_t01939A1BFA76003B0DF2020E353DF647B491231E* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<System.Object>(T)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m90A1E6C4C2B445D2E848DB75C772D1B95AAC046A_gshared (RuntimeObject* ___original0, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<System.Object>()
@@ -3930,8 +3932,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SmallList_1_Last_mD373EF9D4C319B4D364
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SmallList_1_Remove_m6569EE44FFBE479F21A4AEB8F2F422FA4C44500F_gshared (SmallList_1_t2434FCAFEBCC4CD86FC12E035F946CBAC39B7917* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
 // System.Void EnhancedUI.SmallList`1<System.Object>::Add(T)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmallList_1_Add_m26C49E9B54DBB74BF2A6032DF4CCF516C223FA85_gshared (SmallList_1_t2434FCAFEBCC4CD86FC12E035F946CBAC39B7917* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::AddComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Void EnhancedUI.SmallList`1<System.Object>::AddStart(T)
@@ -4036,10 +4036,20 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ScrollRect_set_velocity_mBC8
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
 // System.Int32 EnhancedUI.EnhancedScroller.EnhancedScroller::get_NumberOfCells()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EnhancedScroller_get_NumberOfCells_m3A91E4251038F2ACE02CAF2AF5412658D81120F9 (EnhancedScroller_t1A0F51426CF0D965FD7F60D746E555BA7D46E1CE* __this, const RuntimeMethod* method) ;
-// EnhancedUI.EnhancedScroller.EnhancedScrollerCellView EnhancedUI.EnhancedScroller.EnhancedScroller::_GetRecycledCellView(EnhancedUI.EnhancedScroller.EnhancedScrollerCellView)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EnhancedScrollerCellView_t6F17E136C5D5AB53E47FF00B36BE0B0AAD2A9799* EnhancedScroller__GetRecycledCellView_m1AB3AF0A0EF21425693A0787F1163ADBCB9172E9 (EnhancedScroller_t1A0F51426CF0D965FD7F60D746E555BA7D46E1CE* __this, EnhancedScrollerCellView_t6F17E136C5D5AB53E47FF00B36BE0B0AAD2A9799* ___cellPrefab0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.UI.ScrollRect>()
+inline ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* Component_GetComponent_TisScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E_m807654BF9CCD1E13E3FB8498D557BDDF13006518 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// T UnityEngine.Component::GetComponent<UnityEngine.RectTransform>()
+inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// EnhancedUI.EnhancedScroller.EnhancedScrollerCellView EnhancedUI.EnhancedScroller.EnhancedScroller::_GetRecycledCellView(EnhancedUI.EnhancedScroller.EnhancedScrollerCellView)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EnhancedScrollerCellView_t6F17E136C5D5AB53E47FF00B36BE0B0AAD2A9799* EnhancedScroller__GetRecycledCellView_m1AB3AF0A0EF21425693A0787F1163ADBCB9172E9 (EnhancedScroller_t1A0F51426CF0D965FD7F60D746E555BA7D46E1CE* __this, EnhancedScrollerCellView_t6F17E136C5D5AB53E47FF00B36BE0B0AAD2A9799* ___cellPrefab0, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<UnityEngine.GameObject>(T)
 inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___original0, const RuntimeMethod* method)
 {
@@ -4239,16 +4249,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float EnhancedScroller_get_lookAheadBefore_m972BAD5DA9EBA76C0AC1E9D0FD6F3DC450BC0E9E_inline (EnhancedScroller_t1A0F51426CF0D965FD7F60D746E555BA7D46E1CE* __this, const RuntimeMethod* method) ;
 // System.Single EnhancedUI.EnhancedScroller.EnhancedScroller::get_lookAheadAfter()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float EnhancedScroller_get_lookAheadAfter_m972FE42E0AFBB1BF3998E189926BAF6105560A48_inline (EnhancedScroller_t1A0F51426CF0D965FD7F60D746E555BA7D46E1CE* __this, const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<UnityEngine.UI.ScrollRect>()
-inline ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* Component_GetComponent_TisScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E_m807654BF9CCD1E13E3FB8498D557BDDF13006518 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
-{
-	return ((  ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
-}
-// T UnityEngine.Component::GetComponent<UnityEngine.RectTransform>()
-inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
-{
-	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
-}
 // UnityEngine.RectTransform UnityEngine.UI.ScrollRect::get_content()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ScrollRect_get_content_m7878BCA28A96B7FBA02DC466A1ED2C9E191C6996_inline (ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* __this, const RuntimeMethod* method) ;
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -6965,39 +6965,74 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScrollRect_t17D2F2939CA8953110180DF53164CFC3D
 // System.Single EnhancedUI.EnhancedScroller.EnhancedScroller::get_ScrollRectSize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float EnhancedScroller_get_ScrollRectSize_m189FFAF7AFC97F681AD890F026596B06264E36F7 (EnhancedScroller_t1A0F51426CF0D965FD7F60D746E555BA7D46E1CE* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E_m807654BF9CCD1E13E3FB8498D557BDDF13006518_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		// if (scrollDirection == ScrollDirectionEnum.Vertical)
-		int32_t L_0 = __this->___scrollDirection_4;
-		if (L_0)
+		// if (_scrollRectTransform == null)
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->____scrollRectTransform_38;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
 		{
-			goto IL_001c;
+			goto IL_002b;
+		}
+	}
+	{
+		// _scrollRect = this.GetComponent<ScrollRect>();
+		ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* L_2;
+		L_2 = Component_GetComponent_TisScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E_m807654BF9CCD1E13E3FB8498D557BDDF13006518(__this, Component_GetComponent_TisScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E_m807654BF9CCD1E13E3FB8498D557BDDF13006518_RuntimeMethod_var);
+		__this->____scrollRect_37 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____scrollRect_37), (void*)L_2);
+		// _scrollRectTransform = _scrollRect.GetComponent<RectTransform>();
+		ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* L_3 = __this->____scrollRect_37;
+		NullCheck(L_3);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_4;
+		L_4 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_3, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
+		__this->____scrollRectTransform_38 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____scrollRectTransform_38), (void*)L_4);
+	}
+
+IL_002b:
+	{
+		// if (scrollDirection == ScrollDirectionEnum.Vertical)
+		int32_t L_5 = __this->___scrollDirection_4;
+		if (L_5)
+		{
+			goto IL_0047;
 		}
 	}
 	{
 		// return _scrollRectTransform.rect.height;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_1 = __this->____scrollRectTransform_38;
-		NullCheck(L_1);
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_2;
-		L_2 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_1, NULL);
-		V_0 = L_2;
-		float L_3;
-		L_3 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8((&V_0), NULL);
-		return L_3;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_6 = __this->____scrollRectTransform_38;
+		NullCheck(L_6);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_7;
+		L_7 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_6, NULL);
+		V_0 = L_7;
+		float L_8;
+		L_8 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8((&V_0), NULL);
+		return L_8;
 	}
 
-IL_001c:
+IL_0047:
 	{
 		// return _scrollRectTransform.rect.width;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_4 = __this->____scrollRectTransform_38;
-		NullCheck(L_4);
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_5;
-		L_5 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_4, NULL);
-		V_0 = L_5;
-		float L_6;
-		L_6 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9((&V_0), NULL);
-		return L_6;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_9 = __this->____scrollRectTransform_38;
+		NullCheck(L_9);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_10;
+		L_10 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_9, NULL);
+		V_0 = L_10;
+		float L_11;
+		L_11 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9((&V_0), NULL);
+		return L_11;
 	}
 }
 // UnityEngine.UI.LayoutElement EnhancedUI.EnhancedScroller.EnhancedScroller::get_FirstPadder()
